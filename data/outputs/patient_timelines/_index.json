@@ -1,0 +1,1037 @@
+{
+  "generated_at": "2026-02-03T12:43:31.260268",
+  "total_patients": 147,
+  "total_admissions": 148,
+  "output_directory": "../outputs/patient_timelines",
+  "patients": [
+    {
+      "subject_id": 11438336,
+      "cohort_type": "MDRO",
+      "subcategory": "MRSA",
+      "admission_count": 1,
+      "file": "patient_11438336.json"
+    },
+    {
+      "subject_id": 11644977,
+      "cohort_type": "MDRO",
+      "subcategory": "MRSA",
+      "admission_count": 1,
+      "file": "patient_11644977.json"
+    },
+    {
+      "subject_id": 12356657,
+      "cohort_type": "MDRO",
+      "subcategory": "MRSA",
+      "admission_count": 1,
+      "file": "patient_12356657.json"
+    },
+    {
+      "subject_id": 12808803,
+      "cohort_type": "MDRO",
+      "subcategory": "CRE",
+      "admission_count": 1,
+      "file": "patient_12808803.json"
+    },
+    {
+      "subject_id": 16929830,
+      "cohort_type": "MDRO",
+      "subcategory": "MRSA",
+      "admission_count": 1,
+      "file": "patient_16929830.json"
+    },
+    {
+      "subject_id": 18294629,
+      "cohort_type": "MDRO",
+      "subcategory": "CRE",
+      "admission_count": 1,
+      "file": "patient_18294629.json"
+    },
+    {
+      "subject_id": 19432448,
+      "cohort_type": "MDRO",
+      "subcategory": "MRSA",
+      "admission_count": 1,
+      "file": "patient_19432448.json"
+    },
+    {
+      "subject_id": 19440935,
+      "cohort_type": "MDRO",
+      "subcategory": "MRSA",
+      "admission_count": 1,
+      "file": "patient_19440935.json"
+    },
+    {
+      "subject_id": 19711171,
+      "cohort_type": "MDRO",
+      "subcategory": "MRSA",
+      "admission_count": 1,
+      "file": "patient_19711171.json"
+    },
+    {
+      "subject_id": 19970491,
+      "cohort_type": "MDRO",
+      "subcategory": "CRE",
+      "admission_count": 1,
+      "file": "patient_19970491.json"
+    },
+    {
+      "subject_id": 13938358,
+      "cohort_type": "MDRO",
+      "subcategory": "MRSA",
+      "admission_count": 1,
+      "file": "patient_13938358.json"
+    },
+    {
+      "subject_id": 16121672,
+      "cohort_type": "MDRO",
+      "subcategory": "CRE",
+      "admission_count": 1,
+      "file": "patient_16121672.json"
+    },
+    {
+      "subject_id": 16377954,
+      "cohort_type": "Infection",
+      "subcategory": "Pneumonia",
+      "admission_count": 1,
+      "file": "patient_16377954.json"
+    },
+    {
+      "subject_id": 17479653,
+      "cohort_type": "Infection",
+      "subcategory": "UTI",
+      "admission_count": 1,
+      "file": "patient_17479653.json"
+    },
+    {
+      "subject_id": 19632307,
+      "cohort_type": "Infection",
+      "subcategory": "GI_Infection",
+      "admission_count": 1,
+      "file": "patient_19632307.json"
+    },
+    {
+      "subject_id": 19667522,
+      "cohort_type": "Infection",
+      "subcategory": "GI_Infection",
+      "admission_count": 2,
+      "file": "patient_19667522.json"
+    },
+    {
+      "subject_id": 11601773,
+      "cohort_type": "Infection",
+      "subcategory": "UTI",
+      "admission_count": 1,
+      "file": "patient_11601773.json"
+    },
+    {
+      "subject_id": 10459790,
+      "cohort_type": "Infection",
+      "subcategory": "GI_Infection",
+      "admission_count": 1,
+      "file": "patient_10459790.json"
+    },
+    {
+      "subject_id": 12614318,
+      "cohort_type": "Infection",
+      "subcategory": "Pneumonia",
+      "admission_count": 1,
+      "file": "patient_12614318.json"
+    },
+    {
+      "subject_id": 11687412,
+      "cohort_type": "Infection",
+      "subcategory": "GI_Infection",
+      "admission_count": 1,
+      "file": "patient_11687412.json"
+    },
+    {
+      "subject_id": 10922899,
+      "cohort_type": "Infection",
+      "subcategory": "GI_Infection",
+      "admission_count": 1,
+      "file": "patient_10922899.json"
+    },
+    {
+      "subject_id": 11155160,
+      "cohort_type": "Infection",
+      "subcategory": "Pneumonia",
+      "admission_count": 1,
+      "file": "patient_11155160.json"
+    },
+    {
+      "subject_id": 19548143,
+      "cohort_type": "Infection",
+      "subcategory": "Pneumonia",
+      "admission_count": 1,
+      "file": "patient_19548143.json"
+    },
+    {
+      "subject_id": 19197537,
+      "cohort_type": "Infection",
+      "subcategory": "GI_Infection",
+      "admission_count": 1,
+      "file": "patient_19197537.json"
+    },
+    {
+      "subject_id": 17616643,
+      "cohort_type": "Infection",
+      "subcategory": "UTI",
+      "admission_count": 1,
+      "file": "patient_17616643.json"
+    },
+    {
+      "subject_id": 11664905,
+      "cohort_type": "Infection",
+      "subcategory": "UTI",
+      "admission_count": 1,
+      "file": "patient_11664905.json"
+    },
+    {
+      "subject_id": 19308820,
+      "cohort_type": "Infection",
+      "subcategory": "GI_Infection",
+      "admission_count": 1,
+      "file": "patient_19308820.json"
+    },
+    {
+      "subject_id": 12957994,
+      "cohort_type": "Infection",
+      "subcategory": "UTI",
+      "admission_count": 1,
+      "file": "patient_12957994.json"
+    },
+    {
+      "subject_id": 13855272,
+      "cohort_type": "Infection",
+      "subcategory": "GI_Infection",
+      "admission_count": 1,
+      "file": "patient_13855272.json"
+    },
+    {
+      "subject_id": 10979480,
+      "cohort_type": "Infection",
+      "subcategory": "GI_Infection",
+      "admission_count": 1,
+      "file": "patient_10979480.json"
+    },
+    {
+      "subject_id": 11008188,
+      "cohort_type": "Infection",
+      "subcategory": "UTI",
+      "admission_count": 1,
+      "file": "patient_11008188.json"
+    },
+    {
+      "subject_id": 14198739,
+      "cohort_type": "Infection",
+      "subcategory": "UTI",
+      "admission_count": 1,
+      "file": "patient_14198739.json"
+    },
+    {
+      "subject_id": 16544240,
+      "cohort_type": "Infection",
+      "subcategory": "GI_Infection",
+      "admission_count": 1,
+      "file": "patient_16544240.json"
+    },
+    {
+      "subject_id": 11837845,
+      "cohort_type": "Infection",
+      "subcategory": "Pneumonia",
+      "admission_count": 1,
+      "file": "patient_11837845.json"
+    },
+    {
+      "subject_id": 11854215,
+      "cohort_type": "Infection",
+      "subcategory": "Pneumonia",
+      "admission_count": 1,
+      "file": "patient_11854215.json"
+    },
+    {
+      "subject_id": 13702880,
+      "cohort_type": "Infection",
+      "subcategory": "Pneumonia",
+      "admission_count": 1,
+      "file": "patient_13702880.json"
+    },
+    {
+      "subject_id": 15212341,
+      "cohort_type": "Infection",
+      "subcategory": "GI_Infection",
+      "admission_count": 1,
+      "file": "patient_15212341.json"
+    },
+    {
+      "subject_id": 15112602,
+      "cohort_type": "Infection",
+      "subcategory": "Pneumonia",
+      "admission_count": 1,
+      "file": "patient_15112602.json"
+    },
+    {
+      "subject_id": 19922600,
+      "cohort_type": "Infection",
+      "subcategory": "GI_Infection",
+      "admission_count": 1,
+      "file": "patient_19922600.json"
+    },
+    {
+      "subject_id": 14737169,
+      "cohort_type": "Infection",
+      "subcategory": "Pneumonia",
+      "admission_count": 1,
+      "file": "patient_14737169.json"
+    },
+    {
+      "subject_id": 10916053,
+      "cohort_type": "Infection",
+      "subcategory": "UTI",
+      "admission_count": 1,
+      "file": "patient_10916053.json"
+    },
+    {
+      "subject_id": 14859055,
+      "cohort_type": "Infection",
+      "subcategory": "UTI",
+      "admission_count": 1,
+      "file": "patient_14859055.json"
+    },
+    {
+      "subject_id": 17833220,
+      "cohort_type": "Infection",
+      "subcategory": "UTI",
+      "admission_count": 1,
+      "file": "patient_17833220.json"
+    },
+    {
+      "subject_id": 13624277,
+      "cohort_type": "Infection",
+      "subcategory": "Pneumonia",
+      "admission_count": 1,
+      "file": "patient_13624277.json"
+    },
+    {
+      "subject_id": 17542845,
+      "cohort_type": "Infection",
+      "subcategory": "GI_Infection",
+      "admission_count": 1,
+      "file": "patient_17542845.json"
+    },
+    {
+      "subject_id": 14566798,
+      "cohort_type": "Infection",
+      "subcategory": "GI_Infection",
+      "admission_count": 1,
+      "file": "patient_14566798.json"
+    },
+    {
+      "subject_id": 18245074,
+      "cohort_type": "Infection",
+      "subcategory": "UTI",
+      "admission_count": 1,
+      "file": "patient_18245074.json"
+    },
+    {
+      "subject_id": 12608011,
+      "cohort_type": "Infection",
+      "subcategory": "UTI",
+      "admission_count": 1,
+      "file": "patient_12608011.json"
+    },
+    {
+      "subject_id": 16791751,
+      "cohort_type": "Infection",
+      "subcategory": "UTI",
+      "admission_count": 1,
+      "file": "patient_16791751.json"
+    },
+    {
+      "subject_id": 12749849,
+      "cohort_type": "Infection",
+      "subcategory": "UTI",
+      "admission_count": 1,
+      "file": "patient_12749849.json"
+    },
+    {
+      "subject_id": 17060832,
+      "cohort_type": "Infection",
+      "subcategory": "GI_Infection",
+      "admission_count": 1,
+      "file": "patient_17060832.json"
+    },
+    {
+      "subject_id": 12525799,
+      "cohort_type": "Infection",
+      "subcategory": "GI_Infection",
+      "admission_count": 1,
+      "file": "patient_12525799.json"
+    },
+    {
+      "subject_id": 16090019,
+      "cohort_type": "Infection",
+      "subcategory": "UTI",
+      "admission_count": 1,
+      "file": "patient_16090019.json"
+    },
+    {
+      "subject_id": 17587395,
+      "cohort_type": "Infection",
+      "subcategory": "UTI",
+      "admission_count": 1,
+      "file": "patient_17587395.json"
+    },
+    {
+      "subject_id": 13444104,
+      "cohort_type": "Infection",
+      "subcategory": "GI_Infection",
+      "admission_count": 1,
+      "file": "patient_13444104.json"
+    },
+    {
+      "subject_id": 12193922,
+      "cohort_type": "Infection",
+      "subcategory": "GI_Infection",
+      "admission_count": 1,
+      "file": "patient_12193922.json"
+    },
+    {
+      "subject_id": 12249103,
+      "cohort_type": "Infection",
+      "subcategory": "UTI",
+      "admission_count": 1,
+      "file": "patient_12249103.json"
+    },
+    {
+      "subject_id": 10652480,
+      "cohort_type": "Infection",
+      "subcategory": "GI_Infection",
+      "admission_count": 1,
+      "file": "patient_10652480.json"
+    },
+    {
+      "subject_id": 17650289,
+      "cohort_type": "Infection",
+      "subcategory": "Pneumonia",
+      "admission_count": 1,
+      "file": "patient_17650289.json"
+    },
+    {
+      "subject_id": 14341647,
+      "cohort_type": "Infection",
+      "subcategory": "Pneumonia",
+      "admission_count": 1,
+      "file": "patient_14341647.json"
+    },
+    {
+      "subject_id": 18003081,
+      "cohort_type": "Infection",
+      "subcategory": "GI_Infection",
+      "admission_count": 1,
+      "file": "patient_18003081.json"
+    },
+    {
+      "subject_id": 11999108,
+      "cohort_type": "Infection",
+      "subcategory": "UTI",
+      "admission_count": 1,
+      "file": "patient_11999108.json"
+    },
+    {
+      "subject_id": 17252164,
+      "cohort_type": "Infection",
+      "subcategory": "GI_Infection",
+      "admission_count": 1,
+      "file": "patient_17252164.json"
+    },
+    {
+      "subject_id": 17353623,
+      "cohort_type": "Infection",
+      "subcategory": "Pneumonia",
+      "admission_count": 1,
+      "file": "patient_17353623.json"
+    },
+    {
+      "subject_id": 10402372,
+      "cohort_type": "Infection",
+      "subcategory": "Pneumonia",
+      "admission_count": 1,
+      "file": "patient_10402372.json"
+    },
+    {
+      "subject_id": 15545482,
+      "cohort_type": "Infection",
+      "subcategory": "Pneumonia",
+      "admission_count": 1,
+      "file": "patient_15545482.json"
+    },
+    {
+      "subject_id": 15552419,
+      "cohort_type": "Infection",
+      "subcategory": "UTI",
+      "admission_count": 1,
+      "file": "patient_15552419.json"
+    },
+    {
+      "subject_id": 12615486,
+      "cohort_type": "Infection",
+      "subcategory": "UTI",
+      "admission_count": 1,
+      "file": "patient_12615486.json"
+    },
+    {
+      "subject_id": 15758043,
+      "cohort_type": "Infection",
+      "subcategory": "GI_Infection",
+      "admission_count": 1,
+      "file": "patient_15758043.json"
+    },
+    {
+      "subject_id": 18853927,
+      "cohort_type": "Infection",
+      "subcategory": "Pneumonia",
+      "admission_count": 1,
+      "file": "patient_18853927.json"
+    },
+    {
+      "subject_id": 11822137,
+      "cohort_type": "Infection",
+      "subcategory": "Pneumonia",
+      "admission_count": 1,
+      "file": "patient_11822137.json"
+    },
+    {
+      "subject_id": 17077867,
+      "cohort_type": "Infection",
+      "subcategory": "Pneumonia",
+      "admission_count": 1,
+      "file": "patient_17077867.json"
+    },
+    {
+      "subject_id": 12199972,
+      "cohort_type": "Infection",
+      "subcategory": "GI_Infection",
+      "admission_count": 1,
+      "file": "patient_12199972.json"
+    },
+    {
+      "subject_id": 12892273,
+      "cohort_type": "Infection",
+      "subcategory": "GI_Infection",
+      "admission_count": 1,
+      "file": "patient_12892273.json"
+    },
+    {
+      "subject_id": 18478849,
+      "cohort_type": "Infection",
+      "subcategory": "Pneumonia",
+      "admission_count": 1,
+      "file": "patient_18478849.json"
+    },
+    {
+      "subject_id": 10476869,
+      "cohort_type": "Infection",
+      "subcategory": "Pneumonia",
+      "admission_count": 1,
+      "file": "patient_10476869.json"
+    },
+    {
+      "subject_id": 10504424,
+      "cohort_type": "Infection",
+      "subcategory": "UTI",
+      "admission_count": 1,
+      "file": "patient_10504424.json"
+    },
+    {
+      "subject_id": 13980795,
+      "cohort_type": "Infection",
+      "subcategory": "Pneumonia",
+      "admission_count": 1,
+      "file": "patient_13980795.json"
+    },
+    {
+      "subject_id": 16566006,
+      "cohort_type": "Infection",
+      "subcategory": "GI_Infection",
+      "admission_count": 1,
+      "file": "patient_16566006.json"
+    },
+    {
+      "subject_id": 16745416,
+      "cohort_type": "Infection",
+      "subcategory": "GI_Infection",
+      "admission_count": 1,
+      "file": "patient_16745416.json"
+    },
+    {
+      "subject_id": 11699361,
+      "cohort_type": "Infection",
+      "subcategory": "Pneumonia",
+      "admission_count": 1,
+      "file": "patient_11699361.json"
+    },
+    {
+      "subject_id": 16256748,
+      "cohort_type": "Infection",
+      "subcategory": "Pneumonia",
+      "admission_count": 1,
+      "file": "patient_16256748.json"
+    },
+    {
+      "subject_id": 16323640,
+      "cohort_type": "Infection",
+      "subcategory": "Pneumonia",
+      "admission_count": 1,
+      "file": "patient_16323640.json"
+    },
+    {
+      "subject_id": 15835489,
+      "cohort_type": "Infection",
+      "subcategory": "Pneumonia",
+      "admission_count": 1,
+      "file": "patient_15835489.json"
+    },
+    {
+      "subject_id": 12464244,
+      "cohort_type": "Infection",
+      "subcategory": "Pneumonia",
+      "admission_count": 1,
+      "file": "patient_12464244.json"
+    },
+    {
+      "subject_id": 12278904,
+      "cohort_type": "Infection",
+      "subcategory": "Pneumonia",
+      "admission_count": 1,
+      "file": "patient_12278904.json"
+    },
+    {
+      "subject_id": 12877713,
+      "cohort_type": "Infection",
+      "subcategory": "UTI",
+      "admission_count": 1,
+      "file": "patient_12877713.json"
+    },
+    {
+      "subject_id": 12878814,
+      "cohort_type": "Infection",
+      "subcategory": "Pneumonia",
+      "admission_count": 1,
+      "file": "patient_12878814.json"
+    },
+    {
+      "subject_id": 15952372,
+      "cohort_type": "Infection",
+      "subcategory": "GI_Infection",
+      "admission_count": 1,
+      "file": "patient_15952372.json"
+    },
+    {
+      "subject_id": 14133339,
+      "cohort_type": "Infection",
+      "subcategory": "GI_Infection",
+      "admission_count": 1,
+      "file": "patient_14133339.json"
+    },
+    {
+      "subject_id": 13601518,
+      "cohort_type": "Infection",
+      "subcategory": "UTI",
+      "admission_count": 1,
+      "file": "patient_13601518.json"
+    },
+    {
+      "subject_id": 19096027,
+      "cohort_type": "Infection",
+      "subcategory": "GI_Infection",
+      "admission_count": 1,
+      "file": "patient_19096027.json"
+    },
+    {
+      "subject_id": 19315692,
+      "cohort_type": "Infection",
+      "subcategory": "Pneumonia",
+      "admission_count": 1,
+      "file": "patient_19315692.json"
+    },
+    {
+      "subject_id": 12952913,
+      "cohort_type": "Infection",
+      "subcategory": "Pneumonia",
+      "admission_count": 1,
+      "file": "patient_12952913.json"
+    },
+    {
+      "subject_id": 19765968,
+      "cohort_type": "Infection",
+      "subcategory": "UTI",
+      "admission_count": 1,
+      "file": "patient_19765968.json"
+    },
+    {
+      "subject_id": 10476891,
+      "cohort_type": "Infection",
+      "subcategory": "UTI",
+      "admission_count": 1,
+      "file": "patient_10476891.json"
+    },
+    {
+      "subject_id": 13961236,
+      "cohort_type": "Infection",
+      "subcategory": "UTI",
+      "admission_count": 1,
+      "file": "patient_13961236.json"
+    },
+    {
+      "subject_id": 13266095,
+      "cohort_type": "Infection",
+      "subcategory": "Pneumonia",
+      "admission_count": 1,
+      "file": "patient_13266095.json"
+    },
+    {
+      "subject_id": 15801376,
+      "cohort_type": "Infection",
+      "subcategory": "GI_Infection",
+      "admission_count": 1,
+      "file": "patient_15801376.json"
+    },
+    {
+      "subject_id": 10997090,
+      "cohort_type": "Infection",
+      "subcategory": "GI_Infection",
+      "admission_count": 1,
+      "file": "patient_10997090.json"
+    },
+    {
+      "subject_id": 14148978,
+      "cohort_type": "Infection",
+      "subcategory": "GI_Infection",
+      "admission_count": 1,
+      "file": "patient_14148978.json"
+    },
+    {
+      "subject_id": 10157454,
+      "cohort_type": "Infection",
+      "subcategory": "GI_Infection",
+      "admission_count": 1,
+      "file": "patient_10157454.json"
+    },
+    {
+      "subject_id": 10213803,
+      "cohort_type": "Infection",
+      "subcategory": "GI_Infection",
+      "admission_count": 1,
+      "file": "patient_10213803.json"
+    },
+    {
+      "subject_id": 14559749,
+      "cohort_type": "Infection",
+      "subcategory": "GI_Infection",
+      "admission_count": 1,
+      "file": "patient_14559749.json"
+    },
+    {
+      "subject_id": 15528228,
+      "cohort_type": "Infection",
+      "subcategory": "Pneumonia",
+      "admission_count": 1,
+      "file": "patient_15528228.json"
+    },
+    {
+      "subject_id": 11754784,
+      "cohort_type": "Infection",
+      "subcategory": "GI_Infection",
+      "admission_count": 1,
+      "file": "patient_11754784.json"
+    },
+    {
+      "subject_id": 12186065,
+      "cohort_type": "Infection",
+      "subcategory": "GI_Infection",
+      "admission_count": 1,
+      "file": "patient_12186065.json"
+    },
+    {
+      "subject_id": 14988897,
+      "cohort_type": "Infection",
+      "subcategory": "Pneumonia",
+      "admission_count": 1,
+      "file": "patient_14988897.json"
+    },
+    {
+      "subject_id": 13488954,
+      "cohort_type": "Infection",
+      "subcategory": "UTI",
+      "admission_count": 1,
+      "file": "patient_13488954.json"
+    },
+    {
+      "subject_id": 16939306,
+      "cohort_type": "Infection",
+      "subcategory": "Pneumonia",
+      "admission_count": 1,
+      "file": "patient_16939306.json"
+    },
+    {
+      "subject_id": 10781100,
+      "cohort_type": "Infection",
+      "subcategory": "GI_Infection",
+      "admission_count": 1,
+      "file": "patient_10781100.json"
+    },
+    {
+      "subject_id": 18477696,
+      "cohort_type": "Infection",
+      "subcategory": "UTI",
+      "admission_count": 1,
+      "file": "patient_18477696.json"
+    },
+    {
+      "subject_id": 19802150,
+      "cohort_type": "Infection",
+      "subcategory": "Pneumonia",
+      "admission_count": 1,
+      "file": "patient_19802150.json"
+    },
+    {
+      "subject_id": 10554191,
+      "cohort_type": "Infection",
+      "subcategory": "GI_Infection",
+      "admission_count": 1,
+      "file": "patient_10554191.json"
+    },
+    {
+      "subject_id": 17673221,
+      "cohort_type": "Infection",
+      "subcategory": "Pneumonia",
+      "admission_count": 1,
+      "file": "patient_17673221.json"
+    },
+    {
+      "subject_id": 13118941,
+      "cohort_type": "Infection",
+      "subcategory": "Pneumonia",
+      "admission_count": 1,
+      "file": "patient_13118941.json"
+    },
+    {
+      "subject_id": 12373117,
+      "cohort_type": "Infection",
+      "subcategory": "GI_Infection",
+      "admission_count": 1,
+      "file": "patient_12373117.json"
+    },
+    {
+      "subject_id": 17581522,
+      "cohort_type": "Infection",
+      "subcategory": "GI_Infection",
+      "admission_count": 1,
+      "file": "patient_17581522.json"
+    },
+    {
+      "subject_id": 11369345,
+      "cohort_type": "Infection",
+      "subcategory": "Pneumonia",
+      "admission_count": 1,
+      "file": "patient_11369345.json"
+    },
+    {
+      "subject_id": 12008142,
+      "cohort_type": "Infection",
+      "subcategory": "UTI",
+      "admission_count": 1,
+      "file": "patient_12008142.json"
+    },
+    {
+      "subject_id": 13776738,
+      "cohort_type": "Infection",
+      "subcategory": "GI_Infection",
+      "admission_count": 1,
+      "file": "patient_13776738.json"
+    },
+    {
+      "subject_id": 13907635,
+      "cohort_type": "Infection",
+      "subcategory": "Pneumonia",
+      "admission_count": 1,
+      "file": "patient_13907635.json"
+    },
+    {
+      "subject_id": 14503587,
+      "cohort_type": "Infection",
+      "subcategory": "Pneumonia",
+      "admission_count": 1,
+      "file": "patient_14503587.json"
+    },
+    {
+      "subject_id": 11152036,
+      "cohort_type": "Infection",
+      "subcategory": "Pneumonia",
+      "admission_count": 1,
+      "file": "patient_11152036.json"
+    },
+    {
+      "subject_id": 11192809,
+      "cohort_type": "Infection",
+      "subcategory": "UTI",
+      "admission_count": 1,
+      "file": "patient_11192809.json"
+    },
+    {
+      "subject_id": 11936058,
+      "cohort_type": "Infection",
+      "subcategory": "Pneumonia",
+      "admission_count": 1,
+      "file": "patient_11936058.json"
+    },
+    {
+      "subject_id": 11430111,
+      "cohort_type": "Infection",
+      "subcategory": "GI_Infection",
+      "admission_count": 1,
+      "file": "patient_11430111.json"
+    },
+    {
+      "subject_id": 13757633,
+      "cohort_type": "Infection",
+      "subcategory": "UTI",
+      "admission_count": 1,
+      "file": "patient_13757633.json"
+    },
+    {
+      "subject_id": 10295447,
+      "cohort_type": "Infection",
+      "subcategory": "GI_Infection",
+      "admission_count": 1,
+      "file": "patient_10295447.json"
+    },
+    {
+      "subject_id": 18675991,
+      "cohort_type": "Infection",
+      "subcategory": "Pneumonia",
+      "admission_count": 1,
+      "file": "patient_18675991.json"
+    },
+    {
+      "subject_id": 13585285,
+      "cohort_type": "Infection",
+      "subcategory": "GI_Infection",
+      "admission_count": 1,
+      "file": "patient_13585285.json"
+    },
+    {
+      "subject_id": 17513417,
+      "cohort_type": "Infection",
+      "subcategory": "UTI",
+      "admission_count": 1,
+      "file": "patient_17513417.json"
+    },
+    {
+      "subject_id": 15372801,
+      "cohort_type": "Infection",
+      "subcategory": "Pneumonia",
+      "admission_count": 1,
+      "file": "patient_15372801.json"
+    },
+    {
+      "subject_id": 11292424,
+      "cohort_type": "Infection",
+      "subcategory": "Pneumonia",
+      "admission_count": 1,
+      "file": "patient_11292424.json"
+    },
+    {
+      "subject_id": 10383157,
+      "cohort_type": "Infection",
+      "subcategory": "GI_Infection",
+      "admission_count": 1,
+      "file": "patient_10383157.json"
+    },
+    {
+      "subject_id": 14544801,
+      "cohort_type": "Infection",
+      "subcategory": "UTI",
+      "admission_count": 1,
+      "file": "patient_14544801.json"
+    },
+    {
+      "subject_id": 15493308,
+      "cohort_type": "Infection",
+      "subcategory": "GI_Infection",
+      "admission_count": 1,
+      "file": "patient_15493308.json"
+    },
+    {
+      "subject_id": 10431522,
+      "cohort_type": "Infection",
+      "subcategory": "Pneumonia",
+      "admission_count": 1,
+      "file": "patient_10431522.json"
+    },
+    {
+      "subject_id": 13937672,
+      "cohort_type": "Infection",
+      "subcategory": "GI_Infection",
+      "admission_count": 1,
+      "file": "patient_13937672.json"
+    },
+    {
+      "subject_id": 15718906,
+      "cohort_type": "Infection",
+      "subcategory": "Pneumonia",
+      "admission_count": 1,
+      "file": "patient_15718906.json"
+    },
+    {
+      "subject_id": 16836931,
+      "cohort_type": "Infection",
+      "subcategory": "UTI",
+      "admission_count": 1,
+      "file": "patient_16836931.json"
+    },
+    {
+      "subject_id": 12697686,
+      "cohort_type": "Infection",
+      "subcategory": "Pneumonia",
+      "admission_count": 1,
+      "file": "patient_12697686.json"
+    },
+    {
+      "subject_id": 12966999,
+      "cohort_type": "Infection",
+      "subcategory": "UTI",
+      "admission_count": 1,
+      "file": "patient_12966999.json"
+    },
+    {
+      "subject_id": 18360819,
+      "cohort_type": "Infection",
+      "subcategory": "Pneumonia",
+      "admission_count": 1,
+      "file": "patient_18360819.json"
+    },
+    {
+      "subject_id": 15588383,
+      "cohort_type": "Infection",
+      "subcategory": "UTI",
+      "admission_count": 1,
+      "file": "patient_15588383.json"
+    },
+    {
+      "subject_id": 15637323,
+      "cohort_type": "Infection",
+      "subcategory": "Pneumonia",
+      "admission_count": 1,
+      "file": "patient_15637323.json"
+    },
+    {
+      "subject_id": 18210367,
+      "cohort_type": "Infection",
+      "subcategory": "Pneumonia",
+      "admission_count": 1,
+      "file": "patient_18210367.json"
+    }
+  ]
+}

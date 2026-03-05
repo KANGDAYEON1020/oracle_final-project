@@ -1,0 +1,1762 @@
+{
+  "subject_id": 18294629,
+  "patient_summary": {
+    "total_admissions": 1,
+    "cohort_type": "MDRO",
+    "subcategory": "CRE",
+    "gender": "M",
+    "age": 69.0
+  },
+  "admissions": [
+    {
+      "hadm_id": 22456860,
+      "admit_date": "2143-09-23",
+      "discharge_date": "2143-10-05",
+      "los_days": 11.97,
+      "infection_types": [
+        "CRE"
+      ],
+      "infection_timings": [
+        NaN
+      ],
+      "summary": {
+        "lab_count": 92,
+        "vital_count": 0,
+        "culture_count": 15,
+        "medication_count": 37,
+        "diagnosis_count": 19,
+        "unique_organisms": [
+          "ESCHERICHIA COLI"
+        ]
+      },
+      "diagnoses": [
+        {
+          "seq_num": "1",
+          "icd_code": "57400",
+          "icd_version": "9",
+          "description": "Calculus of gallbladder with acute cholecystitis, without mention of obstruction"
+        },
+        {
+          "seq_num": "10",
+          "icd_code": "4019",
+          "icd_version": "9",
+          "description": "Unspecified essential hypertension"
+        },
+        {
+          "seq_num": "11",
+          "icd_code": "53085",
+          "icd_version": "9",
+          "description": "Barrett's esophagus"
+        },
+        {
+          "seq_num": "12",
+          "icd_code": "E8788",
+          "icd_version": "9",
+          "description": "Other specified surgical operations and procedures causing abnormal patient reaction, or later complication, without mention of misadventure at time of operation"
+        },
+        {
+          "seq_num": "13",
+          "icd_code": "78702",
+          "icd_version": "9",
+          "description": "Nausea alone"
+        },
+        {
+          "seq_num": "14",
+          "icd_code": "6930",
+          "icd_version": "9",
+          "description": "Dermatitis due to drugs and medicines taken internally"
+        },
+        {
+          "seq_num": "15",
+          "icd_code": "E9300",
+          "icd_version": "9",
+          "description": "Penicillins causing adverse effects in therapeutic use"
+        },
+        {
+          "seq_num": "16",
+          "icd_code": "V1271",
+          "icd_version": "9",
+          "description": "Personal history of peptic ulcer disease"
+        },
+        {
+          "seq_num": "17",
+          "icd_code": "56210",
+          "icd_version": "9",
+          "description": "Diverticulosis of colon (without mention of hemorrhage)"
+        },
+        {
+          "seq_num": "18",
+          "icd_code": "V0991",
+          "icd_version": "9",
+          "description": "Infection with drug-resistant microorganisms, unspecified, with multiple drug resistance"
+        },
+        {
+          "seq_num": "19",
+          "icd_code": "5680",
+          "icd_version": "9",
+          "description": "Peritoneal adhesions (postoperative) (postinfection)"
+        },
+        {
+          "seq_num": "2",
+          "icd_code": "56722",
+          "icd_version": "9",
+          "description": "Peritoneal abscess"
+        },
+        {
+          "seq_num": "3",
+          "icd_code": "99859",
+          "icd_version": "9",
+          "description": "Other postoperative infection"
+        },
+        {
+          "seq_num": "4",
+          "icd_code": "5761",
+          "icd_version": "9",
+          "description": "Cholangitis"
+        },
+        {
+          "seq_num": "5",
+          "icd_code": "6822",
+          "icd_version": "9",
+          "description": "Cellulitis and abscess of trunk"
+        },
+        {
+          "seq_num": "6",
+          "icd_code": "0414",
+          "icd_version": "9",
+          "description": "Escherichia coli [E. coli] infection in conditions classified elsewhere and of unspecified site"
+        },
+        {
+          "seq_num": "7",
+          "icd_code": "57410",
+          "icd_version": "9",
+          "description": "Calculus of gallbladder with other cholecystitis, without mention of obstruction"
+        },
+        {
+          "seq_num": "8",
+          "icd_code": "2720",
+          "icd_version": "9",
+          "description": "Pure hypercholesterolemia"
+        },
+        {
+          "seq_num": "9",
+          "icd_code": "3051",
+          "icd_version": "9",
+          "description": "Tobacco use disorder"
+        }
+      ],
+      "timeline": [
+        {
+          "datetime": "2143-09-23 10:00:00",
+          "type": "medication_start",
+          "name": "Atenolol",
+          "route": "PO",
+          "frequency": "DAILY",
+          "status": "Inactive (Due to a change order)"
+        },
+        {
+          "datetime": "2143-09-23 17:00:00",
+          "type": "medication_start",
+          "name": "HYDROmorphone (Dilaudid)",
+          "route": "IV",
+          "frequency": "Q4H:PRN",
+          "status": "Inactive (Due to a change order)"
+        },
+        {
+          "datetime": "2143-09-23 17:00:00",
+          "type": "medication_start",
+          "name": "Pantoprazole",
+          "route": "IV",
+          "frequency": "Q24H",
+          "status": "Discontinued"
+        },
+        {
+          "datetime": "2143-09-23 17:00:00",
+          "type": "medication_start",
+          "name": null,
+          "route": "IV",
+          "frequency": "ASDIR",
+          "status": "Discontinued"
+        },
+        {
+          "datetime": "2143-09-23 17:00:00",
+          "type": "medication_start",
+          "name": "Ondansetron",
+          "route": "IV",
+          "frequency": "Q8H:PRN",
+          "status": "Inactive (Due to a change order)"
+        },
+        {
+          "datetime": "2143-09-23 17:00:00",
+          "type": "medication_start",
+          "name": "Sodium Chloride 0.9%  Flush",
+          "route": "IV",
+          "frequency": "Q8H:PRN",
+          "status": "Discontinued via patient discharge"
+        },
+        {
+          "datetime": "2143-09-23 17:00:00",
+          "type": "medication_start",
+          "name": "CefazoLIN",
+          "route": "IV",
+          "frequency": "Q8H",
+          "status": "Expired"
+        },
+        {
+          "datetime": "2143-09-23 20:00:00",
+          "type": "medication_start",
+          "name": "Heparin",
+          "route": "SC",
+          "frequency": "TID",
+          "status": "Discontinued via patient discharge"
+        },
+        {
+          "datetime": "2143-09-24 00:00:00",
+          "type": "medication_stop",
+          "name": "HYDROmorphone (Dilaudid)",
+          "route": "IV",
+          "status": "Inactive (Due to a change order)"
+        },
+        {
+          "datetime": "2143-09-24 01:00:00",
+          "type": "medication_start",
+          "name": "HYDROmorphone (Dilaudid)",
+          "route": "IV",
+          "frequency": "Q3H:PRN",
+          "status": "Inactive (Due to a change order)"
+        },
+        {
+          "datetime": "2143-09-24 06:10:00",
+          "type": "lab",
+          "name": "Hematocrit",
+          "category": "Hematology",
+          "value": "31.3",
+          "valuenum": "31.3",
+          "unit": "%",
+          "flag": "abnormal"
+        },
+        {
+          "datetime": "2143-09-24 06:10:00",
+          "type": "lab",
+          "name": "Hemoglobin",
+          "category": "Hematology",
+          "value": "10.0",
+          "valuenum": "10",
+          "unit": "g/dL",
+          "flag": "abnormal"
+        },
+        {
+          "datetime": "2143-09-24 06:10:00",
+          "type": "lab",
+          "name": "MCH",
+          "category": "Hematology",
+          "value": "28.7",
+          "valuenum": "28.7",
+          "unit": "pg",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-24 06:10:00",
+          "type": "lab",
+          "name": "MCHC",
+          "category": "Hematology",
+          "value": "31.9",
+          "valuenum": "31.9",
+          "unit": "%",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-24 06:10:00",
+          "type": "lab",
+          "name": "MCV",
+          "category": "Hematology",
+          "value": "90",
+          "valuenum": "90",
+          "unit": "fL",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-24 06:10:00",
+          "type": "lab",
+          "name": "Platelet Count",
+          "category": "Hematology",
+          "value": "285",
+          "valuenum": "285",
+          "unit": "K/uL",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-24 06:10:00",
+          "type": "lab",
+          "name": "RDW",
+          "category": "Hematology",
+          "value": "14.3",
+          "valuenum": "14.3",
+          "unit": "%",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-24 06:10:00",
+          "type": "lab",
+          "name": "Red Blood Cells",
+          "category": "Hematology",
+          "value": "3.47",
+          "valuenum": "3.47",
+          "unit": "m/uL",
+          "flag": "abnormal"
+        },
+        {
+          "datetime": "2143-09-24 06:10:00",
+          "type": "lab",
+          "name": "White Blood Cells",
+          "category": "Hematology",
+          "value": "17.8",
+          "valuenum": "17.8",
+          "unit": "K/uL",
+          "flag": "abnormal"
+        },
+        {
+          "datetime": "2143-09-24 06:10:00",
+          "type": "lab",
+          "name": "Alanine Aminotransferase (ALT)",
+          "category": "Chemistry",
+          "value": "149",
+          "valuenum": "149",
+          "unit": "IU/L",
+          "flag": "abnormal"
+        },
+        {
+          "datetime": "2143-09-24 06:10:00",
+          "type": "lab",
+          "name": "Alkaline Phosphatase",
+          "category": "Chemistry",
+          "value": "275",
+          "valuenum": "275",
+          "unit": "IU/L",
+          "flag": "abnormal"
+        },
+        {
+          "datetime": "2143-09-24 06:10:00",
+          "type": "lab",
+          "name": "Amylase",
+          "category": "Chemistry",
+          "value": "52",
+          "valuenum": "52",
+          "unit": "IU/L",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-24 06:10:00",
+          "type": "lab",
+          "name": "Anion Gap",
+          "category": "Chemistry",
+          "value": "14",
+          "valuenum": "14",
+          "unit": "mEq/L",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-24 06:10:00",
+          "type": "lab",
+          "name": "Asparate Aminotransferase (AST)",
+          "category": "Chemistry",
+          "value": "99",
+          "valuenum": "99",
+          "unit": "IU/L",
+          "flag": "abnormal"
+        },
+        {
+          "datetime": "2143-09-24 06:10:00",
+          "type": "lab",
+          "name": "Bicarbonate",
+          "category": "Chemistry",
+          "value": "27",
+          "valuenum": "27",
+          "unit": "mEq/L",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-24 06:10:00",
+          "type": "lab",
+          "name": "Bilirubin, Total",
+          "category": "Chemistry",
+          "value": "1.1",
+          "valuenum": "1.1",
+          "unit": "mg/dL",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-24 06:10:00",
+          "type": "lab",
+          "name": "Calcium, Total",
+          "category": "Chemistry",
+          "value": "8.4",
+          "valuenum": "8.4",
+          "unit": "mg/dL",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-24 06:10:00",
+          "type": "lab",
+          "name": "Chloride",
+          "category": "Chemistry",
+          "value": "101",
+          "valuenum": "101",
+          "unit": "mEq/L",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-24 06:10:00",
+          "type": "lab",
+          "name": "Creatinine",
+          "category": "Chemistry",
+          "value": "0.7",
+          "valuenum": "0.7",
+          "unit": "mg/dL",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-24 06:10:00",
+          "type": "lab",
+          "name": "Glucose",
+          "category": "Chemistry",
+          "value": "___",
+          "valuenum": "103",
+          "unit": "mg/dL",
+          "flag": "abnormal"
+        },
+        {
+          "datetime": "2143-09-24 06:10:00",
+          "type": "lab",
+          "name": "Lipase",
+          "category": "Chemistry",
+          "value": "11",
+          "valuenum": "11",
+          "unit": "IU/L",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-24 06:10:00",
+          "type": "lab",
+          "name": "Magnesium",
+          "category": "Chemistry",
+          "value": "1.9",
+          "valuenum": "1.9",
+          "unit": "mg/dL",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-24 06:10:00",
+          "type": "lab",
+          "name": "Phosphate",
+          "category": "Chemistry",
+          "value": "3.0",
+          "valuenum": "3",
+          "unit": "mg/dL",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-24 06:10:00",
+          "type": "lab",
+          "name": "Potassium",
+          "category": "Chemistry",
+          "value": "3.9",
+          "valuenum": "3.9",
+          "unit": "mEq/L",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-24 06:10:00",
+          "type": "lab",
+          "name": "Sodium",
+          "category": "Chemistry",
+          "value": "138",
+          "valuenum": "138",
+          "unit": "mEq/L",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-24 06:10:00",
+          "type": "lab",
+          "name": "Urea Nitrogen",
+          "category": "Chemistry",
+          "value": "12",
+          "valuenum": "12",
+          "unit": "mg/dL",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-24 08:00:00",
+          "type": "medication_stop",
+          "name": "CefazoLIN",
+          "route": "IV",
+          "status": "Expired"
+        },
+        {
+          "datetime": "2143-09-24 08:00:00",
+          "type": "medication_start",
+          "name": "HYDROmorphone (Dilaudid)",
+          "route": "PO/NG",
+          "frequency": "Q4H:PRN",
+          "status": "Inactive (Due to a change order)"
+        },
+        {
+          "datetime": "2143-09-24 08:00:00",
+          "type": "medication_start",
+          "name": "HYDROmorphone (Dilaudid)",
+          "route": "PO/NG",
+          "frequency": "Q4H:PRN",
+          "status": "Discontinued"
+        },
+        {
+          "datetime": "2143-09-24 12:00:00",
+          "type": "medication_stop",
+          "name": "HYDROmorphone (Dilaudid)",
+          "route": "IV",
+          "status": "Inactive (Due to a change order)"
+        },
+        {
+          "datetime": "2143-09-24 12:00:00",
+          "type": "medication_stop",
+          "name": "HYDROmorphone (Dilaudid)",
+          "route": "PO/NG",
+          "status": "Inactive (Due to a change order)"
+        },
+        {
+          "datetime": "2143-09-24 12:00:00",
+          "type": "medication_stop",
+          "name": "HYDROmorphone (Dilaudid)",
+          "route": "PO/NG",
+          "status": "Discontinued"
+        },
+        {
+          "datetime": "2143-09-24 12:00:00",
+          "type": "medication_start",
+          "name": "Potassium Chloride",
+          "route": "PO",
+          "frequency": "ONCE",
+          "status": "Expired"
+        },
+        {
+          "datetime": "2143-09-24 12:00:00",
+          "type": "medication_start",
+          "name": "Magnesium Oxide",
+          "route": "PO/NG",
+          "frequency": "ONCE",
+          "status": "Expired"
+        },
+        {
+          "datetime": "2143-09-24 13:00:00",
+          "type": "medication_start",
+          "name": "HYDROmorphone (Dilaudid)",
+          "route": "PO/NG",
+          "frequency": "Q3H:PRN",
+          "status": "Discontinued via patient discharge"
+        },
+        {
+          "datetime": "2143-09-24 13:00:00",
+          "type": "medication_start",
+          "name": "HYDROmorphone (Dilaudid)",
+          "route": "PO/NG",
+          "frequency": "Q3H:PRN",
+          "status": "Discontinued via patient discharge"
+        },
+        {
+          "datetime": "2143-09-24 13:00:00",
+          "type": "medication_start",
+          "name": "HYDROmorphone (Dilaudid)",
+          "route": "IV",
+          "frequency": "Q3H:PRN",
+          "status": "Discontinued"
+        },
+        {
+          "datetime": "2143-09-25 08:00:00",
+          "type": "medication_stop",
+          "name": null,
+          "route": "IV",
+          "status": "Discontinued"
+        },
+        {
+          "datetime": "2143-09-25 08:00:00",
+          "type": "medication_stop",
+          "name": "Cephalexin",
+          "route": "PO/NG",
+          "status": "Discontinued"
+        },
+        {
+          "datetime": "2143-09-25 08:45:00",
+          "type": "culture",
+          "specimen": "SWAB",
+          "organism": "ESCHERICHIA COLI",
+          "isolate_num": "1",
+          "antibiotic": "AMPICILLIN",
+          "interpretation": "R"
+        },
+        {
+          "datetime": "2143-09-25 08:45:00",
+          "type": "culture",
+          "specimen": "SWAB",
+          "organism": "ESCHERICHIA COLI",
+          "isolate_num": "1",
+          "antibiotic": "CEFAZOLIN",
+          "interpretation": "R"
+        },
+        {
+          "datetime": "2143-09-25 08:45:00",
+          "type": "culture",
+          "specimen": "SWAB",
+          "organism": "ESCHERICHIA COLI",
+          "isolate_num": "1",
+          "antibiotic": "TRIMETHOPRIM/SULFA",
+          "interpretation": "R"
+        },
+        {
+          "datetime": "2143-09-25 08:45:00",
+          "type": "culture",
+          "specimen": "SWAB",
+          "organism": "ESCHERICHIA COLI",
+          "isolate_num": "1",
+          "antibiotic": "TETRACYCLINE",
+          "interpretation": "S"
+        },
+        {
+          "datetime": "2143-09-25 08:45:00",
+          "type": "culture",
+          "specimen": "SWAB",
+          "organism": "ESCHERICHIA COLI",
+          "isolate_num": "1",
+          "antibiotic": "GENTAMICIN",
+          "interpretation": "R"
+        },
+        {
+          "datetime": "2143-09-25 08:45:00",
+          "type": "culture",
+          "specimen": "SWAB",
+          "organism": "ESCHERICHIA COLI",
+          "isolate_num": "1",
+          "antibiotic": "TOBRAMYCIN",
+          "interpretation": "S"
+        },
+        {
+          "datetime": "2143-09-25 08:45:00",
+          "type": "culture",
+          "specimen": "SWAB",
+          "organism": "ESCHERICHIA COLI",
+          "isolate_num": "1",
+          "antibiotic": "CEFTAZIDIME",
+          "interpretation": "R"
+        },
+        {
+          "datetime": "2143-09-25 08:45:00",
+          "type": "culture",
+          "specimen": "SWAB",
+          "organism": "ESCHERICHIA COLI",
+          "isolate_num": "1",
+          "antibiotic": "CEFTRIAXONE",
+          "interpretation": "R"
+        },
+        {
+          "datetime": "2143-09-25 08:45:00",
+          "type": "culture",
+          "specimen": "SWAB",
+          "organism": "ESCHERICHIA COLI",
+          "isolate_num": "1",
+          "antibiotic": "CIPROFLOXACIN",
+          "interpretation": "R"
+        },
+        {
+          "datetime": "2143-09-25 08:45:00",
+          "type": "culture",
+          "specimen": "SWAB",
+          "organism": "ESCHERICHIA COLI",
+          "isolate_num": "1",
+          "antibiotic": "AMPICILLIN/SULBACTAM",
+          "interpretation": "R"
+        },
+        {
+          "datetime": "2143-09-25 08:45:00",
+          "type": "culture",
+          "specimen": "SWAB",
+          "organism": "ESCHERICHIA COLI",
+          "isolate_num": "1",
+          "antibiotic": "PIPERACILLIN/TAZO",
+          "interpretation": "R"
+        },
+        {
+          "datetime": "2143-09-25 08:45:00",
+          "type": "culture",
+          "specimen": "SWAB",
+          "organism": "ESCHERICHIA COLI",
+          "isolate_num": "1",
+          "antibiotic": "CEFEPIME",
+          "interpretation": "R"
+        },
+        {
+          "datetime": "2143-09-25 08:45:00",
+          "type": "culture",
+          "specimen": "SWAB",
+          "organism": "ESCHERICHIA COLI",
+          "isolate_num": "1",
+          "antibiotic": "MEROPENEM",
+          "interpretation": "R"
+        },
+        {
+          "datetime": "2143-09-25 08:45:00",
+          "type": "culture",
+          "specimen": "SWAB",
+          "organism": null,
+          "isolate_num": null,
+          "antibiotic": null,
+          "interpretation": null
+        },
+        {
+          "datetime": "2143-09-25 08:45:00",
+          "type": "culture",
+          "specimen": "SWAB",
+          "organism": null,
+          "isolate_num": null,
+          "antibiotic": null,
+          "interpretation": null
+        },
+        {
+          "datetime": "2143-09-25 09:00:00",
+          "type": "medication_start",
+          "name": "Bisacodyl",
+          "route": "PO",
+          "frequency": "DAILY:PRN",
+          "status": "Discontinued via patient discharge"
+        },
+        {
+          "datetime": "2143-09-25 09:00:00",
+          "type": "medication_start",
+          "name": "Cephalexin",
+          "route": "PO/NG",
+          "frequency": "Q6H",
+          "status": "Discontinued"
+        },
+        {
+          "datetime": "2143-09-25 09:00:00",
+          "type": "medication_start",
+          "name": "Ampicillin-Sulbactam",
+          "route": "IV",
+          "frequency": "Q6H",
+          "status": "Discontinued"
+        },
+        {
+          "datetime": "2143-09-25 11:00:00",
+          "type": "medication_stop",
+          "name": "Potassium Chloride",
+          "route": "PO",
+          "status": "Expired"
+        },
+        {
+          "datetime": "2143-09-25 11:00:00",
+          "type": "medication_stop",
+          "name": "Magnesium Oxide",
+          "route": "PO/NG",
+          "status": "Expired"
+        },
+        {
+          "datetime": "2143-09-25 20:00:00",
+          "type": "medication_start",
+          "name": "Docusate Sodium",
+          "route": "PO",
+          "frequency": "BID",
+          "status": "Discontinued via patient discharge"
+        },
+        {
+          "datetime": "2143-09-25 23:00:00",
+          "type": "medication_stop",
+          "name": "HYDROmorphone (Dilaudid)",
+          "route": "IV",
+          "status": "Discontinued"
+        },
+        {
+          "datetime": "2143-09-27 06:00:00",
+          "type": "medication_stop",
+          "name": "Ampicillin-Sulbactam",
+          "route": "IV",
+          "status": "Discontinued"
+        },
+        {
+          "datetime": "2143-09-27 08:00:00",
+          "type": "medication_start",
+          "name": "Amoxicillin-Clavulanic Acid",
+          "route": "PO/NG",
+          "frequency": "Q8H",
+          "status": "Discontinued"
+        },
+        {
+          "datetime": "2143-09-27 12:00:00",
+          "type": "medication_stop",
+          "name": "Amoxicillin-Clavulanic Acid",
+          "route": "PO/NG",
+          "status": "Discontinued"
+        },
+        {
+          "datetime": "2143-09-27 13:00:00",
+          "type": "medication_start",
+          "name": "Meropenem",
+          "route": "IV",
+          "frequency": "Q6H",
+          "status": "Discontinued"
+        },
+        {
+          "datetime": "2143-09-27 13:07:00",
+          "type": "lab",
+          "name": "Alanine Aminotransferase (ALT)",
+          "category": "Chemistry",
+          "value": "61",
+          "valuenum": "61",
+          "unit": "IU/L",
+          "flag": "abnormal"
+        },
+        {
+          "datetime": "2143-09-27 13:07:00",
+          "type": "lab",
+          "name": "Albumin",
+          "category": "Chemistry",
+          "value": "3.2",
+          "valuenum": "3.2",
+          "unit": "g/dL",
+          "flag": "abnormal"
+        },
+        {
+          "datetime": "2143-09-27 13:07:00",
+          "type": "lab",
+          "name": "Alkaline Phosphatase",
+          "category": "Chemistry",
+          "value": "207",
+          "valuenum": "207",
+          "unit": "IU/L",
+          "flag": "abnormal"
+        },
+        {
+          "datetime": "2143-09-27 13:07:00",
+          "type": "lab",
+          "name": "Anion Gap",
+          "category": "Chemistry",
+          "value": "11",
+          "valuenum": "11",
+          "unit": "mEq/L",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-27 13:07:00",
+          "type": "lab",
+          "name": "Asparate Aminotransferase (AST)",
+          "category": "Chemistry",
+          "value": "34",
+          "valuenum": "34",
+          "unit": "IU/L",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-27 13:07:00",
+          "type": "lab",
+          "name": "Bicarbonate",
+          "category": "Chemistry",
+          "value": "31",
+          "valuenum": "31",
+          "unit": "mEq/L",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-27 13:07:00",
+          "type": "lab",
+          "name": "Bilirubin, Total",
+          "category": "Chemistry",
+          "value": "0.9",
+          "valuenum": "0.9",
+          "unit": "mg/dL",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-27 13:07:00",
+          "type": "lab",
+          "name": "Calcium, Total",
+          "category": "Chemistry",
+          "value": "8.3",
+          "valuenum": "8.3",
+          "unit": "mg/dL",
+          "flag": "abnormal"
+        },
+        {
+          "datetime": "2143-09-27 13:07:00",
+          "type": "lab",
+          "name": "Chloride",
+          "category": "Chemistry",
+          "value": "99",
+          "valuenum": "99",
+          "unit": "mEq/L",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-27 13:07:00",
+          "type": "lab",
+          "name": "Creatinine",
+          "category": "Chemistry",
+          "value": "0.6",
+          "valuenum": "0.6",
+          "unit": "mg/dL",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-27 13:07:00",
+          "type": "lab",
+          "name": "Estimated GFR (MDRD equation)",
+          "category": "Chemistry",
+          "value": null,
+          "valuenum": null,
+          "unit": null,
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-27 13:07:00",
+          "type": "lab",
+          "name": "Glucose",
+          "category": "Chemistry",
+          "value": "___",
+          "valuenum": "123",
+          "unit": "mg/dL",
+          "flag": "abnormal"
+        },
+        {
+          "datetime": "2143-09-27 13:07:00",
+          "type": "lab",
+          "name": "Lactate Dehydrogenase (LD)",
+          "category": "Chemistry",
+          "value": "202",
+          "valuenum": "202",
+          "unit": "IU/L",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-27 13:07:00",
+          "type": "lab",
+          "name": "Magnesium",
+          "category": "Chemistry",
+          "value": "2.0",
+          "valuenum": "2",
+          "unit": "mg/dL",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-27 13:07:00",
+          "type": "lab",
+          "name": "Phosphate",
+          "category": "Chemistry",
+          "value": "2.6",
+          "valuenum": "2.6",
+          "unit": "mg/dL",
+          "flag": "abnormal"
+        },
+        {
+          "datetime": "2143-09-27 13:07:00",
+          "type": "lab",
+          "name": "Potassium",
+          "category": "Chemistry",
+          "value": "3.9",
+          "valuenum": "3.9",
+          "unit": "mEq/L",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-27 13:07:00",
+          "type": "lab",
+          "name": "Sodium",
+          "category": "Chemistry",
+          "value": "137",
+          "valuenum": "137",
+          "unit": "mEq/L",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-27 13:07:00",
+          "type": "lab",
+          "name": "Urea Nitrogen",
+          "category": "Chemistry",
+          "value": "13",
+          "valuenum": "13",
+          "unit": "mg/dL",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-27 13:07:00",
+          "type": "lab",
+          "name": "Basophils",
+          "category": "Hematology",
+          "value": "0.3",
+          "valuenum": "0.3",
+          "unit": "%",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-27 13:07:00",
+          "type": "lab",
+          "name": "Eosinophils",
+          "category": "Hematology",
+          "value": "0.9",
+          "valuenum": "0.9",
+          "unit": "%",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-27 13:07:00",
+          "type": "lab",
+          "name": "Hematocrit",
+          "category": "Hematology",
+          "value": "30.3",
+          "valuenum": "30.3",
+          "unit": "%",
+          "flag": "abnormal"
+        },
+        {
+          "datetime": "2143-09-27 13:07:00",
+          "type": "lab",
+          "name": "Hemoglobin",
+          "category": "Hematology",
+          "value": "9.8",
+          "valuenum": "9.8",
+          "unit": "g/dL",
+          "flag": "abnormal"
+        },
+        {
+          "datetime": "2143-09-27 13:07:00",
+          "type": "lab",
+          "name": "Lymphocytes",
+          "category": "Hematology",
+          "value": "13.8",
+          "valuenum": "13.8",
+          "unit": "%",
+          "flag": "abnormal"
+        },
+        {
+          "datetime": "2143-09-27 13:07:00",
+          "type": "lab",
+          "name": "MCH",
+          "category": "Hematology",
+          "value": "29.6",
+          "valuenum": "29.6",
+          "unit": "pg",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-27 13:07:00",
+          "type": "lab",
+          "name": "MCHC",
+          "category": "Hematology",
+          "value": "32.4",
+          "valuenum": "32.4",
+          "unit": "%",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-27 13:07:00",
+          "type": "lab",
+          "name": "MCV",
+          "category": "Hematology",
+          "value": "92",
+          "valuenum": "92",
+          "unit": "fL",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-27 13:07:00",
+          "type": "lab",
+          "name": "Monocytes",
+          "category": "Hematology",
+          "value": "2.8",
+          "valuenum": "2.8",
+          "unit": "%",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-27 13:07:00",
+          "type": "lab",
+          "name": "Neutrophils",
+          "category": "Hematology",
+          "value": "82.2",
+          "valuenum": "82.2",
+          "unit": "%",
+          "flag": "abnormal"
+        },
+        {
+          "datetime": "2143-09-27 13:07:00",
+          "type": "lab",
+          "name": "Platelet Count",
+          "category": "Hematology",
+          "value": "381",
+          "valuenum": "381",
+          "unit": "K/uL",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-27 13:07:00",
+          "type": "lab",
+          "name": "RDW",
+          "category": "Hematology",
+          "value": "14.2",
+          "valuenum": "14.2",
+          "unit": "%",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-27 13:07:00",
+          "type": "lab",
+          "name": "Red Blood Cells",
+          "category": "Hematology",
+          "value": "3.31",
+          "valuenum": "3.31",
+          "unit": "m/uL",
+          "flag": "abnormal"
+        },
+        {
+          "datetime": "2143-09-27 13:07:00",
+          "type": "lab",
+          "name": "White Blood Cells",
+          "category": "Hematology",
+          "value": "12.9",
+          "valuenum": "12.9",
+          "unit": "K/uL",
+          "flag": "abnormal"
+        },
+        {
+          "datetime": "2143-09-27 14:00:00",
+          "type": "medication_start",
+          "name": "Potassium Chloride",
+          "route": "PO",
+          "frequency": "ONCE",
+          "status": "Expired"
+        },
+        {
+          "datetime": "2143-09-27 14:00:00",
+          "type": "medication_start",
+          "name": "Magnesium Sulfate",
+          "route": "IV",
+          "frequency": "ONCE",
+          "status": "Expired"
+        },
+        {
+          "datetime": "2143-09-27 14:00:00",
+          "type": "medication_start",
+          "name": "Potassium Chloride",
+          "route": "PO",
+          "frequency": "ONCE",
+          "status": "Expired"
+        },
+        {
+          "datetime": "2143-09-28 06:35:00",
+          "type": "lab",
+          "name": "Basophils",
+          "category": "Hematology",
+          "value": "0.2",
+          "valuenum": "0.2",
+          "unit": "%",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-28 06:35:00",
+          "type": "lab",
+          "name": "Eosinophils",
+          "category": "Hematology",
+          "value": "1.8",
+          "valuenum": "1.8",
+          "unit": "%",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-28 06:35:00",
+          "type": "lab",
+          "name": "Hematocrit",
+          "category": "Hematology",
+          "value": "28.8",
+          "valuenum": "28.8",
+          "unit": "%",
+          "flag": "abnormal"
+        },
+        {
+          "datetime": "2143-09-28 06:35:00",
+          "type": "lab",
+          "name": "Hemoglobin",
+          "category": "Hematology",
+          "value": "9.2",
+          "valuenum": "9.2",
+          "unit": "g/dL",
+          "flag": "abnormal"
+        },
+        {
+          "datetime": "2143-09-28 06:35:00",
+          "type": "lab",
+          "name": "Lymphocytes",
+          "category": "Hematology",
+          "value": "13.5",
+          "valuenum": "13.5",
+          "unit": "%",
+          "flag": "abnormal"
+        },
+        {
+          "datetime": "2143-09-28 06:35:00",
+          "type": "lab",
+          "name": "MCH",
+          "category": "Hematology",
+          "value": "28.6",
+          "valuenum": "28.6",
+          "unit": "pg",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-28 06:35:00",
+          "type": "lab",
+          "name": "MCHC",
+          "category": "Hematology",
+          "value": "31.9",
+          "valuenum": "31.9",
+          "unit": "%",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-28 06:35:00",
+          "type": "lab",
+          "name": "MCV",
+          "category": "Hematology",
+          "value": "90",
+          "valuenum": "90",
+          "unit": "fL",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-28 06:35:00",
+          "type": "lab",
+          "name": "Monocytes",
+          "category": "Hematology",
+          "value": "3.8",
+          "valuenum": "3.8",
+          "unit": "%",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-28 06:35:00",
+          "type": "lab",
+          "name": "Neutrophils",
+          "category": "Hematology",
+          "value": "80.7",
+          "valuenum": "80.7",
+          "unit": "%",
+          "flag": "abnormal"
+        },
+        {
+          "datetime": "2143-09-28 06:35:00",
+          "type": "lab",
+          "name": "Platelet Count",
+          "category": "Hematology",
+          "value": "350",
+          "valuenum": "350",
+          "unit": "K/uL",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-28 06:35:00",
+          "type": "lab",
+          "name": "RDW",
+          "category": "Hematology",
+          "value": "14.2",
+          "valuenum": "14.2",
+          "unit": "%",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-28 06:35:00",
+          "type": "lab",
+          "name": "Red Blood Cells",
+          "category": "Hematology",
+          "value": "3.21",
+          "valuenum": "3.21",
+          "unit": "m/uL",
+          "flag": "abnormal"
+        },
+        {
+          "datetime": "2143-09-28 06:35:00",
+          "type": "lab",
+          "name": "White Blood Cells",
+          "category": "Hematology",
+          "value": "10.4",
+          "valuenum": "10.4",
+          "unit": "K/uL",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-28 06:35:00",
+          "type": "lab",
+          "name": "Anion Gap",
+          "category": "Chemistry",
+          "value": "13",
+          "valuenum": "13",
+          "unit": "mEq/L",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-28 06:35:00",
+          "type": "lab",
+          "name": "Bicarbonate",
+          "category": "Chemistry",
+          "value": "28",
+          "valuenum": "28",
+          "unit": "mEq/L",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-28 06:35:00",
+          "type": "lab",
+          "name": "Calcium, Total",
+          "category": "Chemistry",
+          "value": "8.2",
+          "valuenum": "8.2",
+          "unit": "mg/dL",
+          "flag": "abnormal"
+        },
+        {
+          "datetime": "2143-09-28 06:35:00",
+          "type": "lab",
+          "name": "Chloride",
+          "category": "Chemistry",
+          "value": "103",
+          "valuenum": "103",
+          "unit": "mEq/L",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-28 06:35:00",
+          "type": "lab",
+          "name": "Creatinine",
+          "category": "Chemistry",
+          "value": "0.6",
+          "valuenum": "0.6",
+          "unit": "mg/dL",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-28 06:35:00",
+          "type": "lab",
+          "name": "Glucose",
+          "category": "Chemistry",
+          "value": "___",
+          "valuenum": "96",
+          "unit": "mg/dL",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-28 06:35:00",
+          "type": "lab",
+          "name": "Magnesium",
+          "category": "Chemistry",
+          "value": "2.2",
+          "valuenum": "2.2",
+          "unit": "mg/dL",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-28 06:35:00",
+          "type": "lab",
+          "name": "Phosphate",
+          "category": "Chemistry",
+          "value": "3.1",
+          "valuenum": "3.1",
+          "unit": "mg/dL",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-28 06:35:00",
+          "type": "lab",
+          "name": "Potassium",
+          "category": "Chemistry",
+          "value": "3.8",
+          "valuenum": "3.8",
+          "unit": "mEq/L",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-28 06:35:00",
+          "type": "lab",
+          "name": "Sodium",
+          "category": "Chemistry",
+          "value": "140",
+          "valuenum": "140",
+          "unit": "mEq/L",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-28 06:35:00",
+          "type": "lab",
+          "name": "Urea Nitrogen",
+          "category": "Chemistry",
+          "value": "11",
+          "valuenum": "11",
+          "unit": "mg/dL",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-28 08:00:00",
+          "type": "medication_stop",
+          "name": "Pantoprazole",
+          "route": "IV",
+          "status": "Discontinued"
+        },
+        {
+          "datetime": "2143-09-28 09:00:00",
+          "type": "medication_start",
+          "name": "Heparin Flush (10 units/ml)",
+          "route": "IV",
+          "frequency": "PRN",
+          "status": "Discontinued via patient discharge"
+        },
+        {
+          "datetime": "2143-09-28 09:00:00",
+          "type": "medication_start",
+          "name": "Pantoprazole",
+          "route": "PO",
+          "frequency": "Q24H",
+          "status": "Inactive (Due to a change order)"
+        },
+        {
+          "datetime": "2143-09-28 10:00:00",
+          "type": "medication_start",
+          "name": "Atenolol",
+          "route": "PO",
+          "frequency": "DAILY",
+          "status": "Discontinued via patient discharge"
+        },
+        {
+          "datetime": "2143-09-28 11:00:00",
+          "type": "medication_start",
+          "name": "Potassium Chloride",
+          "route": "IV",
+          "frequency": "ONCE",
+          "status": "Expired"
+        },
+        {
+          "datetime": "2143-09-28 13:00:00",
+          "type": "medication_stop",
+          "name": "Potassium Chloride",
+          "route": "PO",
+          "status": "Expired"
+        },
+        {
+          "datetime": "2143-09-28 13:00:00",
+          "type": "medication_stop",
+          "name": "Magnesium Sulfate",
+          "route": "IV",
+          "status": "Expired"
+        },
+        {
+          "datetime": "2143-09-28 13:00:00",
+          "type": "medication_stop",
+          "name": "Potassium Chloride",
+          "route": "PO",
+          "status": "Expired"
+        },
+        {
+          "datetime": "2143-09-28 13:00:00",
+          "type": "medication_start",
+          "name": "DiphenhydrAMINE",
+          "route": "IV",
+          "frequency": "Q8H:PRN",
+          "status": "Discontinued via patient discharge"
+        },
+        {
+          "datetime": "2143-09-28 21:00:00",
+          "type": "medication_stop",
+          "name": "Atenolol",
+          "route": "PO",
+          "status": "Inactive (Due to a change order)"
+        },
+        {
+          "datetime": "2143-09-29 04:46:00",
+          "type": "lab",
+          "name": "Hematocrit",
+          "category": "Hematology",
+          "value": "27.8",
+          "valuenum": "27.8",
+          "unit": "%",
+          "flag": "abnormal"
+        },
+        {
+          "datetime": "2143-09-29 04:46:00",
+          "type": "lab",
+          "name": "Hemoglobin",
+          "category": "Hematology",
+          "value": "9.1",
+          "valuenum": "9.1",
+          "unit": "g/dL",
+          "flag": "abnormal"
+        },
+        {
+          "datetime": "2143-09-29 04:46:00",
+          "type": "lab",
+          "name": "MCH",
+          "category": "Hematology",
+          "value": "29.9",
+          "valuenum": "29.9",
+          "unit": "pg",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-29 04:46:00",
+          "type": "lab",
+          "name": "MCHC",
+          "category": "Hematology",
+          "value": "32.9",
+          "valuenum": "32.9",
+          "unit": "%",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-29 04:46:00",
+          "type": "lab",
+          "name": "MCV",
+          "category": "Hematology",
+          "value": "91",
+          "valuenum": "91",
+          "unit": "fL",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-29 04:46:00",
+          "type": "lab",
+          "name": "Platelet Count",
+          "category": "Hematology",
+          "value": "387",
+          "valuenum": "387",
+          "unit": "K/uL",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-29 04:46:00",
+          "type": "lab",
+          "name": "RDW",
+          "category": "Hematology",
+          "value": "14.2",
+          "valuenum": "14.2",
+          "unit": "%",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-29 04:46:00",
+          "type": "lab",
+          "name": "Red Blood Cells",
+          "category": "Hematology",
+          "value": "3.05",
+          "valuenum": "3.05",
+          "unit": "m/uL",
+          "flag": "abnormal"
+        },
+        {
+          "datetime": "2143-09-29 04:46:00",
+          "type": "lab",
+          "name": "White Blood Cells",
+          "category": "Hematology",
+          "value": "10.9",
+          "valuenum": "10.9",
+          "unit": "K/uL",
+          "flag": null
+        },
+        {
+          "datetime": "2143-09-29 10:00:00",
+          "type": "medication_stop",
+          "name": "Potassium Chloride",
+          "route": "IV",
+          "status": "Expired"
+        },
+        {
+          "datetime": "2143-09-30 15:00:00",
+          "type": "medication_start",
+          "name": "Tigecycline",
+          "route": "IV",
+          "frequency": "ONCE",
+          "status": "Expired"
+        },
+        {
+          "datetime": "2143-09-30 15:00:00",
+          "type": "medication_start",
+          "name": "Tigecycline",
+          "route": "IV",
+          "frequency": "ONCE",
+          "status": "Discontinued"
+        },
+        {
+          "datetime": "2143-09-30 15:00:00",
+          "type": "medication_stop",
+          "name": "Tigecycline",
+          "route": "IV",
+          "status": "Discontinued"
+        },
+        {
+          "datetime": "2143-10-01 03:00:00",
+          "type": "medication_start",
+          "name": null,
+          "route": "IV",
+          "frequency": "ASDIR",
+          "status": "Discontinued"
+        },
+        {
+          "datetime": "2143-10-01 05:00:00",
+          "type": "medication_start",
+          "name": "Tigecycline",
+          "route": "IV",
+          "frequency": "Q12H",
+          "status": "Discontinued via patient discharge"
+        },
+        {
+          "datetime": "2143-10-01 10:00:00",
+          "type": "medication_stop",
+          "name": "Meropenem",
+          "route": "IV",
+          "status": "Discontinued"
+        },
+        {
+          "datetime": "2143-10-01 12:00:00",
+          "type": "medication_stop",
+          "name": "Ondansetron",
+          "route": "IV",
+          "status": "Inactive (Due to a change order)"
+        },
+        {
+          "datetime": "2143-10-01 12:00:00",
+          "type": "medication_stop",
+          "name": "Pantoprazole",
+          "route": "PO",
+          "status": "Inactive (Due to a change order)"
+        },
+        {
+          "datetime": "2143-10-01 13:00:00",
+          "type": "medication_start",
+          "name": "Prochlorperazine",
+          "route": "IV",
+          "frequency": "Q6H:PRN",
+          "status": "Discontinued via patient discharge"
+        },
+        {
+          "datetime": "2143-10-01 13:00:00",
+          "type": "medication_start",
+          "name": "Pantoprazole",
+          "route": "PO",
+          "frequency": "Q12H",
+          "status": "Discontinued via patient discharge"
+        },
+        {
+          "datetime": "2143-10-01 13:00:00",
+          "type": "medication_start",
+          "name": "Ondansetron",
+          "route": "IV",
+          "frequency": "Q8H:PRN",
+          "status": "Discontinued via patient discharge"
+        },
+        {
+          "datetime": "2143-10-01 14:00:00",
+          "type": "medication_stop",
+          "name": "Tigecycline",
+          "route": "IV",
+          "status": "Expired"
+        },
+        {
+          "datetime": "2143-10-04 06:00:00",
+          "type": "medication_stop",
+          "name": null,
+          "route": "IV",
+          "status": "Discontinued"
+        },
+        {
+          "datetime": "2143-10-05 20:00:00",
+          "type": "medication_stop",
+          "name": "Sodium Chloride 0.9%  Flush",
+          "route": "IV",
+          "status": "Discontinued via patient discharge"
+        },
+        {
+          "datetime": "2143-10-05 20:00:00",
+          "type": "medication_stop",
+          "name": "Heparin",
+          "route": "SC",
+          "status": "Discontinued via patient discharge"
+        },
+        {
+          "datetime": "2143-10-05 20:00:00",
+          "type": "medication_stop",
+          "name": "HYDROmorphone (Dilaudid)",
+          "route": "PO/NG",
+          "status": "Discontinued via patient discharge"
+        },
+        {
+          "datetime": "2143-10-05 20:00:00",
+          "type": "medication_stop",
+          "name": "HYDROmorphone (Dilaudid)",
+          "route": "PO/NG",
+          "status": "Discontinued via patient discharge"
+        },
+        {
+          "datetime": "2143-10-05 20:00:00",
+          "type": "medication_stop",
+          "name": "Bisacodyl",
+          "route": "PO",
+          "status": "Discontinued via patient discharge"
+        },
+        {
+          "datetime": "2143-10-05 20:00:00",
+          "type": "medication_stop",
+          "name": "Docusate Sodium",
+          "route": "PO",
+          "status": "Discontinued via patient discharge"
+        },
+        {
+          "datetime": "2143-10-05 20:00:00",
+          "type": "medication_stop",
+          "name": "Heparin Flush (10 units/ml)",
+          "route": "IV",
+          "status": "Discontinued via patient discharge"
+        },
+        {
+          "datetime": "2143-10-05 20:00:00",
+          "type": "medication_stop",
+          "name": "Atenolol",
+          "route": "PO",
+          "status": "Discontinued via patient discharge"
+        },
+        {
+          "datetime": "2143-10-05 20:00:00",
+          "type": "medication_stop",
+          "name": "DiphenhydrAMINE",
+          "route": "IV",
+          "status": "Discontinued via patient discharge"
+        },
+        {
+          "datetime": "2143-10-05 20:00:00",
+          "type": "medication_stop",
+          "name": "Tigecycline",
+          "route": "IV",
+          "status": "Discontinued via patient discharge"
+        },
+        {
+          "datetime": "2143-10-05 20:00:00",
+          "type": "medication_stop",
+          "name": "Prochlorperazine",
+          "route": "IV",
+          "status": "Discontinued via patient discharge"
+        },
+        {
+          "datetime": "2143-10-05 20:00:00",
+          "type": "medication_stop",
+          "name": "Pantoprazole",
+          "route": "PO",
+          "status": "Discontinued via patient discharge"
+        },
+        {
+          "datetime": "2143-10-05 20:00:00",
+          "type": "medication_stop",
+          "name": "Ondansetron",
+          "route": "IV",
+          "status": "Discontinued via patient discharge"
+        }
+      ]
+    }
+  ]
+}
