@@ -1,0 +1,3318 @@
+
+
+
+
+
+
+
+    
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        
+            
+            대시보드 : HOME &gt; 감염병통계 &gt; 전수감시감염병 &gt; 대시보드 : KCDA
+        
+    </title>
+
+    <!-- customize -->
+<link rel="stylesheet" type="text/css" href="/pot/resources/css/layout.css">
+<!-- jquery ui -->
+<link rel="stylesheet" type="text/css" href="/pot/resources/plugin/jquery.ui/jquery-ui.min.css">
+    <script type="text/javascript">
+const CTX_PATH="/pot";
+const DIM_URL="https://eid.kdca.go.kr";
+const DEVICE="PC";
+const VWORLD_KEY="8304C87A-15B0-3606-833E-BC9312CEA0B8";
+</script>
+<!-- jquery core -->
+<script type="text/javascript" src="/pot/resources/libs/jquery/jquery-1.11.2.min.js"></script>
+<!-- jquery ui -->
+<script type="text/javascript" src="/pot/resources/plugin/jquery.ui/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/pot/resources/libs/js-cookie-1.5.1/js.cookie.js"></script>
+<script type="text/javascript" src="/pot/resources/js/common.js"></script>
+<script type="text/javascript" src="/pot/resources/js/modal.js"></script>
+
+<!-- 설정 동기화 -->
+<script type="text/javascript" src="/pot/component/js/ND_globalConfig.do" ></script>
+<script type="text/javascript" src="/pot/component/js/ND_massageConfig.do" ></script>
+
+<!-- Openworks 공통 메소드 -->
+<script type="text/javascript" src="/pot/resources/openworks4/js/openworks.global.js"></script>
+<script type="text/javascript" src="/pot/resources/openworks4/js/openworks.message.js"></script>
+<script type="text/javascript" src="/pot/resources/openworks4/js/openworks.initialize.js"></script>
+    <link rel="stylesheet" type="text/css" href="/pot/resources/libs/fancybox-2.1.5/css/jquery.fancybox.css" />
+    <script type="text/javascript" src="/pot/resources/libs/fancybox-2.1.5/js/jquery.fancybox.js"></script>
+<script type="text/javascript" src="/pot/resources/openworks4/js/openworks.modal.js"></script>
+    
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/pot/resources/js/chartJs/chart.basic.js"></script>
+    <script src="/pot/resources/js/jquery.min.js"></script>
+
+    <script type="text/javascript" src="/pot/resources/plugin/chart.js/chart.umd.js"></script>
+<script type="text/javascript" src="/pot/resources/js/chartJs/chart.basic.js"></script>
+<script type="text/javascript" src="/pot/resources/js/chartJs/chart.cmpr.js"></script>
+    
+
+    <style>
+        /* 폰트설정 */
+        @font-face { /*타이틀*/
+            font-family: 'SCDream6';
+            src: url("/pot/resources/images/SCDream6.otf");
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face { /*본문*/
+            font-family: 'Pretendard-Regular';
+            src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+            font-weight: 400;
+            font-style: normal;
+        }
+        @media (max-width: 3839px) {
+            html {
+                font-size: 42%;
+            }
+        }
+        @media (max-width: 2560px) {
+            html {
+                font-size: 35%;
+            }
+        }
+        @media (max-width: 1920px) {
+            html {
+                font-size: 30%;
+            }
+        }
+        @media (max-width: 1200px) {
+            html {
+                font-size: 25%;
+            }
+        }
+        @media (max-width: 480px) {
+            html {
+                font-size: 20%;
+            }
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            user-select: unset;
+        }
+        html {
+            height:100%;
+            background-color: #fff;
+            font-size: 62.5%;
+        }
+        body {
+            width: 100%;
+            min-height: 100vh;
+            font-family: 'SCDream6','Pretendard-Regular';
+        }
+        .dashboard {
+            width: 100%;
+            min-height: 100vh;
+        }
+        .container {
+            min-height: calc(100vh - 6rem);
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            gap: 2rem;
+            position:relative;
+        }
+        .header {
+            background-color: #003366;
+            color: white;
+            padding: 0.2rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            height: 6rem;
+            align-items: center;
+        }
+
+        .header-title img {
+            height: 30px;
+            width: auto;
+            margin: auto 0;
+        }
+
+        .header-center {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 1rem 0;
+            border-radius: 4px;
+            gap: 12px;
+        }
+
+        .disease-info {
+            display: flex;
+            align-items: center;
+            background-color: white;
+            padding: 8px 15px;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            gap: 12px;
+            width: auto;
+            min-width: 300px;
+        }
+
+        .disease-label {
+            color: #003366;
+            font-weight: bold;
+            font-size: 15px;
+            padding-right: 12px;
+            border-right: 2px solid #e0e0e0;
+        }
+
+        .selected-disease {
+            color: #003366;
+            font-weight: 500;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            flex-grow: 1;
+        }
+
+        .header-center button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .header-title {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .header-title h1 {
+            color: #fff;
+            font-size: 0;
+            margin: 0;
+        }
+
+        .header-title span {
+            color: #a7cfff;
+        }
+
+        .header-date {
+            color: #fff;
+            font-size: 1.5rem;
+        }
+
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+
+        .stats-section {
+            flex: 1;
+            overflow: hidden;
+            box-sizing: border-box;
+            background-color: #fff;
+            border-radius: 18px;
+            border: 1px solid #f8f8f8;
+            box-shadow: 0 10px 20px rgb(0 0 0 / 7%);
+        }
+        .box-titbar {
+            display: flex;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: #CCE5FF;
+            justify-content: space-between;
+            font-family: 'SCDream6';
+        }
+        .box-titbar h2 {
+            color: #1b255b;
+            font-size: 1.9rem;
+            font-family: 'SCDream6';
+            letter-spacing: -1px;
+        }
+        #selectedYear {
+            color: #00a9ce;
+        }
+        .stats-content {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+        .map_wrap {
+            width: 40%;
+            border-right: 1px solid #e2e7ee;
+            padding: 2rem;
+        }
+        .map {
+            position: relative;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .map img {
+            width: 100%;
+            max-width: 400%;
+            height: 85%;
+            object-fit: contain;
+        }
+        .chart-inner {
+            height: 100%;
+        }
+        .gender-age {
+            min-height: 30%;
+            width: 100%;
+            background-color: #fff;
+            border-bottom: 1px solid #e2e7ee;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
+        .charts {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            background-color: #fff;
+            align-items: stretch;
+        }
+        .chart-title {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .chart-title h2 {
+            color: #111;
+            font-size: 15px;
+            font-weight: bold;
+            font-family: 'SCDream6';
+            letter-spacing: -1px;
+            margin: 0;
+        }
+        .chart-title p {
+            color: #777c89;
+            font-size: 11px;
+            font-weight: normal;
+        }
+        .chart-line {
+            width: 1px;
+            height: 100%;
+            background: #e2e7ee;
+            margin:0 20px;
+        }
+        .chart-inner_wrap {
+            width: 100%;
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .period-stats {
+            width: 100%;
+            height: calc(100vh - 70vh);
+            overflow: hidden;
+            box-sizing: border-box;
+            background-color: #fff;
+            border-radius: 15px;
+            border: 1px solid #f8f8f8;
+            box-shadow: 0 10px 20px rgb(0 0 0 / 7%);
+        }
+        .overlay{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        .graph {
+            height: 100%;
+            width: 10%;
+            flex: 1;
+            background-color: #fff;
+            border-right: 1px solid #e2e7ee;
+            padding: 3rem 3.5rem 0 3.5rem;
+        }
+        .graph:last-child {
+            border-right: none;
+        }
+        .chart-container {
+            background-color: #E2E8F0;
+            height: 70%;
+        }
+        .popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            width: 550px;
+        }
+
+        .popup-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .popup-row label {
+            flex: 1;
+        }
+
+        .popup-row .select-group select {
+            width: 48%;
+        }
+
+        .popup-buttons {
+            margin-top: 20px;
+        }
+
+        .year-stats {
+            background-color: #E2E8F0;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .year-stats-row {
+            display: flex;
+            gap: 40px;
+            /*justify-content: space-between;*/
+            align-items: flex-start;
+            /*margin-bottom: 10px;*/
+            align-items: center;
+        }
+
+        .year-stats-column {
+            /*flex: 1;*/
+            display: flex;
+        }
+
+        .radio-group {
+            /*display: flex;*/
+            /*flex-direction: column;*/
+            /*align-items: flex-start;*/
+        }
+
+        .radio-group label {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            color: #333;
+            font-size: 14px;
+        }
+
+        .radio-group input[type="radio"] {
+            margin-left: 8px;
+            -webkit-appearance: radio;
+        }
+
+        .radio-group input[type="radio"]:checked {
+            background-color: #0046be;
+            box-shadow: inset 0 0 0 3px white;
+        }
+
+        .popup-buttons {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .popup-buttons button {
+
+            margin-left: 10px;
+            padding: 8px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .custom-radio-button {
+            width: 20px;
+            height: 18px;
+            border: 2px solid #003366;
+            border-radius: 50%;
+            margin-right: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .custom-radio-button::after {
+            content: '';
+            width: 10px;
+            height: 10px;
+            border: 2px solid #003366;
+            border-radius: 50%;
+            background-color: #0046be;
+            display: none;
+        }
+
+        .custom-radio input[type="radio"]:checked + .custom-radio-button::after {
+            display: block;
+        }
+
+        .bubble {
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 0.3vh 0.6vw;
+            border-radius: 0.4rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+            text-align: center;
+            border: 1px solid rgba(224, 224, 224, 0.8);
+            transform: translate(-50%, -50%);
+            font-family: 'SCDream6';
+        }
+
+        .bubble p.area {
+            margin: 0;
+            font-weight: bold;
+            font-size: 0.85em;
+        }
+
+        .bubble span.value {
+            display: block;
+            text-align: center;
+            font-size: 0.85em;
+            margin-top: 2px;
+        }
+
+        #saveButton {
+            background-color: #0046be;
+            color: white;
+        }
+
+        #cancelButton {
+            background-color: #ffffff;
+            border: 1px solid #0046be;
+        }
+
+        #selectedDiseaseName {
+            color: #003366;
+            font-weight: 500;
+            font-size: 15px;
+        }
+
+        .bubble[data-region="gangwon"] {
+            top: 20%;
+            left: 65%;
+        }
+
+        .bubble[data-region="incheon"] {
+            top: 30%;
+            left: 15%;
+        }
+
+        .bubble[data-region="gyeonggi"] {
+            top: 34%;
+            left: 40%;
+        }
+
+        .bubble[data-region="seoul"] {
+            top: 25%;
+            left: 30%;
+        }
+
+        .bubble[data-region="chungbuk"] {
+            top: 45%;
+            left: 60%;
+        }
+
+        .bubble[data-region="chungnam"] {
+            top: 52%;
+            left: 20%;
+        }
+
+        .bubble[data-region="daejeon"] {
+            top: 50%;
+            left: 45%;
+        }
+
+        .bubble[data-region="sejong"] {
+            top: 42%;
+            left: 35%;
+        }
+
+        .bubble[data-region="jeonbuk"] {
+            top: 59%;
+            left: 38%;
+        }
+
+        .bubble[data-region="jeonnam"] {
+            top: 81%;
+            left: 29%;
+        }
+
+        .bubble[data-region="gwangju"] {
+            top: 70%;
+            left: 25%;
+        }
+
+        .bubble[data-region="jeju"] {
+            top: 90%;
+            left: 27%;
+        }
+
+        .bubble[data-region="gyeongbuk"] {
+            top: 45%;
+            left: 80%;
+        }
+
+        .bubble[data-region="daegu"] {
+            top: 58%;
+            left: 62%;
+        }
+
+        .bubble[data-region="gyeongnam"] {
+            top: 70%;
+            left: 60%;
+        }
+
+        .bubble[data-region="ulsan"] {
+            top: 62%;
+            left: 81%;
+        }
+
+        .bubble[data-region="busan"] {
+            top: 72%;
+            left: 75%;
+        }
+
+        .bubble p.area {
+            margin: 0;
+            font-weight: bold;
+            font-size: 0.85em;
+        }
+
+        .bubble span.value {
+            display: block;
+            text-align: center;
+            font-size: 0.85em;
+            margin-top: 2px;
+        }
+
+        .total-count {
+            font-size: 20px;
+            color: #004ab8;
+        }
+
+        .total-count .label {
+            font-size: 15px;
+            color: #111;
+            margin-right: 10px;
+        }
+
+        #ageChart {
+            width: 100%;
+            height: 230px;
+            display: block;
+            box-sizing: border-box;
+        }
+
+        #ageAnnualChart {
+            width: 100%;
+            height: 230px;
+            display: block;
+            box-sizing: border-box;
+        }
+
+        #occurrenceWeekChart, #occurrenceMonthChart, #occurrenceHalfChart, #occurrenceYearChart {
+            width: 100% !important;
+            min-height: 180px;
+            display: inline-block;
+            box-sizing: border-box;
+            position: relative;
+            top:-20px;
+        }
+
+        #occurrenceWeekChart, #occurrenceMonthChart, #occurrenceHalfChart, #occurrenceYearChart {
+            width: 100%;
+            height: 140px;
+            display: block;
+            box-sizing: border-box;
+        }
+
+        .graphs {
+            height: auto;
+            width: auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+
+        .right-column {
+            width: calc(50vw - 45%);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 2rem;
+            gap: 2.5rem;
+            align-content: flex-start;
+            align-items: stretch;
+        }
+
+        #board_set_title{
+            margin-bottom: 10px;
+        }
+
+        .input-flex{
+            justify-content: end;
+        }
+
+        #simplePdFrmIcdgrpCd{
+            width: 30%;
+        }
+
+        #simplePdFrmIcdCd{
+            width: 65%;
+            margin: 0;
+        }
+
+
+        /* 반응형 */
+        @media (min-width: 3201px) and (max-width: 3840px) {
+            .stats-content {
+                padding: 15px;
+            }
+            .charts {
+                flex-direction:column;
+                gap: 30px;
+            }
+            .right-column {
+                gap:7rem;
+            }
+            #patientChart, #nationChart, #patientAnnualChart, #nationAnnualChart {
+                width: 100% !important;
+            }
+            .main-content {
+                max-height: 70vh;
+            }
+        }
+        @media (min-width: 1921px) and (max-width: 3200px) {
+            .chart-inner_wrap {
+                width: 49% !important;
+            }
+            .charts {
+                flex-direction:row !important;
+            }
+            #patientChart, #nationChart, #patientAnnualChart, #nationAnnualChart {
+                width: 100% !important;
+            }
+            .right-column {
+                gap: 4rem;
+            }
+            .main-content {
+                max-height: 60vh;
+            }
+        }
+        @media (min-width: 1200px) and (max-width: 1920px) {
+            .map_wrap {
+                flex-basis: 40%;
+            }
+            .right-column {
+                flex-basis: 60%;
+            }
+
+            #patientChart, #nationChart, #patientAnnualChart, #nationAnnualChart {
+                width: 100% !important;
+            }
+        }
+        @media (max-width: 1200px) {
+            .input-flex{
+                justify-content: space-between;
+            }
+            .input-flex #simplePdFrmIcdgrpCd{
+                width: 30%;
+            }
+            .input-flex #simplePdFrmIcdCd{
+                width: 68%;
+            }
+        }
+        @media (max-width: 1500px) {
+            .map_wrap {
+                width: 50%;
+            }
+            .main-content {
+                flex-direction: column;
+            }
+            .stats-section {
+                width: 100%;
+            }
+            .period-stats {
+                height: 100%;
+            }
+            .period-stats .graphs {
+                flex-direction: column;
+            }
+            
+            /* START 2025. 04. 23 김민주 주무광 요청사항 태블릿에서 기간별 통계 작게 보이는 오류 수정 */
+            .period-stats .graphs .graph{
+                width: 100%;
+            }
+            /* END 2025. 04. 23 김민주 주무광 요청사항 태블릿에서 기간별 통계 작게 보이는 오류 수정 */
+            .graph {
+                width: 100%;
+                border-bottom:1px solid #e2e7ee;
+                border-right: none;
+            }
+        }
+        @media (max-width: 1200px) {
+            .right-column {
+                width: 55%;
+            }
+            .charts{
+                display: block;
+            }
+            .graphs {
+                flex-wrap: wrap;
+            }
+            .graph {
+                width: 100%;
+            }
+            .graph:last-child {
+                border-bottom: none;
+            }
+        }
+
+
+
+        @media (max-width: 768px) {
+
+/*            .header {
+                flex-direction: column;
+                align-items: flex-start;
+                height: auto;
+            }
+            .header-center, .disease-info {
+                width: 100%;
+            }*/
+            .disease-info {
+                min-width: auto;
+            }
+            .map_wrap {
+                flex-basis: 100%;
+                border-bottom:1px solid #e2e7ee;
+            }
+            .right-column {
+                flex-basis: 100%;
+            }
+            .graphs {
+                flex-wrap: wrap;
+            }
+            .graph {
+                width: 100%;
+            }
+            .period-stats .graphs .graph{
+                width: 100%;
+            }
+            .box-titbar h2 {
+                font-size: 17px;
+                font-family: 'SCDream6';
+                letter-spacing: -1px;
+            }
+            .stats-content {
+                flex-wrap: wrap;
+                flex-direction: row;
+            }
+
+            .charts {
+                width: 45%;
+                display: flex;
+            }
+            .map img {
+                margin: 3% auto;
+            }
+            .bubble {
+                font-size: 0.8em;
+                padding: 3px 6px;
+            }
+            /**새로 추가**/
+            .header-title{
+                padding:10px 0;
+            }
+            .header-date{
+                padding-bottom:5px;
+            }
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+                height: auto;
+            }
+            .header-center, .disease-info {
+                width: 100%;
+            }
+
+            .popup{
+                width:100%;
+            }
+            .popup h2{
+                padding-bottom:12px;
+            }
+            .popup-row{
+                display: block;
+                flex-direction: column;
+                align-items: start;
+            }
+            .popup-row label{
+                padding-bottom:4px;
+            }
+            .year-stats{
+                padding:12px;
+            }
+            .year-stats-column label{
+                font-size:15px;
+            }
+            .radio-group{
+                display: flex;
+                gap: 20px;
+                padding-top:10px;
+            }
+            #simplePdFrmIcdgrpCd, #simplePdFrmIcdCd{
+                margin-top: 10px;
+            }
+        }
+
+        @media (max-width: 550px) {
+            .radio-group{
+                display: block;
+            }
+            .charts {
+                display: block;
+                width: 100%;
+            }
+        }
+        @media (max-width: 430px) {
+            .year-stats-row{
+                gap: 20px;
+            }
+            .input-flex{
+                flex-direction: column;
+            }
+            #simplePdFrmIcdgrpCd, #simplePdFrmIcdCd{
+                width: 100% !important;
+            }
+            .year-stats-column{
+                flex-direction: column;
+            }
+            #year{
+                margin: 0 !important;
+            }
+        }
+
+
+
+    </style>
+    
+    
+
+    <script defer type="text/javascript">
+        const ICD_GROUP_CD = '02';
+        const ICD_CD = 'NB0010';
+
+        document.addEventListener('DOMContentLoaded', function(){
+            document.getElementById('simplePdFrmIcdgrpCd').value = ICD_GROUP_CD;
+
+            checkToCheckNomal("simplePdFrmIcdgrpCd"); // 감염병 콤보박스 셋팅(일반형)
+
+            document.getElementById('simplePdFrmIcdCd').value = ICD_CD;
+
+            document.getElementById('selectedDiseaseName').textContent = $("#simplePdFrmIcdCd").find('option[value="'+ICD_CD+'"]').text();
+
+
+            const settingButton = document.getElementById('settingButton');
+            const settingPopup = document.getElementById('settingPopup');
+            const overlay = document.getElementById('overlay');
+            const cancelButton = document.getElementById('cancelButton');
+            const saveButton = document.getElementById('saveButton');
+
+            function checkToCheckNomal(target) {
+                const $target = $('#'+target);
+                const selectedId = $('#'+target+' option:selected').val();
+
+                $target.closest("div").find("optgroup").each(function () {
+                    let labelValue = $(this).attr('data-icdgrpCd');
+                    if (selectedId.includes(labelValue)) {
+                        $(this).children("option").each(function () {
+                            $(this).prop('disabled', false);
+                            $(this).show();
+                            $(this).closest("optgroup").show();
+                            $(this).closest("optgroup :first-child").prop("selected", true);
+                        })
+                    } else {
+                        $(this).children("option").each(function () {
+                            $(this).prop('disabled', true);
+                            $(this).hide();
+                            $(this).closest("optgroup").hide();
+                            $(this).closest("optgroup :first-child").removeAttr("selected");
+                        })
+                    }
+                });
+            }
+
+            // 지역별 조회탭 콤보박스 onchange 이벤트 리스너
+            $("select[id$=FrmIcdgrpCd]").change(function (e) {
+                let $target = $(e.currentTarget);
+                let idNm =  $target.attr("id");
+                checkToCheckNomal(idNm);
+            })
+
+            settingButton.addEventListener('click', () =>{
+                settingPopup.style.display = 'block';
+                overlay.style.display = 'block';
+            });
+
+            function closePopup()
+            {
+                settingPopup.style.display = 'none';
+                overlay.style.display = 'none'
+            }
+
+            cancelButton.addEventListener('click', closePopup);
+            overlay.addEventListener('click', closePopup);
+
+            document.getElementById('simplePdFrmIcdCd').addEventListener('change', function(){
+                const selectedOption = this.options[this.selectedIndex];
+                document.getElementById('selectedDiseaseName').textContent = selectedOption.text;
+            });
+
+
+            saveButton.addEventListener('click', () =>
+            {
+                const year = document.getElementById('year').value;
+                const population = document.querySelector('input[name="population"]:checked').value;
+                const diseaseType = document.getElementById('simplePdFrmIcdgrpCd').value;
+                const diseaseSelect = document.getElementById('simplePdFrmIcdCd');
+                const diseaseName = diseaseSelect.value;
+
+                const annualStatsContent = document.querySelector('#annual-stats .map-content');
+                
+                if(population === 'relative')
+                {
+                    annualStatsContent.textContent = '(인구 10만명당 발생률)';
+                }
+                else
+                {
+                    annualStatsContent.textContent = '(발생건수)';
+                }
+
+                document.getElementById('selectedYear').textContent = year;
+
+                const selectedOption = diseaseSelect.options[diseaseSelect.selectedIndex];
+                document.getElementById('selectedDiseaseName').textContent = selectedOption.text;
+
+                loadDashboard(year, population, diseaseType, diseaseName);
+                closePopup();
+            });
+
+
+            // 전주차 추출(현재 미사용)
+            function dashboardCurrentWeek()
+            {
+                let currentWeek;
+                let currentYear;
+
+                $.ajax({
+                    async: true,
+                    url: "/pot/is/dashboardCurrentWeek.do",
+                    type: "GET",
+                    contentType: 'application/x-www-form-urlencoded;charset-UTF-8',
+                    dataType: "json",
+                    success: function (response) {
+                    	if(response != null && response !== undefined) {
+                    		currentYear = response.value.YR
+	                        currentWeek = response.value.WEEK;
+                    	}
+                    },
+                    error: function (xhr, status, err) {
+                        console.error("주차정보 실패", err);
+                    }
+                });
+            }
+
+
+
+            // (차트)감염병 발생 현황 ====================================================================================================================================
+            function dashboardDateWeek (pData, chartId, chartTitle) {
+
+                $("div.occurrenceWeek" ).empty();
+                $("div.occurrenceWeek" ).append('<canvas id="occurrenceWeekChart"> </canvas>');
+
+                const ctx = document.getElementById(chartId+"Chart").getContext('2d');
+
+                $.ajax({
+                    async : true,
+                    url : "/pot/is/dashboardDateWeek.do",
+                    type : "GET",
+                    contentType : 'application/x-www-form-urlencoded;charset-UTF-8',
+                    data : pData, // 보내는 데이터
+                    dataType: "json",
+                    success: function(response, status, xhr) {
+
+                        console.log("server response:", response);
+
+                        const data = Array.isArray(response) ? response : (response.data || []);
+
+                        if(data.length ===0)
+                        {
+                            $("div.occurrenceWeek" ).empty();
+                            $("div.occurrenceWeek").append('<div style="display: flex; align-items: center; justify-content: center; color: #666; top: 50%; position: relative; font-size: 1.5em; transform: translateY(-50%)"> 결과 없음  </div>')
+                            return;
+                        }
+
+                        new Chart(ctx, {
+                            type: 'line',
+                            data: {
+                                labels:  [...data.map(a => a["DD"])],
+                                datasets: [
+                                    {
+                                        label: '발생건수',
+                                        data: [...data.map(a => a["건수"])],
+                                        borderColor: 'rgba(75, 192, 192, 1)',
+                                        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                                        borderWidth: 2
+                                    },
+                                ]
+                            },
+                            options: {
+                                responsive: true,
+                                maintainAspectRatio: false,
+                                plugins: {
+                                    legend: {
+                                        display: false,
+                                        position: 'bottom' // 라벨을 아래에 배치
+                                    },
+                                    title:{
+                                        display: true,
+                                        text: chartTitle
+                                    }
+                                    , tooltip: {
+                                    	mode: 'index'
+                                    	, intersect: false
+                                    }
+                                },
+                                scales: {
+                                    y : {
+                                        beginAtZero : true
+                                        , suggestedMax: 10
+                                    }
+                                }
+                            },
+                        });
+                    },
+                    error : function(xhr, status, err) {
+                    }
+                });
+            }
+
+
+            function dashboardDateMonth (pData, chartId, chartTitle) {
+
+                $("div.occurrenceMonth").empty();
+                $("div.occurrenceMonth").append('<canvas id="occurrenceMonthChart"> </canvas>');
+
+                const ctx = document.getElementById(chartId+"Chart").getContext('2d');
+
+                $.ajax({
+                    async : true,
+                    url : "/pot/is/dashboardDateMonth.do",
+                    type : "GET",
+                    contentType : 'application/x-www-form-urlencoded;charset-UTF-8',
+                    data : pData, // 보내는 데이터
+                    dataType: "json",
+                    success: function(data, status, xhr) {
+
+                        if(data.length ===0)
+                        {
+                            $("div.occurrenceMonth" ).empty();
+                            $("div.occurrenceMonth").append('<div style="display: flex; align-items: center; justify-content: center; color: #666; top: 50%; position: relative; font-size: 1.5em; transform: translateY(-50%)"> 결과 없음  </div>')
+                            return;
+                        }
+
+                        new Chart(ctx, {
+                            type: 'line',
+                            data: {
+                                labels:  [...data.map(a => a["WW주"])],
+                                datasets: [
+                                    {
+                                        label: '발생건수',
+                                        data: [...data.map(a => a["건수"])],
+                                        borderColor: 'rgba(75, 192, 192, 1)',
+                                        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                                        borderWidth: 2
+                                    },
+                                ]
+                            },
+                            options: {
+                                responsive: true,
+                                maintainAspectRatio: false,
+                                plugins: {
+                                    legend: {
+                                        display: false,
+                                        position: 'bottom' // 라벨을 아래에 배치
+                                    },
+                                    title:{
+                                        display: true,
+                                        text: chartTitle
+                                    }
+                                    , tooltip: {
+                                    	mode: 'index'
+                                    	, intersect: false
+                                    }
+                                },
+                                scales: {
+                                    y : {
+                                        beginAtZero : true
+                                        , suggestedMax: 10
+                                    }
+                                }
+                            },
+                        });
+                    },
+                    error : function(xhr, status, err) {
+                    }
+                });
+            }
+
+            function dashboardDateHalf (pData, chartId, chartTitle) {
+
+                $("div.occurrenceHalf" ).empty();
+                $("div.occurrenceHalf" ).append('<canvas id="occurrenceHalfChart"> </canvas>');
+
+                const ctx = document.getElementById(chartId+"Chart").getContext('2d');
+
+
+                $.ajax({
+                    async : true,
+                    url : "/pot/is/dashboardDateHalf.do",
+                    type : "GET",
+                    contentType : 'application/x-www-form-urlencoded;charset-UTF-8',
+                    data : pData, // 보내는 데이터
+                    dataType: "json",
+                    success: function(data, status, xhr) {
+
+                        if(data.length ===0)
+                        {
+                            $("div.occurrenceHalf" ).empty();
+                            $("div.occurrenceHalf").append('<div style="display: flex; align-items: center; justify-content: center; color: #666; top: 50%; position: relative; font-size: 1.5em; transform: translateY(-50%)"> 결과 없음  </div>')
+                            return;
+                        }
+
+                        new Chart(ctx, {
+                            type: 'line',
+                            data: {
+                                labels:  [...data.map(a => a["MM월"])],
+                                datasets: [
+                                    {
+                                        label: '발생건수',
+                                        data: [...data.map(a => a["건수"])],
+                                        borderColor: 'rgba(75, 192, 192, 1)',
+                                        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                                        borderWidth: 2
+                                    },
+                                ]
+                            },
+                            options: {
+                                responsive: true,
+                                maintainAspectRatio: false,
+                                plugins: {
+                                    legend: {
+                                        display: false,
+                                        position: 'bottom' // 라벨을 아래에 배치
+                                    },
+                                    title:{
+                                        display: true,
+                                        text: chartTitle
+                                    }
+                                    , tooltip: {
+                                    	mode: 'index'
+                                    	, intersect: false
+                                    }
+                                },
+                                scales: {
+                                    y : {
+                                        beginAtZero : true
+                                        , suggestedMax: 10
+                                    }
+                                }
+                            },
+                        });
+                    },
+                    error : function(xhr, status, err) {
+                    }
+                });
+            }
+
+            function dashboardDateYear (pData, chartId, chartTitle) {
+
+                $("div.occurrenceYear" ).empty();
+                $("div.occurrenceYear" ).append('<canvas id="occurrenceYearChart"> </canvas>');
+
+                const ctx = document.getElementById(chartId+"Chart").getContext('2d');
+
+                $.ajax({
+                    async : true,
+                    url : "/pot/is/dashboardDateYear.do",
+                    type : "GET",
+                    contentType : 'application/x-www-form-urlencoded;charset-UTF-8',
+                    data : pData, // 보내는 데이터
+                    dataType: "json",
+                    success: function(data, status, xhr) {
+
+                        if(data.length ===0)
+                        {
+                            $("div.occurrenceYear" ).empty();
+                            $("div.occurrenceYear").append('<div style="display: flex; align-items: center; justify-content: center; color: #666; top: 50%; position: relative; font-size: 1.5em; transform: translateY(-50%)"> 결과 없음  </div>')
+                            return;
+                        }
+
+                        new Chart(ctx, {
+                            type: 'line',
+                            data: {
+                                labels:  [...data.map(a => a["YYYY"])],
+                                datasets: [
+                                    {
+                                        label: '발생건수',
+                                        data: [...data.map(a => a["건수"])],
+                                        borderColor: 'rgba(75, 192, 192, 1)',
+                                        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                                        borderWidth: 2
+                                    },
+                                ]
+                            },
+                            options: {
+                                responsive: true,
+                                maintainAspectRatio: false,
+                                plugins: {
+                                    legend: {
+                                        display: false,
+                                        position: 'bottom' // 라벨을 아래에 배치
+                                    },
+                                    title:{
+                                        display: true,
+                                        text: chartTitle
+                                    }
+                                    , tooltip: {
+                                    	mode: 'index'
+                                    	, intersect: false
+                                    }
+                                },
+                                scales: {
+                                    y : {
+                                        beginAtZero : true
+                                        , suggestedMax: 10
+                                    }
+                                }
+                            },
+                        });
+                    },
+                    error : function(xhr, status, err) {
+                    }
+                });
+            }
+            // (차트)연령대 현황 ======================================================================================================================================
+            function dashboardSexAndAge (pData, chartId, chartTitle) {
+
+                $("div." + chartId).empty();
+                $("div." + chartId).append('<canvas id="'+ chartId +'Chart"></canvas>');
+
+                const ctx = document.getElementById(chartId+"Chart").getContext('2d');
+
+                $.ajax({
+                    async : true,
+                    url : "/pot/is/dashboardSexAndAge.do",
+                    type : "GET",
+                    contentType : 'application/x-www-form-urlencoded;charset-U' +
+                        'TF-8',
+                    data : pData, // 보내는 데이터
+                    dataType: "json",
+                    success: function(data, status, xhr) {
+
+                        if(data.length ===0)
+                        {
+                            $("div." + chartId).empty();
+                            $("div." + chartId).append('<div style="display: flex; align-items: center; justify-content: center; color: #666; top: 50%; position: relative; font-size: 1.5em; transform: translateY(-50%)"> 결과 없음  </div>')
+                            return;
+                        }
+
+                        // const labels = ['0~4세', '5~9세', '10~14세', '15~19세', '20~24세', '25~29세', '30~34세', '35~39세', '40~44세', '45~49세', '50~54세', '55~59세', '60~64세', '65~69세', '70~74세', '75~79세', '80세 이상'];
+                        const labels = [...new Set(data.map(a => a['AGE_RANGE']))];
+                        // const maleData = [-100, -200, -300, -400, -500, -600, -700, -800, -900, -1000, -1100, -1200, -1300, -1400, -1500, -1600, -1700];
+                        const maleData = data.filter(a1 => a1['PTNT_GNDR_NM'] == '남성').map(a2 => -a2['CNT']); // 남자는 마이너스 값으로 해서 좌측에 표시
+                        // const femaleData = [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700];
+                        const femaleData = data.filter(a1 => a1['PTNT_GNDR_NM'] == '여성').map(a2 => a2['CNT']);
+
+                        const maxValue = Math.max(Math.max(...maleData.map(Math.abs)), Math.max(...femaleData));
+
+                        new Chart(ctx, {
+                            type: 'bar',
+                            data: {
+                                labels: labels,
+                                datasets: [
+                                    {
+                                        label: '남자',
+                                        data: maleData,
+                                        backgroundColor: 'rgba(63, 199, 218, 1)',
+                                        borderColor: 'rgba(0, 157, 206, 1)',
+                                        borderWidth: 1
+                                    },
+                                    {
+                                        label: '여자',
+                                        data: femaleData,
+                                        backgroundColor: 'rgba(255, 165, 203, 1)',
+                                        borderColor: 'rgba(255, 94, 162, 1)',
+                                        borderWidth: 1
+                                    }
+                                ]
+                            },
+                            options: {
+                                responsive: true,
+                                maintainAspectRatio : false,
+                                indexAxis: 'y',
+                                scales: {
+                                    x: {
+                                        stacked: true,
+                                        min: -maxValue,
+                                        max: maxValue,
+                                        ticks: {
+                                            callback: function(value) {
+                                                return Math.abs(value);
+                                            }
+                                        },
+                                        // beginAtZero: true
+                                    },
+                                    y: {
+                                        stacked: true,
+                                        // beginAtZero: true
+                                    }
+                                },
+                                plugins: {
+                                    tooltip:{
+                                        callbacks: {
+                                            label: function(context)
+                                            {
+                                                let label = context.dataset.label || '';
+                                                const value = Math.abs(context.parsed.x);
+
+                                                if(label)
+                                                {
+                                                    label += ': ';
+                                                }
+
+                                                if(context.parsed.x != null)
+                                                {
+                                                    label += value.toLocaleString() + '명';
+                                                }
+                                                return label;
+                                            }
+                                        }
+                                    },
+                                    legend: {
+                                        display: true,
+                                        position: 'top',
+                                        align: 'center',
+                                    },
+                                },
+                            },
+                        });
+                    },
+                    error : function(xhr, status, err) {
+                    }
+                });
+            }
+
+            // (차트) 환자분류 ======================================================================================================================================
+            function dashboardPatientClassification(pData, chartId, chartTitle) {
+
+                $("div." + chartId).empty();
+                $("div." + chartId).append('<canvas id="'+ chartId +'Chart"></canvas>');
+
+                const ctx = document.getElementById(chartId+"Chart").getContext('2d');
+
+                $.ajax({
+                    async : true,
+                    url : "/pot/is/dashboardPatientClassification.do",
+                    type : "GET",
+                    contentType : 'application/x-www-form-urlencoded;charset-UTF-8',
+                    data : pData, // 보내는 데이터
+                    dataType: "json",
+
+                    success: function(data) {
+
+                        const totalCount = data.reduce((sum,cur) => sum + (cur['총건수'] || 0), 0);
+
+                        if(data.length ===0)
+                        {
+                            $("div." + chartId).empty();
+                            $("div." + chartId).append('<div style="display: flex; align-items: center; justify-content: center; color: #666; top: 50%; position: relative; font-size: 1.5em; transform: translateY(-50%); height: calc(100% -60px); margin-top:80px;"> 결과 없음  </div>')
+
+                            if(chartId === 'patientAnnual')
+                            {
+                                $('#annual-stats .total-count').text( totalCount.toLocaleString() + '건');
+                            } else if(chartId === 'patient')
+                            {
+                                $('#daily-stats .total-count').text( totalCount.toLocaleString() + '건');
+                            }
+                            return;
+                        }
+
+                        if(chartId === 'patientAnnual')
+                        {
+                            $('#annual-stats .total-count').text( totalCount.toLocaleString() + '건');
+                        } else if(chartId === 'patient')
+                        {
+                            $('#daily-stats .total-count').text( totalCount.toLocaleString() + '건');
+                        }
+
+                        const areaData = data.reduce((acc,cur) =>{
+                            if(cur['환자분류'] && cur['총건수']) {
+                                acc[cur['환자분류']] = cur['총건수'];
+                            }
+                            else {
+                                console.warn("잘못됨", cur);
+                            }
+                            return acc;
+                        }, {});
+
+                        const labels = Object.keys(areaData);
+                        const values = Object.values(areaData);
+                        const total = values.reduce((a,b) => a+b, 0);
+                        const percentages = values.map(value => ((value/total)* 100).toFixed(1));
+
+                        const chartLabels = labels.map(function(label, index)
+                            {
+                                return label + '(' + percentages[index] + '%)';
+                            }
+                        );
+
+                        new Chart(ctx, {
+                            type: 'pie',
+                            data: {
+                                labels: chartLabels,
+                                datasets: [
+                                    {
+                                        data: values,
+                                        backgroundColor:
+                                            [
+                                                'rgba( 0, 188, 214,0.8)',
+                                                'rgba( 42, 124,218,0.8)',
+                                                'rgba( 141, 68,198,0.8)'
+                                            ],
+                                        borderColor:
+                                            [
+                                                'rgba( 0, 188, 214,0.8)',
+                                                'rgba( 42, 124,218,0.8)',
+                                                'rgba( 141, 68,198,0.8)'
+                                            ],
+                                        borderWidth: 1
+                                    }
+                                ]
+                            },
+                            options: {
+                                responsive: true,
+                                maintainAspectRatio : false,
+                                cutout:'50%',
+
+                                plugins:{
+                                    legend :{
+                                        position: 'top',
+                                    },
+                                    tooltip: {
+                                        enabled: true,
+                                        callbacks:{
+                                            label: function(context)
+                                            {
+                                                const label = context.label.split('(')[0].trim();
+                                                const value = context.parsed;
+                                                const percentage = percentages[context.dataIndex];
+
+                                                return label + ':' + value.toLocaleString() + '(' + percentage + '%)';
+                                            }
+                                        }
+                                    }
+                                }
+
+                            },
+                        });
+                    },
+                    error : function(xhr, status, err) {
+                        console.error("실패", err);
+                    }
+                });
+            }
+
+            // 추정감염지역
+            function dashboardEstimatedNation(pData, chartId, chartTitle) {
+
+                $("div." + chartId).empty();
+                $("div." + chartId).append('<canvas id="'+ chartId +'Chart"></canvas>');
+
+                const ctx = document.getElementById(chartId+"Chart").getContext('2d');
+
+                $.ajax({
+                    async : true,
+                    url : "/pot/is/dashboardEstimatedArea.do",
+                    type : "GET",
+                    contentType : 'application/x-www-form-urlencoded;charset-UTF-8',
+                    data : pData, // 보내는 데이터
+                    dataType: "json",
+
+                    success: function(data) {
+
+                        if(data.length ===0)
+                        {
+                            $("div." + chartId).empty();
+                            $("div." + chartId).append('<div style="display: flex; align-items: center; justify-content: center; color: #666; top: 50%; position: relative; font-size: 1.5em; transform: translateY(-50%); height: calc(100% -60px); margin-top:80px;"> 결과 없음  </div>')
+                            return;
+                        }
+
+                        console.log(data);
+
+                        const areaData = data.reduce((acc,cur) =>{
+                            acc[cur['추정감염지역']] = cur['총건수'];
+                            return acc;
+                        }, {});
+
+                        const labels = Object.keys(areaData);
+                        const values = Object.values(areaData);
+                        const total = values.reduce((a,b) => a+b, 0);
+                        const percentages = values.map(value => ((value/total)* 100).toFixed(2));
+
+                        const chartLabels = labels.map(function(label, index){
+                                return label + '(' + percentages[index] + '%)';
+                            }
+                        );
+
+                        new Chart(ctx, {
+                            type: 'pie',
+                            data: {
+                                labels: chartLabels,
+                                datasets: [
+                                    {
+                                        data: values,
+                                        backgroundColor:
+                                            [
+                                                'rgba( 0, 188, 214,0.8)',
+                                                'rgba( 42, 124,218,0.8)',
+                                            ],
+                                        borderColor:
+                                            [
+                                                'rgba( 0, 188, 214,0.8)',
+                                                'rgba( 42, 124,218,0.8)',
+                                            ],
+                                        borderWidth: 1
+                                    }
+                                ]
+                            },
+                            options: {
+                                responsive: true,
+                                maintainAspectRatio : false,
+                                cutout:'50%',
+
+                                plugins:{
+                                    legend :{
+                                        position: 'top',
+                                    },
+                                    tooltip: {
+                                        enabled: true,
+                                        callbacks:{
+                                            label: function(context)
+                                            {
+                                                const label = context.label.split('(')[0].trim();
+                                                const value = context.parsed;
+                                                const percentage = percentages[context.dataIndex];
+
+                                                return label + ':' + value.toLocaleString() + '(' + percentage + '%)';
+                                            }
+                                        }
+                                    }
+                                }
+
+                            },
+                        });
+                    },
+                    error : function(xhr, status, err) {
+                        console.error("실패", err);
+                    }
+                });
+            }
+
+
+            function dashboardRegion(pData, charId) {
+                $.ajax({
+                    async: true,
+                    url: "/pot/is/dashboardRegion.do",
+                    type: "GET",
+                    contentType: 'application/x-www-form-urlencoded;charset-UTF-8',
+                    data: pData,
+                    dataType: "json",
+                    success: function (data, status, xhr) {
+                        console.log("Received data:", data);
+                        const defaultData = [{시도: " 08경기", 건수: 0, 시도ENG: "gyeonggi"}, {
+                            시도: " 01서울",
+                            건수: 0,
+                            시도ENG: "seoul"
+                        }, {시도: " 15경남", 건수: 0, 시도ENG: "gyeongnam"}, {시도: " 02부산", 건수: 0, 시도ENG: "busan"}, {
+                            시도: " 04인천",
+                            건수: 0,
+                            시도ENG: "incheon"
+                        }, {시도: " 03대구", 건수: 0, 시도ENG: "daegu"}, {시도: " 14경북", 건수: 0, 시도ENG: "gyeongbuk"}, {
+                            시도: " 12전북",
+                            건수: 0,
+                            시도ENG: "jeonbuk"
+                        }, {시도: " 13전남", 건수: 0, 시도ENG: "jeonnam"}, {시도: " 05광주", 건수: 0, 시도ENG: "gwangju"}, {
+                            시도: " 11충남",
+                            건수: 0,
+                            시도ENG: "chungnam"
+                        }, {시도: " 09강원", 건수: 0, 시도ENG: "gangwon"}, {시도: " 16제주", 건수: 0, 시도ENG: "jeju"}, {
+                            시도: " 10충북",
+                            건수: 0,
+                            시도ENG: "chungbuk"
+                        }, {시도: " 07울산", 건수: 0, 시도ENG: "ulsan"}, {시도: " 06대전", 건수: 0, 시도ENG: "daejeon"}, {
+                            시도: " 17세종",
+                            건수: 0,
+                            시도ENG: "sejong"
+                        }];
+
+                        const processedData = data && data.length > 0 ? data : defaultData;
+
+                        const sidoDataObj = {};
+                        processedData.forEach(item => {
+                            if (charId === 'regionAnnual' && pData.population === 'relative') {
+                                sidoDataObj[item.시도ENG] = item.VAL || 0;
+                            } else {
+                                sidoDataObj[item.시도ENG] = item.건수 || 0;
+                            }
+                        });
+                        const selector = charId === 'regionAnnual' ? "#annual-stats .bubble" : "#daily-stats .bubble";
+                        $(selector).each(function () {
+                            const region = $(this).data('region');
+                            const value = sidoDataObj[region] || 0;
+
+                            const formattedValue = typeof value === 'number' ?
+                                value.toLocaleString('ko-KR') :
+                                value.toString();
+                            $(this).find('span.value').text(formattedValue);
+                        });
+                    }, error: function (xhr, status, err) {
+
+                        console.error("Error fetching region data:", err);
+                        const selector = charId === 'regionAnnual' ? "#annual-stats .bubble" : "#daily-stats .bubble";
+                        $(selector).each(function () {
+                            $(this).find('span.value').text('0');
+                        });
+                    }
+                });
+            }
+
+            function loadDashboard(year, population, diseaseType, diseaseName)
+            {
+                year = year == null ? 2026 : year;
+                diseaseName = diseaseName == null ? ICD_CD : diseaseName;
+
+                const today = "20260209";
+                const yesterdayDate = "20260208";
+                const oneWeekAgo = "20260202";
+                const oneMonthAgo = "20260109";
+                const sixMonthsAgo = "20250901";
+                const fiveYearsAgo = "20220101";
+                const currentyearStart = "20260101";
+                const currentyearEnd ="20261231";
+
+                const startDate = year +'0101';
+                const endDate = year + '1231';
+
+                const  baseParams  ={
+                    'ymd' : year,
+                    'yearStartDt' : year,
+                    'yearEndDt'   : year,
+                    'area' : ['01', '02'],
+                    'grp' : ['01', '02', '03'],
+                    'occurGbn' : 'CNT',
+                    'population' : population === 'relative' ? 'RATE' : 'CNT',
+                    'infectedArea' : '',
+                    'weekFlag' : '',
+                    'diseaseCls' : 'NB0010',
+                };
+
+                const chartDate = [
+                    { yearStartDt: oneWeekAgo ,  yearEndDt: yesterdayDate, chartId: 'occurrenceWeek'},
+                    { yearStartDt: today  ,  yearEndDt: yesterdayDate, chartId: 'occurrenceMonth', weekFlag: 'Y'},
+                    { yearStartDt: sixMonthsAgo ,  yearEndDt: yesterdayDate, chartId: 'occurrenceHalf'},
+                    { yearStartDt: fiveYearsAgo ,  yearEndDt: yesterdayDate, chartId: 'occurrenceYear'}
+                ];
+
+                const paramDateWeek = {...baseParams, yearStartDt: chartDate[0].yearStartDt, yearEndDt:chartDate[0].yearEndDt, diseaseCls: diseaseName};
+                dashboardDateWeek(paramDateWeek, chartDate[0].chartId, chartDate[0].title);
+
+                const paramDateMonth = {...baseParams, yearStartDt: chartDate[1].yearStartDt, diseaseCls: diseaseName, weekFlag:chartDate[1].weekFlag};
+                dashboardDateMonth(paramDateMonth, chartDate[1].chartId, chartDate[1].title , chartDate[1].weekFlag);
+
+                const paramDateHalf = {...baseParams, yearStartDt: chartDate[2].yearStartDt, yearEndDt:chartDate[2].yearEndDt, diseaseCls: diseaseName};
+                dashboardDateHalf(paramDateHalf, chartDate[2].chartId, chartDate[2].title);
+
+                const paramDateYear = {...baseParams, yearStartDt: chartDate[3].yearStartDt, yearEndDt:chartDate[3].yearEndDt, diseaseCls: diseaseName};
+                dashboardDateYear(paramDateYear, chartDate[3].chartId, chartDate[3].title);
+
+                const chartAge = [
+                    { yearStartDt:  oneWeekAgo ,chartId: 'age', title: '최근 7일', diseaseCls: diseaseName, weekFlag: 'Y' },
+                    { yearStartDt: startDate , yearEndDt: endDate, chartId: 'ageAnnual', title: '최근 4주', diseaseCls: diseaseName},
+                ];
+
+                chartAge.forEach(config =>{
+                    const params = { ...baseParams, yearStartDt: config.yearStartDt, yearEndDt: config.yearEndDt, diseaseCls:diseaseName, weekFlag:config.weekFlag};
+                    dashboardSexAndAge(params, config.chartId, config.title, config.diseaseCls, config.weekFlag);
+                });
+
+                const chartNation = [
+                    { yearStartDt:  oneWeekAgo ,chartId: 'nation', title: '최근 7일', diseaseCls: diseaseName, weekFlag: 'Y'},
+                    { yearStartDt: startDate , yearEndDt: endDate, chartId: 'nationAnnual', title: '최근 4주', diseaseCls: diseaseName},
+                ];
+
+                chartNation.forEach(config =>{
+                    const params = { ...baseParams, yearStartDt: config.yearStartDt, yearEndDt: config.yearEndDt, diseaseCls: diseaseName, weekFlag:config.weekFlag};
+                    dashboardEstimatedNation(params, config.chartId, config.title, config.diseaseCls);
+                });
+
+
+                const chartPatient = [
+                    { yearStartDt:  oneWeekAgo ,chartId: 'patient', title: '최근 7일', diseaseCls: diseaseName, weekFlag: 'Y'},
+                    {yearStartDt: startDate , yearEndDt: endDate, chartId: 'patientAnnual', title: '최근 4주', diseaseCls: diseaseName},
+                ];
+
+                chartPatient.forEach(config =>{
+                    const params = { ...baseParams,  yearStartDt: config.yearStartDt, yearEndDt: config.yearEndDt, diseaseCls: diseaseName, weekFlag:config.weekFlag};
+                    dashboardPatientClassification(params, config.chartId, config.title, config.diseaseCls);
+                });
+
+                const chartRegion = [
+                    { yearStartDt:  oneWeekAgo ,title: '최근 7일',  chartId: 'region', diseaseCls: diseaseName, weekFlag: 'Y'},
+                    { yearStartDt: startDate , yearEndDt: endDate, title: '최근 4주',  chartId: 'regionAnnual',diseaseCls: diseaseName, population: population , ymd: year},
+                ];
+
+                chartRegion.forEach(config =>{
+                    const params = { ...baseParams,  yearStartDt: config.yearStartDt, yearEndDt: config.yearEndDt, population: config.population, ymd: config.ymd, diseaseCls: diseaseName, weekFlag:config.weekFlag};
+                    dashboardRegion(params, config.chartId, config.title, config.diseaseCls);
+                });
+            }
+
+            loadDashboard();
+        })
+
+    </script>
+
+    <style type="text/css">.fancybox-margin{margin-right:0px;}</style>
+
+
+</head>
+<body>
+
+<div class="dashboard">
+    <header class="header">
+        <div class="header-title">
+            <img src="/pot/resources/images/dash.png" alt="질병청"/>
+            <h1> 감염병 통계 <span> 대시보드</span></h1>
+        </div>
+        <div class="header-center">
+            <div class="disease-info">
+                <span class="disease-label"> 감염병 </span>
+                <span id="selectedDiseaseName" class="selected-disease"></span>
+            </div>
+            <button id="settingButton">
+                <img src="/pot/resources/images/setting.png" alt="covid-1"/>
+            </button>
+
+            <div class="language_set" tabindex="0">
+                <button type="button" class="langSet_view"><img src="/pot/resources/images/ico-language.png" alt="language setting icon"/><span class="setLangSpecify"></span></button>
+                <ul class="lang_ul" aria-hidden="true">
+                    <li class="lang_li" tabindex="-1" data-lang-name="ko" data-lang-specify="한국어" title="한국어 언어 설정"><a href="/pot/is/dashboardEDW.do"><span class="lang_name">한국어</span></a></li><!-- <span class="lang_ko" style="text-indent: -2px;"></span> -->
+                    <li class="lang_li" tabindex="-1" data-lang-name="en" data-lang-specify="English"  title="English Language Settings"><a href="/pot/is/dashboardEDW.do?lang=en"><span class="lang_name">English</span></a></li><!-- <span class="lang_en"></span> -->
+                </ul>
+            </div>
+        </div>
+        <div class="header-date">
+            
+            <span>조회기준일시     2026-02-08  23:59 </span>
+        </div>
+
+    </header>
+    <div class="container">
+        <main class="main-content">
+            <section class="stats-section" id="daily-stats">
+                <div class="box-titbar">
+                    <h2 id="weeklyStatsTitle"> 전주 기준 통계 (<span id="crtrYear" style='color: #00a9ce;'>2026</span>년 <span id="crtrWeek" style='color: #00a9ce;'>06</span>주차)</h2>
+                    <p class="total-count"><span class="label">보고건수</span></p>
+                </div>
+                <div class="stats-content">
+                    <div class="map_wrap">
+                        <div class="map">
+                            <div class="chart-title">
+                                <h2 class="map-title">지역별 통계 </h2>
+                                <p class="map-content">(발생건수) </p>
+                            </div>
+                            <img src="/pot/resources/images/koreamap.png" alt="covid-1"/>
+                            <map name="korea-map">
+                                <area target="_blank" alt="강원" title="강원" href="#"
+                                      coords="159,75,151,97,165,115,172,146,168,157,269,172,324,157,225,1,108,39" shape="poly">
+                                <!-- 인천 -->
+                                <area target="_blank" alt="인천" title="인천" href="#"
+                                      coords="65,109,88,126,81,133,80,144,71,135,63,129" shape="poly">
+                                <!-- 경기 -->
+                                <area target="_blank" alt="경기" title="경기" href="#"
+                                      coords="57,104,100,46,158,76,167,113,176,139,167,158,142,176,127,187,109,180,97,186,79,167,77,150,83,143,92,127"
+                                      shape="poly">
+                                <!-- 서울 -->
+                                <area target="_blank" alt="서울" title="서울" href="#"
+                                      coords="106,101,87,113,96,127,112,125,118,119,112,105" shape="poly">
+                                <!-- 충북 -->
+                                <area target="_blank" alt="충북" title="충북"
+                                      coords="130,213,132,230,150,242,150,262,158,280,184,290,200,266,184,227,236,195,254,172,167,160,145,180"
+                                      shape="poly">
+                                <!-- 충남 -->
+                                <area target="_blank" alt="충남" title="충남"
+                                      coords="160,286,151,273,133,269,124,258,134,233,122,214,134,195,116,187,96,190,29,195,61,274,71,289,109,268"
+                                      shape="poly">
+                                <!-- 대전 -->
+                                <area target="_blank" alt="대전" title="대전"
+                                      coords="139,235,133,244,130,253,129,260,138,265,146,265,151,263,149,247,149,241"
+                                      shape="poly">
+                                <!-- 세종 -->
+                                <area target="_blank" alt="세종" title="세종"
+                                      coords="122,239,106,243,104,251,108,257,115,260,128,256,125,242" shape="poly">
+                                <!-- 전북 -->
+                                <area target="_blank" alt="전북" title="전북"
+                                      coords="101,275,61,313,50,351,62,363,95,353,118,367,162,367,164,347,160,321,189,302,187,288"
+                                      shape="poly">
+                                <!-- 전남 -->
+                                <area target="_blank" alt="전남" title="전남"
+                                      coords="42,357,48,451,29,435,11,452,20,469,34,479,78,471,108,450,153,424,176,403,160,368,104,354"
+                                      shape="poly">
+                                <!-- 광주 -->
+                                <area target="_blank" alt="광주" title="광주" coords="90,373,66,380,69,390,82,391,96,390,102,382"
+                                      shape="poly">
+                                <!-- 제주 -->
+                                <area target="_blank" alt="제주" title="제주"
+                                      coords="60,510,55,528,65,535,94,531,123,523,131,509,121,501" shape="poly">
+                                <!-- 경북 -->
+                                <area target="_blank" alt="경북" title="경북"
+                                      coords="258,169,181,212,188,308,301,335,357,284,325,158" shape="poly">
+                                <!-- 대구 -->
+                                <area target="_blank" alt="대구" title="대구"
+                                      coords="262,286,238,302,240,312,234,330,246,333,269,313,280,295" shape="poly">
+                                <!-- 경남 -->
+                                <area target="_blank" alt="경남" title="경남"
+                                      coords="187,299,155,323,154,379,183,410,231,412,263,400,285,381,312,368,320,357,309,335,290,326"
+                                      shape="poly">
+                                <!-- 울산 -->
+                                <area target="_blank" alt="울산" title="울산" coords="344,324,352,280,322,280,314,309,313,322"
+                                      shape="poly">
+                                <!-- 부산 -->
+                                <area target="_blank" alt="부산" title="부산" coords="281,396,309,353,277,349,243,367" shape="poly">
+                            </map>
+                            <div class="bubbles-container">
+                                <div class="bubble" data-region="gangwon">
+                                    <p class="area">강원</p>
+                                    <span class="value">&nbsp;</span>
+                                </div>
+                                <div class="bubble" data-region="incheon">
+                                    <p class="area">인천</p>
+                                    <span class="value">&nbsp;</span>
+                                </div>
+                                <div class="bubble" data-region="gyeonggi">
+                                    <p class="area">경기</p>
+                                    <span class="value">&nbsp;</span>
+                                </div>
+                                <div class="bubble" data-region="seoul">
+                                    <p class="area">서울</p>
+                                    <span class="value">&nbsp;</span>
+                                </div>
+                                <div class="bubble" data-region="chungbuk">
+                                    <p class="area">충북</p>
+                                    <span class="value">&nbsp;</span>
+                                </div>
+                                <div class="bubble" data-region="chungnam">
+                                    <p class="area">충남</p>
+                                    <span class="value">&nbsp;</span>
+                                </div>
+                                <div class="bubble" data-region="daejeon">
+                                    <p class="area">대전</p>
+                                    <span class="value">&nbsp;</span>
+                                </div>
+                                <div class="bubble" data-region="sejong">
+                                    <p class="area">세종</p>
+                                    <span class="value">&nbsp;</span>
+                                </div>
+                                <div class="bubble" data-region="jeonbuk">
+                                    <p class="area">전북</p>
+                                    <span class="value">&nbsp;</span>
+                                </div>
+                                <div class="bubble" data-region="jeonnam">
+                                    <p class="area">전남</p>
+                                    <span class="value">&nbsp;</span>
+                                </div>
+                                <div class="bubble" data-region="gwangju">
+                                    <p class="area">광주</p>
+                                    <span class="value">&nbsp;</span>
+                                </div>
+                                <div class="bubble" data-region="jeju">
+                                    <p class="area">제주</p>
+                                    <span class="value">&nbsp;</span>
+                                </div>
+                                <div class="bubble" data-region="gyeongbuk">
+                                    <p class="area">경북</p>
+                                    <span class="value">&nbsp;</span>
+                                </div>
+                                <div class="bubble" data-region="daegu">
+                                    <p class="area">대구</p>
+                                    <span class="value">&nbsp;</span>
+                                </div>
+                                <div class="bubble" data-region="gyeongnam">
+                                    <p class="area">경남</p>
+                                    <span class="value">&nbsp;</span>
+                                </div>
+                                <div class="bubble" data-region="ulsan">
+                                    <p class="area">울산</p>
+                                    <span class="value">&nbsp;</span>
+                                </div>
+                                <div class="bubble" data-region="busan">
+                                    <p class="area">부산</p>
+                                    <span class="value">&nbsp;</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-column">
+                        <div class="gender-age">
+                            <div class="chart-title">
+                                <h2>성별/연령별</h2>
+                                <p class="map-content">(발생건수) </p>
+                            </div>
+                            <div class="chart-inner age">
+                                <canvas id="ageChart">차트영역</canvas>
+                            </div>
+                        </div>
+                        <div class="charts">
+                            <div class="chart-inner_wrap">
+                                <div class="chart-title">
+                                    <h2>환자분류별 통계</h2>
+                                    <p>(발생비율) </p>
+                                </div>
+                                <div class="chart-inner patient">
+                                    <canvas id="patientChart"> 차트영역</canvas>
+                                </div>
+                            </div>
+                            <span class="chart-line"></span>
+                            <div class="chart-inner_wrap">
+                                <div class="chart-title">
+                                    <h2>감염지역별 통계</h2>
+                                    <p>(발생비율) </p>
+                                </div>
+                                <div class="chart-inner nation">
+                                    <canvas id="nationChart"> 차트영역</canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="stats-section" id="annual-stats">
+                <div class="box-titbar">
+                    <h2>
+                        <span id="selectedYear">2026</span>년 연간 누적 통계
+                    </h2>
+                    <p class="total-count"><span class="label">보고건수</span></p>
+                </div>
+                <div class="stats-content">
+                    <div class="map_wrap">
+                        <div class="map">
+                            <div class="chart-title">
+                                <h2 class="map-title">지역별 통계 </h2>
+                                <p class="map-content">(발생건수) </p>
+                            </div>
+                            <img src="/pot/resources/images/koreamap.png" alt="covid-1"/>
+                            <map name="korea-map">
+                                <area target="_blank" alt="강원" title="강원" href="#"
+                                      coords="159,75,151,97,165,115,172,146,168,157,269,172,324,157,225,1,108,39" shape="poly">
+                                <!-- 인천 -->
+                                <area target="_blank" alt="인천" title="인천" href="#"
+                                      coords="65,109,88,126,81,133,80,144,71,135,63,129" shape="poly">
+                                <!-- 경기 -->
+                                <area target="_blank" alt="경기" title="경기" href="#"
+                                      coords="57,104,100,46,158,76,167,113,176,139,167,158,142,176,127,187,109,180,97,186,79,167,77,150,83,143,92,127"
+                                      shape="poly">
+                                <!-- 서울 -->
+                                <area target="_blank" alt="서울" title="서울" href="#"
+                                      coords="106,101,87,113,96,127,112,125,118,119,112,105" shape="poly">
+                                <!-- 충북 -->
+                                <area target="_blank" alt="충북" title="충북"
+                                      coords="130,213,132,230,150,242,150,262,158,280,184,290,200,266,184,227,236,195,254,172,167,160,145,180"
+                                      shape="poly">
+                                <!-- 충남 -->
+                                <area target="_blank" alt="충남" title="충남"
+                                      coords="160,286,151,273,133,269,124,258,134,233,122,214,134,195,116,187,96,190,29,195,61,274,71,289,109,268"
+                                      shape="poly">
+                                <!-- 대전 -->
+                                <area target="_blank" alt="대전" title="대전"
+                                      coords="139,235,133,244,130,253,129,260,138,265,146,265,151,263,149,247,149,241"
+                                      shape="poly">
+                                <!-- 세종 -->
+                                <area target="_blank" alt="세종" title="세종"
+                                      coords="122,239,106,243,104,251,108,257,115,260,128,256,125,242" shape="poly">
+                                <!-- 전북 -->
+                                <area target="_blank" alt="전북" title="전북"
+                                      coords="101,275,61,313,50,351,62,363,95,353,118,367,162,367,164,347,160,321,189,302,187,288"
+                                      shape="poly">
+                                <!-- 전남 -->
+                                <area target="_blank" alt="전남" title="전남"
+                                      coords="42,357,48,451,29,435,11,452,20,469,34,479,78,471,108,450,153,424,176,403,160,368,104,354"
+                                      shape="poly">
+                                <!-- 광주 -->
+                                <area target="_blank" alt="광주" title="광주" coords="90,373,66,380,69,390,82,391,96,390,102,382"
+                                      shape="poly">
+                                <!-- 제주 -->
+                                <area target="_blank" alt="제주" title="제주"
+                                      coords="60,510,55,528,65,535,94,531,123,523,131,509,121,501" shape="poly">
+                                <!-- 경북 -->
+                                <area target="_blank" alt="경북" title="경북"
+                                      coords="258,169,181,212,188,308,301,335,357,284,325,158" shape="poly">
+                                <!-- 대구 -->
+                                <area target="_blank" alt="대구" title="대구"
+                                      coords="262,286,238,302,240,312,234,330,246,333,269,313,280,295" shape="poly">
+                                <!-- 경남 -->
+                                <area target="_blank" alt="경남" title="경남"
+                                      coords="187,299,155,323,154,379,183,410,231,412,263,400,285,381,312,368,320,357,309,335,290,326"
+                                      shape="poly">
+                                <!-- 울산 -->
+                                <area target="_blank" alt="울산" title="울산" coords="344,324,352,280,322,280,314,309,313,322"
+                                      shape="poly">
+                                <!-- 부산 -->
+                                <area target="_blank" alt="부산" title="부산" coords="281,396,309,353,277,349,243,367" shape="poly">
+                            </map>
+                            <div class="bubbles-container">
+                                <div class="bubble" data-region="gangwon">
+                                    <p class="area">강원</p>
+                                    <span class="value">&nbsp;</span>
+                                </div>
+                                <div class="bubble" data-region="incheon">
+                                    <p class="area">인천</p>
+                                    <span class="value">&nbsp;</span>
+                                </div>
+                                <div class="bubble" data-region="gyeonggi">
+                                    <p class="area">경기</p>
+                                    <span class="value">&nbsp;</span>
+                                </div>
+                                <div class="bubble" data-region="seoul">
+                                    <p class="area">서울</p>
+                                    <span class="value">&nbsp;</span>
+                                </div>
+                                <div class="bubble" data-region="chungbuk">
+                                    <p class="area">충북</p>
+                                    <span class="value">&nbsp;</span>
+                                </div>
+                                <div class="bubble" data-region="chungnam">
+                                    <p class="area">충남</p>
+                                    <span class="value">&nbsp;</span>
+                                </div>
+                                <div class="bubble" data-region="daejeon">
+                                    <p class="area">대전</p>
+                                    <span class="value">&nbsp;</span>
+                                </div>
+                                <div class="bubble" data-region="sejong">
+                                    <p class="area">세종</p>
+                                    <span class="value">&nbsp;</span>
+                                </div>
+                                <div class="bubble" data-region="jeonbuk">
+                                    <p class="area">전북</p>
+                                    <span class="value">&nbsp;</span>
+                                </div>
+                                <div class="bubble" data-region="jeonnam">
+                                    <p class="area">전남</p>
+                                    <span class="value">&nbsp;</span>
+                                </div>
+                                <div class="bubble" data-region="gwangju">
+                                    <p class="area">광주</p>
+                                    <span class="value">&nbsp;</span>
+                                </div>
+                                <div class="bubble" data-region="jeju">
+                                    <p class="area">제주</p>
+                                    <span class="value">&nbsp;</span>
+                                </div>
+                                <div class="bubble" data-region="gyeongbuk">
+                                    <p class="area">경북</p>
+                                    <span class="value">&nbsp;</span>
+                                </div>
+                                <div class="bubble" data-region="daegu">
+                                    <p class="area">대구</p>
+                                    <span class="value">&nbsp;</span>
+                                </div>
+                                <div class="bubble" data-region="gyeongnam">
+                                    <p class="area">경남</p>
+                                    <span class="value">&nbsp;</span>
+                                </div>
+                                <div class="bubble" data-region="ulsan">
+                                    <p class="area">울산</p>
+                                    <span class="value">&nbsp;</span>
+                                </div>
+                                <div class="bubble" data-region="busan">
+                                    <p class="area">부산</p>
+                                    <span class="value">&nbsp;</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-column">
+                        <div class="gender-age annual">
+                            <div class="chart-title">
+                                <h2>성별/연령별</h2>
+                                <p>(발생건수) </p>
+                            </div>
+                            <div class="chart-inner ageAnnual">
+                                <canvas id="ageAnnualChart"> 차트영역</canvas>
+                            </div>
+                        </div>
+                        <div class="charts">
+                            <div class="chart-inner_wrap">
+                                <div class="chart-title">
+                                    <h2>환자분류별 통계</h2>
+                                    <p>(발생비율) </p>
+                                </div>
+                                <div class="chart-inner patientAnnual">
+                                    <canvas id="patientAnnualChart"> 차트영역</canvas>
+                                </div>
+                            </div>
+                            <span class="chart-line"></span>
+                            <div class="chart-inner_wrap">
+                                <div class="chart-title">
+                                    <h2>감염지역별 통계</h2>
+                                    <p>(발생비율) </p>
+                                </div>
+                                <div class="chart-inner nationAnnual">
+                                    <canvas id="areaAnnualChart"> 차트영역</canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <section class="period-stats">
+            <div class="box-titbar">
+                <h2> 기간별 통계 </h2>
+            </div>
+            <div class="graphs">
+                <div class="graph">
+                    <div class="chart-title">
+                        <h2>최근 7일</h2>
+                        <p class="map-content">(발생건수) </p>
+                    </div>
+                    <div class="chart-container occurrenceWeek">
+                        <canvas id="occurrenceWeekChart"> 차트영역</canvas>
+                    </div>
+                </div>
+                <div class="graph">
+                    <div class="chart-title">
+                        <h2>최근 4주</h2>
+                        <p class="map-content">(발생건수) </p>
+                    </div>
+                    <div class="chart-container occurrenceMonth">
+                        <canvas id="occurrenceMonthChart"> 차트영역</canvas>
+                    </div>
+                </div>
+                <div class="graph">
+                    <div class="chart-title">
+                        <h2>최근 6개월</h2>
+                        <p class="map-content">(발생건수) </p>
+                    </div>
+                    <div class="chart-container occurrenceHalf">
+                        <canvas id="occurrenceHalfChart"> 차트영역</canvas>
+                    </div>
+                </div>
+                <div class="graph">
+                    <div class="chart-title">
+                        <h2>최근 5개년</h2>
+                        <p class="map-content">(발생건수) </p>
+                    </div>
+                    <div class="chart-container occurrenceYear">
+                        <canvas id="occurrenceYearChart"> 차트영역</canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="overlay" id="overlay" style="display: none;"></div>
+    <div class="popup" id="settingPopup" style="display: none">
+        <h2 id="board_set_title"> 대시보드 설정 </h2>
+        <div class="popup-content">
+            <div class="popup-row">
+                <div style="width: 20%">
+                    <label for="simplePdFrmIcdgrpCd">감염병명</label>
+                </div>
+                <div class="input-flex">
+                    <select name="icdgrpCd" id="simplePdFrmIcdgrpCd" tabindex="0"
+                            title="감염병명 급수 선택">
+                        
+                            <option value="01">제1급</option>
+                        
+                            <option value="02">제2급</option>
+                        
+                            <option value="03">제3급</option>
+                        
+                    </select>
+                    <select name="icdCd" id="simplePdFrmIcdCd" title="감염병명 선택">
+                        
+                            <optgroup label="제1급" style="height:35px;"
+                                      data-icdgrpCd="01">
+                                
+                                    
+                                        
+                                            <option value="NA0001">에볼라바이러스병</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NA0002">마버그열</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NA0003">라싸열</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NA0004">크리미안콩고출혈열</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NA0005">남아메리카출혈열</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NA0006">리프트밸리열</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NA0007">두창</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NA0008">페스트</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NA0009">탄저</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NA0010">보툴리눔독소증</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NA0011">야토병</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NA0013">중증급성호흡기증후군(SARS)</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NA0014">중동호흡기증후군(MERS)</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NA0015">동물인플루엔자 인체감염증</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NA0016">신종인플루엔자</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NA0017">디프테리아</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NA0018">@니파바이러스감염증</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                            </optgroup>
+                        
+                            <optgroup label="제2급" style="height:35px;"
+                                      data-icdgrpCd="02">
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NB0002">수두</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NB0003">홍역</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NB0004">콜레라</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NB0005">장티푸스</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NB0006">파라티푸스</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NB0007">세균성이질</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NB0008">장출혈성대장균감염증</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NB0009">A형간염</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NB0010">백일해</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NB0011">유행성이하선염</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NB1201">풍진(선천성)</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NB1202">풍진(후천성)</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NB0013">폴리오</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NB0014">수막구균 감염증</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NB0015">b형헤모필루스인플루엔자</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NB0016">폐렴구균 감염증</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NB0017">한센병</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NB0018">성홍열</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NB0019">반코마이신내성황색포도알균(VRSA) 감염증</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NB0020">카바페넴내성장내세균목(CRE) 감염증</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NB0021">E형간염</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                            </optgroup>
+                        
+                            <optgroup label="제3급" style="height:35px;"
+                                      data-icdgrpCd="03">
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NC0001">파상풍</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NC0201">B형간염</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NC0003">일본뇌염</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NC0004">C형간염</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NC0005">말라리아</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NC0006">레지오넬라증</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NC0007">비브리오패혈증</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NC0008">발진티푸스</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NC0009">발진열</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NC0010">쯔쯔가무시증</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NC0011">렙토스피라증</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NC0012">브루셀라증</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NC0013">공수병</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NC0014">신증후군출혈열</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NC0016">크로이츠펠트-야콥병(CJD) 및 변종크로이츠펠트-야콥병(vCJD)</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NC0017">황열</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NC0018">뎅기열</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NC0019">큐열</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NC0020">웨스트나일열</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NC0021">라임병</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NC0022">진드기매개뇌염</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NC0023">유비저</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NC0024">치쿤구니야열</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NC0025">중증열성혈소판감소증후군(SFTS)</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NC0026">지카바이러스감염증</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NC0027">매독</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NC2704">매독(선천성)</option>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <option value="NC0028">@엠폭스</option>
+                                        
+                                    
+                                
+                            </optgroup>
+                        
+                    </select>
+                </div>
+            </div>
+            <div class="year-stats">
+                <div class="year-stats-row">
+                    <div class="year-stats-column">
+                        <div style="display: flex; align-items: center;">
+                            <label for="year"> 기준년도: </label>
+                        </div>
+                        <select id="year" style="margin-left: 5px">
+                            
+                            
+                                <option value="2026"
+                                        selected="selected" >2026</option>
+                                
+                            
+                                <option value="2025"
+                                         >2025</option>
+                                
+                            
+                                <option value="2024"
+                                         >2024</option>
+                                
+                            
+                                <option value="2023"
+                                         >2023</option>
+                                
+                            
+                                <option value="2022"
+                                         >2022</option>
+                                
+                            
+                                <option value="2021"
+                                         >2021</option>
+                                
+                            
+                                <option value="2020"
+                                         >2020</option>
+                                
+                            
+                                <option value="2019"
+                                         >2019</option>
+                                
+                            
+                                <option value="2018"
+                                         >2018</option>
+                                
+                            
+                                <option value="2017"
+                                         >2017</option>
+                                
+                            
+                                <option value="2016"
+                                         >2016</option>
+                                
+                            
+                                <option value="2015"
+                                         >2015</option>
+                                
+                            
+                        </select>
+                    </div>
+                    <div class="">
+                        <div style="margin-bottom: 10px">
+                            <label> 지역별 통계 표시방법: </label>
+                        </div>
+                        <div class="radio-group">
+                            <label class="custom-radio">
+                                <input type="radio" id="absolute" name="population" value="absolute" checked>
+                                <span class="custom-radio-button"></span>
+                                발생건수
+                            </label>
+                            <label class="custom-radio">
+                                <input type="radio" id="relative" name="population" value="relative">
+                                <span class="custom-radio-button"></span>
+                                인구 10만명당 발생률
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup-buttons">
+            <button id="cancelButton"> 취소</button>
+            <button id="saveButton"> 설정</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
