@@ -1,0 +1,117 @@
+{
+  "dedup": {
+    "CRITICAL": {
+      "rate_limit_minutes": 60
+    },
+    "ACTION": {
+      "rate_limit_minutes": 30
+    },
+    "INFO": {
+      "rate_limit_minutes": 1440
+    }
+  },
+  "rules": [
+    {
+      "alert_type": "ISOLATION",
+      "severity": "CRITICAL",
+      "description": "MDRO 확진 환자에게 격리 미적용",
+      "scope": "slot",
+      "condition": {
+        "any": [
+          { "event_type": "isolation_gap_current" }
+        ]
+      },
+      "recommended_cta": [
+        "병상배정",
+        "격리 체크리스트"
+      ]
+    },
+    {
+      "alert_type": "PENDING_RESULT",
+      "severity": "ACTION",
+      "description": "배양 채취 - 결과 대기 중",
+      "condition": {
+        "any": [
+          { "event_type": "culture_ordered_new" }
+        ]
+      },
+      "recommended_cta": [
+        "배양 결과 추적"
+      ]
+    },
+    {
+      "alert_type": "DETERIORATION",
+      "severity": "ACTION",
+      "description": "감염 지표 변화 감지",
+      "merge": true,
+      "condition": {
+        "any": [
+          { "event_type": "temp_spike" },
+          { "event_type": "wbc_rise" },
+          { "event_type": "crp_rise" },
+          { "event_type": "abx_escalate_or_change" },
+          { "event_type": "o2_start_or_increase" },
+          { "event_type": "platelet_drop" }
+        ]
+      },
+      "recommended_cta": []
+    },
+    {
+      "alert_type": "CARE_GAP",
+      "severity": "ACTION",
+      "description": "운영 조치 필요 이벤트",
+      "merge": true,
+      "condition": {
+        "any": [
+          { "event_type": "culture_result_arrived" },
+          { "event_type": "prn_increase" },
+          { "event_type": "notify_first_seen" }
+        ]
+      },
+      "recommended_cta": [
+        "조치 확인"
+      ]
+    },
+    {
+      "alert_type": "SEPSIS",
+      "severity": "CRITICAL",
+      "description": "Sepsis 조기위험: 게이트 충족",
+      "scope": "slot",
+      "condition": {
+        "all": [
+          { "event_type": "sepsis_rate_high" },
+          { "event_type": "sepsis_vital_lab_trigger" }
+        ]
+      },
+      "recommended_cta": [
+        "Sepsis Early Response 체크리스트",
+        "환자 상세 이동"
+      ]
+    },
+    {
+      "alert_type": "SEPSIS",
+      "severity": "ACTION",
+      "description": "Sepsis 위험 상승(게이트 미충족)",
+      "condition": {
+        "any": [
+          { "event_type": "sepsis_gate_failed" }
+        ]
+      },
+      "recommended_cta": [
+        "모니터링 강화",
+        "환자 상세 확인"
+      ]
+    },
+    {
+      "alert_type": "NO_MEANINGFUL_CHANGE",
+      "severity": "INFO",
+      "description": "의미 있는 변화 없음(직전 슬롯 대비 안정)",
+      "condition": {
+        "any": [
+          { "event_type": "no_meaningful_change" }
+        ]
+      },
+      "recommended_cta": []
+    }
+  ]
+}
