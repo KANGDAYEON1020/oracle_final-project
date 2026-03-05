@@ -1,0 +1,5173 @@
+{
+  "doc_id": "ATS_IDSA_CAP_2019",
+  "source_path": "./docs_raw/지역사회감염폐렴_AmericanThoracicSociety.pdf",
+  "num_pages": 13,
+  "pages": [
+    {
+      "page_no": 1,
+      "num_lines": 49,
+      "num_tables": 1,
+      "lines": [
+        {
+          "line_no": 2,
+          "text": "AMERICAN THORACIC SOCIETY"
+        },
+        {
+          "line_no": 4,
+          "text": "DOCUMENTS"
+        },
+        {
+          "line_no": 8,
+          "text": "Diagnosis and Treatment of Adults with Community-acquired"
+        },
+        {
+          "line_no": 9,
+          "text": "Pneumonia"
+        },
+        {
+          "line_no": 11,
+          "text": "An Of cial Clinical Practice Guideline of the American Thoracic Society and"
+        },
+        {
+          "line_no": 12,
+          "text": "Infectious Diseases Society of America: Executive Summary"
+        },
+        {
+          "line_no": 14,
+          "text": "Joshua P. Metlay*, Grant W. Waterer*, Ann C. Long, Antonio Anzueto, Jan Brozek, Kristina Crothers, Laura A. Cooley,"
+        },
+        {
+          "line_no": 16,
+          "text": "Nathan C. Dean, Michael J. Fine, Scott A. Flanders, Marie R. Grif n, Mark L. Metersky, Daniel M. Musher,"
+        },
+        {
+          "line_no": 17,
+          "text": "Marcos I. Restrepo, and Cynthia G. Whitney; on behalf of the American Thoracic Society and Infectious Diseases"
+        },
+        {
+          "line_no": 18,
+          "text": "Society of America"
+        },
+        {
+          "line_no": 19,
+          "text": "T A T S M 2019 I D S A"
+        },
+        {
+          "line_no": 20,
+          "text": "HIS OFFICIAL CLINICAL PRACTICE GUIDELINE WAS APPROVED BY THE MERICAN HORACIC OCIETY AY AND THE NFECTIOUS ISEASES OCIETY OF MERICA"
+        },
+        {
+          "line_no": 21,
+          "text": "A 2019"
+        },
+        {
+          "line_no": 22,
+          "text": "UGUST"
+        },
+        {
+          "line_no": 23,
+          "text": "Background: This document provides evidence-based clinical decisions. Although some recommendations remain"
+        },
+        {
+          "line_no": 24,
+          "text": "practice guidelines on the management of adult patients with unchanged from the 2007 guideline, the availability of"
+        },
+        {
+          "line_no": 25,
+          "text": "community-acquired pneumonia. results from new therapeutic trials and epidemiological"
+        },
+        {
+          "line_no": 26,
+          "text": "investigations led to revised recommendations for"
+        },
+        {
+          "line_no": 27,
+          "text": "Methods: A multidisciplinary panel conducted pragmatic"
+        },
+        {
+          "line_no": 28,
+          "text": "empiric treatment strategies and additional management"
+        },
+        {
+          "line_no": 29,
+          "text": "systematic reviews of the relevant research and applied Grading of"
+        },
+        {
+          "line_no": 30,
+          "text": "decisions."
+        },
+        {
+          "line_no": 31,
+          "text": "Recommendations, Assessment, Development, and Evaluation"
+        },
+        {
+          "line_no": 32,
+          "text": "methodology for clinical recommendations. Conclusions: The panel formulated and provided the rationale"
+        },
+        {
+          "line_no": 33,
+          "text": "for recommendations on selected diagnostic and treatment"
+        },
+        {
+          "line_no": 35,
+          "text": "Results: The panel addressed 16 speci c areas for"
+        },
+        {
+          "line_no": 36,
+          "text": "strategies for adult patients with community-acquired pneumonia."
+        },
+        {
+          "line_no": 37,
+          "text": "recommendations spanning questions of diagnostic"
+        },
+        {
+          "line_no": 38,
+          "text": "testing, determination of site of care, selection of initial Keywords: community-acquired pneumonia; pneumonia; patient"
+        },
+        {
+          "line_no": 39,
+          "text": "empiric antibiotic therapy, and subsequent management management"
+        },
+        {
+          "line_no": 40,
+          "text": "*Co–first authors."
+        },
+        {
+          "line_no": 41,
+          "text": "Endorsed by the Society of Infectious Disease Pharmacists July 2019."
+        },
+        {
+          "line_no": 42,
+          "text": "ORCID IDs: 0000-0003-2259-6282 (J.P.M.); 0000-0002-7222-8018 (G.W.W.); 0000-0002-7007-588X (A.A.); 0000-0002-3122-0773 (J.B.);"
+        },
+        {
+          "line_no": 43,
+          "text": "0000-0001-9702-0371 (K.C.); 0000-0002-5127-3442 (L.A.C.); 0000-0002-1996-0533 (N.C.D.); 0000-0003-3470-9846 (M.J.F.);"
+        },
+        {
+          "line_no": 44,
+          "text": "0000-0002-8634-4909 (S.A.F.); 0000-0001-7114-7614 (M.R.G.); 0000-0003-1968-1400 (M.L.M.); 0000-0002-7571-066X (D.M.M.);"
+        },
+        {
+          "line_no": 45,
+          "text": "0000-0001-9107-3405 (M.I.R.); 0000-0002-1056-3216 (C.G.W.)."
+        },
+        {
+          "line_no": 46,
+          "text": "Supported by the American Thoracic Society and Infectious Diseases Society of America."
+        },
+        {
+          "line_no": 47,
+          "text": "The findings and conclusions in this report are those of the authors and do not necessarily represent the official position of the U.S. CDC."
+        },
+        {
+          "line_no": 48,
+          "text": "This Executive Summary is part of the full official ATS clinical practice guideline, which readers may access online at http://www.atsjournals.org/"
+        },
+        {
+          "line_no": 49,
+          "text": "doi/abs/10.1164/rccm.201908-1581ST. Only the Executive Summary is appearing in the print edition of the Journal. The article of record, and the"
+        },
+        {
+          "line_no": 50,
+          "text": "one that should be cited, is: Diagnosis and Treatment of Adults with Community-acquired Pneumonia: An Official Clinical Practice Guideline of the"
+        },
+        {
+          "line_no": 51,
+          "text": "American Thoracic Society and Infectious Diseases Society of America. Am J Respir Crit Care Med 2019;200:e45–e67."
+        },
+        {
+          "line_no": 52,
+          "text": "Youmay printone copyof thisdocumentat nocharge. However,ifyourequire morethanone copy,youmustplaceareprint order.Domestic reprint orders:"
+        },
+        {
+          "line_no": 53,
+          "text": "amy.schriver@sheridan.com; international reprint orders: louisa.mott@springer.com."
+        },
+        {
+          "line_no": 54,
+          "text": "This article has an online supplement, which is accessible from this issue’s table of contents at www.atsjournals.org."
+        },
+        {
+          "line_no": 55,
+          "text": "Am J Respir Crit Care Med Vol 200, Iss 7, pp 809–821, Oct 1, 2019"
+        },
+        {
+          "line_no": 56,
+          "text": "Copyright © 2019 by the American Thoracic Society"
+        },
+        {
+          "line_no": 58,
+          "text": "Internet address: www.atsjournals.org"
+        },
+        {
+          "line_no": 59,
+          "text": "American Thoracic Society Documents 809"
+        }
+      ],
+      "tables": [
+        {
+          "table_no": 0,
+          "rows": [
+            [
+              "Background:Thisdocumentprovidesevidence-basedclinical decisions.Althoughsomerecommendationsremain"
+            ],
+            [
+              "practiceguidelinesonthemanagementofadultpatientswith unchangedfromthe2007guideline,theavailabilityof\ncommunity-acquiredpneumonia. resultsfromnewtherapeutictrialsandepidemiological\ninvestigationsledtorevisedrecommendationsfor\nMethods:Amultidisciplinarypanelconductedpragmatic\nempirictreatmentstrategiesandadditionalmanagement\nsystematicreviewsoftherelevantresearchandappliedGradingof\ndecisions.\nRecommendations,Assessment,Development,andEvaluation\nmethodologyforclinicalrecommendations. Conclusions:Thepanelformulatedandprovidedtherationale\nforrecommendationsonselecteddiagnosticandtreatment\nResults:Thepaneladdressed16specificareasfor\nstrategiesforadultpatientswithcommunity-acquiredpneumonia.\nrecommendationsspanningquestionsofdiagnostic\ntesting,determinationofsiteofcare,selectionofinitial Keywords: community-acquired pneumonia; pneumonia; patient\nempiricantibiotictherapy,andsubsequentmanagement management"
+            ],
+            [
+              ""
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "page_no": 2,
+      "num_lines": 59,
+      "num_tables": 0,
+      "lines": [
+        {
+          "line_no": 3,
+          "text": "AMERICAN THORACIC SOCIETY DOCUMENTS"
+        },
+        {
+          "line_no": 6,
+          "text": "Contents"
+        },
+        {
+          "line_no": 7,
+          "text": "Used to Determine Inpatient CAP and Risk Factors for"
+        },
+        {
+          "line_no": 8,
+          "text": "Introduction versus Outpatient Treatment MRSA or P. aeruginosa Be"
+        },
+        {
+          "line_no": 9,
+          "text": "Methods Location for Adults with CAP? Treated with Extended-"
+        },
+        {
+          "line_no": 10,
+          "text": "Recommendations Question 7: Should a Clinical Spectrum Antibiotic Therapy"
+        },
+        {
+          "line_no": 11,
+          "text": "Question 1: In Adults with CAP, Prediction Rule for Prognosis Instead of Standard CAP"
+        },
+        {
+          "line_no": 12,
+          "text": "Should Gram Stain and Culture plus Clinical Judgment versus Regimens?"
+        },
+        {
+          "line_no": 13,
+          "text": "of Lower Respiratory Secretions Clinical Judgment Alone Be Used Question 12: In the Inpatient"
+        },
+        {
+          "line_no": 14,
+          "text": "Be Obtained at the Time of to Determine Inpatient General Setting, Should Adults with"
+        },
+        {
+          "line_no": 15,
+          "text": "Diagnosis? Medical versus Higher Levels of CAP Be Treated with"
+        },
+        {
+          "line_no": 16,
+          "text": "Question 2: In Adults with CAP, Inpatient Treatment Intensity Corticosteroids?"
+        },
+        {
+          "line_no": 17,
+          "text": "Should Blood Cultures Be (ICU, Step-Down, or Telemetry Question 13: In Adults with CAP"
+        },
+        {
+          "line_no": 18,
+          "text": "ObtainedattheTimeofDiagnosis? Unit) for Adults with CAP? Who Test Positive for"
+        },
+        {
+          "line_no": 19,
+          "text": "Question 3: In Adults with CAP, Question 8: In the Outpatient Influenza, Should the"
+        },
+        {
+          "line_no": 20,
+          "text": "Should Legionella and Setting, Which Antibiotics Are Treatment Regimen Include"
+        },
+        {
+          "line_no": 21,
+          "text": "Pneumococcal Urinary Antigen Recommended for Empiric Antiviral Therapy?"
+        },
+        {
+          "line_no": 22,
+          "text": "Testing Be Performed at the Treatment of CAP in Adults? Question 14: In Adults with CAP"
+        },
+        {
+          "line_no": 23,
+          "text": "Time of Diagnosis? Question 9: In the Inpatient Who Test Positive for Influenza,"
+        },
+        {
+          "line_no": 24,
+          "text": "Question 4: In Adults with CAP, Setting, Which Antibiotic Should the Treatment"
+        },
+        {
+          "line_no": 25,
+          "text": "Should a Respiratory Sample Be Regimens Are Recommended Regimen Include Antibacterial"
+        },
+        {
+          "line_no": 26,
+          "text": "Tested for Influenza Virus at the for Empiric Treatment of Therapy?"
+        },
+        {
+          "line_no": 27,
+          "text": "Time of Diagnosis? CAP in Adults without Risk Question 15: In Outpatient"
+        },
+        {
+          "line_no": 28,
+          "text": "Question 5: In Adults with CAP, Factors for MRSA and and Inpatient Adults with"
+        },
+        {
+          "line_no": 29,
+          "text": "Should Serum Procalcitonin P. aeruginosa? CAP Who Are Improving,"
+        },
+        {
+          "line_no": 30,
+          "text": "plus Clinical Judgment Question 10: In the Inpatient What Is the Appropriate"
+        },
+        {
+          "line_no": 31,
+          "text": "versus Clinical Judgment Setting, Should Patients with Duration of Antibiotic"
+        },
+        {
+          "line_no": 32,
+          "text": "Alone Be Used to Withhold Suspected Aspiration Pneumonia Treatment?"
+        },
+        {
+          "line_no": 33,
+          "text": "Initiation of Antibiotic Treatment? Receive Additional Anaerobic Question 16: In Adults with CAP"
+        },
+        {
+          "line_no": 34,
+          "text": "Question 6: Should a Clinical Coverage beyond Standard Who Are Improving, Should"
+        },
+        {
+          "line_no": 35,
+          "text": "Prediction Rule for Prognosis Empiric Treatment for CAP? Follow-up Chest Imaging Be"
+        },
+        {
+          "line_no": 36,
+          "text": "plus Clinical Judgment versus Question 11: In the Inpatient Obtained?"
+        },
+        {
+          "line_no": 37,
+          "text": "Clinical Judgment Alone Be Setting, Should Adults with Conclusions"
+        },
+        {
+          "line_no": 38,
+          "text": "Introduction treatable bacterial causes of CAP. As We have maintained the convention of"
+        },
+        {
+          "line_no": 39,
+          "text": "bacterial pathogens often coexist with separate recommendations on the basis of"
+        },
+        {
+          "line_no": 40,
+          "text": "In the 10 years since the last American viruses and there is no current diagnostic the severity of illness. Although historically"
+        },
+        {
+          "line_no": 41,
+          "text": "Thoracic Society (ATS)/Infectious test accurate enough or fast enough to site of care (outpatient, inpatient general"
+        },
+        {
+          "line_no": 42,
+          "text": "Diseases Society of America (IDSA) determinethatCAPisduesolelytoavirusat ward, ICU) has served as a severity"
+        },
+        {
+          "line_no": 43,
+          "text": "community-acquired pneumonia (CAP) the time of presentation (see below), our surrogate, decisions about site of care may"
+        },
+        {
+          "line_no": 44,
+          "text": "guideline (1), there have been changes in recommendations are to initially treat be based on considerations other than"
+        },
+        {
+          "line_no": 45,
+          "text": "the process for guideline development, as empirically for possible bacterial infection severity and can vary widely between"
+        },
+        {
+          "line_no": 46,
+          "text": "well as generation of new clinical data. ATS or coinfection. In addition, the emergence hospitals and practice sites. We have"
+        },
+        {
+          "line_no": 47,
+          "text": "and IDSA agreed on moving from the of multidrug-resistant pathogens, including therefore chosen to use the IDSA/ATS CAP"
+        },
+        {
+          "line_no": 48,
+          "text": "narrative style of previous documents to the methicillin-resistant Staphylococcus aureus severitycriteriathathavebeenvalidatedand"
+        },
+        {
+          "line_no": 49,
+          "text": "Grading of Recommendations Assessment, (MRSA) and Pseudomonas aeruginosa, de fi ne severe CAP as present in patients"
+        },
+        {
+          "line_no": 50,
+          "text": "Development, and Evaluation (GRADE) require separate recommendations when with either one major criterion or three or"
+        },
+        {
+          "line_no": 51,
+          "text": "format. We thus developed this updated CAP the risk of each of these pathogens is more minor criteria (Table 1)."
+        },
+        {
+          "line_no": 52,
+          "text": "guideline as a series of questions answered elevated. We acknowledge that other This guideline reaf fi rms many"
+        },
+        {
+          "line_no": 54,
+          "text": "from available evidence in an is option A multidrug-resistant Enterobacteriaceae can recommendations from the 2007 statement."
+        },
+        {
+          "line_no": 56,
+          "text": "better than option B formatusing the Patient cause CAP, including organisms producing However, new evidence and a new process"
+        },
+        {
+          "line_no": 57,
+          "text": "or Population, Intervention, Comparison, extended-spectrum b -lactamase, but we do have led to signi fi cant changes, which are"
+        },
+        {
+          "line_no": 58,
+          "text": "Outcome (PICO) framework (2). not discuss them separately because they summarized in Table 2."
+        },
+        {
+          "line_no": 59,
+          "text": "This guideline addresses the clinical are much less common and are effectively"
+        },
+        {
+          "line_no": 60,
+          "text": "entity of pneumonia that is acquired outside covered by the strategies presented for"
+        },
+        {
+          "line_no": 61,
+          "text": "of the hospital setting by adults who do not P. aeruginosa. Therefore, throughout this Methods"
+        },
+        {
+          "line_no": 62,
+          "text": "have an immunocompromising condition. document when discussing P. aeruginosa"
+        },
+        {
+          "line_no": 63,
+          "text": "Antibiotic recommendations are based on we are also referring to other similar The guideline development methodology"
+        },
+        {
+          "line_no": 65,
+          "text": "selecting agents effective against the major multiresistant gram-negative bacteria. and how con ict of interest was managed"
+        },
+        {
+          "line_no": 66,
+          "text": "810 American Journal of Respiratory and Critical Care Medicine Volume 200 Number 7 | October 1 2019"
+        }
+      ],
+      "tables": []
+    },
+    {
+      "page_no": 3,
+      "num_lines": 92,
+      "num_tables": 0,
+      "lines": [
+        {
+          "line_no": 3,
+          "text": "AMERICAN THORACIC SOCIETY DOCUMENTS"
+        },
+        {
+          "line_no": 6,
+          "text": "are presented in the online supplement. We the last 90 days (conditional desire to improve antibiotic use as well as"
+        },
+        {
+          "line_no": 8,
+          "text": "followed the GRADE standards for recommendation, very low quality of improve clinicians understanding of their"
+        },
+        {
+          "line_no": 9,
+          "text": "evaluating the evidence for each PICO and evidence). local pathogen prevalences and resistance"
+        },
+        {
+          "line_no": 10,
+          "text": "assigned a quality of evidence rating of high, Rationale for the recommendation. In patterns, which we believe are key to"
+        },
+        {
+          "line_no": 11,
+          "text": "moderate, low, or very low. On the basis of balancing the lack of evidence supporting selecting appropriate empiric antibiotic"
+        },
+        {
+          "line_no": 12,
+          "text": "the quality of evidence, recommendations routine sputum culture with the desire for therapy."
+        },
+        {
+          "line_no": 13,
+          "text": "were assigned as strong or conditional. improved antimicrobial stewardship, the"
+        },
+        {
+          "line_no": 14,
+          "text": "Recommendations that were based on committee voted to continue the stance of"
+        },
+        {
+          "line_no": 15,
+          "text": "Question 2: In Adults with CAP,"
+        },
+        {
+          "line_no": 16,
+          "text": "low or very low quality of evidence and previous guidelines in recommending"
+        },
+        {
+          "line_no": 17,
+          "text": "Should Blood Cultures Be Obtained at"
+        },
+        {
+          "line_no": 18,
+          "text": "not believed to represent standards of neither for nor against routinely obtaining"
+        },
+        {
+          "line_no": 19,
+          "text": "the Time of Diagnosis?"
+        },
+        {
+          "line_no": 20,
+          "text": "care were labeled as conditional sputum Gram stain and culture in all"
+        },
+        {
+          "line_no": 21,
+          "text": "recommendations. Statements in favor of adults with CAP managed in the hospital Recommendation. We recommend not"
+        },
+        {
+          "line_no": 22,
+          "text": "strong recommendations begin with the setting. Whether to culture patients or"
+        },
+        {
+          "line_no": 23,
+          "text": "obtaining blood cultures in adults with CAP"
+        },
+        {
+          "line_no": 24,
+          "text": "words “ We recommend . . . ” ; statements in not should be determined by individual"
+        },
+        {
+          "line_no": 25,
+          "text": "managed in the outpatient setting (strong"
+        },
+        {
+          "line_no": 26,
+          "text": "favor of conditional recommendations clinicians on the basis of clinical presentation,"
+        },
+        {
+          "line_no": 27,
+          "text": "recommendation,verylowqualityofevidence)."
+        },
+        {
+          "line_no": 28,
+          "text": "“ ” local etiological considerations, and local"
+        },
+        {
+          "line_no": 29,
+          "text": "begin with the words We suggest . . . ."
+        },
+        {
+          "line_no": 30,
+          "text": "We suggest not routinely obtaining"
+        },
+        {
+          "line_no": 31,
+          "text": "fi antimicrobial stewardship processes."
+        },
+        {
+          "line_no": 32,
+          "text": "Although we speci ed pairwise PICO"
+        },
+        {
+          "line_no": 33,
+          "text": "blood cultures in adults with CAP managed"
+        },
+        {
+          "line_no": 35,
+          "text": "The committee identi ed two"
+        },
+        {
+          "line_no": 36,
+          "text": "questions for all antibiotic options in the"
+        },
+        {
+          "line_no": 37,
+          "text": "in the hospital setting (conditional"
+        },
+        {
+          "line_no": 38,
+          "text": "situations in which we recommend sputum"
+        },
+        {
+          "line_no": 39,
+          "text": "outpatient and inpatient settings, we"
+        },
+        {
+          "line_no": 40,
+          "text": "recommendation,verylowqualityofevidence)."
+        },
+        {
+          "line_no": 41,
+          "text": "Gram stain and culture: in hospitalized"
+        },
+        {
+          "line_no": 42,
+          "text": "summarized the recommendations using We recommend obtaining"
+        },
+        {
+          "line_no": 43,
+          "text": "patients with severe CAP, and when strong"
+        },
+        {
+          "line_no": 44,
+          "text": "lists of treatment options, in no preferred pretreatment blood cultures in adults with"
+        },
+        {
+          "line_no": 45,
+          "text": "risk factors for MRSA and P. aeruginosa are"
+        },
+        {
+          "line_no": 46,
+          "text": "order, rather than retain the PICO format CAP managed in the hospital setting who:"
+        },
+        {
+          "line_no": 48,
+          "text": "identi ed, unless local etiological data have"
+        },
+        {
+          "line_no": 49,
+          "text": "for this section."
+        },
+        {
+          "line_no": 51,
+          "text": "already shown these pathogens are very 1. are classi ed as severe CAP (see Table 1)"
+        },
+        {
+          "line_no": 52,
+          "text": "infrequently identi fi ed in patients with (strong recommendation, very low"
+        },
+        {
+          "line_no": 53,
+          "text": "Recommendations CAP. Patients who have severe CAP quality of evidence); or"
+        },
+        {
+          "line_no": 54,
+          "text": "requiring intubation should have lower 2."
+        },
+        {
+          "line_no": 55,
+          "text": "respiratory tract samples, such as a. are being empirically treated for"
+        },
+        {
+          "line_no": 56,
+          "text": "Question 1: In Adults with CAP,"
+        },
+        {
+          "line_no": 57,
+          "text": "endotracheal aspirates, sent for Gram stain MRSA or P. aeruginosa (strong"
+        },
+        {
+          "line_no": 58,
+          "text": "Should Gram Stain and Culture of"
+        },
+        {
+          "line_no": 59,
+          "text": "and culture promptly after intubation, recommendation, very low quality of"
+        },
+        {
+          "line_no": 60,
+          "text": "Lower Respiratory Secretions Be"
+        },
+        {
+          "line_no": 61,
+          "text": "particularly as these patients may be more evidence); or"
+        },
+        {
+          "line_no": 62,
+          "text": "Obtained at the Time of Diagnosis?"
+        },
+        {
+          "line_no": 63,
+          "text": "likely to have pneumonia due to MRSA or b. were previously infected with MRSA"
+        },
+        {
+          "line_no": 64,
+          "text": "Recommendation. We recommend not P. aeruginosa and endotracheal aspirates or P. aeruginosa, especially those"
+        },
+        {
+          "line_no": 65,
+          "text": "have a better yield of microbiological with prior respiratory tract infection"
+        },
+        {
+          "line_no": 66,
+          "text": "obtaining sputum Gram stain and culture"
+        },
+        {
+          "line_no": 67,
+          "text": "organisms than sputum culture (3). (conditional recommendation, very"
+        },
+        {
+          "line_no": 68,
+          "text": "routinelyinadultswithCAPmanagedinthe"
+        },
+        {
+          "line_no": 69,
+          "text": "We recommend obtaining sputum for low quality of evidence); or"
+        },
+        {
+          "line_no": 70,
+          "text": "outpatient setting (strong recommendation,"
+        },
+        {
+          "line_no": 71,
+          "text": "Gram stain and culture in situations when c. were hospitalized and received"
+        },
+        {
+          "line_no": 72,
+          "text": "very low quality of evidence)."
+        },
+        {
+          "line_no": 73,
+          "text": "risk factors for MRSA or P. aeruginosa are parenteral antibiotics, whether during"
+        },
+        {
+          "line_no": 74,
+          "text": "We recommend obtaining pretreatment"
+        },
+        {
+          "line_no": 75,
+          "text": "present, both when initial empiric therapy the hospitalization event or not, in"
+        },
+        {
+          "line_no": 76,
+          "text": "Gram stain and culture of respiratory"
+        },
+        {
+          "line_no": 77,
+          "text": "is expanded to cover these pathogens and the last 90 days (conditional"
+        },
+        {
+          "line_no": 78,
+          "text": "secretionsinadultswithCAPmanagedinthe"
+        },
+        {
+          "line_no": 79,
+          "text": "when it is not expanded. In the former case, recommendation, very low quality of"
+        },
+        {
+          "line_no": 80,
+          "text": "hospital setting who:"
+        },
+        {
+          "line_no": 81,
+          "text": "negative microbiological test results may be evidence)."
+        },
+        {
+          "line_no": 82,
+          "text": "1. are classi fi ed as severe CAP (see Table 1), used to deescalate therapy, and in the latter Rationale for the recommendation."
+        },
+        {
+          "line_no": 83,
+          "text": "especially if they are intubated (strong case, positive microbiological test results Although additional diagnostic information"
+        },
+        {
+          "line_no": 84,
+          "text": "recommendation, very low quality of may be used to adjust therapy. As discussed could improve the quality of treatment"
+        },
+        {
+          "line_no": 85,
+          "text": "evidence); or below, although there are numerous studies decisions, support for routine collection of"
+        },
+        {
+          "line_no": 86,
+          "text": "2. identifying individual risk factors for MRSA blood cultures is reduced by the low quality"
+        },
+        {
+          "line_no": 87,
+          "text": "a. are being empirically treated for and P. aeruginosa, many of these of studies demonstrating clinical bene fi t."
+        },
+        {
+          "line_no": 88,
+          "text": "MRSA or P. aeruginosa (strong associations are weak and vary across sites. Routinely obtaining blood cultures may"
+        },
+        {
+          "line_no": 89,
+          "text": "recommendation, very low quality of The most consistently strong risk factor to generate false-positive results that lead to"
+        },
+        {
+          "line_no": 90,
+          "text": "evidence); or consider is prior infection with either unnecessary antibiotic use and increased"
+        },
+        {
+          "line_no": 91,
+          "text": "b. were previously infected with MRSA MRSA or P. aeruginosa. In addition, length of stay."
+        },
+        {
+          "line_no": 92,
+          "text": "or P. aeruginosa, especially those with hospitalization and treatment with In severe CAP, delay in covering less-"
+        },
+        {
+          "line_no": 93,
+          "text": "prior respiratory tract infection parenteral antibiotics in the last 90 days is common pathogens can have serious"
+        },
+        {
+          "line_no": 95,
+          "text": "(conditional recommendation, very associated with an increased risk of consequences. Therefore, the potential bene t"
+        },
+        {
+          "line_no": 96,
+          "text": "low quality of evidence); or these pathogens, and so we recommend of blood cultures is much larger when results"
+        },
+        {
+          "line_no": 97,
+          "text": "c. were hospitalized and received sputum culture in this situation. These can be returned within 24 to 48 hours. The"
+        },
+        {
+          "line_no": 98,
+          "text": "parenteral antibiotics, whether during recommendations are not based on high- rationale for the recommendation for blood"
+        },
+        {
+          "line_no": 99,
+          "text": "fl ’"
+        },
+        {
+          "line_no": 100,
+          "text": "the hospitalization event or not, in grade evidence but re ect the committee s culturesinthesettingofriskfactorsforMRSA"
+        },
+        {
+          "line_no": 101,
+          "text": "American Thoracic Society Documents 811"
+        }
+      ],
+      "tables": []
+    },
+    {
+      "page_no": 4,
+      "num_lines": 103,
+      "num_tables": 0,
+      "lines": [
+        {
+          "line_no": 3,
+          "text": "AMERICAN THORACIC SOCIETY DOCUMENTS"
+        },
+        {
+          "line_no": 6,
+          "text": "Table 1. 2007 Infectious Diseases secretions for Legionella culture on selective initiated in adults with clinically suspected"
+        },
+        {
+          "line_no": 7,
+          "text": "Society of America/American Thoracic media or Legionella nucleic acid ampli fi cation and radiographically con fi rmed CAP"
+        },
+        {
+          "line_no": 8,
+          "text": "Society Criteria for Defining Severe testing in adults with severe CAP (conditional regardless of initial serum procalcitonin"
+        },
+        {
+          "line_no": 9,
+          "text": "Community-acquired Pneumonia recommendation, low quality of evidence). level (strong recommendation, moderate"
+        },
+        {
+          "line_no": 10,
+          "text": "Rationale for the recommendation."
+        },
+        {
+          "line_no": 11,
+          "text": "quality of evidence)."
+        },
+        {
+          "line_no": 12,
+          "text": "Randomized trials have failed to identify a Rationale for the recommendation."
+        },
+        {
+          "line_no": 13,
+          "text": "Validated definition includes either one fi"
+        },
+        {
+          "line_no": 14,
+          "text": "bene t for urinary antigen testing for"
+        },
+        {
+          "line_no": 15,
+          "text": "Procalcitonin has been used to guide"
+        },
+        {
+          "line_no": 16,
+          "text": "major criterion or three or more"
+        },
+        {
+          "line_no": 17,
+          "text": "Streptococcus pneumoniae and Legionella."
+        },
+        {
+          "line_no": 18,
+          "text": "minor criteria initiation of antibiotics in patients with lower"
+        },
+        {
+          "line_no": 19,
+          "text": "Concern has also been raised that narrowing"
+        },
+        {
+          "line_no": 20,
+          "text": "respiratory infections, but many of these"
+        },
+        {
+          "line_no": 21,
+          "text": "Minor criteria therapy in response to positive urinary"
+        },
+        {
+          "line_no": 22,
+          "text": "Respiratory rate>30 breaths/min studies are not restricted to patients with"
+        },
+        {
+          "line_no": 23,
+          "text": "antigen tests could lead to increased risk of"
+        },
+        {
+          "line_no": 24,
+          "text": "Pa /F ratio<250 radiographically con fi rmed pneumonia."
+        },
+        {
+          "line_no": 25,
+          "text": "O2 IO2"
+        },
+        {
+          "line_no": 26,
+          "text": "Multilobar infiltrates clinical relapse (4). In large observational"
+        },
+        {
+          "line_no": 27,
+          "text": "Some patients with low procalcitonin"
+        },
+        {
+          "line_no": 28,
+          "text": "Confusion/disorientation studies, these diagnostic tests have been"
+        },
+        {
+          "line_no": 29,
+          "text": "levels have CAP and have been safely"
+        },
+        {
+          "line_no": 30,
+          "text": "Uremia (blood urea nitrogen associated with reduction in mortality;"
+        },
+        {
+          "line_no": 31,
+          "text": "level>20 mg/dl) treated without antibiotics (7), but these"
+        },
+        {
+          "line_no": 32,
+          "text": "therefore, we recommend testing in patients"
+        },
+        {
+          "line_no": 33,
+          "text": "Leukopenia* (white blood cell represent small subgroups, raising concerns"
+        },
+        {
+          "line_no": 34,
+          "text": "with severe disease. An increase in Legionella"
+        },
+        {
+          "line_no": 35,
+          "text": "count,4,000 cells/ml)"
+        },
+        {
+          "line_no": 36,
+          "text": "about the safety of widely using such a"
+        },
+        {
+          "line_no": 37,
+          "text": "infections in the United States in the"
+        },
+        {
+          "line_no": 38,
+          "text": "Thrombocytopenia (platelet"
+        },
+        {
+          "line_no": 39,
+          "text": "count,100,000/ml) past decade highlights the importance of this strategy."
+        },
+        {
+          "line_no": 40,
+          "text": "Hypothermia (core temperature,368C) diagnosis, especially among severely ill"
+        },
+        {
+          "line_no": 41,
+          "text": "Hypotension requiring aggressive fluid"
+        },
+        {
+          "line_no": 42,
+          "text": "patients, particularly in the setting"
+        },
+        {
+          "line_no": 43,
+          "text": "resuscitation Question 6: Should a Clinical"
+        },
+        {
+          "line_no": 44,
+          "text": "of potential outbreaks due to a"
+        },
+        {
+          "line_no": 45,
+          "text": "Prediction Rule for Prognosis plus"
+        },
+        {
+          "line_no": 46,
+          "text": "Major criteria common source, although most cases"
+        },
+        {
+          "line_no": 47,
+          "text": "Clinical Judgment versus Clinical"
+        },
+        {
+          "line_no": 48,
+          "text": "Septic shock with need for are not associated with a known"
+        },
+        {
+          "line_no": 49,
+          "text": "Judgment Alone Be Used to"
+        },
+        {
+          "line_no": 50,
+          "text": "vasopressors"
+        },
+        {
+          "line_no": 51,
+          "text": "outbreak and remain sporadic (5, 6)."
+        },
+        {
+          "line_no": 52,
+          "text": "Respiratory failure requiring mechanical Determine Inpatient versus"
+        },
+        {
+          "line_no": 53,
+          "text": "ventilation Outpatient Treatment Location for"
+        },
+        {
+          "line_no": 54,
+          "text": "Question 4: In Adults with CAP,"
+        },
+        {
+          "line_no": 55,
+          "text": "Adults with CAP?"
+        },
+        {
+          "line_no": 56,
+          "text": "*Due to infection alone (i.e., not chemotherapy Should a Respiratory Sample Be"
+        },
+        {
+          "line_no": 57,
+          "text": "induced). Tested for Influenza Virus at the Time"
+        },
+        {
+          "line_no": 58,
+          "text": "Recommendation. In addition to clinical"
+        },
+        {
+          "line_no": 59,
+          "text": "of Diagnosis?"
+        },
+        {
+          "line_no": 60,
+          "text": "judgement, we recommend that"
+        },
+        {
+          "line_no": 61,
+          "text": "clinicians use a validated clinical prediction"
+        },
+        {
+          "line_no": 62,
+          "text": "and P. aeruginosa is the same as for sputum Recommendation. When in fl uenza viruses"
+        },
+        {
+          "line_no": 63,
+          "text": "rule for prognosis, preferentially the"
+        },
+        {
+          "line_no": 64,
+          "text": "culture. are circulating in the community, we"
+        },
+        {
+          "line_no": 65,
+          "text": "Pneumonia Severity Index (PSI) (strong"
+        },
+        {
+          "line_no": 67,
+          "text": "recommend testing for in uenza with a rapid"
+        },
+        {
+          "line_no": 68,
+          "text": "fl fl recommendation, moderate quality of"
+        },
+        {
+          "line_no": 69,
+          "text": "Question 3: In Adults with CAP, in uenza molecular assay (i.e., in uenza"
+        },
+        {
+          "line_no": 70,
+          "text": "fi evidence) over the CURB-65 (tool based"
+        },
+        {
+          "line_no": 71,
+          "text": "Should Legionella and Pneumococcal nucleic acid ampli cation test), which is"
+        },
+        {
+          "line_no": 72,
+          "text": "fl on confusion, urea level, respiratory rate,"
+        },
+        {
+          "line_no": 73,
+          "text": "Urinary Antigen Testing Be Performed preferredoverarapidin uenzadiagnostictest"
+        },
+        {
+          "line_no": 75,
+          "text": "at the Time of Diagnosis? (i.e., antigen test) (strong recommendation, blood pressure, and age 65) (conditional"
+        },
+        {
+          "line_no": 76,
+          "text": "moderate quality of evidence). recommendation, low quality of"
+        },
+        {
+          "line_no": 77,
+          "text": "Recommendation. We suggest not Rationale for the recommendation. The evidence), to determine the need for"
+        },
+        {
+          "line_no": 79,
+          "text": "routinely testing urine for pneumococcal bene ts of antiviral therapy support testing of hospitalization in adults diagnosed with"
+        },
+        {
+          "line_no": 81,
+          "text": "antigen in adults with CAP (conditional patients during periods of high in uenza CAP."
+        },
+        {
+          "line_no": 82,
+          "text": "recommendation, low quality of evidence), activity. During periods of low in fl uenza Rationale for the recommendation. Our"
+        },
+        {
+          "line_no": 83,
+          "text": "except in adults with severe CAP (conditional activity,testingcanbeconsideredbutmaynot recommendation to use the PSI as an adjunct"
+        },
+        {
+          "line_no": 84,
+          "text": "recommendation, low quality of evidence). be routinely performed. Of note, this testing to clinical judgment to guide the initial site of"
+        },
+        {
+          "line_no": 85,
+          "text": "We suggest not routinely testing urine recommendation has both therapeutic treatment is based on consistent evidence of"
+        },
+        {
+          "line_no": 86,
+          "text": "for Legionella antigen in adults with CAP and infection-control implications in the"
+        },
+        {
+          "line_no": 87,
+          "text": "the effectiveness and safety of this approach."
+        },
+        {
+          "line_no": 89,
+          "text": "(conditional recommendation, low quality hospital setting. Updated in uenza testing"
+        },
+        {
+          "line_no": 90,
+          "text": "Using a safe and effective decision aid to"
+        },
+        {
+          "line_no": 91,
+          "text": "of evidence), except recommendations are also available on the"
+        },
+        {
+          "line_no": 92,
+          "text": "increase outpatient treatment of patients"
+        },
+        {
+          "line_no": 94,
+          "text": "CDC website (https://www.cdc.gov/ u/"
+        },
+        {
+          "line_no": 95,
+          "text": "1. in cases where indicated by with CAP has potential to decrease"
+        },
+        {
+          "line_no": 96,
+          "text": "professionals/diagnosis/index.htm)."
+        },
+        {
+          "line_no": 97,
+          "text": "epidemiological factors, such as unnecessary variability in admission rates,"
+        },
+        {
+          "line_no": 98,
+          "text": "association with a Legionella outbreak or the high cost of inpatient pneumonia"
+        },
+        {
+          "line_no": 99,
+          "text": "Question 5: In Adults with CAP,"
+        },
+        {
+          "line_no": 100,
+          "text": "recent travel (conditional recommendation, treatment (8, 9), and the risk of hospital-"
+        },
+        {
+          "line_no": 101,
+          "text": "Should Serum Procalcitonin plus"
+        },
+        {
+          "line_no": 102,
+          "text": "low quality of evidence); or acquired complications. Providing a"
+        },
+        {
+          "line_no": 103,
+          "text": "Clinical Judgment versus Clinical"
+        },
+        {
+          "line_no": 104,
+          "text": "2. in adults with severe CAP (see Table 1)"
+        },
+        {
+          "line_no": 105,
+          "text": "conditional recommendation to use"
+        },
+        {
+          "line_no": 106,
+          "text": "Judgment Alone Be Used to Withhold"
+        },
+        {
+          "line_no": 107,
+          "text": "(conditional recommendation, low"
+        },
+        {
+          "line_no": 108,
+          "text": "Initiation of Antibiotic Treatment? CURB-65 considers its greater simplicity"
+        },
+        {
+          "line_no": 109,
+          "text": "quality of evidence)."
+        },
+        {
+          "line_no": 110,
+          "text": "of use relative to the PSI despite the paucity"
+        },
+        {
+          "line_no": 111,
+          "text": "We suggest testing for Legionella urinary Recommendation. We recommend that of evidence regarding its effectiveness"
+        },
+        {
+          "line_no": 112,
+          "text": "antigen and collecting lower respiratory tract empiric antibiotic therapy should be or safety."
+        },
+        {
+          "line_no": 113,
+          "text": "812 American Journal of Respiratory and Critical Care Medicine Volume 200 Number 7 | October 1 2019"
+        }
+      ],
+      "tables": []
+    },
+    {
+      "page_no": 5,
+      "num_lines": 57,
+      "num_tables": 1,
+      "lines": [
+        {
+          "line_no": 3,
+          "text": "AMERICAN THORACIC SOCIETY DOCUMENTS"
+        },
+        {
+          "line_no": 6,
+          "text": "Table 2. Differences between the 2019 and 2007 American Thoracic Society/Infectious Diseases Society of America"
+        },
+        {
+          "line_no": 7,
+          "text": "Community-acquired Pneumonia Guidelines"
+        },
+        {
+          "line_no": 9,
+          "text": "Recommendation 2007 ATS/IDSA Guideline 2019 ATS/IDSA Guideline"
+        },
+        {
+          "line_no": 10,
+          "text": "Sputum culture Primarily recommended in patients with Now recommended in patients with severe"
+        },
+        {
+          "line_no": 11,
+          "text": "severe disease disease as well as in all inpatients"
+        },
+        {
+          "line_no": 12,
+          "text": "empirically treated for MRSA or"
+        },
+        {
+          "line_no": 13,
+          "text": "Pseudomonas aeruginosa"
+        },
+        {
+          "line_no": 14,
+          "text": "Blood culture Primarily recommended in patients with Now recommended in patients with severe"
+        },
+        {
+          "line_no": 15,
+          "text": "severe disease disease as well as in all inpatients"
+        },
+        {
+          "line_no": 16,
+          "text": "empirically treated for MRSA or P."
+        },
+        {
+          "line_no": 17,
+          "text": "aeruginosa"
+        },
+        {
+          "line_no": 18,
+          "text": "Macrolide monotherapy Strong recommendation for outpatients Conditional recommendation for outpatients"
+        },
+        {
+          "line_no": 19,
+          "text": "based on resistance levels"
+        },
+        {
+          "line_no": 20,
+          "text": "Use of procalcitonin Not covered Not recommended to determine need for"
+        },
+        {
+          "line_no": 21,
+          "text": "initial antibacterial therapy"
+        },
+        {
+          "line_no": 22,
+          "text": "Use of corticosteroids Not covered Recommended not to use. May be"
+        },
+        {
+          "line_no": 23,
+          "text": "considered in patients with refractory septic"
+        },
+        {
+          "line_no": 24,
+          "text": "shock"
+        },
+        {
+          "line_no": 25,
+          "text": "Use of healthcare-associated pneumonia Accepted as introduced in the 2005 Recommend abandoning this categorization."
+        },
+        {
+          "line_no": 26,
+          "text": "category ATS/IDSA hospital-acquired and Emphasis on local epidemiology and"
+        },
+        {
+          "line_no": 27,
+          "text": "ventilator-associated pneumonia validated risk factors to determine need for"
+        },
+        {
+          "line_no": 28,
+          "text": "guidelines MRSA or P. aeruginosa coverage."
+        },
+        {
+          "line_no": 29,
+          "text": "Increased emphasis on deescalation of"
+        },
+        {
+          "line_no": 30,
+          "text": "treatment if cultures are negative"
+        },
+        {
+          "line_no": 31,
+          "text": "Standard empiric therapy for severe CAP b-Lactam/macrolide and Both accepted but stronger evidence in favor"
+        },
+        {
+          "line_no": 32,
+          "text": "b-lactam/fluoroquinolone combinations of b-lactam/macrolide combination"
+        },
+        {
+          "line_no": 33,
+          "text": "given equal weighting"
+        },
+        {
+          "line_no": 34,
+          "text": "Routine use of follow-up chest imaging Not addressed Recommended not to obtain. Patients may be"
+        },
+        {
+          "line_no": 35,
+          "text": "eligible for lung cancer screening, which"
+        },
+        {
+          "line_no": 36,
+          "text": "should be performed as clinically indicated"
+        },
+        {
+          "line_no": 37,
+          "text": "Definition of abbreviations: ATS=American Thoracic Society; CAP=community-acquired pneumonia; IDSA=Infectious Diseases Society of America;"
+        },
+        {
+          "line_no": 38,
+          "text": "MRSA=methicillin-resistant Staphylococcus aureus."
+        },
+        {
+          "line_no": 39,
+          "text": "Question 7: Should a Clinical intensity (conditional recommendation, Question 8: In the Outpatient Setting,"
+        },
+        {
+          "line_no": 40,
+          "text": "Prediction Rule for Prognosis plus low quality of evidence). Which Antibiotics Are Recommended"
+        },
+        {
+          "line_no": 41,
+          "text": "Clinical Judgment versus Clinical Rationalefortherecommendation. Patients for Empiric Treatment of CAP in"
+        },
+        {
+          "line_no": 42,
+          "text": "Judgment Alone Be Used to transferred to an ICU after admission to Adults?"
+        },
+        {
+          "line_no": 43,
+          "text": "Determine Inpatient General Medical a hospital ward experience higher"
+        },
+        {
+          "line_no": 44,
+          "text": "versus Higher Levels of Inpatient mortality than those directly admitted to Recommendation."
+        },
+        {
+          "line_no": 45,
+          "text": "Treatment Intensity (ICU, Step-Down, the ICU from an emergency department 1. For healthy outpatient adults without"
+        },
+        {
+          "line_no": 47,
+          "text": "or Telemetry Unit) for Adults with (10 13). This higher mortality may in comorbidities listed below or risk factors"
+        },
+        {
+          "line_no": 48,
+          "text": "CAP? part be attributable to progressive for antibiotic resistant pathogens, we"
+        },
+        {
+          "line_no": 49,
+          "text": "“ ”"
+        },
+        {
+          "line_no": 50,
+          "text": "pneumonia, but mis-triage of patients recommend (Table 3):"
+        },
+        {
+          "line_no": 51,
+          "text": "Recommendation. We recommend direct with unrecognized severe pneumonia amoxicillin 1 g three times daily"
+        },
+        {
+          "line_no": 53,
+          "text": "admission to an ICU for patients with may be a contributing factor (10). It (strong recommendation, moderate"
+        },
+        {
+          "line_no": 54,
+          "text": "hypotension requiring vasopressors or seems unlikely that physician judgment quality of evidence), or"
+        },
+        {
+          "line_no": 55,
+          "text": "respiratory failure requiring mechanical alone would be equivalent to physician doxycycline 100 mg twice daily"
+        },
+        {
+          "line_no": 57,
+          "text": "ventilation (strong recommendation, low judgment together with a severity tool to (conditional recommendation, low"
+        },
+        {
+          "line_no": 58,
+          "text": "quality of evidence). guide the site-of-care decision. We quality of evidence), or"
+        },
+        {
+          "line_no": 59,
+          "text": "For patients not requiring recommend the 2007 IDSA/ATS severe a macrolide (azithromycin 500 mg on"
+        },
+        {
+          "line_no": 62,
+          "text": "vasopressors or mechanical ventilator CAP criteria over other published scores, rst day then 250 mg daily or"
+        },
+        {
+          "line_no": 63,
+          "text": "support, we suggest using the IDSA/ATS because they are composed of readily clarithromycin 500 mg twice daily or"
+        },
+        {
+          "line_no": 64,
+          "text": "2007 minor severity criteria (Table 1) available severity parameters and are clarithromycin extended release 1,000"
+        },
+        {
+          "line_no": 65,
+          "text": "together with clinical judgment to guide more accurate than other available mg daily) only in areas with"
+        },
+        {
+          "line_no": 66,
+          "text": "the need for higher levels of treatment scores. pneumococcal resistance to macrolides"
+        },
+        {
+          "line_no": 67,
+          "text": "American Thoracic Society Documents 813"
+        }
+      ],
+      "tables": [
+        {
+          "table_no": 0,
+          "rows": [
+            [
+              ""
+            ],
+            [
+              "Recommendation 2007ATS/IDSAGuideline 2019ATS/IDSAGuideline"
+            ],
+            [
+              ""
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "page_no": 6,
+      "num_lines": 81,
+      "num_tables": 1,
+      "lines": [
+        {
+          "line_no": 3,
+          "text": "AMERICAN THORACIC SOCIETY DOCUMENTS"
+        },
+        {
+          "line_no": 6,
+          "text": "Table 3. Initial Treatment Strategies for Outpatients with Community-acquired doxycycline be 200 mg, to achieve adequate"
+        },
+        {
+          "line_no": 7,
+          "text": "Pneumonia serumlevelsmorerapidly.Therearenodata"
+        },
+        {
+          "line_no": 8,
+          "text": "assessing whether such an approach is"
+        },
+        {
+          "line_no": 9,
+          "text": "associated with improved outcomes."
+        },
+        {
+          "line_no": 10,
+          "text": "Standard Regimen"
+        },
+        {
+          "line_no": 11,
+          "text": "In a departure from the prior CAP"
+        },
+        {
+          "line_no": 12,
+          "text": "guidelines, the panel did not give a strong"
+        },
+        {
+          "line_no": 13,
+          "text": "No comorbidities or risk factors for MRSA Amoxicillin or"
+        },
+        {
+          "line_no": 14,
+          "text": "recommendation for routine use of a"
+        },
+        {
+          "line_no": 15,
+          "text": "or Pseudomonas aeruginosa* doxycycline or"
+        },
+        {
+          "line_no": 16,
+          "text": "macrolide (if local pneumococcal macrolide antibiotic as monotherapy for"
+        },
+        {
+          "line_no": 17,
+          "text": "resistance is ,25%) † outpatient CAP, even in patients without"
+        },
+        {
+          "line_no": 18,
+          "text": "comorbidities. This was based on studies"
+        },
+        {
+          "line_no": 20,
+          "text": "With comorbidities Combination therapy with"
+        },
+        {
+          "line_no": 21,
+          "text": "of macrolide failures in patients with"
+        },
+        {
+          "line_no": 22,
+          "text": "amoxicillin/clavulanate or cephalosporin"
+        },
+        {
+          "line_no": 23,
+          "text": "macrolide-resistant S. pneumoniae (14, 15),"
+        },
+        {
+          "line_no": 24,
+          "text": "AND"
+        },
+        {
+          "line_no": 26,
+          "text": "macrolide or doxycycline in combination with a macrolide resistance"
+        },
+        {
+          "line_no": 28,
+          "text": "OR rate of 30% among S. pneumoniae isolates"
+        },
+        {
+          "line_no": 29,
+          "text": "in the United States, most of which is high-"
+        },
+        {
+          "line_no": 30,
+          "text": "monotherapy with respiratory"
+        },
+        {
+          "line_no": 31,
+          "text": "fluoroquinolone jj level resistance (16). However, in settings"
+        },
+        {
+          "line_no": 32,
+          "text": "where macrolide resistance is documented"
+        },
+        {
+          "line_no": 33,
+          "text": "Definition of abbreviations: ER=extended release; MRSA=methicillin-resistant Staphylococcus"
+        },
+        {
+          "line_no": 34,
+          "text": "to be low and there are contraindications to"
+        },
+        {
+          "line_no": 35,
+          "text": "aureus."
+        },
+        {
+          "line_no": 36,
+          "text": "alternative therapies, a macrolide as"
+        },
+        {
+          "line_no": 37,
+          "text": "*Risk factors include prior respiratory isolation of MRSA or P. aeruginosa or recent hospitalization"
+        },
+        {
+          "line_no": 38,
+          "text": "AND receipt of parenteral antibiotics (in the last 90 d). monotherapy is a treatment option."
+        },
+        {
+          "line_no": 39,
+          "text": "†Amoxicillin 1 g three times daily, doxycycline 100 mg twice daily, azithromycin 500 mg on first day Patients with comorbidities should"
+        },
+        {
+          "line_no": 40,
+          "text": "then 250 mg daily, clarithromycin 500 mg twice daily, or clarithromycin ER 1,000 mg daily."
+        },
+        {
+          "line_no": 41,
+          "text": "receive broader-spectrum treatment for two"
+        },
+        {
+          "line_no": 42,
+          "text": "‡Comorbidities include chronic heart, lung, liver, or renal disease; diabetes mellitus; alcoholism;"
+        },
+        {
+          "line_no": 43,
+          "text": "reasons. First, such patients are likely more"
+        },
+        {
+          "line_no": 44,
+          "text": "malignancy; or asplenia."
+        },
+        {
+          "line_no": 45,
+          "text": "x vulnerable to poor outcomes if the initial"
+        },
+        {
+          "line_no": 46,
+          "text": "Amoxicillin/clavulanate 500 mg/125 mg three times daily, amoxicillin/clavulanate 875 mg/125 mg"
+        },
+        {
+          "line_no": 47,
+          "text": "twice daily, 2,000 mg/125 mg twice daily, cefpodoxime 200 mg twice daily, or cefuroxime 500 mg empiric antibiotic regimen is inadequate."
+        },
+        {
+          "line_no": 48,
+          "text": "twice daily; AND azithromycin 500 mg on first day then 250 mg daily, clarithromycin 500 mg twice Second, many such patients have risk"
+        },
+        {
+          "line_no": 49,
+          "text": "daily, clarithromycin ER 1,000 mg daily, or doxycycline 100 mg twice daily."
+        },
+        {
+          "line_no": 50,
+          "text": "factors for antibiotic resistance by virtue of"
+        },
+        {
+          "line_no": 52,
+          "text": "Levofloxacin 750 mg daily, moxifloxacin 400 mg daily, or gemifloxacin 320 mg daily."
+        },
+        {
+          "line_no": 53,
+          "text": "previous contact with the healthcare system"
+        },
+        {
+          "line_no": 54,
+          "text": "and/or prior antibiotic exposure (see"
+        },
+        {
+          "line_no": 55,
+          "text": ", fl"
+        },
+        {
+          "line_no": 56,
+          "text": "25% (conditional recommendation, moxi oxacin 400 mg daily, or Recommendation 10) and are therefore"
+        },
+        {
+          "line_no": 58,
+          "text": "moderate quality of evidence). gemi oxacin 320 mg daily) (strong recommended to receive broader-spectrum"
+        },
+        {
+          "line_no": 59,
+          "text": "2. For outpatient adults with comorbidities recommendation, moderate quality therapy to ensure adequate coverage. In"
+        },
+        {
+          "line_no": 60,
+          "text": "such as chronic heart, lung, liver, or renal of evidence). addition to Haemophilus in fl uenzae and"
+        },
+        {
+          "line_no": 61,
+          "text": "disease; diabetes mellitus; alcoholism; Rationale for the recommendation. Given Moraxella catarrhalis (both of which"
+        },
+        {
+          "line_no": 62,
+          "text": "malignancy; or asplenia, we recommend the paucity of randomized controlled trial frequently produce b -lactamase), S. aureus"
+        },
+        {
+          "line_no": 63,
+          "text": "(Table 3) (in no particular order of (RCT) data in the outpatient setting, the and gram-negative bacilli are more"
+        },
+        {
+          "line_no": 64,
+          "text": "preference): committee considered all available evidence. common causes of CAP in patients with"
+        },
+        {
+          "line_no": 65,
+          "text": "d Combination therapy: The data included the few RCTs of comorbidities, such as COPD."
+        },
+        {
+          "line_no": 66,
+          "text": "B amoxicillin/clavulanate 500 mg/125 outpatient CAP, observational studies, Regimens recommended for patients"
+        },
+        {
+          "line_no": 67,
+          "text": "mg three times daily, or amoxicillin/ RCTs of inpatient CAP treatment, with comorbidities include a b -lactam"
+        },
+        {
+          "line_no": 68,
+          "text": "clavulanate 875 mg/125 mg twice antimicrobial resistance data from or cephalosporin in combination with"
+        },
+        {
+          "line_no": 69,
+          "text": "daily, or 2,000 mg/125 mg twice daily, surveillance programs, and data either a macrolide or doxycycline. These"
+        },
+        {
+          "line_no": 70,
+          "text": "or a cephalosporin (cefpodoxime regarding antibiotic-related adverse combinations should effectively target"
+        },
+        {
+          "line_no": 71,
+          "text": "200 mg twice daily or cefuroxime events. macrolide- and doxycycline-resistant"
+        },
+        {
+          "line_no": 73,
+          "text": "500 mg twice daily); AND For patients without comorbidities that S. pneumoniae (as -lactam resistance in"
+        },
+        {
+          "line_no": 74,
+          "text": "B macrolide (azithromycin 500 mg on increase the risk for poor outcomes, the S. pneumoniae remains less common), in"
+        },
+        {
+          "line_no": 75,
+          "text": "fi b –"
+        },
+        {
+          "line_no": 76,
+          "text": "rst day then 250 mg daily, panel recommended amoxicillin 1 g every addition to -lactamase producing"
+        },
+        {
+          "line_no": 78,
+          "text": "clarithromycin [500 mg twice daily 8 hours or doxycycline 100 mg twice daily. strains of H. in uenzae, many enteric"
+        },
+        {
+          "line_no": 79,
+          "text": "or extended release 1,000 mg once The recommendation for amoxicillin was gram-negative bacilli, most methicillin-"
+        },
+        {
+          "line_no": 81,
+          "text": "daily]) (strong recommendation, basedonseveralstudiesthatshowedef cacy susceptible S. aureus, and Mycoplasma"
+        },
+        {
+          "line_no": 82,
+          "text": "moderate quality of evidence for of this regimen for inpatient CAP despite pneumoniae and Chlamydia pneumoniae."
+        },
+        {
+          "line_no": 83,
+          "text": "combination therapy) or doxycycline presumed lack of coverage of this antibiotic The monotherapies listed also are effective"
+        },
+        {
+          "line_no": 84,
+          "text": "100 mg twice daily (conditional for atypical organisms. This treatment also against most common bacterial pathogens."
+        },
+        {
+          "line_no": 85,
+          "text": "recommendation, low quality of has a long track record of safety. The Both sets of treatment recommendations"
+        },
+        {
+          "line_no": 86,
+          "text": "evidence for combination therapy); recommendation for doxycycline was based contain multiple antibiotic options without"
+        },
+        {
+          "line_no": 87,
+          "text": "OR on limited clinical trial data, but a broad specifying a preference order. The choice"
+        },
+        {
+          "line_no": 88,
+          "text": "Monotherapy: spectrum of action, including the most between these options requires a"
+        },
+        {
+          "line_no": 90,
+          "text": "fl – fi"
+        },
+        {
+          "line_no": 91,
+          "text": "B respiratory uoroquinolone common relevant organisms. Some experts risk bene t assessment for each individual"
+        },
+        {
+          "line_no": 92,
+          "text": "fl fi"
+        },
+        {
+          "line_no": 93,
+          "text": "(levo oxacin 750 mg daily, recommend that the rst dose of oral patient, weighing local epidemiological data"
+        },
+        {
+          "line_no": 94,
+          "text": "814 American Journal of Respiratory and Critical Care Medicine Volume 200 Number 7 | October 1 2019"
+        }
+      ],
+      "tables": [
+        {
+          "table_no": 0,
+          "rows": [
+            [
+              ""
+            ],
+            [
+              "StandardRegimen"
+            ],
+            [
+              ""
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "page_no": 7,
+      "num_lines": 305,
+      "num_tables": 1,
+      "lines": [
+        {
+          "line_no": 12,
+          "text": "ecnatsiseR"
+        },
+        {
+          "line_no": 16,
+          "text": "gurD"
+        },
+        {
+          "line_no": 18,
+          "text": "rof"
+        },
+        {
+          "line_no": 19,
+          "text": "ksiR"
+        },
+        {
+          "line_no": 20,
+          "text": "dna"
+        },
+        {
+          "line_no": 22,
+          "text": "ytireveS"
+        },
+        {
+          "line_no": 25,
+          "text": "leveL"
+        },
+        {
+          "line_no": 28,
+          "text": "ainomuenP"
+        },
+        {
+          "line_no": 32,
+          "text": "deriuqca-ytinummoC"
+        },
+        {
+          "line_no": 38,
+          "text": "htiw"
+        },
+        {
+          "line_no": 40,
+          "text": "stneitapnI"
+        },
+        {
+          "line_no": 43,
+          "text": "rof"
+        },
+        {
+          "line_no": 44,
+          "text": "seigetartS"
+        },
+        {
+          "line_no": 47,
+          "text": "tnemtaerT"
+        },
+        {
+          "line_no": 51,
+          "text": "laitinI"
+        },
+        {
+          "line_no": 54,
+          "text": "elbaT"
+        },
+        {
+          "line_no": 55,
+          "text": "dna"
+        },
+        {
+          "line_no": 56,
+          "text": "noitazilatipsoH"
+        },
+        {
+          "line_no": 57,
+          "text": "tneceR"
+        },
+        {
+          "line_no": 58,
+          "text": "dna"
+        },
+        {
+          "line_no": 59,
+          "text": "noitazilatipsoH"
+        },
+        {
+          "line_no": 60,
+          "text": "tneceR"
+        },
+        {
+          "line_no": 61,
+          "text": "dna"
+        },
+        {
+          "line_no": 62,
+          "text": "scitoibitnA"
+        },
+        {
+          "line_no": 63,
+          "text": "laretneraP"
+        },
+        {
+          "line_no": 64,
+          "text": "dna"
+        },
+        {
+          "line_no": 65,
+          "text": "scitoibitnA"
+        },
+        {
+          "line_no": 66,
+          "text": "laretneraP"
+        },
+        {
+          "line_no": 67,
+          "text": "ksiR"
+        },
+        {
+          "line_no": 68,
+          "text": "detadilaV"
+        },
+        {
+          "line_no": 69,
+          "text": "yllacoL"
+        },
+        {
+          "line_no": 70,
+          "text": "ksiR"
+        },
+        {
+          "line_no": 71,
+          "text": "detadilaV"
+        },
+        {
+          "line_no": 72,
+          "text": "yllacoL"
+        },
+        {
+          "line_no": 74,
+          "text": "noitalosI"
+        },
+        {
+          "line_no": 75,
+          "text": "yrotaripseR"
+        },
+        {
+          "line_no": 76,
+          "text": "roirP"
+        },
+        {
+          "line_no": 78,
+          "text": "noitalosI"
+        },
+        {
+          "line_no": 79,
+          "text": "yrotaripseR"
+        },
+        {
+          "line_no": 80,
+          "text": "roirP"
+        },
+        {
+          "line_no": 81,
+          "text": "asonigurea"
+        },
+        {
+          "line_no": 83,
+          "text": "rof"
+        },
+        {
+          "line_no": 84,
+          "text": "srotcaF"
+        },
+        {
+          "line_no": 85,
+          "text": "ASRM"
+        },
+        {
+          "line_no": 86,
+          "text": "rof"
+        },
+        {
+          "line_no": 87,
+          "text": "srotcaF"
+        },
+        {
+          "line_no": 88,
+          "text": "asonigurea"
+        },
+        {
+          "line_no": 89,
+          "text": "sanomoduesP"
+        },
+        {
+          "line_no": 90,
+          "text": "ASRM"
+        },
+        {
+          "line_no": 91,
+          "text": "nemigeR"
+        },
+        {
+          "line_no": 92,
+          "text": "dradnatS"
+        },
+        {
+          "line_no": 93,
+          "text": "etaitini"
+        },
+        {
+          "line_no": 94,
+          "text": "tub"
+        },
+        {
+          "line_no": 95,
+          "text": "serutluc"
+        },
+        {
+          "line_no": 96,
+          "text": "niatbO"
+        },
+        {
+          "line_no": 97,
+          "text": "dlohhtiw"
+        },
+        {
+          "line_no": 98,
+          "text": "tub"
+        },
+        {
+          "line_no": 99,
+          "text": "serutluc"
+        },
+        {
+          "line_no": 100,
+          "text": "niatbO"
+        },
+        {
+          "line_no": 102,
+          "text": "asonigurea"
+        },
+        {
+          "line_no": 104,
+          "text": "rof"
+        },
+        {
+          "line_no": 105,
+          "text": "egarevoc"
+        },
+        {
+          "line_no": 106,
+          "text": "ddA"
+        },
+        {
+          "line_no": 107,
+          "text": "niatbo"
+        },
+        {
+          "line_no": 108,
+          "text": "dna"
+        },
+        {
+          "line_no": 109,
+          "text": "x egarevoc"
+        },
+        {
+          "line_no": 110,
+          "text": "ASRM"
+        },
+        {
+          "line_no": 111,
+          "text": "ddA"
+        },
+        {
+          "line_no": 114,
+          "text": "edilorcam1matcaL-b"
+        },
+        {
+          "line_no": 115,
+          "text": "tneitapni"
+        },
+        {
+          "line_no": 116,
+          "text": "erevesnoN"
+        },
+        {
+          "line_no": 117,
+          "text": "ylno"
+        },
+        {
+          "line_no": 118,
+          "text": "asonigurea"
+        },
+        {
+          "line_no": 120,
+          "text": "rof"
+        },
+        {
+          "line_no": 121,
+          "text": "egarevoc"
+        },
+        {
+          "line_no": 122,
+          "text": "sselnu"
+        },
+        {
+          "line_no": 123,
+          "text": "egarevoc"
+        },
+        {
+          "line_no": 124,
+          "text": "ASRM"
+        },
+        {
+          "line_no": 125,
+          "text": "wolla"
+        },
+        {
+          "line_no": 127,
+          "text": "serutluc"
+        },
+        {
+          "line_no": 128,
+          "text": "niatbo"
+        },
+        {
+          "line_no": 129,
+          "text": "dna"
+        },
+        {
+          "line_no": 130,
+          "text": "wolla"
+        },
+        {
+          "line_no": 132,
+          "text": "RCP"
+        },
+        {
+          "line_no": 133,
+          "text": "lasan/serutluc"
+        },
+        {
+          "line_no": 135,
+          "text": "enoloniuqorufl"
+        },
+        {
+          "line_no": 136,
+          "text": "yrotaripser"
+        },
+        {
+          "line_no": 137,
+          "text": "*ainomuenp"
+        },
+        {
+          "line_no": 138,
+          "text": "evitisop"
+        },
+        {
+          "line_no": 139,
+          "text": "era"
+        },
+        {
+          "line_no": 140,
+          "text": "stluser"
+        },
+        {
+          "line_no": 141,
+          "text": "erutluc"
+        },
+        {
+          "line_no": 144,
+          "text": ".evitisop"
+        },
+        {
+          "line_no": 145,
+          "text": "era"
+        },
+        {
+          "line_no": 146,
+          "text": "stluser"
+        },
+        {
+          "line_no": 147,
+          "text": "erutluc"
+        },
+        {
+          "line_no": 149,
+          "text": "noitamrfinoc"
+        },
+        {
+          "line_no": 151,
+          "text": "noitalacseed"
+        },
+        {
+          "line_no": 153,
+          "text": "noitamrfinoc"
+        },
+        {
+          "line_no": 155,
+          "text": "noitalacseed"
+        },
+        {
+          "line_no": 156,
+          "text": ",elbaliava"
+        },
+        {
+          "line_no": 158,
+          "text": "RCP"
+        },
+        {
+          "line_no": 159,
+          "text": "lasan"
+        },
+        {
+          "line_no": 160,
+          "text": "dipar"
+        },
+        {
+          "line_no": 161,
+          "text": "ypareht"
+        },
+        {
+          "line_no": 162,
+          "text": "deunitnoc"
+        },
+        {
+          "line_no": 163,
+          "text": "rof"
+        },
+        {
+          "line_no": 164,
+          "text": "deen"
+        },
+        {
+          "line_no": 165,
+          "text": "ypareht"
+        },
+        {
+          "line_no": 166,
+          "text": "deunitnoc"
+        },
+        {
+          "line_no": 167,
+          "text": "rof"
+        },
+        {
+          "line_no": 168,
+          "text": "deen"
+        },
+        {
+          "line_no": 169,
+          "text": "ciripme"
+        },
+        {
+          "line_no": 170,
+          "text": "lanoitidda"
+        },
+        {
+          "line_no": 171,
+          "text": "dlohhtiw"
+        },
+        {
+          "line_no": 172,
+          "text": "diparfiASRMtsniagaypareht"
+        },
+        {
+          "line_no": 173,
+          "text": "dda"
+        },
+        {
+          "line_no": 175,
+          "text": "evitagen"
+        },
+        {
+          "line_no": 177,
+          "text": "gnitset"
+        },
+        {
+          "line_no": 178,
+          "text": "evitisop"
+        },
+        {
+          "line_no": 180,
+          "text": "RCP"
+        },
+        {
+          "line_no": 182,
+          "text": "egarevoc"
+        },
+        {
+          "line_no": 183,
+          "text": "serutluc"
+        },
+        {
+          "line_no": 184,
+          "text": "niatbo"
+        },
+        {
+          "line_no": 185,
+          "text": "dna"
+        },
+        {
+          "line_no": 187,
+          "text": "asonigurea"
+        },
+        {
+          "line_no": 189,
+          "text": "rof"
+        },
+        {
+          "line_no": 190,
+          "text": "egarevoc"
+        },
+        {
+          "line_no": 191,
+          "text": "ddA"
+        },
+        {
+          "line_no": 192,
+          "text": "dna"
+        },
+        {
+          "line_no": 193,
+          "text": "x egarevoc"
+        },
+        {
+          "line_no": 194,
+          "text": "ASRM"
+        },
+        {
+          "line_no": 195,
+          "text": "ddA"
+        },
+        {
+          "line_no": 197,
+          "text": "asonigurea"
+        },
+        {
+          "line_no": 199,
+          "text": "rof"
+        },
+        {
+          "line_no": 200,
+          "text": "egarevoc"
+        },
+        {
+          "line_no": 201,
+          "text": "ddA"
+        },
+        {
+          "line_no": 202,
+          "text": "niatbo"
+        },
+        {
+          "line_no": 203,
+          "text": "dna"
+        },
+        {
+          "line_no": 204,
+          "text": "x egarevoc"
+        },
+        {
+          "line_no": 205,
+          "text": "ASRM"
+        },
+        {
+          "line_no": 206,
+          "text": "ddA"
+        },
+        {
+          "line_no": 209,
+          "text": "edilorcam1matcaL-b"
+        },
+        {
+          "line_no": 210,
+          "text": "tneitapni"
+        },
+        {
+          "line_no": 211,
+          "text": "ereveS"
+        },
+        {
+          "line_no": 212,
+          "text": "wolla"
+        },
+        {
+          "line_no": 214,
+          "text": "serutluc"
+        },
+        {
+          "line_no": 215,
+          "text": "niatbo"
+        },
+        {
+          "line_no": 216,
+          "text": "dna"
+        },
+        {
+          "line_no": 217,
+          "text": "dna"
+        },
+        {
+          "line_no": 218,
+          "text": "RCP"
+        },
+        {
+          "line_no": 219,
+          "text": "lasan"
+        },
+        {
+          "line_no": 220,
+          "text": "niatbo"
+        },
+        {
+          "line_no": 221,
+          "text": "wolla"
+        },
+        {
+          "line_no": 223,
+          "text": "serutluc"
+        },
+        {
+          "line_no": 224,
+          "text": "niatbo"
+        },
+        {
+          "line_no": 225,
+          "text": "dna"
+        },
+        {
+          "line_no": 226,
+          "text": "wolla"
+        },
+        {
+          "line_no": 228,
+          "text": "RCP"
+        },
+        {
+          "line_no": 229,
+          "text": "lasan/serutluc"
+        },
+        {
+          "line_no": 231,
+          "text": "enoloniuqorufl1matcal-b"
+        },
+        {
+          "line_no": 232,
+          "text": "*ainomuenp"
+        },
+        {
+          "line_no": 234,
+          "text": "noitamrfinoc"
+        },
+        {
+          "line_no": 236,
+          "text": "noitalacseed"
+        },
+        {
+          "line_no": 237,
+          "text": "noitalacseed"
+        },
+        {
+          "line_no": 238,
+          "text": "wolla"
+        },
+        {
+          "line_no": 240,
+          "text": "serutluc"
+        },
+        {
+          "line_no": 242,
+          "text": "noitamrfinoc"
+        },
+        {
+          "line_no": 244,
+          "text": "noitalacseed"
+        },
+        {
+          "line_no": 246,
+          "text": "noitamrfinoc"
+        },
+        {
+          "line_no": 248,
+          "text": "noitalacseed"
+        },
+        {
+          "line_no": 249,
+          "text": "ypareht"
+        },
+        {
+          "line_no": 250,
+          "text": "deunitnoc"
+        },
+        {
+          "line_no": 251,
+          "text": "rof"
+        },
+        {
+          "line_no": 252,
+          "text": "deen"
+        },
+        {
+          "line_no": 253,
+          "text": "rof"
+        },
+        {
+          "line_no": 254,
+          "text": "deen"
+        },
+        {
+          "line_no": 256,
+          "text": "noitamrfinoc"
+        },
+        {
+          "line_no": 258,
+          "text": "ypareht"
+        },
+        {
+          "line_no": 259,
+          "text": "deunitnoc"
+        },
+        {
+          "line_no": 260,
+          "text": "rof"
+        },
+        {
+          "line_no": 261,
+          "text": "deen"
+        },
+        {
+          "line_no": 262,
+          "text": "ypareht"
+        },
+        {
+          "line_no": 263,
+          "text": "deunitnoc"
+        },
+        {
+          "line_no": 264,
+          "text": "rof"
+        },
+        {
+          "line_no": 265,
+          "text": "deen"
+        },
+        {
+          "line_no": 266,
+          "text": "ypareht"
+        },
+        {
+          "line_no": 267,
+          "text": "deunitnoc"
+        },
+        {
+          "line_no": 268,
+          "text": ";aciremA"
+        },
+        {
+          "line_no": 270,
+          "text": "yteicoS"
+        },
+        {
+          "line_no": 271,
+          "text": "sesaesiD"
+        },
+        {
+          "line_no": 272,
+          "text": "suoitcefnI=ASDI"
+        },
+        {
+          "line_no": 273,
+          "text": ";ainomuenp"
+        },
+        {
+          "line_no": 274,
+          "text": "deriuqca-latipsoh=PAH"
+        },
+        {
+          "line_no": 275,
+          "text": ";ainomuenp"
+        },
+        {
+          "line_no": 276,
+          "text": "deriuqca-ytinummoc=PAC"
+        },
+        {
+          "line_no": 277,
+          "text": ";yteicoS"
+        },
+        {
+          "line_no": 278,
+          "text": "cicarohT"
+        },
+        {
+          "line_no": 279,
+          "text": "naciremA=STA"
+        },
+        {
+          "line_no": 280,
+          "text": ":snoitaiverbba"
+        },
+        {
+          "line_no": 282,
+          "text": "noitinfieD"
+        },
+        {
+          "line_no": 283,
+          "text": ".ainomuenp"
+        },
+        {
+          "line_no": 284,
+          "text": "detaicossa-rotalitnev=PAV"
+        },
+        {
+          "line_no": 285,
+          "text": ";suerua"
+        },
+        {
+          "line_no": 286,
+          "text": "succocolyhpatS"
+        },
+        {
+          "line_no": 287,
+          "text": "tnatsiser-nillicihtem=ASRM"
+        },
+        {
+          "line_no": 288,
+          "text": ".)1"
+        },
+        {
+          "line_no": 289,
+          "text": "elbaT"
+        },
+        {
+          "line_no": 290,
+          "text": "ees("
+        },
+        {
+          "line_no": 291,
+          "text": "senilediug"
+        },
+        {
+          "line_no": 292,
+          "text": "airetirc"
+        },
+        {
+          "line_no": 293,
+          "text": "ytireves"
+        },
+        {
+          "line_no": 294,
+          "text": "PAC"
+        },
+        {
+          "line_no": 295,
+          "text": "ASDI/STA"
+        },
+        {
+          "line_no": 296,
+          "text": "7002"
+        },
+        {
+          "line_no": 298,
+          "text": "denfied"
+        },
+        {
+          "line_no": 299,
+          "text": "sA*"
+        },
+        {
+          "line_no": 300,
+          "text": "nicymorhtiralc"
+        },
+        {
+          "line_no": 302,
+          "text": "yliad"
+        },
+        {
+          "line_no": 303,
+          "text": "gm005"
+        },
+        {
+          "line_no": 304,
+          "text": "nicymorhtizaDNAsruoh21yreve"
+        },
+        {
+          "line_no": 306,
+          "text": "006"
+        },
+        {
+          "line_no": 307,
+          "text": "eniloratfec"
+        },
+        {
+          "line_no": 308,
+          "text": "ro,yliad"
+        },
+        {
+          "line_no": 309,
+          "text": "g2–1"
+        },
+        {
+          "line_no": 310,
+          "text": "enoxairtfec"
+        },
+        {
+          "line_no": 311,
+          "text": ",sruoh"
+        },
+        {
+          "line_no": 312,
+          "text": "8yreve"
+        },
+        {
+          "line_no": 313,
+          "text": "g2–1"
+        },
+        {
+          "line_no": 314,
+          "text": "emixatofec"
+        },
+        {
+          "line_no": 315,
+          "text": ",sruoh"
+        },
+        {
+          "line_no": 316,
+          "text": "6yreve"
+        },
+        {
+          "line_no": 318,
+          "text": "3–5.1matcablus1nillicipmA†"
+        },
+        {
+          "line_no": 319,
+          "text": ".yliad"
+        },
+        {
+          "line_no": 320,
+          "text": "eciwt"
+        },
+        {
+          "line_no": 322,
+          "text": "005"
+        },
+        {
+          "line_no": 323,
+          "text": ".yliad"
+        },
+        {
+          "line_no": 325,
+          "text": "004"
+        },
+        {
+          "line_no": 326,
+          "text": "nicaxoflixom"
+        },
+        {
+          "line_no": 328,
+          "text": "yliad"
+        },
+        {
+          "line_no": 330,
+          "text": "057"
+        },
+        {
+          "line_no": 331,
+          "text": "nicaxofloveL‡"
+        },
+        {
+          "line_no": 333,
+          "text": ".)h"
+        },
+        {
+          "line_no": 335,
+          "text": "yreve"
+        },
+        {
+          "line_no": 337,
+          "text": "006("
+        },
+        {
+          "line_no": 338,
+          "text": "dilozenil"
+        },
+        {
+          "line_no": 340,
+          "text": ")slevel"
+        },
+        {
+          "line_no": 342,
+          "text": "desab"
+        },
+        {
+          "line_no": 343,
+          "text": "tsujda"
+        },
+        {
+          "line_no": 346,
+          "text": "yreve"
+        },
+        {
+          "line_no": 347,
+          "text": "gk/gm"
+        },
+        {
+          "line_no": 348,
+          "text": "51("
+        },
+        {
+          "line_no": 349,
+          "text": "nicymocnav"
+        },
+        {
+          "line_no": 350,
+          "text": ":senilediug"
+        },
+        {
+          "line_no": 351,
+          "text": "PAV/PAH"
+        },
+        {
+          "line_no": 352,
+          "text": "ASDI/STA"
+        },
+        {
+          "line_no": 353,
+          "text": "6102"
+        },
+        {
+          "line_no": 354,
+          "text": "eht"
+        },
+        {
+          "line_no": 355,
+          "text": "reP"
+        },
+        {
+          "line_no": 357,
+          "text": "meneporem"
+        },
+        {
+          "line_no": 358,
+          "text": ",)h"
+        },
+        {
+          "line_no": 360,
+          "text": "yreve"
+        },
+        {
+          "line_no": 362,
+          "text": "005("
+        },
+        {
+          "line_no": 363,
+          "text": "menepimi"
+        },
+        {
+          "line_no": 364,
+          "text": ",)h"
+        },
+        {
+          "line_no": 366,
+          "text": "yreve"
+        },
+        {
+          "line_no": 369,
+          "text": "emidizatfec"
+        },
+        {
+          "line_no": 370,
+          "text": ",)h"
+        },
+        {
+          "line_no": 372,
+          "text": "yreve"
+        },
+        {
+          "line_no": 375,
+          "text": "emipefec"
+        },
+        {
+          "line_no": 376,
+          "text": ",)h"
+        },
+        {
+          "line_no": 378,
+          "text": "yreve"
+        },
+        {
+          "line_no": 380,
+          "text": "5.4("
+        },
+        {
+          "line_no": 381,
+          "text": "matcabozat-nillicarepip"
+        },
+        {
+          "line_no": 382,
+          "text": ":senilediug"
+        },
+        {
+          "line_no": 383,
+          "text": "PAV/PAH"
+        },
+        {
+          "line_no": 384,
+          "text": "ASDI/STA"
+        },
+        {
+          "line_no": 385,
+          "text": "6102"
+        },
+        {
+          "line_no": 386,
+          "text": "eht"
+        },
+        {
+          "line_no": 387,
+          "text": "reP"
+        },
+        {
+          "line_no": 388,
+          "text": "eht"
+        },
+        {
+          "line_no": 390,
+          "text": "ylno"
+        },
+        {
+          "line_no": 391,
+          "text": "deredisnoc"
+        },
+        {
+          "line_no": 393,
+          "text": "dluohs"
+        },
+        {
+          "line_no": 394,
+          "text": "hcihw"
+        },
+        {
+          "line_no": 395,
+          "text": ",eaecairetcaboretnE"
+        },
+        {
+          "line_no": 396,
+          "text": "gnicudorp–esamatcal-b"
+        },
+        {
+          "line_no": 397,
+          "text": "murtceps-dednetxe"
+        },
+        {
+          "line_no": 398,
+          "text": "rof"
+        },
+        {
+          "line_no": 399,
+          "text": "egarevoc"
+        },
+        {
+          "line_no": 400,
+          "text": "edulcni"
+        },
+        {
+          "line_no": 401,
+          "text": "ton"
+        },
+        {
+          "line_no": 402,
+          "text": "seoD"
+        },
+        {
+          "line_no": 403,
+          "text": ".)h"
+        },
+        {
+          "line_no": 405,
+          "text": "yreve"
+        },
+        {
+          "line_no": 408,
+          "text": "manoertza"
+        },
+        {
+          "line_no": 410,
+          "text": ",)h"
+        },
+        {
+          "line_no": 412,
+          "text": "yreve"
+        },
+        {
+          "line_no": 415,
+          "text": ".atad"
+        },
+        {
+          "line_no": 416,
+          "text": "lacigoloiborcim"
+        },
+        {
+          "line_no": 417,
+          "text": "lacol"
+        },
+        {
+          "line_no": 419,
+          "text": "tneitap"
+        },
+        {
+          "line_no": 421,
+          "text": "sisab"
+        },
+        {
+          "line_no": 422,
+          "text": "AMERICAN THORACIC SOCIETY DOCUMENTS"
+        },
+        {
+          "line_no": 423,
+          "text": "American Thoracic Society Documents 815"
+        }
+      ],
+      "tables": [
+        {
+          "table_no": 0,
+          "rows": [
+            [
+              "",
+              "dnanoitazilatipsoHtneceR dnascitoibitnAlaretneraP asonigurea.ProfsrotcaF\nksiRdetadilaVyllacoL",
+              ""
+            ],
+            [
+              "",
+              "dnanoitazilatipsoHtneceR dnascitoibitnAlaretneraP\nksiRdetadilaVyllacoL\nASRMrofsrotcaF",
+              ""
+            ],
+            [
+              "",
+              "fonoitalosIyrotaripseRroirP\nasonigureasanomoduesP\nfonoitalosIyrotaripseRroirP\nASRM\nnemigeRdradnatS",
+              ""
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "page_no": 8,
+      "num_lines": 91,
+      "num_tables": 0,
+      "lines": [
+        {
+          "line_no": 3,
+          "text": "AMERICAN THORACIC SOCIETY DOCUMENTS"
+        },
+        {
+          "line_no": 6,
+          "text": "fi –"
+        },
+        {
+          "line_no": 7,
+          "text": "against speci c risk factors that increase 1 2 g daily, or ceftaroline 600 mg every and are not recommended as empiric"
+        },
+        {
+          "line_no": 8,
+          "text": "the risk of individual choices, such as 12 h) and a macrolide (azithromycin therapy for adults with severe CAP."
+        },
+        {
+          "line_no": 10,
+          "text": "documented -lactam or macrolide allergy, 500 mg daily or clarithromycin 500 mg"
+        },
+        {
+          "line_no": 11,
+          "text": "cardiac arrhythmia (macrolides), vascular twice daily) (strong recommendation, Question 10: In the Inpatient Setting,"
+        },
+        {
+          "line_no": 13,
+          "text": "disease ( uoroquinolones), and history of high quality of evidence), or Should Patients with Suspected"
+        },
+        {
+          "line_no": 15,
+          "text": "infection with Clostridium dif cile. In monotherapy with a respiratory Aspiration Pneumonia Receive"
+        },
+        {
+          "line_no": 17,
+          "text": "fl fl"
+        },
+        {
+          "line_no": 18,
+          "text": "particular, despite the concern regarding uoroquinolone (levo oxacin 750 mg Additional Anaerobic Coverage beyond"
+        },
+        {
+          "line_no": 20,
+          "text": "adverse events associated with daily, moxi oxacin 400 mg daily) (strong Standard Empiric Treatment for CAP?"
+        },
+        {
+          "line_no": 22,
+          "text": "uoroquinolones, the panel believed that recommendation, high quality of"
+        },
+        {
+          "line_no": 23,
+          "text": "fl uoroquinolone therapy was justi fi ed for evidence). Recommendation. We suggest not routinely"
+        },
+        {
+          "line_no": 24,
+          "text": "adults with comorbidities and CAP adding anaerobic coverage for suspected"
+        },
+        {
+          "line_no": 25,
+          "text": "AthirdoptionforadultswithCAPwho"
+        },
+        {
+          "line_no": 26,
+          "text": "managed in the outpatient setting. aspirationpneumoniaunlesslungabscessor"
+        },
+        {
+          "line_no": 27,
+          "text": "have contraindications to both macrolides"
+        },
+        {
+          "line_no": 28,
+          "text": "Reasons included the performance of empyema is suspected (conditional"
+        },
+        {
+          "line_no": 30,
+          "text": "and uoroquinolones is:"
+        },
+        {
+          "line_no": 32,
+          "text": "uoroquinolones in numerous studies of recommendation,verylowqualityofevidence)."
+        },
+        {
+          "line_no": 33,
+          "text": "outpatient CAP (17 – 22) and inpatient combination therapy with a b -lactam Rationale for the recommendation."
+        },
+        {
+          "line_no": 36,
+          "text": "CAP (see inpatient CAP section), the very (ampicillin sulbactam, cefotaxime, Although older studies of patients with"
+        },
+        {
+          "line_no": 37,
+          "text": "low resistance rates in common bacterial ceftaroline, or ceftriaxone, doses as aspiration pneumonia showed high"
+        },
+        {
+          "line_no": 38,
+          "text": "causes of CAP, their coverage of both above) and doxycycline 100 mg twice isolationratesofanaerobicorganisms,more"
+        },
+        {
+          "line_no": 39,
+          "text": "typical and atypical organisms, their oral recent studies have shown that anaerobes"
+        },
+        {
+          "line_no": 40,
+          "text": "daily (conditional recommendation, low"
+        },
+        {
+          "line_no": 41,
+          "text": "bioavailability, the convenience of are uncommon in patients hospitalized"
+        },
+        {
+          "line_no": 42,
+          "text": "quality of evidence)."
+        },
+        {
+          "line_no": 43,
+          "text": "monotherapy, and the relative rarity of Rationale for the recommendation. As with suspected aspiration (24, 25)."
+        },
+        {
+          "line_no": 44,
+          "text": "serious adverse events related to their use. Increasing prevalence of antibiotic-"
+        },
+        {
+          "line_no": 45,
+          "text": "summarized in Table 4, the empiric"
+        },
+        {
+          "line_no": 46,
+          "text": "However, there have been increasing resistant pathogens and complications of"
+        },
+        {
+          "line_no": 47,
+          "text": "antibiotic coverage recommendations for"
+        },
+        {
+          "line_no": 48,
+          "text": "reports of adverse events related to antibiotic use highlight the need for a"
+        },
+        {
+          "line_no": 49,
+          "text": "patients hospitalized with CAP remain"
+        },
+        {
+          "line_no": 51,
+          "text": "uoroquinolone use as summarized on the treatment approach that avoids"
+        },
+        {
+          "line_no": 52,
+          "text": "aligned to cover the most likely pathogens"
+        },
+        {
+          "line_no": 53,
+          "text": "U.S. Food and Drug Administration unnecessary use of antibiotics."
+        },
+        {
+          "line_no": 54,
+          "text": "causing CAP. There is a paucity of RCTs"
+        },
+        {
+          "line_no": 55,
+          "text": "website (23)."
+        },
+        {
+          "line_no": 56,
+          "text": "to favor the recommendation of"
+        },
+        {
+          "line_no": 57,
+          "text": "Of note, we adopt the convention of Question 11: In the Inpatient Setting,"
+        },
+        {
+          "line_no": 59,
+          "text": "combination -lactam plus macrolide"
+        },
+        {
+          "line_no": 60,
+          "text": "prior guidelines to recommend that patients Should Adults with CAP and Risk"
+        },
+        {
+          "line_no": 61,
+          "text": "with recent exposure to one class of versus monotherapy with a respiratory Factors for MRSA or P. aeruginosa Be"
+        },
+        {
+          "line_no": 63,
+          "text": "antibiotics recommended above receive uoroquinolone versus combined therapy Treated with Extended-Spectrum"
+        },
+        {
+          "line_no": 64,
+          "text": "treatment with antibiotics from a different with b -lactam plus doxycycline. Antibiotic Therapy Instead of"
+        },
+        {
+          "line_no": 65,
+          "text": "class, given increased risk for bacterial Recommendation 9.2. In inpatient Standard CAP Regimens?"
+        },
+        {
+          "line_no": 66,
+          "text": "resistance to the initial treatment regimen. adults with severe CAP (see Table 1)"
+        },
+        {
+          "line_no": 67,
+          "text": "We also highlight that although patients without risk factors for MRSA or P. Recommendation. We recommend"
+        },
+        {
+          "line_no": 69,
+          "text": "with signi cant risk factors for CAP abandoning use of the prior categorization"
+        },
+        {
+          "line_no": 70,
+          "text": "aeruginosa, we recommend (Table 4) (note"
+        },
+        {
+          "line_no": 71,
+          "text": "due to MRSA or P. aeruginosa (see fi of healthcare-associated pneumonia"
+        },
+        {
+          "line_no": 72,
+          "text": "speci c agents and doses are the same as 9.1):"
+        },
+        {
+          "line_no": 73,
+          "text": "Recommendation 11) are uncommonly (HCAP) to guide selection of extended"
+        },
+        {
+          "line_no": 75,
+          "text": "managed in the outpatient setting, these d a -lactam plus a macrolide (strong antibiotic coverage in adults with CAP"
+        },
+        {
+          "line_no": 76,
+          "text": "patients may require antibiotics that recommendation, moderate quality of (strong recommendation, moderate quality"
+        },
+        {
+          "line_no": 77,
+          "text": "include coverage for these pathogens. evidence), or of evidence)."
+        },
+        {
+          "line_no": 79,
+          "text": "d a -lactam plus a respiratory We recommend clinicians only cover"
+        },
+        {
+          "line_no": 81,
+          "text": "uoroquinolone (strong recommendation, empirically for MRSA or P. aeruginosa in"
+        },
+        {
+          "line_no": 82,
+          "text": "Question 9: In the Inpatient Setting,"
+        },
+        {
+          "line_no": 83,
+          "text": "low quality of evidence). adults with CAP if locally validated risk"
+        },
+        {
+          "line_no": 84,
+          "text": "Which Antibiotic Regimens Are"
+        },
+        {
+          "line_no": 85,
+          "text": "Rationale for the recommendation. In factors for either pathogen are present"
+        },
+        {
+          "line_no": 86,
+          "text": "Recommended for Empiric Treatment"
+        },
+        {
+          "line_no": 87,
+          "text": "the absence of data from clinical trials (strong recommendation, moderate quality"
+        },
+        {
+          "line_no": 88,
+          "text": "of CAP in Adults without Risk Factors"
+        },
+        {
+          "line_no": 90,
+          "text": "demonstratingthesuperiorityofanyspeci c of evidence). Empiric treatment options for"
+        },
+        {
+          "line_no": 91,
+          "text": "for MRSA and P. aeruginosa?"
+        },
+        {
+          "line_no": 92,
+          "text": "regimen for patients with severe CAP, the MRSA include vancomycin (15 mg/kg"
+        },
+        {
+          "line_no": 93,
+          "text": "committee considered epidemiological data every 12 h, adjust based on levels) or"
+        },
+        {
+          "line_no": 94,
+          "text": "Recommendation 9.1. In inpatient adults"
+        },
+        {
+          "line_no": 95,
+          "text": "for severe CAP pathogens and observational linezolid (600 mg every 12 h). Empiric"
+        },
+        {
+          "line_no": 96,
+          "text": "with nonsevere CAP without risk factors"
+        },
+        {
+          "line_no": 97,
+          "text": "studies comparing different regimens. As a treatment options for P. aeruginosa"
+        },
+        {
+          "line_no": 98,
+          "text": "for MRSA or P. aeruginosa (see"
+        },
+        {
+          "line_no": 99,
+          "text": "result, we recommend that combination include piperacillin-tazobactam (4.5 g every"
+        },
+        {
+          "line_no": 100,
+          "text": "Recommendation 10), we recommend"
+        },
+        {
+          "line_no": 102,
+          "text": "therapy with a -lactam plus a macrolide 6 h), cefepime (2 g every 8 h), ceftazidime"
+        },
+        {
+          "line_no": 103,
+          "text": "the following empiric treatment"
+        },
+        {
+          "line_no": 105,
+          "text": "or a -lactam plus a respiratory (2 g every 8 h), aztreonam (2 g every 8 h),"
+        },
+        {
+          "line_no": 106,
+          "text": "regimens (Table 4) (in no order of"
+        },
+        {
+          "line_no": 108,
+          "text": "uoroquinolone should be the treatment of meropenem (1 g every 8 h), or imipenem"
+        },
+        {
+          "line_no": 109,
+          "text": "preference):"
+        },
+        {
+          "line_no": 110,
+          "text": "choice for patients with severe CAP. Both (500 mg every 6 h)."
+        },
+        {
+          "line_no": 111,
+          "text": "b fl"
+        },
+        {
+          "line_no": 112,
+          "text": "combination therapy with a -lactam uoroquinolone monotherapy and the If clinicians are currently covering"
+        },
+        {
+          "line_no": 114,
+          "text": "1 – b"
+        },
+        {
+          "line_no": 115,
+          "text": "(ampicillin sulbactam 1.5 3 g every 6 h, combination of -lactam plus doxycycline empirically for MRSA or P. aeruginosa in"
+        },
+        {
+          "line_no": 117,
+          "text": "cefotaxime 1 2 g every 8 h, ceftriaxone have not been well studied in severe CAP adults with CAP on the basis of published"
+        },
+        {
+          "line_no": 118,
+          "text": "816 American Journal of Respiratory and Critical Care Medicine Volume 200 Number 7 | October 1 2019"
+        }
+      ],
+      "tables": []
+    },
+    {
+      "page_no": 9,
+      "num_lines": 97,
+      "num_tables": 0,
+      "lines": [
+        {
+          "line_no": 3,
+          "text": "AMERICAN THORACIC SOCIETY DOCUMENTS"
+        },
+        {
+          "line_no": 6,
+          "text": "risk factors but do not have local etiological hospital-acquired and ventilator-associated with severe CAP. The risk of corticosteroids"
+        },
+        {
+          "line_no": 7,
+          "text": "data, we recommend continuing empiric pneumonia (32). in the dose range up to 240 mg of"
+        },
+        {
+          "line_no": 8,
+          "text": "coverage while obtaining culture data to The major additional risk factors for hydrocortisone equivalent per day for a"
+        },
+        {
+          "line_no": 10,
+          "text": "establish if these pathogens are present to MRSA and P. aeruginosa identi ed in the maximum of 7 days is predominantly"
+        },
+        {
+          "line_no": 11,
+          "text": "justify continued treatment for these literature are hospitalization and parenteral hyperglycemia, although rehospitalization"
+        },
+        {
+          "line_no": 12,
+          "text": "pathogens after the fi rst few days of empiric antibiotic exposure in the last 90 days rates may also be higher (49), and"
+        },
+        {
+          "line_no": 14,
+          "text": "treatment (strong recommendation, low (30, 31, 33 45). In patients with recent more general concerns about greater"
+        },
+        {
+          "line_no": 15,
+          "text": "quality of evidence). hospitalization and exposure to parenteral complications in the following 30 to"
+        },
+        {
+          "line_no": 16,
+          "text": "Rationale for the recommendation. Our antibiotics, we recommend microbiological 90 days have been raised (50). At"
+        },
+        {
+          "line_no": 17,
+          "text": "approach to treating inpatient adults with testing without empiric extended-spectrum least one large trial (clinicaltrials.gov"
+        },
+        {
+          "line_no": 18,
+          "text": "CAP is summarized in Table 4. Our therapy for treatment of nonsevere CAP, NCT01283009) has been completed but not"
+        },
+        {
+          "line_no": 19,
+          "text": "recommendation against using the former and microbiological testing with extended- reported and may further inform which"
+        },
+        {
+          "line_no": 21,
+          "text": "category of HCAP as a basis for selecting spectrum empiric therapy in addition to subgroups of patients bene t from steroids."
+        },
+        {
+          "line_no": 22,
+          "text": "extended spectrum therapy is based on coverage for standard CAP pathogens for We also endorse the Surviving Sepsis"
+        },
+        {
+          "line_no": 23,
+          "text": "treatment of severe CAP, with deescalation Campaign recommendations on the"
+        },
+        {
+          "line_no": 24,
+          "text": "high-quality studies of patient outcomes."
+        },
+        {
+          "line_no": 25,
+          "text": "at 48 hours if cultures are negative and the use of steroids in patients with septic"
+        },
+        {
+          "line_no": 26,
+          "text": "Although we understand that clinicians"
+        },
+        {
+          "line_no": 28,
+          "text": "patient is improving. shock refractory to adequate uid"
+        },
+        {
+          "line_no": 29,
+          "text": "would prefer a simple rule that does not"
+        },
+        {
+          "line_no": 30,
+          "text": "fi The data supporting rapid MRSA nasal resuscitation and vasopressor support (48)."
+        },
+        {
+          "line_no": 31,
+          "text": "require incorporating site-speci c data,"
+        },
+        {
+          "line_no": 32,
+          "text": "testing are robust (46, 47), and treatment Of note, there is no intent that our"
+        },
+        {
+          "line_no": 33,
+          "text": "the current evidence does not permit"
+        },
+        {
+          "line_no": 34,
+          "text": "for MRSA pneumonia can generally be recommendations would override clinically"
+        },
+        {
+          "line_no": 35,
+          "text": "endorsement of a simple and accurate rule"
+        },
+        {
+          "line_no": 36,
+          "text": "withheld when the nasal swab is negative, appropriate use of steroids for comorbid"
+        },
+        {
+          "line_no": 37,
+          "text": "to determine which patients with CAP"
+        },
+        {
+          "line_no": 38,
+          "text": "especially in nonsevere CAP. However, the diseases, such as chronic obstructive"
+        },
+        {
+          "line_no": 39,
+          "text": "should be covered for MRSA and/or"
+        },
+        {
+          "line_no": 40,
+          "text": "positive predictive value is not as high; pulmonary disease, asthma, and"
+        },
+        {
+          "line_no": 41,
+          "text": "P. aeruginosa. However, the alternative"
+        },
+        {
+          "line_no": 42,
+          "text": "therefore, when the nasal swab is positive, autoimmune diseases, where corticosteroids"
+        },
+        {
+          "line_no": 43,
+          "text": "approach to MRSA and P. aeruginosa that"
+        },
+        {
+          "line_no": 44,
+          "text": "coverage for MRSA pneumonia should are supported as a component of treatment."
+        },
+        {
+          "line_no": 45,
+          "text": "we propose as a replacement is not based"
+        },
+        {
+          "line_no": 46,
+          "text": "generally be initiated, but blood and"
+        },
+        {
+          "line_no": 47,
+          "text": "on high-quality studies, because such"
+        },
+        {
+          "line_no": 48,
+          "text": "sputum cultures should be sent and Question 13: In Adults with CAP Who"
+        },
+        {
+          "line_no": 49,
+          "text": "studies do not exist. The lack of adequate"
+        },
+        {
+          "line_no": 50,
+          "text": "therapy deescalated if cultures are Test Positive for Influenza, Should the"
+        },
+        {
+          "line_no": 51,
+          "text": "outcome data and marked variation"
+        },
+        {
+          "line_no": 52,
+          "text": "negative. However, this latter strategy of Treatment Regimen Include Antiviral"
+        },
+        {
+          "line_no": 53,
+          "text": "between sites in prevalence of MRSA and P."
+        },
+        {
+          "line_no": 54,
+          "text": "deescalation in the face of a positive nasal Therapy?"
+        },
+        {
+          "line_no": 56,
+          "text": "aeruginosa make generalizing any ndings"
+        },
+        {
+          "line_no": 57,
+          "text": "swab will vary depending on the severity of"
+        },
+        {
+          "line_no": 59,
+          "text": "extremely dif cult. We hope that future"
+        },
+        {
+          "line_no": 60,
+          "text": "CAP and the local prevalence of MRSA as Recommendation. We recommend that"
+        },
+        {
+          "line_no": 61,
+          "text": "research will improve our understanding of"
+        },
+        {
+          "line_no": 63,
+          "text": "a pathogen. antiin uenza treatment, such as oseltamivir,"
+        },
+        {
+          "line_no": 64,
+          "text": "this challenging clinical problem."
+        },
+        {
+          "line_no": 65,
+          "text": "be prescribed for adults with CAP who test"
+        },
+        {
+          "line_no": 67,
+          "text": "Our rst principle was to maintain the"
+        },
+        {
+          "line_no": 69,
+          "text": "Question 12: In the Inpatient Setting, positive for in uenza in the inpatient"
+        },
+        {
+          "line_no": 70,
+          "text": "distinction between severe and nonsevere"
+        },
+        {
+          "line_no": 71,
+          "text": "Should Adults with CAP Be Treated setting, independent of duration of"
+        },
+        {
+          "line_no": 72,
+          "text": "pneumonia as per prior guidelines, because"
+        },
+        {
+          "line_no": 73,
+          "text": "with Corticosteroids? illness before diagnosis (strong"
+        },
+        {
+          "line_no": 74,
+          "text": "the risk of inadequate empiric antibiotic"
+        },
+        {
+          "line_no": 75,
+          "text": "recommendation, moderate quality of"
+        },
+        {
+          "line_no": 76,
+          "text": "therapy is much greater in severe CAP. As"
+        },
+        {
+          "line_no": 77,
+          "text": "Recommendation. We recommend not evidence)."
+        },
+        {
+          "line_no": 79,
+          "text": "noted previously, severity is de ned by the fl"
+        },
+        {
+          "line_no": 80,
+          "text": "routinely using corticosteroids in We suggest that antiin uenza"
+        },
+        {
+          "line_no": 81,
+          "text": "degree of physiological impairment as"
+        },
+        {
+          "line_no": 82,
+          "text": "adults with nonsevere CAP (strong treatment be prescribed for adults with CAP"
+        },
+        {
+          "line_no": 84,
+          "text": "classi ed by the IDSA/ATS 2007 criteria. fl"
+        },
+        {
+          "line_no": 85,
+          "text": "recommendation, high quality of evidence). who test positive for in uenza in the"
+        },
+        {
+          "line_no": 86,
+          "text": "The second principle was that there is"
+        },
+        {
+          "line_no": 87,
+          "text": "We suggest not routinely using outpatient setting, independent of"
+        },
+        {
+          "line_no": 88,
+          "text": "fi fi"
+        },
+        {
+          "line_no": 89,
+          "text": "suf cient evidence that prior identi cation"
+        },
+        {
+          "line_no": 90,
+          "text": "corticosteroids in adults with severe CAP duration of illness before diagnosis"
+        },
+        {
+          "line_no": 91,
+          "text": "of MRSA or P. aeruginosa in the respiratory"
+        },
+        {
+          "line_no": 92,
+          "text": "(conditional recommendation, moderate (conditional recommendation, low quality"
+        },
+        {
+          "line_no": 93,
+          "text": "tract within the prior year predicts a very"
+        },
+        {
+          "line_no": 94,
+          "text": "quality of evidence). of evidence)."
+        },
+        {
+          "line_no": 95,
+          "text": "high risk of these pathogens being We suggest not routinely using Rationale for the recommendation."
+        },
+        {
+          "line_no": 97,
+          "text": "identi ed in patients presenting with CAP"
+        },
+        {
+          "line_no": 98,
+          "text": "corticosteroids in adults with severe For inpatients, a substantial body of"
+        },
+        {
+          "line_no": 99,
+          "text": "– fi"
+        },
+        {
+          "line_no": 100,
+          "text": "(26 31), and therefore these were suf cient fl"
+        },
+        {
+          "line_no": 101,
+          "text": "in uenza pneumonia (conditional observational evidence suggests that giving"
+        },
+        {
+          "line_no": 102,
+          "text": "indications to recommend blood and fl"
+        },
+        {
+          "line_no": 103,
+          "text": "recommendation, low quality of evidence). antiin uenza agents reduces mortality risk"
+        },
+        {
+          "line_no": 104,
+          "text": "sputum cultures and empiric therapy for We endorse the Surviving Sepsis in adults with in fl uenza infection. Although"
+        },
+        {
+          "line_no": 105,
+          "text": "these pathogens in patients with CAP in Campaign recommendations on the use of bene fi ts are strongest when therapy is"
+        },
+        {
+          "line_no": 106,
+          "text": "addition to coverage for standard CAP corticosteroids in patients with CAP and started within 48 hours of symptom"
+        },
+        {
+          "line_no": 107,
+          "text": "pathogens, with deescalation at 48 hours if refractory septic shock (48). onset, studies also support starting later"
+        },
+        {
+          "line_no": 108,
+          "text": "cultures are negative. We endorse the Rationale for the recommendation. (51). These data underlie our strong"
+        },
+        {
+          "line_no": 109,
+          "text": "empiric treatment recommendations for There are no data suggesting bene fi t of recommendation for using antiin fl uenza"
+        },
+        {
+          "line_no": 110,
+          "text": "MRSA and P. aeruginosa provided by the corticosteroids in patients with nonsevere agents for patients with CAP and"
+        },
+        {
+          "line_no": 112,
+          "text": "2016 Clinical Practice Guideline from IDSA CAP with respect to mortality or organ in uenza in the inpatient setting,"
+        },
+        {
+          "line_no": 113,
+          "text": "and ATS for the management of adults with failure and only limited data in patients consistent with the recently published"
+        },
+        {
+          "line_no": 114,
+          "text": "American Thoracic Society Documents 817"
+        }
+      ],
+      "tables": []
+    },
+    {
+      "page_no": 10,
+      "num_lines": 106,
+      "num_tables": 0,
+      "lines": [
+        {
+          "line_no": 3,
+          "text": "AMERICAN THORACIC SOCIETY DOCUMENTS"
+        },
+        {
+          "line_no": 7,
+          "text": "IDSA In uenza Clinical Practice discontinuation of antibiotic treatment at abnormalitiesinthesestudiesmeetcriteria"
+        },
+        {
+          "line_no": 8,
+          "text": "Guideline (52). 48 to 72 hours. for lung cancer screening among current"
+        },
+        {
+          "line_no": 9,
+          "text": "Although we did not identify studies or past smokers (56)."
+        },
+        {
+          "line_no": 10,
+          "text": "fi fl"
+        },
+        {
+          "line_no": 11,
+          "text": "that speci cally evaluated antiin uenza"
+        },
+        {
+          "line_no": 12,
+          "text": "Question 15: In Outpatient and"
+        },
+        {
+          "line_no": 13,
+          "text": "agents for treating outpatients with CAP"
+        },
+        {
+          "line_no": 14,
+          "text": "Inpatient Adults with CAP Who Are"
+        },
+        {
+          "line_no": 15,
+          "text": "fl Conclusions"
+        },
+        {
+          "line_no": 16,
+          "text": "who test positive for in uenza, we make"
+        },
+        {
+          "line_no": 17,
+          "text": "Improving, What Is the Appropriate"
+        },
+        {
+          "line_no": 18,
+          "text": "the same recommendation as for"
+        },
+        {
+          "line_no": 19,
+          "text": "Duration of Antibiotic Treatment?"
+        },
+        {
+          "line_no": 20,
+          "text": "inpatients, on the basis of the inpatient Recommendations to help clinicians"
+        },
+        {
+          "line_no": 21,
+          "text": "data and on outpatient data showing Recommendation. We recommend that the optimize therapy for their patients with CAP"
+        },
+        {
+          "line_no": 22,
+          "text": "better time to resolution of symptoms and have been revised in light of new data."
+        },
+        {
+          "line_no": 23,
+          "text": "duration of antibiotic therapy should be"
+        },
+        {
+          "line_no": 24,
+          "text": "Methods of quality improvement are"
+        },
+        {
+          "line_no": 25,
+          "text": "prevention of hospitalization among"
+        },
+        {
+          "line_no": 26,
+          "text": "guided by a validated measure of clinical"
+        },
+        {
+          "line_no": 27,
+          "text": "fl critical to the implementation of"
+        },
+        {
+          "line_no": 28,
+          "text": "those with in uenza but without"
+        },
+        {
+          "line_no": 29,
+          "text": "stability (resolution of vital sign"
+        },
+        {
+          "line_no": 30,
+          "text": "guideline recommendations. It remains"
+        },
+        {
+          "line_no": 31,
+          "text": "pneumonia. Our recommendations are abnormalities [heart rate, respiratory rate,"
+        },
+        {
+          "line_no": 32,
+          "text": "fl disappointing how few key clinical questions"
+        },
+        {
+          "line_no": 33,
+          "text": "consistent with the IDSA in uenza blood pressure, oxygen saturation, and"
+        },
+        {
+          "line_no": 34,
+          "text": "have been studied adequately enough to"
+        },
+        {
+          "line_no": 35,
+          "text": "guidelines, which were recently temperature], ability to eat, and normal"
+        },
+        {
+          "line_no": 36,
+          "text": "allow for strong recommendations regarding"
+        },
+        {
+          "line_no": 37,
+          "text": "released (52). mentation), and antibiotic therapy should"
+        },
+        {
+          "line_no": 38,
+          "text": "the standard of care. We hope that the"
+        },
+        {
+          "line_no": 39,
+          "text": "be continued until the patient achieves"
+        },
+        {
+          "line_no": 40,
+          "text": "research priorities outlined in this document"
+        },
+        {
+          "line_no": 41,
+          "text": "stability and for no less than a total of 5 days"
+        },
+        {
+          "line_no": 42,
+          "text": "Question 14: In Adults with CAP Who will prompt new investigations addressing"
+        },
+        {
+          "line_no": 43,
+          "text": "(strong recommendation, moderate quality"
+        },
+        {
+          "line_no": 44,
+          "text": "Test Positive for Influenza, Should the key knowledge gaps."
+        },
+        {
+          "line_no": 45,
+          "text": "of evidence)."
+        },
+        {
+          "line_no": 46,
+          "text": "Treatment Regimen Include Despite substantial concern over the"
+        },
+        {
+          "line_no": 47,
+          "text": "Rationale for the recommendation. As"
+        },
+        {
+          "line_no": 48,
+          "text": "Antibacterial Therapy? rise of antibiotic-resistant pathogens, most"
+        },
+        {
+          "line_no": 49,
+          "text": "recent data supporting antibiotic"
+        },
+        {
+          "line_no": 50,
+          "text": "patients with CAP can be adequately treated"
+        },
+        {
+          "line_no": 52,
+          "text": "administration for 5 days are scant, on a"
+        },
+        {
+          "line_no": 53,
+          "text": "Recommendation. We recommend that with regimens that have been used for"
+        },
+        {
+          "line_no": 54,
+          "text": "– fi"
+        },
+        {
+          "line_no": 55,
+          "text": "risk bene t basis we recommend treating"
+        },
+        {
+          "line_no": 56,
+          "text": "standard antibacterial treatment be initially multiple decades. It is also true that the"
+        },
+        {
+          "line_no": 57,
+          "text": "for a minimum of 5 days, even if the patient"
+        },
+        {
+          "line_no": 58,
+          "text": "prescribed for adults with clinical and subset of patients with CAP who have"
+        },
+        {
+          "line_no": 59,
+          "text": "has reached clinical stability before 5 days."
+        },
+        {
+          "line_no": 60,
+          "text": "radiographic evidence of CAP who test signi fi cant comorbidities and frequent"
+        },
+        {
+          "line_no": 61,
+          "text": "As most patients will achieve clinical"
+        },
+        {
+          "line_no": 63,
+          "text": "positive for in uenza in the inpatient contact with healthcare settings and"
+        },
+        {
+          "line_no": 65,
+          "text": "stability within the rst 48 to 72 hours, a"
+        },
+        {
+          "line_no": 66,
+          "text": "and outpatient settings (strong antibiotics is increasing, and, in some"
+        },
+        {
+          "line_no": 67,
+          "text": "total duration of therapy of 5 days will be"
+        },
+        {
+          "line_no": 68,
+          "text": "recommendation, low quality settings, the rates of infection with MRSA or"
+        },
+        {
+          "line_no": 69,
+          "text": "appropriate for most patients. In switching"
+        },
+        {
+          "line_no": 70,
+          "text": "of evidence). P. aeruginosa are high enough to warrant"
+        },
+        {
+          "line_no": 71,
+          "text": "from parenteral to oral antibiotics, either"
+        },
+        {
+          "line_no": 72,
+          "text": "Rationale for the recommendation. The empiric treatment."
+        },
+        {
+          "line_no": 73,
+          "text": "the same agent or the same drug class"
+        },
+        {
+          "line_no": 74,
+          "text": "recommendation to routinely prescribe Unfortunately, microbiological testing"
+        },
+        {
+          "line_no": 75,
+          "text": "should be used."
+        },
+        {
+          "line_no": 76,
+          "text": "antibacterial agents in patients with has yet to deliver fast, accurate, and"
+        },
+        {
+          "line_no": 77,
+          "text": "We acknowledge that most studies"
+        },
+        {
+          "line_no": 79,
+          "text": "in uenza virus infection and pneumonia affordable testing that results in proven"
+        },
+        {
+          "line_no": 80,
+          "text": "in support of 5 days of antibiotic therapy"
+        },
+        {
+          "line_no": 82,
+          "text": "was based on evidence suggesting that bene t for patients with CAP in terms of"
+        },
+        {
+          "line_no": 83,
+          "text": "include patients without severe CAP, but"
+        },
+        {
+          "line_no": 84,
+          "text": "bacterial coinfections are a common and more rapid delivery of targeted therapy or"
+        },
+        {
+          "line_no": 85,
+          "text": "we believe these results apply to"
+        },
+        {
+          "line_no": 87,
+          "text": "serious complication of in uenza, as well as safe deescalation of unnecessary therapy."
+        },
+        {
+          "line_no": 88,
+          "text": "patients with severe CAP and without"
+        },
+        {
+          "line_no": 89,
+          "text": "the inability to exclude the presence of Exceptions include rapid testing for"
+        },
+        {
+          "line_no": 90,
+          "text": "infectious complications. We believe that"
+        },
+        {
+          "line_no": 92,
+          "text": "bacterial coinfection in a patient with MRSA and in uenza. Until we have such"
+        },
+        {
+          "line_no": 93,
+          "text": "the duration of therapy for CAP due"
+        },
+        {
+          "line_no": 95,
+          "text": "CAP who has a positive test for in uenza widely available (and affordable) tests,"
+        },
+        {
+          "line_no": 96,
+          "text": "to suspected or proven MRSA or"
+        },
+        {
+          "line_no": 97,
+          "text": "virus. Although low levels of biomarkers therapyformanyormostpatientswithCAP"
+        },
+        {
+          "line_no": 98,
+          "text": "P. aeruginosa should be 7 days, in"
+        },
+        {
+          "line_no": 99,
+          "text": "such as procalcitonin decrease the will remain empiric. Therefore, clinicians"
+        },
+        {
+          "line_no": 100,
+          "text": "agreement with the recent HAP/VAP"
+        },
+        {
+          "line_no": 101,
+          "text": "likelihood that patients have bacterial need to be aware of the spectrum of local"
+        },
+        {
+          "line_no": 102,
+          "text": "guidelines (32)."
+        },
+        {
+          "line_no": 103,
+          "text": "infections, these biomarkers do not pathogens,especiallyiftheycareforpatients"
+        },
+        {
+          "line_no": 104,
+          "text": "completely rule out bacterial pneumonia in at a center where infection with antibiotic-"
+        },
+        {
+          "line_no": 106,
+          "text": "an individual patient with suf cient Question 16: In Adults with CAP Who resistant pathogens such as MRSA and"
+        },
+        {
+          "line_no": 107,
+          "text": "accuracy to justify initially withholding Are Improving, Should Follow-up P. aeruginosa are more common."
+        },
+        {
+          "line_no": 108,
+          "text": "antibiotictherapy,especiallyamongpatients Chest Imaging Be Obtained? A difference between this guideline and"
+        },
+        {
+          "line_no": 109,
+          "text": "– fi"
+        },
+        {
+          "line_no": 110,
+          "text": "with severe CAP (53 55). We have previous ones is that we have signi cantly"
+        },
+        {
+          "line_no": 111,
+          "text": "provided a strong recommendation Recommendation. In adults with CAP increased the proportion of patients"
+        },
+        {
+          "line_no": 113,
+          "text": "because of the signi cant risk of whose symptoms have resolved within 5 to in whom we recommend routinely"
+        },
+        {
+          "line_no": 114,
+          "text": "treatment failure in delaying appropriate 7 days, we suggest not routinely obtaining obtaining respiratory tract samples for"
+        },
+        {
+          "line_no": 115,
+          "text": "antibacterial therapy in patients with CAP. follow-up chest imaging (conditional microbiologic studies. This decision"
+        },
+        {
+          "line_no": 116,
+          "text": "However, in patients with CAP, a positive recommendation, low quality of evidence). is largely based on a desire to correct"
+        },
+        {
+          "line_no": 117,
+          "text": "in fl uenza test, no evidence of a bacterial Rationale for the recommendation. the overuse of anti-MRSA and"
+        },
+        {
+          "line_no": 118,
+          "text": "pathogen (including a low procalcitonin Available data suggest the positive yield antipseudomonal therapy that has occurred"
+        },
+        {
+          "line_no": 119,
+          "text": "level), and early clinical stability, from repeat imaging ranges from 0.2% to since the introduction of the HCAP"
+        },
+        {
+          "line_no": 121,
+          "text": "consideration could be given to earlier 5.0%; however, many patients with new classi cation (which we recommend"
+        },
+        {
+          "line_no": 122,
+          "text": "818 American Journal of Respiratory and Critical Care Medicine Volume 200 Number 7 | October 1 2019"
+        }
+      ],
+      "tables": []
+    },
+    {
+      "page_no": 11,
+      "num_lines": 93,
+      "num_tables": 0,
+      "lines": [
+        {
+          "line_no": 3,
+          "text": "AMERICAN THORACIC SOCIETY DOCUMENTS"
+        },
+        {
+          "line_no": 6,
+          "text": "abandoning) rather than high-quality recommending increased testing. We but the recommendations included here do"
+        },
+        {
+          "line_no": 7,
+          "text": "evidence. We expect this change will similarly expect our move against not obviate the need for clinical"
+        },
+        {
+          "line_no": 9,
+          "text": "generate signi cant research to prove endorsing monotherapy with macrolides, assessment and knowledge to ensure"
+        },
+        {
+          "line_no": 10,
+          "text": "or disprove the value of this approach. which is based on population resistance each individual patient receives"
+        },
+        {
+          "line_no": 12,
+          "text": "As it is not possible to create a one data rather than high-quality clinical appropriate and timely care. However,"
+        },
+        {
+          "line_no": 13,
+          "text": "fi ”"
+        },
+        {
+          "line_no": 14,
+          "text": "size ts all schema for empiric therapy studies, will generate future outcomes this guideline delineates minimum"
+        },
+        {
+          "line_no": 15,
+          "text": "for CAP, clinicians must validate any studies comparing different treatment clinical standards that are achievable"
+        },
+        {
+          "line_no": 16,
+          "text": "approach taking into account their local strategies. and will help drive the best patient"
+        },
+        {
+          "line_no": 17,
+          "text": "spectrum and frequency of resistant We hope that clinicians and outcomes on the basis of currently"
+        },
+        {
+          "line_no": 18,
+          "text": "fi n"
+        },
+        {
+          "line_no": 19,
+          "text": "pathogens, which is another driver for researchers will nd this guideline useful, available data."
+        },
+        {
+          "line_no": 20,
+          "text": "This clinical practice guideline was prepared by an ATS/IDSA ad hoc committee on community-acquired pneumonia in adults."
+        },
+        {
+          "line_no": 21,
+          "text": "Members of the committee are as Hospital and University of Western Australia, committee for AstraZeneca, Forest, and"
+        },
+        {
+          "line_no": 22,
+          "text": "follows: Perth, Australia; 4South Texas Veterans Novartis; served on a data safety and"
+        },
+        {
+          "line_no": 23,
+          "text": "Healthcare System, San Antonio, Texas; monitoring board for Bayer; and received"
+        },
+        {
+          "line_no": 24,
+          "text": "J OSHUA P. M ETLAY , M.D., P H .D. 5University of Texas Health San Antonio, research support from GlaxoSmithKline."
+        },
+        {
+          "line_no": 25,
+          "text": "(Co-Chair)1,2 San Antonio, Texas; 6McMaster University,"
+        },
+        {
+          "line_no": 26,
+          "text": "N.C.D. served as a consultant for Cerexa;"
+        },
+        {
+          "line_no": 27,
+          "text": "Hamilton, Ontario, Canada; 7VA Puget Sound"
+        },
+        {
+          "line_no": 28,
+          "text": "G W. W , M.B. B.S., P .D. served on a data safety and monitoring board"
+        },
+        {
+          "line_no": 29,
+          "text": "RANT ATERER H"
+        },
+        {
+          "line_no": 30,
+          "text": "Health Care System, Seattle, Washington;"
+        },
+        {
+          "line_no": 31,
+          "text": "(Co-Chair)3 for Contrafect and Theravance; and served on"
+        },
+        {
+          "line_no": 32,
+          "text": "8University of Washington, Seattle, Washington;"
+        },
+        {
+          "line_no": 33,
+          "text": "A NTONIO A NZUETO , M.D.4,5 9Respiratory Diseases Branch, Centers for an advisory committee for Cempra and"
+        },
+        {
+          "line_no": 34,
+          "text": "Paratek.S.A.F.receivedresearchsupportfrom"
+        },
+        {
+          "line_no": 35,
+          "text": "J B , M.D., P .D.6* Disease Control and Prevention, Atlanta,"
+        },
+        {
+          "line_no": 36,
+          "text": "AN ROZEK H"
+        },
+        {
+          "line_no": 37,
+          "text": "the Blue Cross Blue Shield of Michigan;"
+        },
+        {
+          "line_no": 38,
+          "text": "K C , M.D.7,8 Georgia; 10Intermountain Medical Center, Salt"
+        },
+        {
+          "line_no": 39,
+          "text": "RISTINA ROTHERS received personal fees for expert testimony"
+        },
+        {
+          "line_no": 40,
+          "text": "Lake City, Utah; 11University of Utah,"
+        },
+        {
+          "line_no": 41,
+          "text": "L AURA A. C OOLEY , M.D.9 Salt Lake City, Utah; 12VA Pittsburgh related to the practice of hospital medicine;"
+        },
+        {
+          "line_no": 42,
+          "text": "N ATHAN C. D EAN , M.D.10,11 Medical Center, Pittsburgh, Pennsylvania; and received royalties from Wiley Publishing."
+        },
+        {
+          "line_no": 43,
+          "text": "M ICHAEL J. F INE , M.D., M.S C .12,13 13University of Pittsburgh, Pittsburgh, A.C.L. has ownership or investment interest"
+        },
+        {
+          "line_no": 44,
+          "text": "S A. F , M.D.14 Pennsylvania; 14University of Michigan, with Aurora Cannabis, Canopy Growth, and"
+        },
+        {
+          "line_no": 45,
+          "text": "COTT LANDERS"
+        },
+        {
+          "line_no": 46,
+          "text": "M R. G , M.D., M.P.H.15 Ann Arbor, Michigan; 15Vanderbilt University, Cronos Group. M.L.M. received research"
+        },
+        {
+          "line_no": 47,
+          "text": "ARIE RIFFIN"
+        },
+        {
+          "line_no": 48,
+          "text": "Nashville, Tennessee; 16University of support from Gilead, Insmed, Multiclonal"
+        },
+        {
+          "line_no": 49,
+          "text": "A C. L , M.D., M.S.8*"
+        },
+        {
+          "line_no": 50,
+          "text": "NN ONG Connecticut School of Medicine, Therapeutics, and Pharmaxis; served as a"
+        },
+        {
+          "line_no": 51,
+          "text": "M ARK L. M ETERSKY , M.D.16 Farmington, Connecticut; 17Michael E. consultant for Aradigm, Arsanis, Bayer,"
+        },
+        {
+          "line_no": 52,
+          "text": "D ANIEL M. M USHER , M.D.17,18 DeBakey VA Medical Center, Houston, Insmed, International Biophysics, Savara,"
+        },
+        {
+          "line_no": 53,
+          "text": "M I. R , M.D., M.S ., P .D.4,5 Texas; and 18Baylor College of Medicine, Shionogi, and various law firms; served as a"
+        },
+        {
+          "line_no": 54,
+          "text": "ARCOS ESTREPO C H"
+        },
+        {
+          "line_no": 55,
+          "text": "Houston, Texas"
+        },
+        {
+          "line_no": 56,
+          "text": "C G. W , M.D., M.P.H.9 consultant for EBSCO as a reviewer for"
+        },
+        {
+          "line_no": 57,
+          "text": "YNTHIA HITNEY"
+        },
+        {
+          "line_no": 58,
+          "text": "DynaMed, a decision support tool; and served"
+        },
+        {
+          "line_no": 59,
+          "text": "*Methodologist. Author Disclosures: A.A. served as a on an advisory committee and as a consultant"
+        },
+        {
+          "line_no": 60,
+          "text": "1Massachusetts General Hospital, Boston, consultant for AstraZeneca, Bayer, Boehringer for Grifols. J.P.M., G.W., J.B., K.C., L.A.C.,"
+        },
+        {
+          "line_no": 61,
+          "text": "Massachusetts; 2Harvard Medical Ingelheim, GlaxoSmithKline, Novartis, Pfizer, M.J.F., M.R.G., D.M.M., M.I.R., and C.G.W."
+        },
+        {
+          "line_no": 62,
+          "text": "School, Boston, Massachusetts; 3Royal Perth and Sunovion; served on an advisory reported no relevant commercial relationships."
+        },
+        {
+          "line_no": 63,
+          "text": "References 6. Dooling KL, Toews KA, Hicks LA, Garrison LE, Bachaus B, Zansky S,"
+        },
+        {
+          "line_no": 64,
+          "text": "et al. Active bacterial core surveillance for legionellosis: United"
+        },
+        {
+          "line_no": 65,
+          "text": "States, 2011-2013. MMWR Morb Mortal Wkly Rep 2015;64:"
+        },
+        {
+          "line_no": 66,
+          "text": "1. Mandell LA, Wunderink RG, Anzueto A, Bartlett JG, Campbell GD,"
+        },
+        {
+          "line_no": 67,
+          "text": "1190–1193."
+        },
+        {
+          "line_no": 68,
+          "text": "Dean NC, et al.; Infectious Diseases Society of America; American"
+        },
+        {
+          "line_no": 69,
+          "text": "Thoracic Society. Infectious Diseases Society of America/American 7. Christ-Crain M, Stolz D, Bingisser R, Mu¨ller C, Miedinger D, Huber PR,"
+        },
+        {
+          "line_no": 70,
+          "text": "Thoracic Society consensus guidelines on the management of et al. Procalcitonin guidance of antibiotic therapy in community-"
+        },
+        {
+          "line_no": 71,
+          "text": "community-acquired pneumonia in adults. Clin Infect Dis 2007;44: acquired pneumonia: a randomized trial. Am J Respir Crit Care Med"
+        },
+        {
+          "line_no": 72,
+          "text": "S27–S72. 2006;174:84–93."
+        },
+        {
+          "line_no": 73,
+          "text": "2.Guyatt GH, OxmanAD, Kunz R, AtkinsD, Brozek J, Vist G, etal.GRADE 8. Colice GL, Morley MA, Asche C, Birnbaum HG. Treatment costs of"
+        },
+        {
+          "line_no": 74,
+          "text": "community-acquired pneumonia in an employed population. Chest"
+        },
+        {
+          "line_no": 75,
+          "text": "guidelines: 2. Framing the question and deciding on important"
+        },
+        {
+          "line_no": 76,
+          "text": "outcomes. J Clin Epidemiol 2011;64:395–400."
+        },
+        {
+          "line_no": 77,
+          "text": "2004;125:2140–2145."
+        },
+        {
+          "line_no": 78,
+          "text": "9. Yu H, Rubin J, Dunning S, Li S, Sato R. Clinical and economic burden of"
+        },
+        {
+          "line_no": 79,
+          "text": "3. McCauley LM, Webb BJ, Sorensen J, Dean NC. Use of tracheal aspirate"
+        },
+        {
+          "line_no": 80,
+          "text": "community-acquired pneumonia in the Medicare fee-for-service"
+        },
+        {
+          "line_no": 81,
+          "text": "culture in newly intubated patients with community-onset pneumonia."
+        },
+        {
+          "line_no": 82,
+          "text": "population. J Am Geriatr Soc 2012;60:2137–2143."
+        },
+        {
+          "line_no": 83,
+          "text": "Ann Am Thorac Soc 2016;13:376–381."
+        },
+        {
+          "line_no": 84,
+          "text": "10. Brown SM, Jones JP, Aronsky D, Jones BE, Lanspa MJ, Dean NC."
+        },
+        {
+          "line_no": 85,
+          "text": "4. Falguera M, Ruiz-Gonza´lez A, Schoenenberger JA, Touzo´n C,"
+        },
+        {
+          "line_no": 86,
+          "text": "Relationships among initial hospital triage, disease progression and"
+        },
+        {
+          "line_no": 87,
+          "text": "Ga´zquezI,GalindoC,etal.Prospective,randomisedstudytocompare"
+        },
+        {
+          "line_no": 88,
+          "text": "mortality in community-acquired pneumonia. Respirology 2012;17:"
+        },
+        {
+          "line_no": 89,
+          "text": "empirical treatment versus targeted treatment on the basis of the urine 1207–1213."
+        },
+        {
+          "line_no": 90,
+          "text": "antigen results in hospitalised patients with community-acquired"
+        },
+        {
+          "line_no": 91,
+          "text": "11.PhuaJ,NgerngWJ,LimTK.Theimpactofadelayinintensivecareunit"
+        },
+        {
+          "line_no": 92,
+          "text": "pneumonia. Thorax 2010;65:101–106."
+        },
+        {
+          "line_no": 93,
+          "text": "admission for community-acquired pneumonia. Eur Respir J 2010;"
+        },
+        {
+          "line_no": 94,
+          "text": "5. Garrison LE, Kunz JM, Cooley LA, Moore MR, Lucas C, Schrag S, 36:826–833."
+        },
+        {
+          "line_no": 95,
+          "text": "et al. Vital signs: deficiencies in environmental control 12. Renaud B, Brun-Buisson C, Santin A, Coma E,Noyez C, Fine MJ, et al."
+        },
+        {
+          "line_no": 96,
+          "text": "identified in outbreaks of legionnaires’ disease. North Outcomes of early, late, and no admission to the intensive care unit"
+        },
+        {
+          "line_no": 97,
+          "text": "America, 2000-2014. MMWR Morb Mortal Wkly Rep 2016;65: for patients hospitalized with community-acquired pneumonia. Acad"
+        },
+        {
+          "line_no": 98,
+          "text": "576–584. Emerg Med 2012;19:294–303."
+        },
+        {
+          "line_no": 99,
+          "text": "American Thoracic Society Documents 819"
+        }
+      ],
+      "tables": []
+    },
+    {
+      "page_no": 12,
+      "num_lines": 103,
+      "num_tables": 0,
+      "lines": [
+        {
+          "line_no": 3,
+          "text": "AMERICAN THORACIC SOCIETY DOCUMENTS"
+        },
+        {
+          "line_no": 6,
+          "text": "13. Restrepo MI, Mortensen EM, Rello J, Brody J, Anzueto A. Late 31. Torre-Cisneros J, Natera C, Mesa F, Trikic M, Rodr´ıguez-Baño J. Clinical"
+        },
+        {
+          "line_no": 7,
+          "text": "admissiontotheICUinpatientswithcommunity-acquiredpneumonia predictorsofmethicillin-resistantStaphylococcusaureusinnosocomial"
+        },
+        {
+          "line_no": 8,
+          "text": "is associated with higher mortality. Chest 2010;137:552–557. and healthcare-associated pneumonia: a multicenter, matched case-"
+        },
+        {
+          "line_no": 9,
+          "text": "14. Lonks JR, Garau J, Gomez L, Xercavins M, Ochoa de Echagu¨en A, control study. Eur J Clin Microbiol Infect Dis 2018;37:51–56."
+        },
+        {
+          "line_no": 10,
+          "text": "Gareen IF, et al. Failure of macrolide antibiotic treatment in patients 32.KalilAC,MeterskyML,KlompasM,MuscedereJ,SweeneyDA,Palmer"
+        },
+        {
+          "line_no": 11,
+          "text": "with bacteremia due to erythromycin-resistant Streptococcus LB, et al. Management of adults with hospital-acquired and"
+        },
+        {
+          "line_no": 12,
+          "text": "pneumoniae. Clin Infect Dis 2002;35:556–564. ventilator-associated pneumonia: 2016 clinical practice guidelines"
+        },
+        {
+          "line_no": 13,
+          "text": "15. Daneman N, McGeer A, Green K, Low DE; Toronto Invasive Bacterial by the infectious diseases society of America and the American"
+        },
+        {
+          "line_no": 14,
+          "text": "Diseases Network. Macrolide resistance in bacteremic Thoracic Society. Clin Infect Dis 2016;63:e61–e111."
+        },
+        {
+          "line_no": 15,
+          "text": "pneumococcal disease: implications for patient management. Clin 33. Arancibia F, Bauer TT, Ewig S, Mensa J, Gonzalez J, Niederman MS,"
+        },
+        {
+          "line_no": 16,
+          "text": "Infect Dis 2006;43:432–438. et al. Community-acquired pneumonia due to gram-negative"
+        },
+        {
+          "line_no": 17,
+          "text": "16. Centers for Disease Control and Prevention. Active Bacterial Core bacteria and pseudomonas aeruginosa: incidence, risk, and"
+        },
+        {
+          "line_no": 18,
+          "text": "surveillance (ABCs) report, Emerging Infections Program Network, prognosis. Arch Intern Med 2002;162:1849–1858."
+        },
+        {
+          "line_no": 19,
+          "text": "Streptococcus pneumoniae, 2016 [accessed 2019 Sept 8]. Available 34.Cillo´nizC,Gabarru´sA,FerrerM,PuigdelaBellacasaJ,RinaudoM,Mensa"
+        },
+        {
+          "line_no": 20,
+          "text": "from: https://www.cdc.gov/abcs/reports-findings/survreports/ J, et al. Community-acquired pneumonia due to multidrug- and non-"
+        },
+        {
+          "line_no": 21,
+          "text": "spneu16.pdf."
+        },
+        {
+          "line_no": 22,
+          "text": "multidrug-resistantPseudomonasaeruginosa.Chest2016;150:415–425."
+        },
+        {
+          "line_no": 23,
+          "text": "17. Fogarty C, Grossman C, Williams J, Haverstock M, Church D. Efficacy 35. Falcone M, Russo A, Giannella M, Cangemi R, Scarpellini MG,"
+        },
+        {
+          "line_no": 24,
+          "text": "and safety of moxifloxacin vs clarithromycin for community-acquired Bertazzoni G, et al. Individualizing risk of multidrug-resistant pathogens"
+        },
+        {
+          "line_no": 25,
+          "text": "pneumonia. Infect Med 1999;16:748–763. in community-onset pneumonia. PLoS One 2015;10:e0119528."
+        },
+        {
+          "line_no": 26,
+          "text": "36. Jung JY, Park MS, Kim YS, Park BH, Kim SK, Chang J, et al."
+        },
+        {
+          "line_no": 27,
+          "text": "18.GotfriedMH,DattaniD,RifferE,DevcichKJ,BusmanTA,NotarioGF,etal."
+        },
+        {
+          "line_no": 28,
+          "text": "Healthcare-associated pneumonia among hospitalized patients in a"
+        },
+        {
+          "line_no": 29,
+          "text": "A controlled, double-blind, multicenter study comparing clarithromycin"
+        },
+        {
+          "line_no": 30,
+          "text": "extended-release tablets and levofloxacin tablets in the treatment of Korean tertiary hospital. BMC Infect Dis 2011;11:61."
+        },
+        {
+          "line_no": 31,
+          "text": "community-acquired pneumonia. Clin Ther 2002;24:736–751. 37.Metersky ML, FreiCR,Mortensen EM. Predictors ofPseudomonasand"
+        },
+        {
+          "line_no": 32,
+          "text": "methicillin-resistant Staphylococcus aureus in hospitalized patients"
+        },
+        {
+          "line_no": 33,
+          "text": "19. Liu Y, Zhang Y, Wu J, Zhu D, Sun S, Zhao L, et al. A randomized,"
+        },
+        {
+          "line_no": 34,
+          "text": "double-blind, multicenter phase II study comparing the efficacy and"
+        },
+        {
+          "line_no": 35,
+          "text": "withhealthcare-associatedpneumonia.Respirology2016;21:157–163."
+        },
+        {
+          "line_no": 36,
+          "text": "safety of oral nemonoxacin with oral levofloxacin in the treatment of 38. Pifarre R, Falguera M, Vicente-de-Vera C, Nogues A. Characteristics of"
+        },
+        {
+          "line_no": 37,
+          "text": "community-acquired pneumonia in patients with chronic obstructive"
+        },
+        {
+          "line_no": 38,
+          "text": "community-acquired pneumonia. J Microbiol Immunol Infect 2017;"
+        },
+        {
+          "line_no": 39,
+          "text": "50:811–820. pulmonary disease. Respir Med 2007;101:2139–2144."
+        },
+        {
+          "line_no": 40,
+          "text": "39. Polverino E, Cilloniz C, Menendez R, Gabarrus A, Rosales-Mayor E,"
+        },
+        {
+          "line_no": 41,
+          "text": "20. D’Ignazio J, Camere MA, Lewis DE, Jorgensen D, Breen JD. Novel,"
+        },
+        {
+          "line_no": 42,
+          "text": "Alcaraz V, et al. Microbiology and outcomes of community acquired"
+        },
+        {
+          "line_no": 43,
+          "text": "single-dose microsphere formulation of azithromycin versus 7-day"
+        },
+        {
+          "line_no": 44,
+          "text": "pneumonia in non cystic-fibrosis bronchiectasis patients. J Infect"
+        },
+        {
+          "line_no": 45,
+          "text": "levofloxacin therapy for treatment of mild to moderate community-"
+        },
+        {
+          "line_no": 46,
+          "text": "2015;71:28–36."
+        },
+        {
+          "line_no": 47,
+          "text": "acquired pneumonia in adults. Antimicrob Agents Chemother 2005;"
+        },
+        {
+          "line_no": 48,
+          "text": "40. Prina E, Ranzani OT, Polverino E, Cillo´niz C, Ferrer M, Fernandez L,"
+        },
+        {
+          "line_no": 49,
+          "text": "49:4035–4041."
+        },
+        {
+          "line_no": 50,
+          "text": "et al. Risk factors associated with potentially antibiotic-resistant"
+        },
+        {
+          "line_no": 51,
+          "text": "21. van Rensburg DJ, Perng RP, Mitha IH, Bester AJ, Kasumba J, Wu RG,"
+        },
+        {
+          "line_no": 52,
+          "text": "pathogens in community-acquired pneumonia. Ann Am Thorac Soc"
+        },
+        {
+          "line_no": 53,
+          "text": "et al. Efficacy and safety of nemonoxacin versus levofloxacin for"
+        },
+        {
+          "line_no": 54,
+          "text": "2015;12:153–160."
+        },
+        {
+          "line_no": 55,
+          "text": "community-acquired pneumonia. Antimicrob Agents Chemother"
+        },
+        {
+          "line_no": 56,
+          "text": "41. Rodrigo-Troyano A, Sibila O. The respiratory threat posed by multidrug"
+        },
+        {
+          "line_no": 57,
+          "text": "2010;54:4098–4106."
+        },
+        {
+          "line_no": 58,
+          "text": "resistant Gram-negative bacteria. Respirology 2017;22:1288–1299."
+        },
+        {
+          "line_no": 59,
+          "text": "22. Oldach D, Clark K, Schranz J, Das A, Craft JC, Scott D, et al."
+        },
+        {
+          "line_no": 60,
+          "text": "42.ShindoY,ItoR,KobayashiD,AndoM,IchikawaM,ShirakiA,etal.Risk"
+        },
+        {
+          "line_no": 61,
+          "text": "Randomized, double-blind, multicenter phase 2 study comparing the"
+        },
+        {
+          "line_no": 62,
+          "text": "factors for drug-resistant pathogens in community-acquired and"
+        },
+        {
+          "line_no": 63,
+          "text": "efficacy and safety of oral solithromycin (CEM-101) to those of oral"
+        },
+        {
+          "line_no": 64,
+          "text": "healthcare-associated pneumonia. Am J Respir Crit Care Med 2013;"
+        },
+        {
+          "line_no": 65,
+          "text": "levofloxacin in the treatment of patients with community-acquired"
+        },
+        {
+          "line_no": 66,
+          "text": "188:985–995."
+        },
+        {
+          "line_no": 67,
+          "text": "bacterialpneumonia.AntimicrobAgentsChemother2013;57:2526–2534."
+        },
+        {
+          "line_no": 68,
+          "text": "43. von Baum H, Welte T, Marre R, Suttorp N, Ewig S; CAPNETZ study"
+        },
+        {
+          "line_no": 69,
+          "text": "23. U.S. Food and Drug Administration. Fluoroquinolone antimicrobial"
+        },
+        {
+          "line_no": 70,
+          "text": "group.Community-acquired pneumoniathroughEnterobacteriaceae"
+        },
+        {
+          "line_no": 71,
+          "text": "drugs information. 2019 [accessed 2019 Mar 8]. Available from: https://"
+        },
+        {
+          "line_no": 72,
+          "text": "and Pseudomonas aeruginosa: diagnosis, incidence and predictors."
+        },
+        {
+          "line_no": 73,
+          "text": "www.fda.gov/Drugs/DrugSafety/InformationbyDrugClass/ucm346750.htm. Eur Respir J 2010;35:598–605."
+        },
+        {
+          "line_no": 74,
+          "text": "24.El-SolhAA,PietrantoniC,BhatA,AquilinaAT,OkadaM,GroverV,etal."
+        },
+        {
+          "line_no": 75,
+          "text": "44. Shorr AF, MyersDE, Huang DB, Nathanson BH,Emons MF, Kollef MH."
+        },
+        {
+          "line_no": 76,
+          "text": "Microbiology of severe aspiration pneumonia in institutionalized"
+        },
+        {
+          "line_no": 77,
+          "text": "A risk score for identifying methicillin-resistant Staphylococcus"
+        },
+        {
+          "line_no": 78,
+          "text": "elderly. Am J Respir Crit Care Med 2003;167:1650–1654."
+        },
+        {
+          "line_no": 79,
+          "text": "aureus in patients presenting to the hospital with pneumonia. BMC"
+        },
+        {
+          "line_no": 80,
+          "text": "25. Marik PE, Careau P. The role of anaerobes in patients with ventilator-"
+        },
+        {
+          "line_no": 81,
+          "text": "Infect Dis 2013;13:268."
+        },
+        {
+          "line_no": 82,
+          "text": "associated pneumonia and aspiration pneumonia: a prospective"
+        },
+        {
+          "line_no": 83,
+          "text": "45. Wooten DA, Winston LG. Risk factors for methicillin-resistant"
+        },
+        {
+          "line_no": 84,
+          "text": "study. Chest 1999;115:178–183."
+        },
+        {
+          "line_no": 85,
+          "text": "Staphylococcus aureus in patients with community-onset and"
+        },
+        {
+          "line_no": 86,
+          "text": "26.AlibertiS,Reyes LF,FaverioP,Sotgiu G, Dore S,Rodriguez AH,et al.; hospital-onset pneumonia. Respir Med 2013;107:1266–1270."
+        },
+        {
+          "line_no": 87,
+          "text": "GLIMP Investigators. Global initiative for methicillin-resistant 46. Dangerfield B, Chung A, Webb B, Seville MT. Predictive value of"
+        },
+        {
+          "line_no": 88,
+          "text": "Staphylococcus aureus pneumonia (GLIMP): an international, methicillin-resistantStaphylococcusaureus(MRSA)nasalswabPCRassay"
+        },
+        {
+          "line_no": 89,
+          "text": "observational cohort study. Lancet Infect Dis 2016;16:1364–1376. for MRSA pneumonia. Antimicrob Agents Chemother 2014;58:859–864."
+        },
+        {
+          "line_no": 90,
+          "text": "27. Gross AE, Van Schooneveld TC, Olsen KM, Rupp ME, Bui TH, Forsung 47.ParenteDM,CunhaCB,MylonakisE,TimbrookTT.Theclinicalutilityof"
+        },
+        {
+          "line_no": 91,
+          "text": "E, et al. Epidemiology and predictors of multidrug-resistant methicillin-resistant Staphylococcus aureus (MRSA) nasal screening"
+        },
+        {
+          "line_no": 92,
+          "text": "community-acquired and health care-associated pneumonia. to rule out MRSA pneumonia: a diagnostic meta-analysis with"
+        },
+        {
+          "line_no": 93,
+          "text": "Antimicrob Agents Chemother 2014;58:5262–5268. antimicrobial stewardship implications. Clin Infect Dis 2018;67:1–7."
+        },
+        {
+          "line_no": 94,
+          "text": "28. Jones BE, Brown KA, Jones MM, Huttner BD, Greene T, Sauer BC, 48.RhodesA,EvansLE,AlhazzaniW,LevyMM,AntonelliM,FerrerR,etal."
+        },
+        {
+          "line_no": 95,
+          "text": "et al. Variation in empiric coverage versus detection of methicillin- Surviving sepsis campaign: international guidelines for management"
+        },
+        {
+          "line_no": 96,
+          "text": "resistant Staphylococcus aureus and Pseudomonas aeruginosa in of sepsis and septic shock: 2016. Intensive Care Med 2017;43:304–377."
+        },
+        {
+          "line_no": 97,
+          "text": "hospitalizations for community-onset pneumonia across 128 US 49.BrielM,SpoorenbergSMC,SnijdersD,TorresA,Fernandez-SerranoS,"
+        },
+        {
+          "line_no": 98,
+          "text": "Veterans Affairs Medical Centers. Infect Control Hosp Epidemiol Meduri GU, etal.; Ovidius StudyGroup; CapisceStudyGroup;STEP"
+        },
+        {
+          "line_no": 99,
+          "text": "2017;38:937–944."
+        },
+        {
+          "line_no": 100,
+          "text": "Study Group. Corticosteroids in patients hospitalized with"
+        },
+        {
+          "line_no": 101,
+          "text": "29. Jung WJ, Kang YA, Park MS, Park SC, Leem AY, Kim EY, et al. community-acquired pneumonia: systematic review and individual"
+        },
+        {
+          "line_no": 102,
+          "text": "Prediction of methicillin-resistant Staphylococcus aureus in patients patient data metaanalysis. Clin Infect Dis 2018;66:346–354."
+        },
+        {
+          "line_no": 103,
+          "text": "with non-nosocomial pneumonia. BMC Infect Dis 2013;13:370. 50. Waljee AK, Rogers MA, Lin P, Singal AG, Stein JD, Marks RM, et al."
+        },
+        {
+          "line_no": 104,
+          "text": "30. Minejima E, Lou M, Nieberg P, Wong-Beringer A. Patients presenting to Short term use of oral corticosteroids and related harms among"
+        },
+        {
+          "line_no": 105,
+          "text": "the hospital withMRSA pneumonia:differentiatingcharacteristicsand adults in the United States: population based cohort study. BMJ"
+        },
+        {
+          "line_no": 106,
+          "text": "outcomes with empiric treatment. BMC Infect Dis 2014;14:252. 2017;357:j1415."
+        },
+        {
+          "line_no": 107,
+          "text": "820 American Journal of Respiratory and Critical Care Medicine Volume 200 Number 7 | October 1 2019"
+        }
+      ],
+      "tables": []
+    },
+    {
+      "page_no": 13,
+      "num_lines": 13,
+      "num_tables": 0,
+      "lines": [
+        {
+          "line_no": 3,
+          "text": "AMERICAN THORACIC SOCIETY DOCUMENTS"
+        },
+        {
+          "line_no": 6,
+          "text": "51. Louie JK, Yang S, Acosta M, Yen C, Samuel MC, Schechter R, et al. 54. Self WH, Balk RA, Grijalva CG, Williams DJ, Zhu Y, Anderson EJ, et al."
+        },
+        {
+          "line_no": 7,
+          "text": "Treatment with neuraminidase inhibitors for critically ill patients with Procalcitonin as a marker of etiology in adults hospitalized"
+        },
+        {
+          "line_no": 8,
+          "text": "influenza A (H1N1)pdm09. Clin Infect Dis 2012;55:1198–1204. with community-acquired pneumonia. Clin Infect Dis 2017;65:"
+        },
+        {
+          "line_no": 9,
+          "text": "52. Uyeki TM, Bernstein HH, Bradley JS, Englund JA, File TM Jr, Fry AM, 183–190."
+        },
+        {
+          "line_no": 10,
+          "text": "etal.Clinicalpracticeguidelinesbytheinfectiousdiseasessocietyof 55. Rodr´ıguez AH, Avile´s-Jurado FX, D´ıaz E, Schuetz P, Trefler SI, Sole´-"
+        },
+        {
+          "line_no": 11,
+          "text": "America: 2018 update on diagnosis, treatment, chemoprophylaxis, Viola´n J, et al.; SEMICYUC/GETGAG Working Group. Procalcitonin"
+        },
+        {
+          "line_no": 12,
+          "text": "and institutional outbreak management of seasonal influenzaa. Clin (PCT) levels for ruling-out bacterial coinfection in ICU patients with"
+        },
+        {
+          "line_no": 13,
+          "text": "Infect Dis 2018;68:e1–e47. influenza: a CHAID decision-tree analysis. J Infect 2016;72:143–151."
+        },
+        {
+          "line_no": 14,
+          "text": "53. Kamat IS, Ramachandran V, Eswaran H, Abers MS, Musher DM. Low 56. Moyer VA; U.S. Preventive Services Task Force. Screening for lung"
+        },
+        {
+          "line_no": 15,
+          "text": "procalcitonin, community acquired pneumonia, and antibiotic cancer: U.S. Preventive Services Task Force recommendation"
+        },
+        {
+          "line_no": 16,
+          "text": "therapy. Lancet Infect Dis 2018;18:496–497. statement. Ann Intern Med 2014;160:330–338."
+        },
+        {
+          "line_no": 57,
+          "text": "American Thoracic Society Documents 821"
+        }
+      ],
+      "tables": []
+    }
+  ]
+}

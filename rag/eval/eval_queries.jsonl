@@ -1,0 +1,16 @@
+{"query": "수인성 및 식품매개감염병의 법적 정의와 유행의 기준", "must_contain": "2명 이상", "expected_keywords": ["수인성", "식품매개", "유행", "집단발생"], "expected_sections": ["용어 정의", "유행여부 판단", "개요"]}
+{"query": "지역사회획득 폐렴(CAP)의 진단을 위한 기본 검사 항목", "must_contain": "객담", "expected_keywords": ["흉부 X선", "혈액배양", "그람 염색", "진단"], "expected_sections": ["폐렴의 진단", "진단검사", "요약"]}
+{"query": "의료기관 내 감염 예방을 위한 표준주의(Standard Precautions)의 핵심 원칙", "must_contain": "손위생", "expected_keywords": ["개인보호구", "호흡기 예절", "환경관리", "표준주의"], "expected_sections": ["표준주의 권고", "표준주의와 전파경로별 격리지침"]}
+{"query": "급성 위장관계 감염 시 항생제 치료가 권장되는 상황", "must_contain": "혈변", "expected_keywords": ["발열", "여행자 설사", "면역저하자", "경험적 항생제"], "expected_sections": ["경험적 항생제 치료의 적응증", "치료"]}
+{"query": "감염병 집단발생 시 수행하는 역학조사의 기본 단계", "must_contain": "조사디자인", "expected_keywords": ["발생인지", "기초자료 수집", "현장 역학조사", "결과보고"], "expected_sections": ["유행 역학조사", "역학조사 업무 흐름"]}
+{"query": "폐렴 환자의 입원 여부를 결정하는 중증도 판정 도구와 항목", "must_contain": "CURB-65", "expected_keywords": ["PSI", "혼돈", "호흡수", "혈압", "나이"], "expected_sections": ["폐렴의 입원기준", "중증도 판정도구"]}
+{"query": "수인성 감염병 환자 및 접촉자 격리 관리의 기본 원칙", "must_contain": "전파위험군", "expected_keywords": ["음식취급", "보육", "업무 제한", "격리"], "expected_sections": ["환자 및 접촉자 관리", "격리"]}
+{"query": "의료 현장에서 적용하는 무균술(ANTT)의 정의와 종류", "must_contain": "표준 무균술", "expected_keywords": ["외과적 무균술", "무균부위", "오염 최소화"], "expected_sections": ["무균술", "무균술의 개요"]}
+{"query": "국내 폐렴 적정성 평가의 목적과 주요 평가지표", "must_contain": "항생제 투여", "expected_keywords": ["산소포화도", "혈액배양", "질 개선"], "expected_sections": ["평가 개요", "폐렴 4차 적정성 평가"]}
+{"query": "장출혈성대장균(STEC) 감염 환자 치료 시 금기 사항", "must_contain": "항생제 사용", "expected_keywords": ["지사제", "용혈성요독증후군", "독소"], "expected_sections": ["치료", "장출혈성대장균감염증"]}
+{"query": "VRSA 환자 분류 기준", "must_contain": "혈액", "expected_keywords": ["분리", "임상검체", "병원체보유자"], "expected_sections": ["신고 진단기준", "감시 및 신고"]}
+{"query": "CRE 감염 격리 원칙", "must_contain": "1인실", "expected_keywords": ["코호트", "접촉주의", "차단막"], "expected_sections": ["감염관리", "예방 및 관리"]}
+{"query": "수막구균 예방 항생제", "must_contain": "리팜핀", "expected_keywords": ["밀접접촉자", "용량", "화학요법"], "expected_sections": ["접촉자 관리", "환자관리"]}
+{"query": "성홍열 등교 중지 기준", "must_contain": "24시간", "expected_keywords": ["항생제", "전염력", "비말 격리"], "expected_sections": ["환자관리", "격리"]}
+{"query": "SFTS 공동조사 대상", "must_contain": "반려동물", "expected_keywords": ["야생동물", "접촉력", "전파사례"], "expected_sections": ["적용 범위", "공동 역학조사"]}
+{"query": "SFTS 시료 운송 원칙", "must_contain": "냉장", "expected_keywords": ["기밀용기", "2차 포장", "시료채취"], "expected_sections": ["시료 채취", "검체송부"]}

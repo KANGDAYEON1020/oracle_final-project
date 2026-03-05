@@ -1,0 +1,69 @@
+ehec:
+  - 장출혈성대장균
+  - 장출혈성대장균감염증
+  - stec
+  - ehec
+  - e. coli o157
+
+salmonella:
+  - 살모넬라균
+  - salmonella species
+  - salmonella
+
+shigella:
+  - shigella species
+  - 세균성이질균
+  - 이질균
+  - shigella
+  - 이질
+
+campylobacter:
+  - 캄필로박터균
+  - campylobacter species
+  - 캄필로박터제주니균
+  - campylobacter
+
+vibrio:
+  - 장염비브리오균
+  - 비브리오균
+  - 비브리오패혈증균
+  - 비브리오패혈균
+  - vibrio
+
+cholera:
+  - 콜레라균
+  - 콜레라
+  - v. cholerae
+  - v. cholerae o1
+  - v. cholerae o139
+
+typhoid:
+  - s. typhi
+  - 장티푸스균
+  - s. paratyphi
+  - 파라티푸스균
+  - 장티푸스
+  - 파라티푸스
+
+norovirus:
+  - 노로바이러스
+
+rotavirus:
+  - 로타바이러스
+
+clostridium:
+  - c. difficile
+  - clostridium species
+
+yersinia:
+  - yersinia species
+
+ecoli:
+  - e. coli
+  - 대장균
+  - escherichia coli
+
+staphylococcus:
+  - s. aureus
+  - 황색포도알균
+  - staphylococcus aureus
