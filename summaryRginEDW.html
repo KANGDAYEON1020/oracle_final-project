@@ -1,0 +1,6999 @@
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko" prefix="og: https://ogp.me/ns#">
+<head>
+    <meta name="robots" content="index,follow" />
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:site_name" content="질병관리청 감염병포털" />
+	<meta name="author" content="질병관리청 감염병포털" />
+	<meta property="og:type" content="website" />
+	<meta property="og:description" content="질병관리청 감염병포털" />
+
+	<title>
+		
+			
+			주요통계(지역별) : HOME &gt; 감염병통계 &gt; 전수감시감염병 &gt; 주요통계(지역별) 
+		
+	</title>
+
+	<!-- customize -->
+<link rel="stylesheet" type="text/css" href="/pot/resources/css/layout.css">
+<!-- jquery ui -->
+<link rel="stylesheet" type="text/css" href="/pot/resources/plugin/jquery.ui/jquery-ui.min.css">
+    <script type="text/javascript">
+const CTX_PATH="/pot";
+const DIM_URL="https://eid.kdca.go.kr";
+const DEVICE="PC";
+const VWORLD_KEY="8304C87A-15B0-3606-833E-BC9312CEA0B8";
+</script>
+<!-- jquery core -->
+<script type="text/javascript" src="/pot/resources/libs/jquery/jquery-1.11.2.min.js"></script>
+<!-- jquery ui -->
+<script type="text/javascript" src="/pot/resources/plugin/jquery.ui/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/pot/resources/libs/js-cookie-1.5.1/js.cookie.js"></script>
+<script type="text/javascript" src="/pot/resources/js/common.js"></script>
+<script type="text/javascript" src="/pot/resources/js/modal.js"></script>
+
+<!-- 설정 동기화 -->
+<script type="text/javascript" src="/pot/component/js/ND_globalConfig.do" ></script>
+<script type="text/javascript" src="/pot/component/js/ND_massageConfig.do" ></script>
+
+<!-- Openworks 공통 메소드 -->
+<script type="text/javascript" src="/pot/resources/openworks4/js/openworks.global.js"></script>
+<script type="text/javascript" src="/pot/resources/openworks4/js/openworks.message.js"></script>
+<script type="text/javascript" src="/pot/resources/openworks4/js/openworks.initialize.js"></script>
+    <link rel="stylesheet" type="text/css" href="/pot/resources/plugin/swiper/swiper-bundle.min.css">
+    <script type="text/javascript" src="/pot/resources/plugin/swiper/swiper-bundle.min.js"></script>
+    
+    <script type="text/javascript" src="/pot/resources/js/tab.js"></script>
+    <link rel="stylesheet" type="text/css" href="/pot/resources/libs/fancybox-2.1.5/css/jquery.fancybox.css" />
+    <script type="text/javascript" src="/pot/resources/libs/fancybox-2.1.5/js/jquery.fancybox.js"></script>
+<script type="text/javascript" src="/pot/resources/openworks4/js/openworks.modal.js"></script>
+    
+	
+<link rel="stylesheet" type="text/css" href="/pot/resources/plugin/multiple-select/multiple-select.css">
+    <script type="text/javascript" src="/pot/resources/plugin/multiple-select/multiple-select.js"></script>
+    
+<script type="text/javascript" src="/pot/resources/plugin/chart.js/chart.umd.js"></script>
+<script type="text/javascript" src="/pot/resources/js/chartJs/chart.basic.js"></script>
+<script type="text/javascript" src="/pot/resources/js/chartJs/chart.cmpr.js"></script>
+    
+<script type="text/javascript" src="/pot/resources/js/absFile.js"></script>
+    
+<script type="text/javascript" src="/pot/resources/libs/form-3.51.0/jquery.form.js"></script>
+    <script type="text/javascript" src="/pot/resources/js/common/datatables/jquery.dataTables.js"></script>
+                    <script type="text/javascript" src="/pot/resources/js/common/datatables/dataTables.bootstrap.min.js"></script>
+                    <script type="text/javascript" src="/pot/resources/js/common/datatables/dataTables.rowsGroup.js"></script>
+                    <script type="text/javascript" src="/pot/resources/js/common/datatables/abs-datatables.js"></script>
+    
+<meta name="keywords" content="주요통계(지역별)" />
+<meta name="description" content="주요통계(지역별)" />
+
+
+
+<style type="text/css">
+.table th{
+	background-color: #edf8ff;
+}
+
+#table td,.mscroll td{
+	vertical-align: middle;
+	text-align: center;
+}
+
+.dataTableTitle {
+background-color: #f7f7f7!important;
+}
+</style>
+
+<script type="text/javascript">
+$(document).ready(function () {
+
+    let d = new Date();
+    let sel_day = -1;
+    d.setDate(d.getDate() + sel_day);
+
+    let year = d.getFullYear();
+    let month = ('0' + (d.getMonth() + 1)).slice(-2);
+    let day = ('0' + d.getDate()).slice(-2);
+
+    let html = '';
+    html = ""+year+"년 "+month+"월 "+day+"일, 23시 59분";
+    $('.selectTime').append(html);
+
+
+	//분류 체크박스 최대 하나만 체크 가능하게 컨트롤
+	$("input:checkbox[id^=simplePdFrm_patntAreaType]").on("click", function(e){
+		var chkFrm = $(this).closest('form').attr("id");
+		var id = $(this).attr("class");
+
+		if($(this).is(":checked") == true){
+			$("#"+id).removeAttr("checked");
+		}
+
+	});
+
+    function validationChkFnc(chkFrm){
+
+        if(chkFrm != "dissMonthFrm"){
+            var startDt = $("#"+chkFrm).find("[name=startDt] option:selected").val();
+            var endDt = $("#"+chkFrm).find("[name=endDt] option:selected").val();
+            if(chkFrm != 'dissDeathFrm' || (chkFrm == 'dissDeathFrm' &&  $("#"+chkFrm).find("[name=dateType]:checked").val() == "year")){
+                if(startDt > endDt){
+                    alert("종료일이 시작일보다 커야 합니다.")
+                    $("#"+chkFrm).find("[name=endDt]").focus();
+                    return false;
+                }
+            }
+        }
+
+        if(chkFrm == "dissYearMonthFrm"){
+            if($("#"+chkFrm).find("[name=icdgrpCd] option:selected").val() == ""){
+                alert("감염병 급을 선택하세요.");
+                $("#"+chkFrm).find("[name=icdgrpCd]").focus();
+                return false;
+            }else if($("#"+chkFrm).find("[name=icdCd] option:selected").val() == ""){
+                alert("감염병명을 선택하세요.")
+                $("#"+chkFrm).find("[name=icdCd]").focus();
+                return false;
+            }
+        }
+        return true;
+    }
+
+
+  //멀티셀릭터 옵션
+	$('.multi').multipleSelect({
+	  selectAllDelimiter: [],
+	  multipleWidth: "999",
+	  ellipsis: true,
+	  multiple: true,
+	  placeholder: '전체',
+	  selectAllText: '전체',
+	  allSelected: '전체'
+	});
+
+
+
+	//환자분류별 선택시 발생수 체크후 숨김
+    $(".statistic-form [name=patntType]").on("change", function () {
+      if ($(this).val() == '1') {
+        $("[name=searchType]").eq(0).prop("checked", true);
+        $("[name=searchType]").eq(1).prop("checked", false).siblings('label').removeClass('on');
+        $(".searchType").css("visibility", "visible")
+      } else if ($(this).val() == '2') {
+        $("[name=searchType]").eq(0).prop("checked", true);
+        $("[name=searchType]").eq(1).prop("checked", false).siblings('label').removeClass('on');
+        $(".searchType").css("visibility", "hidden")
+      }
+    });
+
+
+
+
+ // 감염병명 노멀셀릭트 1급 선택시 1급 질병명만 노출되게...(일반 콤보 셋팅)
+    function checkToCheckNomal(target) {
+      const $target = $('#'+target);
+      const selectedId = $('#'+target+' option:selected').val();
+
+      $target.closest("div").find("optgroup").each(function () {
+        let labelValue = $(this).attr('data-icdgrpCd');
+        if (selectedId.includes(labelValue)) {
+          $(this).children("option").each(function () {
+            $(this).prop('disabled', false);
+            $(this).show();
+            $(this).closest("optgroup").show();
+            $(this).closest("optgroup :first-child").prop("selected", true);
+          })
+        } else {
+          $(this).children("option").each(function () {
+            $(this).prop('disabled', true);
+            $(this).hide();
+            $(this).closest("optgroup").hide();
+            $(this).closest("optgroup :first-child").removeAttr("selected");
+          })
+        }
+      });
+
+    }
+
+
+
+
+    //지역별 조회탭 콤보박스 onchange 이벤트 리스너
+    $("select[id$=FrmIcdgrpCd]").change(function (e) {
+    	let $target = $(e.currentTarget);
+    	let idNm =  $target.attr("id");
+    	checkToCheckNomal(idNm);
+
+    })
+
+    checkToCheckNomal("simpleAreaFrmIcdgrpCd"); //감염병 콤보박스 셋팅(일반형)
+
+    //통계작성 버튼클릭
+    $('[type=submit]').on('click', function(event) {
+
+
+        var chkFrm = $(this).closest('form').attr("id");
+
+        var paramMap = $("#"+chkFrm).serializeArray();
+
+        if(validationChkFnc(chkFrm)){
+        	$(".contents-wrap").empty();
+            $(".contents-wrap").load("/pot/is/simpleAreaStatsContentEDW.do", paramMap);
+        }
+
+    });
+});
+
+
+
+
+</script>
+
+    <style type="text/css">
+        .st0{fill:url(#SVGID_1_);}
+        .st1{fill:#FFFFFF;}
+        .spin{ width:50px; height:50px; animation: rotator 1s linear infinite;}
+        .spin img{width:100%; height:100%; display: block;}
+        @keyframes rotator {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+	<!--skip-->
+	<div class="skipnavi">
+		<a href="#gnb">대메뉴 바로가기</a>
+		<a href="#content">본문 바로가기</a>
+		<a href="#footer">푸터 바로가기</a>
+	</div>
+	<!--//skip-->
+
+		<header id="header" >
+		
+
+
+
+
+
+
+
+<!--전체메뉴 start -->
+<div id="modal-menu" class="site_map" >
+	<!--pc-->
+	<div class="container1400 menu_effect for_pc">
+		<div class="menu_header">
+			<div class="logo"><a href="/pot/" title="로고"><img src="/pot/resources/images/logo_S.png" alt="감염병포털 로고"></a></div>
+			<div class="search_box">
+				<div class="mnue_search_area">
+					<!--검색 start-->
+					<form name="searchForm1" class="search-container" action="/pot/search.do" method="post">
+						<div class="search-area">
+							<label for="search-pc-header"><span>검색어</span>를 입력하세요</label>
+							<input id="search-pc-header" type="text" name="q_searchVal" class="search">
+						</div>
+						<button type="button" onclick="fnSearchSubmit('', 'searchForm1');">검색</button>
+					</form>
+					<!--검색 end-->
+				</div>
+				<a href="#" class="btn-close allmenu_close" title="닫기"></a>
+			</div>
+		</div>
+
+		<div class="menu_contents">
+			
+				
+					<div class="menu_box">
+						<div class="title">
+							
+								
+								감염병정보
+							
+						</div>
+
+						
+							<ul class="dep1_list">
+								
+									
+										
+											
+											
+											
+											
+										
+
+										
+										
+
+										<li>
+											
+											<a href="/pot/ii/sttyInftnsds/sttyInftnsds.do" target="_self">
+												
+													
+													법정감염병
+												
+											</a>
+											
+										</li>
+									
+								
+									
+										
+											
+											
+											
+											
+										
+
+										
+										
+
+										<li>
+											
+											<a href="/pot/bbs/BD_selectBbsList.do?q_bbsSn=1001" target="_self">
+												
+													
+													감염병지침
+												
+											</a>
+											
+										</li>
+									
+								
+									
+										
+											
+											
+											
+											
+										
+
+										
+										
+											
+												
+													
+													
+												
+											
+												
+											
+										
+
+										<li>
+											
+											<a href="https://nqs.kdca.go.kr/nqs/vaccination.do?gubun=org" target="_blank" title="새창으로 이동합니다.">
+												
+													
+													해외감염병정보
+												
+											</a>
+											
+												<ul class="dep2_list">
+													
+														
+															
+																
+																
+																
+															
+
+															
+															
+
+															<li>
+																
+																<a href="https://nqs.kdca.go.kr/nqs/vaccination.do?gubun=org" target="_blank" title="새창으로 이동합니다.">
+																	
+																		
+																		국제공인예방접종기관
+																	
+																</a>
+															</li>
+														
+													
+														
+															
+																
+																
+																
+															
+
+															
+															
+
+															<li>
+																
+																<a href="http://xn--now-po7lf48dlsm0ya109f.kr/nqs/oidnow/travel/prevention.do" target="_blank" title="새창으로 이동합니다.">
+																	
+																		
+																		해외감염병 예방수칙
+																	
+																</a>
+															</li>
+														
+													
+												</ul>
+											
+										</li>
+									
+								
+							</ul>
+						
+					</div>
+				
+			
+				
+					<div class="menu_box">
+						<div class="title">
+							
+								
+								감염병소식
+							
+						</div>
+
+						
+							<ul class="dep1_list">
+								
+									
+										
+											
+											
+											
+											
+										
+
+										
+										
+
+										<li>
+											
+											<a href="/pot/bbs/BD_selectBbsList.do?q_bbsSn=1008" target="_self">
+												
+													
+													감염병뉴스
+												
+											</a>
+											
+										</li>
+									
+								
+									
+										
+											
+											
+											
+											
+										
+
+										
+										
+
+										<li>
+											
+											<a href="/pot/bbs/BD_selectBbsList.do?q_bbsSn=1009" target="_self">
+												
+													
+													주간발생동향
+												
+											</a>
+											
+										</li>
+									
+								
+									
+								
+									
+										
+											
+											
+											
+											
+										
+
+										
+										
+
+										<li>
+											
+											<a href="/pot/bbs/BD_selectBbsList.do?q_bbsSn=1010&q_clsfNo=1" target="_self">
+												
+													
+													간행물·소식지
+												
+											</a>
+											
+										</li>
+									
+								
+							</ul>
+						
+					</div>
+				
+			
+				
+					<div class="menu_box">
+						<div class="title">
+							
+								
+								코로나19
+							
+						</div>
+
+						
+							<ul class="dep1_list">
+								
+									
+										
+											
+											
+											
+											
+										
+
+										
+										
+											
+												
+													
+													
+												
+											
+												
+											
+												
+											
+										
+
+										<li>
+											
+											<a href="/pot/bbs/BD_selectBbs.do?q_bbsSn=1025" target="_self">
+												
+													
+													발생현황
+												
+											</a>
+											
+												<ul class="dep2_list">
+													
+														
+															
+																
+																
+																
+															
+
+															
+															
+
+															<li>
+																
+																<a href="/pot/bbs/BD_selectBbs.do?q_bbsSn=1025" target="_self">
+																	
+																		
+																		최근 발생현황
+																	
+																</a>
+															</li>
+														
+													
+														
+															
+																
+																
+																
+															
+
+															
+															
+
+															<li>
+																
+																<a href="/pot/cv/trend/dmstc/selectMntrgSttus.do" target="_self">
+																	
+																		
+																		전체 발생현황
+																	
+																</a>
+															</li>
+														
+													
+														
+															
+																
+																
+																
+															
+
+															
+															
+
+															<li>
+																
+																<a href="/pot/www/CVID19/CVID19_INFO/VRTN_SRVLNC_STS.jsp" target="_self">
+																	
+																		
+																		변이 감시 현황
+																	
+																</a>
+															</li>
+														
+													
+												</ul>
+											
+										</li>
+									
+								
+									
+										
+											
+											
+											
+											
+										
+
+										
+										
+											
+												
+													
+													
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+										
+
+										<li>
+											
+											<a href="/pot/www/CVID19/CVID19_INFO/DFNTN.jsp" target="_self">
+												
+													
+													코로나19정보
+												
+											</a>
+											
+												<ul class="dep2_list">
+													
+														
+															
+																
+																
+																
+															
+
+															
+															
+
+															<li>
+																
+																<a href="/pot/www/CVID19/CVID19_INFO/DFNTN.jsp" target="_self">
+																	
+																		
+																		정의
+																	
+																</a>
+															</li>
+														
+													
+														
+													
+														
+													
+														
+													
+														
+															
+																
+																
+																
+															
+
+															
+															
+
+															<li>
+																
+																<a href="/pot/www/CVID19/CVID19_INFO/COVID_SNDRM.jsp" target="_self">
+																	
+																		
+																		만성 코로나19증후군
+																	
+																</a>
+															</li>
+														
+													
+														
+													
+														
+													
+												</ul>
+											
+										</li>
+									
+								
+									
+										
+											
+											
+											
+											
+										
+
+										
+										
+											
+												
+													
+													
+												
+											
+												
+											
+												
+											
+										
+
+										<li>
+											
+											<a href="/pot/www/CVID19/PRVNTN/VCNTN.jsp" target="_self">
+												
+													
+													예방
+												
+											</a>
+											
+												<ul class="dep2_list">
+													
+														
+															
+																
+																
+																
+															
+
+															
+															
+
+															<li>
+																
+																<a href="/pot/www/CVID19/PRVNTN/VCNTN.jsp" target="_self">
+																	
+																		
+																		예방접종
+																	
+																</a>
+															</li>
+														
+													
+														
+													
+														
+															
+																
+																
+																
+															
+
+															
+															
+
+															<li>
+																
+																<a href="/pot/www/CVID19/PRVNTN/PRVNTN_MNGT.jsp" target="_self">
+																	
+																		
+																		예방관리
+																	
+																</a>
+															</li>
+														
+													
+												</ul>
+											
+										</li>
+									
+								
+									
+										
+											
+											
+											
+											
+										
+
+										
+										
+											
+												
+													
+													
+												
+											
+												
+											
+												
+											
+										
+
+										<li>
+											
+											<a href="/pot/www/CVID19/INSP/INSPMET.jsp" target="_self">
+												
+													
+													검사
+												
+											</a>
+											
+												<ul class="dep2_list">
+													
+														
+															
+																
+																
+																
+															
+
+															
+															
+
+															<li>
+																
+																<a href="/pot/www/CVID19/INSP/INSPMET.jsp" target="_self">
+																	
+																		
+																		코로나19검사방법
+																	
+																</a>
+															</li>
+														
+													
+														
+													
+														
+													
+												</ul>
+											
+										</li>
+									
+								
+									
+										
+											
+											
+											
+											
+										
+
+										
+										
+											
+												
+													
+													
+												
+											
+												
+											
+										
+
+										<li>
+											
+											<a href="/pot/www/CVID19/DFNTDGNS/DFNTDGNS_SPRT.jsp" target="_self">
+												
+													
+													확진
+												
+											</a>
+											
+												<ul class="dep2_list">
+													
+														
+															
+																
+																
+																
+															
+
+															
+															
+
+															<li>
+																
+																<a href="/pot/www/CVID19/DFNTDGNS/DFNTDGNS_SPRT.jsp" target="_self">
+																	
+																		
+																		확진자지원
+																	
+																</a>
+															</li>
+														
+													
+														
+													
+												</ul>
+											
+										</li>
+									
+								
+									
+										
+											
+											
+											
+											
+										
+
+										
+										
+											
+												
+													
+													
+												
+											
+												
+											
+										
+
+										<li>
+											
+											<a href="/pot/www/CVID19/TRTMNT/MEDCN.jsp" target="_self">
+												
+													
+													치료
+												
+											</a>
+											
+												<ul class="dep2_list">
+													
+														
+															
+																
+																
+																
+															
+
+															
+															
+
+															<li>
+																
+																<a href="/pot/www/CVID19/TRTMNT/MEDCN.jsp" target="_self">
+																	
+																		
+																		치료제
+																	
+																</a>
+															</li>
+														
+													
+														
+															
+																
+																
+																
+															
+
+															
+															
+
+															<li>
+																
+																<a href="/pot/cv/etngcPhcyInst/selectEtngcPrscrptnInstList.do" target="_self">
+																	
+																		
+																		먹는치료제
+																	
+																</a>
+															</li>
+														
+													
+												</ul>
+											
+										</li>
+									
+								
+							</ul>
+						
+					</div>
+				
+			
+				
+					<div class="menu_box">
+						<div class="title">
+							
+								
+								감염병통계
+							
+						</div>
+
+						
+							<ul class="dep1_list">
+								
+									
+										
+											
+											
+											
+											
+										
+
+										
+										
+											
+												
+													
+													
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+										
+
+										<li>
+											
+											<a href="/pot/is/summaryEDW.do" target="_self">
+												
+													
+													전수감시감염병
+												
+											</a>
+											
+												<ul class="dep2_list">
+													
+														
+															
+																
+																
+																
+															
+
+															
+															
+
+															<li>
+																
+																<a href="/pot/is/summaryEDW.do" target="_self">
+																	
+																		
+																		주요통계(기간별)
+																	
+																</a>
+															</li>
+														
+													
+														
+															
+																
+																
+																
+															
+
+															
+															
+
+															<li>
+																
+																<a href="/pot/is/summaryRginEDW.do" target="_self">
+																	
+																		
+																		주요통계(지역별)
+																	
+																</a>
+															</li>
+														
+													
+														
+															
+																
+																
+																
+															
+
+															
+															
+
+															<li>
+																
+																<a href="/pot/is/summaryAgeEDW.do" target="_self">
+																	
+																		
+																		주요통계(성별/연령별)
+																	
+																</a>
+															</li>
+														
+													
+														
+															
+																
+																
+																
+															
+
+															
+															
+
+															<li>
+																
+																<a href="/pot/is/inftnsdsEDW.do" target="_self">
+																	
+																		
+																		감염병별
+																	
+																</a>
+															</li>
+														
+													
+														
+															
+																
+																
+																
+															
+
+															
+															
+
+															<li>
+																
+																<a href="/pot/is/rginEDW.do" target="_self">
+																	
+																		
+																		지역별
+																	
+																</a>
+															</li>
+														
+													
+														
+															
+																
+																
+																
+															
+
+															
+															
+
+															<li>
+																
+																<a href="/pot/is/ageEDW.do" target="_self">
+																	
+																		
+																		성별/연령별
+																	
+																</a>
+															</li>
+														
+													
+														
+															
+																
+																
+																
+															
+
+															
+															
+
+															<li>
+																
+																<a href="/pot/is/dashboardEDW.do" target="_blank" title="새창으로 이동합니다.">
+																	
+																		
+																		대시보드
+																	
+																</a>
+															</li>
+														
+													
+												</ul>
+											
+										</li>
+									
+								
+									
+										
+											
+											
+											
+											
+										
+
+										
+										
+											
+												
+													
+													
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+										
+
+										<li>
+											
+											<a href="/pot/is/st/influ.do" target="_self">
+												
+													
+													표본감시감염병
+												
+											</a>
+											
+												<ul class="dep2_list">
+													
+														
+															
+																
+																
+																
+															
+
+															
+															
+
+															<li>
+																
+																<a href="/pot/is/st/influ.do" target="_self">
+																	
+																		
+																		인플루엔자
+																	
+																</a>
+															</li>
+														
+													
+														
+															
+																
+																
+																
+															
+
+															
+															
+
+															<li>
+																
+																<a href="/pot/is/st/fluON.do" target="_blank" title="새창으로 이동합니다.">
+																	
+																		
+																		인플루엔자대시보드
+																	
+																</a>
+															</li>
+														
+													
+														
+															
+																
+																
+																
+															
+
+															
+															
+
+															<li>
+																
+																<a href="/pot/is/st/prsts.do" target="_self">
+																	
+																		
+																		기생충감염증
+																	
+																</a>
+															</li>
+														
+													
+														
+															
+																
+																
+																
+															
+
+															
+															
+
+															<li>
+																
+																<a href="/pot/is/st/hfmd.do" target="_self">
+																	
+																		
+																		수족구병
+																	
+																</a>
+															</li>
+														
+													
+														
+															
+																
+																
+																
+															
+
+															
+															
+
+															<li>
+																
+																<a href="/pot/is/st/hfmdc.do" target="_self">
+																	
+																		
+																		합병증동반수족구병
+																	
+																</a>
+															</li>
+														
+													
+														
+															
+																
+																
+																
+															
+
+															
+															
+
+															<li>
+																
+																<a href="/pot/is/st/stis.do" target="_self">
+																	
+																		
+																		성매개감염병
+																	
+																</a>
+															</li>
+														
+													
+														
+															
+																
+																
+																
+															
+
+															
+															
+
+															<li>
+																
+																<a href="/pot/is/st/ipi.do" target="_self">
+																	
+																		
+																		해외유입기생충감염증
+																	
+																</a>
+															</li>
+														
+													
+														
+															
+																
+																
+																
+															
+
+															
+															
+
+															<li>
+																
+																<a href="/pot/is/st/gstrnftn.do" target="_self">
+																	
+																		
+																		장관감염증
+																	
+																</a>
+															</li>
+														
+													
+														
+															
+																
+																
+																
+															
+
+															
+															
+
+															<li>
+																
+																<a href="/pot/is/st/ari.do" target="_self">
+																	
+																		
+																		급성호흡기감염증
+																	
+																</a>
+															</li>
+														
+													
+														
+															
+																
+																
+																
+															
+
+															
+															
+
+															<li>
+																
+																<a href="/pot/is/st/sari.do" target="_self">
+																	
+																		
+																		중증급성호흡기감염증
+																	
+																</a>
+															</li>
+														
+													
+														
+															
+																
+																
+																
+															
+
+															
+															
+
+															<li>
+																
+																<a href="/pot/is/st/etrvnftn.do" target="_self">
+																	
+																		
+																		엔테로바이러스감염증
+																	
+																</a>
+															</li>
+														
+													
+														
+															
+																
+																
+																
+															
+
+															
+															
+
+															<li>
+																
+																<a href="/pot/is/st/ophlgc.do" target="_self">
+																	
+																		
+																		안과감염병
+																	
+																</a>
+															</li>
+														
+													
+														
+															
+																
+																
+																
+															
+
+															
+															
+
+															<li>
+																
+																<a href="/pot/is/st/hai.do" target="_self">
+																	
+																		
+																		의료관련감염병
+																	
+																</a>
+															</li>
+														
+													
+														
+															
+																
+																
+																
+															
+
+															
+															
+
+															<li>
+																
+																<a href="/pot/is/st/hcv.do" target="_self">
+																	
+																		
+																		C형간염
+																	
+																</a>
+															</li>
+														
+													
+												</ul>
+											
+										</li>
+									
+								
+							</ul>
+						
+					</div>
+				
+			
+				
+					<div class="menu_box">
+						<div class="title">
+							
+								
+								알림·자료
+							
+						</div>
+
+						
+							<ul class="dep1_list">
+								
+									
+										
+											
+											
+											
+											
+										
+
+										
+										
+
+										<li>
+											
+											<a href="/pot/bbs/BD_selectBbsList.do?q_bbsSn=1011" target="_self">
+												
+													
+													공지사항
+												
+											</a>
+											
+										</li>
+									
+								
+									
+										
+											
+											
+											
+											
+										
+
+										
+										
+
+										<li>
+											
+											<a href="/pot/bbs/BD_selectBbsList.do?q_bbsSn=1002" target="_self">
+												
+													
+													홍보자료
+												
+											</a>
+											
+												<ul class="dep2_list">
+													
+														
+													
+														
+													
+														
+													
+														
+													
+														
+													
+														
+													
+												</ul>
+											
+										</li>
+									
+								
+									
+										
+											
+											
+											
+											
+										
+
+										
+										
+
+										<li>
+											
+											<a href="/pot/bbs/BD_selectBbsList.do?q_bbsSn=1013" target="_self">
+												
+													
+													자주찾는 질문
+												
+											</a>
+											
+										</li>
+									
+								
+							</ul>
+						
+					</div>
+				
+			
+				
+			
+		</div>
+	</div>
+	<!--// pc-->
+
+	<!--mob-->
+	<div class="for_mob mob_allMenu">
+		<div class="menu_header">
+			<div class="logo_header">
+				<a href="/pot/" title="로고"><img src="/pot/resources/images/mob_allmenu_logo.png" alt="감염병포털 로고"></a>
+				<a href="#" class="btn-close btn-close-white allmenu_close" title=" 닫기"></a>
+			</div>
+			<div class="search_box">
+				<div class="mnue_search_area">
+					<!--검색 start-->
+					<form name="searchForm2" class="search-container" action="/pot/search.do" method="post">
+						<div class="search-area">
+							<label for="search-mob-header"><span>검색어</span>를 입력하세요</label>
+							<input id="search-mob-header" type="text" name="q_searchVal" class="search">
+						</div>
+						<button type="button" onclick="fnSearchSubmit('', 'searchForm2');">검색</button>
+					</form>
+					<!--검색 end-->
+				</div>
+			</div>
+		</div>
+
+		<div class="contents" role="tablist">
+			<ul class="mDepth1">
+				
+					
+						<li class="on">
+							
+								
+								
+								
+							
+
+							
+							
+								
+									
+										
+										
+									
+								
+									
+								
+									
+								
+							
+
+							
+								
+									<a href="#">
+										
+											
+											감염병정보
+										
+									</a>
+									<div class="mDepth2">
+										<ul class="menu_list">
+											
+												
+													
+														
+														
+														
+													
+
+													
+													
+													<li >
+														
+															
+															
+																
+																<a href="/pot/ii/sttyInftnsds/sttyInftnsds.do" target="_self">
+																	
+																		
+																		법정감염병
+																	
+																</a>
+															
+														
+													</li>
+												
+											
+												
+													
+														
+														
+														
+													
+
+													
+													
+													<li >
+														
+															
+															
+																
+																<a href="/pot/bbs/BD_selectBbsList.do?q_bbsSn=1001" target="_self">
+																	
+																		
+																		감염병지침
+																	
+																</a>
+															
+														
+													</li>
+												
+											
+												
+													
+														
+														
+														
+													
+
+													
+													
+														
+															
+																
+																
+															
+														
+															
+														
+													
+													<li class="dropDown">
+														
+															
+																<a href="#">
+																	
+																		
+																		해외감염병정보
+																	
+																</a>
+																<ul class="mDepth3">
+																	
+																		
+																			
+																				
+																				
+																				
+																			
+
+																			
+																			
+
+																			<li>
+																				
+																				<a href="https://nqs.kdca.go.kr/nqs/vaccination.do?gubun=org" target="_blank" title="새창으로 이동합니다.">
+																					
+																						
+																						국제공인예방접종기관
+																					
+																				</a>
+																			</li>
+																		
+																	
+																		
+																			
+																				
+																				
+																				
+																			
+
+																			
+																			
+
+																			<li>
+																				
+																				<a href="http://xn--now-po7lf48dlsm0ya109f.kr/nqs/oidnow/travel/prevention.do" target="_blank" title="새창으로 이동합니다.">
+																					
+																						
+																						해외감염병 예방수칙
+																					
+																				</a>
+																			</li>
+																		
+																	
+																</ul>
+															
+															
+														
+													</li>
+												
+											
+										</ul>
+									</div>
+								
+								
+							
+						</li>
+					
+				
+					
+						<li >
+							
+								
+								
+								
+							
+
+							
+							
+								
+									
+										
+										
+									
+								
+									
+								
+									
+								
+									
+								
+							
+
+							
+								
+									<a href="#">
+										
+											
+											감염병소식
+										
+									</a>
+									<div class="mDepth2">
+										<ul class="menu_list">
+											
+												
+													
+														
+														
+														
+													
+
+													
+													
+													<li >
+														
+															
+															
+																
+																<a href="/pot/bbs/BD_selectBbsList.do?q_bbsSn=1008" target="_self">
+																	
+																		
+																		감염병뉴스
+																	
+																</a>
+															
+														
+													</li>
+												
+											
+												
+													
+														
+														
+														
+													
+
+													
+													
+													<li >
+														
+															
+															
+																
+																<a href="/pot/bbs/BD_selectBbsList.do?q_bbsSn=1009" target="_self">
+																	
+																		
+																		주간발생동향
+																	
+																</a>
+															
+														
+													</li>
+												
+											
+												
+											
+												
+													
+														
+														
+														
+													
+
+													
+													
+													<li >
+														
+															
+															
+																
+																<a href="/pot/bbs/BD_selectBbsList.do?q_bbsSn=1010&q_clsfNo=1" target="_self">
+																	
+																		
+																		간행물·소식지
+																	
+																</a>
+															
+														
+													</li>
+												
+											
+										</ul>
+									</div>
+								
+								
+							
+						</li>
+					
+				
+					
+						<li >
+							
+								
+								
+								
+							
+
+							
+							
+								
+									
+										
+										
+											
+												
+													
+													
+												
+											
+												
+											
+												
+											
+										
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+							
+
+							
+								
+									<a href="#">
+										
+											
+											코로나19
+										
+									</a>
+									<div class="mDepth2">
+										<ul class="menu_list">
+											
+												
+													
+														
+														
+														
+													
+
+													
+													
+														
+															
+																
+																
+															
+														
+															
+														
+															
+														
+													
+													<li class="dropDown">
+														
+															
+																<a href="#">
+																	
+																		
+																		발생현황
+																	
+																</a>
+																<ul class="mDepth3">
+																	
+																		
+																			
+																				
+																				
+																				
+																			
+
+																			
+																			
+
+																			<li>
+																				
+																				<a href="/pot/bbs/BD_selectBbs.do?q_bbsSn=1025" target="_self">
+																					
+																						
+																						최근 발생현황
+																					
+																				</a>
+																			</li>
+																		
+																	
+																		
+																			
+																				
+																				
+																				
+																			
+
+																			
+																			
+
+																			<li>
+																				
+																				<a href="/pot/cv/trend/dmstc/selectMntrgSttus.do" target="_self">
+																					
+																						
+																						전체 발생현황
+																					
+																				</a>
+																			</li>
+																		
+																	
+																		
+																			
+																				
+																				
+																				
+																			
+
+																			
+																			
+
+																			<li>
+																				
+																				<a href="/pot/www/CVID19/CVID19_INFO/VRTN_SRVLNC_STS.jsp" target="_self">
+																					
+																						
+																						변이 감시 현황
+																					
+																				</a>
+																			</li>
+																		
+																	
+																</ul>
+															
+															
+														
+													</li>
+												
+											
+												
+													
+														
+														
+														
+													
+
+													
+													
+														
+															
+																
+																
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+													
+													<li class="dropDown">
+														
+															
+																<a href="#">
+																	
+																		
+																		코로나19정보
+																	
+																</a>
+																<ul class="mDepth3">
+																	
+																		
+																			
+																				
+																				
+																				
+																			
+
+																			
+																			
+
+																			<li>
+																				
+																				<a href="/pot/www/CVID19/CVID19_INFO/DFNTN.jsp" target="_self">
+																					
+																						
+																						정의
+																					
+																				</a>
+																			</li>
+																		
+																	
+																		
+																	
+																		
+																	
+																		
+																	
+																		
+																			
+																				
+																				
+																				
+																			
+
+																			
+																			
+
+																			<li>
+																				
+																				<a href="/pot/www/CVID19/CVID19_INFO/COVID_SNDRM.jsp" target="_self">
+																					
+																						
+																						만성 코로나19증후군
+																					
+																				</a>
+																			</li>
+																		
+																	
+																		
+																	
+																		
+																	
+																</ul>
+															
+															
+														
+													</li>
+												
+											
+												
+													
+														
+														
+														
+													
+
+													
+													
+														
+															
+																
+																
+															
+														
+															
+														
+															
+														
+													
+													<li class="dropDown">
+														
+															
+																<a href="#">
+																	
+																		
+																		예방
+																	
+																</a>
+																<ul class="mDepth3">
+																	
+																		
+																			
+																				
+																				
+																				
+																			
+
+																			
+																			
+
+																			<li>
+																				
+																				<a href="/pot/www/CVID19/PRVNTN/VCNTN.jsp" target="_self">
+																					
+																						
+																						예방접종
+																					
+																				</a>
+																			</li>
+																		
+																	
+																		
+																	
+																		
+																			
+																				
+																				
+																				
+																			
+
+																			
+																			
+
+																			<li>
+																				
+																				<a href="/pot/www/CVID19/PRVNTN/PRVNTN_MNGT.jsp" target="_self">
+																					
+																						
+																						예방관리
+																					
+																				</a>
+																			</li>
+																		
+																	
+																</ul>
+															
+															
+														
+													</li>
+												
+											
+												
+													
+														
+														
+														
+													
+
+													
+													
+														
+															
+																
+																
+															
+														
+															
+														
+															
+														
+													
+													<li class="dropDown">
+														
+															
+																<a href="#">
+																	
+																		
+																		검사
+																	
+																</a>
+																<ul class="mDepth3">
+																	
+																		
+																			
+																				
+																				
+																				
+																			
+
+																			
+																			
+
+																			<li>
+																				
+																				<a href="/pot/www/CVID19/INSP/INSPMET.jsp" target="_self">
+																					
+																						
+																						코로나19검사방법
+																					
+																				</a>
+																			</li>
+																		
+																	
+																		
+																	
+																		
+																	
+																</ul>
+															
+															
+														
+													</li>
+												
+											
+												
+													
+														
+														
+														
+													
+
+													
+													
+														
+															
+																
+																
+															
+														
+															
+														
+													
+													<li class="dropDown">
+														
+															
+																<a href="#">
+																	
+																		
+																		확진
+																	
+																</a>
+																<ul class="mDepth3">
+																	
+																		
+																			
+																				
+																				
+																				
+																			
+
+																			
+																			
+
+																			<li>
+																				
+																				<a href="/pot/www/CVID19/DFNTDGNS/DFNTDGNS_SPRT.jsp" target="_self">
+																					
+																						
+																						확진자지원
+																					
+																				</a>
+																			</li>
+																		
+																	
+																		
+																	
+																</ul>
+															
+															
+														
+													</li>
+												
+											
+												
+													
+														
+														
+														
+													
+
+													
+													
+														
+															
+																
+																
+															
+														
+															
+														
+													
+													<li class="dropDown">
+														
+															
+																<a href="#">
+																	
+																		
+																		치료
+																	
+																</a>
+																<ul class="mDepth3">
+																	
+																		
+																			
+																				
+																				
+																				
+																			
+
+																			
+																			
+
+																			<li>
+																				
+																				<a href="/pot/www/CVID19/TRTMNT/MEDCN.jsp" target="_self">
+																					
+																						
+																						치료제
+																					
+																				</a>
+																			</li>
+																		
+																	
+																		
+																			
+																				
+																				
+																				
+																			
+
+																			
+																			
+
+																			<li>
+																				
+																				<a href="/pot/cv/etngcPhcyInst/selectEtngcPrscrptnInstList.do" target="_self">
+																					
+																						
+																						먹는치료제
+																					
+																				</a>
+																			</li>
+																		
+																	
+																</ul>
+															
+															
+														
+													</li>
+												
+											
+										</ul>
+									</div>
+								
+								
+							
+						</li>
+					
+				
+					
+						<li >
+							
+								
+								
+								
+							
+
+							
+							
+								
+									
+										
+										
+											
+												
+													
+													
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+										
+									
+								
+									
+								
+							
+
+							
+								
+									<a href="#">
+										
+											
+											감염병통계
+										
+									</a>
+									<div class="mDepth2">
+										<ul class="menu_list">
+											
+												
+													
+														
+														
+														
+													
+
+													
+													
+														
+															
+																
+																
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+													
+													<li class="dropDown">
+														
+															
+																<a href="#">
+																	
+																		
+																		전수감시감염병
+																	
+																</a>
+																<ul class="mDepth3">
+																	
+																		
+																			
+																				
+																				
+																				
+																			
+
+																			
+																			
+
+																			<li>
+																				
+																				<a href="/pot/is/summaryEDW.do" target="_self">
+																					
+																						
+																						주요통계(기간별)
+																					
+																				</a>
+																			</li>
+																		
+																	
+																		
+																			
+																				
+																				
+																				
+																			
+
+																			
+																			
+
+																			<li>
+																				
+																				<a href="/pot/is/summaryRginEDW.do" target="_self">
+																					
+																						
+																						주요통계(지역별)
+																					
+																				</a>
+																			</li>
+																		
+																	
+																		
+																			
+																				
+																				
+																				
+																			
+
+																			
+																			
+
+																			<li>
+																				
+																				<a href="/pot/is/summaryAgeEDW.do" target="_self">
+																					
+																						
+																						주요통계(성별/연령별)
+																					
+																				</a>
+																			</li>
+																		
+																	
+																		
+																			
+																				
+																				
+																				
+																			
+
+																			
+																			
+
+																			<li>
+																				
+																				<a href="/pot/is/inftnsdsEDW.do" target="_self">
+																					
+																						
+																						감염병별
+																					
+																				</a>
+																			</li>
+																		
+																	
+																		
+																			
+																				
+																				
+																				
+																			
+
+																			
+																			
+
+																			<li>
+																				
+																				<a href="/pot/is/rginEDW.do" target="_self">
+																					
+																						
+																						지역별
+																					
+																				</a>
+																			</li>
+																		
+																	
+																		
+																			
+																				
+																				
+																				
+																			
+
+																			
+																			
+
+																			<li>
+																				
+																				<a href="/pot/is/ageEDW.do" target="_self">
+																					
+																						
+																						성별/연령별
+																					
+																				</a>
+																			</li>
+																		
+																	
+																		
+																			
+																				
+																				
+																				
+																			
+
+																			
+																			
+
+																			<li>
+																				
+																				<a href="/pot/is/dashboardEDW.do" target="_blank" title="새창으로 이동합니다.">
+																					
+																						
+																						대시보드
+																					
+																				</a>
+																			</li>
+																		
+																	
+																</ul>
+															
+															
+														
+													</li>
+												
+											
+												
+													
+														
+														
+														
+													
+
+													
+													
+														
+															
+																
+																
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+													
+													<li class="dropDown">
+														
+															
+																<a href="#">
+																	
+																		
+																		표본감시감염병
+																	
+																</a>
+																<ul class="mDepth3">
+																	
+																		
+																			
+																				
+																				
+																				
+																			
+
+																			
+																			
+
+																			<li>
+																				
+																				<a href="/pot/is/st/influ.do" target="_self">
+																					
+																						
+																						인플루엔자
+																					
+																				</a>
+																			</li>
+																		
+																	
+																		
+																			
+																				
+																				
+																				
+																			
+
+																			
+																			
+
+																			<li>
+																				
+																				<a href="/pot/is/st/fluON.do" target="_blank" title="새창으로 이동합니다.">
+																					
+																						
+																						인플루엔자대시보드
+																					
+																				</a>
+																			</li>
+																		
+																	
+																		
+																			
+																				
+																				
+																				
+																			
+
+																			
+																			
+
+																			<li>
+																				
+																				<a href="/pot/is/st/prsts.do" target="_self">
+																					
+																						
+																						기생충감염증
+																					
+																				</a>
+																			</li>
+																		
+																	
+																		
+																			
+																				
+																				
+																				
+																			
+
+																			
+																			
+
+																			<li>
+																				
+																				<a href="/pot/is/st/hfmd.do" target="_self">
+																					
+																						
+																						수족구병
+																					
+																				</a>
+																			</li>
+																		
+																	
+																		
+																			
+																				
+																				
+																				
+																			
+
+																			
+																			
+
+																			<li>
+																				
+																				<a href="/pot/is/st/hfmdc.do" target="_self">
+																					
+																						
+																						합병증동반수족구병
+																					
+																				</a>
+																			</li>
+																		
+																	
+																		
+																			
+																				
+																				
+																				
+																			
+
+																			
+																			
+
+																			<li>
+																				
+																				<a href="/pot/is/st/stis.do" target="_self">
+																					
+																						
+																						성매개감염병
+																					
+																				</a>
+																			</li>
+																		
+																	
+																		
+																			
+																				
+																				
+																				
+																			
+
+																			
+																			
+
+																			<li>
+																				
+																				<a href="/pot/is/st/ipi.do" target="_self">
+																					
+																						
+																						해외유입기생충감염증
+																					
+																				</a>
+																			</li>
+																		
+																	
+																		
+																			
+																				
+																				
+																				
+																			
+
+																			
+																			
+
+																			<li>
+																				
+																				<a href="/pot/is/st/gstrnftn.do" target="_self">
+																					
+																						
+																						장관감염증
+																					
+																				</a>
+																			</li>
+																		
+																	
+																		
+																			
+																				
+																				
+																				
+																			
+
+																			
+																			
+
+																			<li>
+																				
+																				<a href="/pot/is/st/ari.do" target="_self">
+																					
+																						
+																						급성호흡기감염증
+																					
+																				</a>
+																			</li>
+																		
+																	
+																		
+																			
+																				
+																				
+																				
+																			
+
+																			
+																			
+
+																			<li>
+																				
+																				<a href="/pot/is/st/sari.do" target="_self">
+																					
+																						
+																						중증급성호흡기감염증
+																					
+																				</a>
+																			</li>
+																		
+																	
+																		
+																			
+																				
+																				
+																				
+																			
+
+																			
+																			
+
+																			<li>
+																				
+																				<a href="/pot/is/st/etrvnftn.do" target="_self">
+																					
+																						
+																						엔테로바이러스감염증
+																					
+																				</a>
+																			</li>
+																		
+																	
+																		
+																			
+																				
+																				
+																				
+																			
+
+																			
+																			
+
+																			<li>
+																				
+																				<a href="/pot/is/st/ophlgc.do" target="_self">
+																					
+																						
+																						안과감염병
+																					
+																				</a>
+																			</li>
+																		
+																	
+																		
+																			
+																				
+																				
+																				
+																			
+
+																			
+																			
+
+																			<li>
+																				
+																				<a href="/pot/is/st/hai.do" target="_self">
+																					
+																						
+																						의료관련감염병
+																					
+																				</a>
+																			</li>
+																		
+																	
+																		
+																			
+																				
+																				
+																				
+																			
+
+																			
+																			
+
+																			<li>
+																				
+																				<a href="/pot/is/st/hcv.do" target="_self">
+																					
+																						
+																						C형간염
+																					
+																				</a>
+																			</li>
+																		
+																	
+																</ul>
+															
+															
+														
+													</li>
+												
+											
+										</ul>
+									</div>
+								
+								
+							
+						</li>
+					
+				
+					
+						<li >
+							
+								
+								
+								
+							
+
+							
+							
+								
+									
+										
+										
+									
+								
+									
+								
+									
+								
+							
+
+							
+								
+									<a href="#">
+										
+											
+											알림·자료
+										
+									</a>
+									<div class="mDepth2">
+										<ul class="menu_list">
+											
+												
+													
+														
+														
+														
+													
+
+													
+													
+													<li >
+														
+															
+															
+																
+																<a href="/pot/bbs/BD_selectBbsList.do?q_bbsSn=1011" target="_self">
+																	
+																		
+																		공지사항
+																	
+																</a>
+															
+														
+													</li>
+												
+											
+												
+													
+														
+														
+														
+													
+
+													
+													
+													<li class="dropDown">
+														
+															
+															
+																
+																<a href="/pot/bbs/BD_selectBbsList.do?q_bbsSn=1002" target="_self">
+																	
+																		
+																		홍보자료
+																	
+																</a>
+															
+														
+													</li>
+												
+											
+												
+													
+														
+														
+														
+													
+
+													
+													
+													<li >
+														
+															
+															
+																
+																<a href="/pot/bbs/BD_selectBbsList.do?q_bbsSn=1013" target="_self">
+																	
+																		
+																		자주찾는 질문
+																	
+																</a>
+															
+														
+													</li>
+												
+											
+										</ul>
+									</div>
+								
+								
+							
+						</li>
+					
+				
+					
+				
+			</ul>
+		</div>
+	</div>
+	<!--//mob-->
+</div>
+<!--pc 전체메뉴 end -->
+
+<div class="wrap_head" id="gnb">
+	<div class="box_gnb">
+		<div class="logo">
+			<a href="/pot/" title="로고"><img src="/pot/resources/images/logo_S.png" alt="감염병포털 로고"></a>
+		</div>
+		<nav class="gnb for_pc">
+			<ul class="menu">
+				
+					
+						<li 
+							
+						>
+							
+								
+								
+								
+							
+
+							
+							
+								
+									
+										
+										
+									
+								
+									
+								
+									
+								
+							
+
+							
+								
+									
+									<a href="/pot/ii/sttyInftnsds/sttyInftnsds.do" aria-haspopup="false">
+										
+											
+											감염병정보
+										
+									</a>
+									<div class="menu_sub">
+										<div class="gnb_sub_title">
+											
+												
+												<div class="gnb-menu-title">감염병정보</div>
+											
+										</div>
+										<ul class="depth2">
+											
+												
+													
+														
+														
+														
+														
+													
+
+													
+													
+
+													<li>
+														<strong class="title_sub">
+															
+															<a href="/pot/ii/sttyInftnsds/sttyInftnsds.do" target="_self">
+																
+																	
+																	법정감염병
+																
+															</a>
+														</strong>
+														
+													</li>
+												
+											
+												
+													
+														
+														
+														
+														
+													
+
+													
+													
+
+													<li>
+														<strong class="title_sub">
+															
+															<a href="/pot/bbs/BD_selectBbsList.do?q_bbsSn=1001" target="_self">
+																
+																	
+																	감염병지침
+																
+															</a>
+														</strong>
+														
+													</li>
+												
+											
+												
+													
+														
+														
+														
+														
+													
+
+													
+													
+														
+															
+																
+																
+															
+														
+															
+														
+													
+
+													<li>
+														<strong class="title_sub">
+															
+															<a href="https://nqs.kdca.go.kr/nqs/vaccination.do?gubun=org" target="_blank" title="새창으로 이동합니다.">
+																
+																	
+																	해외감염병정보
+																
+															</a>
+														</strong>
+														
+															
+																
+																	
+																	
+																	
+																
+
+																
+																
+
+																
+																<a href="https://nqs.kdca.go.kr/nqs/vaccination.do?gubun=org" class="link_sub" target="_blank" title="새창으로 이동합니다.">
+																	<span class="sub_text">
+																		
+																			
+																			국제공인예방접종기관
+																		
+																	</span>
+																</a>
+															
+														
+															
+																
+																	
+																	
+																	
+																
+
+																
+																
+
+																
+																<a href="http://xn--now-po7lf48dlsm0ya109f.kr/nqs/oidnow/travel/prevention.do" class="link_sub" target="_blank" title="새창으로 이동합니다.">
+																	<span class="sub_text">
+																		
+																			
+																			해외감염병 예방수칙
+																		
+																	</span>
+																</a>
+															
+														
+													</li>
+												
+											
+										</ul>
+									</div>
+								
+								
+							
+						</li>
+					
+				
+					
+						<li 
+							
+						>
+							
+								
+								
+								
+							
+
+							
+							
+								
+									
+										
+										
+									
+								
+									
+								
+									
+								
+									
+								
+							
+
+							
+								
+									
+									<a href="/pot/bbs/BD_selectBbsList.do?q_bbsSn=1008" aria-haspopup="false">
+										
+											
+											감염병소식
+										
+									</a>
+									<div class="menu_sub">
+										<div class="gnb_sub_title">
+											
+												
+												<div class="gnb-menu-title">감염병소식</div>
+											
+										</div>
+										<ul class="depth2">
+											
+												
+													
+														
+														
+														
+														
+													
+
+													
+													
+
+													<li>
+														<strong class="title_sub">
+															
+															<a href="/pot/bbs/BD_selectBbsList.do?q_bbsSn=1008" target="_self">
+																
+																	
+																	감염병뉴스
+																
+															</a>
+														</strong>
+														
+													</li>
+												
+											
+												
+													
+														
+														
+														
+														
+													
+
+													
+													
+
+													<li>
+														<strong class="title_sub">
+															
+															<a href="/pot/bbs/BD_selectBbsList.do?q_bbsSn=1009" target="_self">
+																
+																	
+																	주간발생동향
+																
+															</a>
+														</strong>
+														
+													</li>
+												
+											
+												
+											
+												
+													
+														
+														
+														
+														
+													
+
+													
+													
+
+													<li>
+														<strong class="title_sub">
+															
+															<a href="/pot/bbs/BD_selectBbsList.do?q_bbsSn=1010&q_clsfNo=1" target="_self">
+																
+																	
+																	간행물·소식지
+																
+															</a>
+														</strong>
+														
+													</li>
+												
+											
+										</ul>
+									</div>
+								
+								
+							
+						</li>
+					
+				
+					
+						<li 
+							
+						>
+							
+								
+								
+								
+							
+
+							
+							
+								
+									
+										
+										
+											
+												
+													
+													
+												
+											
+												
+											
+												
+											
+										
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+							
+
+							
+								
+									
+									<a href="/pot/bbs/BD_selectBbs.do?q_bbsSn=1025" aria-haspopup="false">
+										
+											
+											코로나19
+										
+									</a>
+									<div class="menu_sub">
+										<div class="gnb_sub_title">
+											
+												
+												<div class="gnb-menu-title">코로나19</div>
+											
+										</div>
+										<ul class="depth2">
+											
+												
+													
+														
+														
+														
+														
+													
+
+													
+													
+														
+															
+																
+																
+															
+														
+															
+														
+															
+														
+													
+
+													<li>
+														<strong class="title_sub">
+															
+															<a href="/pot/bbs/BD_selectBbs.do?q_bbsSn=1025" target="_self">
+																
+																	
+																	발생현황
+																
+															</a>
+														</strong>
+														
+															
+																
+																	
+																	
+																	
+																
+
+																
+																
+
+																
+																<a href="/pot/bbs/BD_selectBbs.do?q_bbsSn=1025" class="link_sub" target="_self">
+																	<span class="sub_text">
+																		
+																			
+																			최근 발생현황
+																		
+																	</span>
+																</a>
+															
+														
+															
+																
+																	
+																	
+																	
+																
+
+																
+																
+
+																
+																<a href="/pot/cv/trend/dmstc/selectMntrgSttus.do" class="link_sub" target="_self">
+																	<span class="sub_text">
+																		
+																			
+																			전체 발생현황
+																		
+																	</span>
+																</a>
+															
+														
+															
+																
+																	
+																	
+																	
+																
+
+																
+																
+
+																
+																<a href="/pot/www/CVID19/CVID19_INFO/VRTN_SRVLNC_STS.jsp" class="link_sub" target="_self">
+																	<span class="sub_text">
+																		
+																			
+																			변이 감시 현황
+																		
+																	</span>
+																</a>
+															
+														
+													</li>
+												
+											
+												
+													
+														
+														
+														
+														
+													
+
+													
+													
+														
+															
+																
+																
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+													
+
+													<li>
+														<strong class="title_sub">
+															
+															<a href="/pot/www/CVID19/CVID19_INFO/DFNTN.jsp" target="_self">
+																
+																	
+																	코로나19정보
+																
+															</a>
+														</strong>
+														
+															
+																
+																	
+																	
+																	
+																
+
+																
+																
+
+																
+																<a href="/pot/www/CVID19/CVID19_INFO/DFNTN.jsp" class="link_sub" target="_self">
+																	<span class="sub_text">
+																		
+																			
+																			정의
+																		
+																	</span>
+																</a>
+															
+														
+															
+														
+															
+														
+															
+														
+															
+																
+																	
+																	
+																	
+																
+
+																
+																
+
+																
+																<a href="/pot/www/CVID19/CVID19_INFO/COVID_SNDRM.jsp" class="link_sub" target="_self">
+																	<span class="sub_text">
+																		
+																			
+																			만성 코로나19증후군
+																		
+																	</span>
+																</a>
+															
+														
+															
+														
+															
+														
+													</li>
+												
+											
+												
+													
+														
+														
+														
+														
+													
+
+													
+													
+														
+															
+																
+																
+															
+														
+															
+														
+															
+														
+													
+
+													<li>
+														<strong class="title_sub">
+															
+															<a href="/pot/www/CVID19/PRVNTN/VCNTN.jsp" target="_self">
+																
+																	
+																	예방
+																
+															</a>
+														</strong>
+														
+															
+																
+																	
+																	
+																	
+																
+
+																
+																
+
+																
+																<a href="/pot/www/CVID19/PRVNTN/VCNTN.jsp" class="link_sub" target="_self">
+																	<span class="sub_text">
+																		
+																			
+																			예방접종
+																		
+																	</span>
+																</a>
+															
+														
+															
+														
+															
+																
+																	
+																	
+																	
+																
+
+																
+																
+
+																
+																<a href="/pot/www/CVID19/PRVNTN/PRVNTN_MNGT.jsp" class="link_sub" target="_self">
+																	<span class="sub_text">
+																		
+																			
+																			예방관리
+																		
+																	</span>
+																</a>
+															
+														
+													</li>
+												
+											
+												
+													
+														
+														
+														
+														
+													
+
+													
+													
+														
+															
+																
+																
+															
+														
+															
+														
+															
+														
+													
+
+													<li>
+														<strong class="title_sub">
+															
+															<a href="/pot/www/CVID19/INSP/INSPMET.jsp" target="_self">
+																
+																	
+																	검사
+																
+															</a>
+														</strong>
+														
+															
+																
+																	
+																	
+																	
+																
+
+																
+																
+
+																
+																<a href="/pot/www/CVID19/INSP/INSPMET.jsp" class="link_sub" target="_self">
+																	<span class="sub_text">
+																		
+																			
+																			코로나19검사방법
+																		
+																	</span>
+																</a>
+															
+														
+															
+														
+															
+														
+													</li>
+												
+											
+												
+													
+														
+														
+														
+														
+													
+
+													
+													
+														
+															
+																
+																
+															
+														
+															
+														
+													
+
+													<li>
+														<strong class="title_sub">
+															
+															<a href="/pot/www/CVID19/DFNTDGNS/DFNTDGNS_SPRT.jsp" target="_self">
+																
+																	
+																	확진
+																
+															</a>
+														</strong>
+														
+															
+																
+																	
+																	
+																	
+																
+
+																
+																
+
+																
+																<a href="/pot/www/CVID19/DFNTDGNS/DFNTDGNS_SPRT.jsp" class="link_sub" target="_self">
+																	<span class="sub_text">
+																		
+																			
+																			확진자지원
+																		
+																	</span>
+																</a>
+															
+														
+															
+														
+													</li>
+												
+											
+												
+													
+														
+														
+														
+														
+													
+
+													
+													
+														
+															
+																
+																
+															
+														
+															
+														
+													
+
+													<li>
+														<strong class="title_sub">
+															
+															<a href="/pot/www/CVID19/TRTMNT/MEDCN.jsp" target="_self">
+																
+																	
+																	치료
+																
+															</a>
+														</strong>
+														
+															
+																
+																	
+																	
+																	
+																
+
+																
+																
+
+																
+																<a href="/pot/www/CVID19/TRTMNT/MEDCN.jsp" class="link_sub" target="_self">
+																	<span class="sub_text">
+																		
+																			
+																			치료제
+																		
+																	</span>
+																</a>
+															
+														
+															
+																
+																	
+																	
+																	
+																
+
+																
+																
+
+																
+																<a href="/pot/cv/etngcPhcyInst/selectEtngcPrscrptnInstList.do" class="link_sub" target="_self">
+																	<span class="sub_text">
+																		
+																			
+																			먹는치료제
+																		
+																	</span>
+																</a>
+															
+														
+													</li>
+												
+											
+										</ul>
+									</div>
+								
+								
+							
+						</li>
+					
+				
+					
+						<li 
+							class="click"
+						>
+							
+								
+								
+								
+							
+
+							
+							
+								
+									
+										
+										
+											
+												
+													
+													
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+										
+									
+								
+									
+								
+							
+
+							
+								
+									
+									<a href="/pot/is/summaryEDW.do" aria-haspopup="false">
+										
+											
+											감염병통계
+										
+									</a>
+									<div class="menu_sub">
+										<div class="gnb_sub_title">
+											
+												
+												<div class="gnb-menu-title">감염병통계</div>
+											
+										</div>
+										<ul class="depth2">
+											
+												
+													
+														
+														
+														
+														
+													
+
+													
+													
+														
+															
+																
+																
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+													
+
+													<li>
+														<strong class="title_sub">
+															
+															<a href="/pot/is/summaryEDW.do" target="_self">
+																
+																	
+																	전수감시감염병
+																
+															</a>
+														</strong>
+														
+															
+																
+																	
+																	
+																	
+																
+
+																
+																
+
+																
+																<a href="/pot/is/summaryEDW.do" class="link_sub" target="_self">
+																	<span class="sub_text">
+																		
+																			
+																			주요통계(기간별)
+																		
+																	</span>
+																</a>
+															
+														
+															
+																
+																	
+																	
+																	
+																
+
+																
+																
+
+																
+																<a href="/pot/is/summaryRginEDW.do" class="link_sub" target="_self">
+																	<span class="sub_text">
+																		
+																			
+																			주요통계(지역별)
+																		
+																	</span>
+																</a>
+															
+														
+															
+																
+																	
+																	
+																	
+																
+
+																
+																
+
+																
+																<a href="/pot/is/summaryAgeEDW.do" class="link_sub" target="_self">
+																	<span class="sub_text">
+																		
+																			
+																			주요통계(성별/연령별)
+																		
+																	</span>
+																</a>
+															
+														
+															
+																
+																	
+																	
+																	
+																
+
+																
+																
+
+																
+																<a href="/pot/is/inftnsdsEDW.do" class="link_sub" target="_self">
+																	<span class="sub_text">
+																		
+																			
+																			감염병별
+																		
+																	</span>
+																</a>
+															
+														
+															
+																
+																	
+																	
+																	
+																
+
+																
+																
+
+																
+																<a href="/pot/is/rginEDW.do" class="link_sub" target="_self">
+																	<span class="sub_text">
+																		
+																			
+																			지역별
+																		
+																	</span>
+																</a>
+															
+														
+															
+																
+																	
+																	
+																	
+																
+
+																
+																
+
+																
+																<a href="/pot/is/ageEDW.do" class="link_sub" target="_self">
+																	<span class="sub_text">
+																		
+																			
+																			성별/연령별
+																		
+																	</span>
+																</a>
+															
+														
+															
+																
+																	
+																	
+																	
+																
+
+																
+																
+
+																
+																<a href="/pot/is/dashboardEDW.do" class="link_sub" target="_blank" title="새창으로 이동합니다.">
+																	<span class="sub_text">
+																		
+																			
+																			대시보드
+																		
+																	</span>
+																</a>
+															
+														
+													</li>
+												
+											
+												
+													
+														
+														
+														
+														
+													
+
+													
+													
+														
+															
+																
+																
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+													
+
+													<li>
+														<strong class="title_sub">
+															
+															<a href="/pot/is/st/influ.do" target="_self">
+																
+																	
+																	표본감시감염병
+																
+															</a>
+														</strong>
+														
+															
+																
+																	
+																	
+																	
+																
+
+																
+																
+
+																
+																<a href="/pot/is/st/influ.do" class="link_sub" target="_self">
+																	<span class="sub_text">
+																		
+																			
+																			인플루엔자
+																		
+																	</span>
+																</a>
+															
+														
+															
+																
+																	
+																	
+																	
+																
+
+																
+																
+
+																
+																<a href="/pot/is/st/fluON.do" class="link_sub" target="_blank" title="새창으로 이동합니다.">
+																	<span class="sub_text">
+																		
+																			
+																			인플루엔자대시보드
+																		
+																	</span>
+																</a>
+															
+														
+															
+																
+																	
+																	
+																	
+																
+
+																
+																
+
+																
+																<a href="/pot/is/st/prsts.do" class="link_sub" target="_self">
+																	<span class="sub_text">
+																		
+																			
+																			기생충감염증
+																		
+																	</span>
+																</a>
+															
+														
+															
+																
+																	
+																	
+																	
+																
+
+																
+																
+
+																
+																<a href="/pot/is/st/hfmd.do" class="link_sub" target="_self">
+																	<span class="sub_text">
+																		
+																			
+																			수족구병
+																		
+																	</span>
+																</a>
+															
+														
+															
+																
+																	
+																	
+																	
+																
+
+																
+																
+
+																
+																<a href="/pot/is/st/hfmdc.do" class="link_sub" target="_self">
+																	<span class="sub_text">
+																		
+																			
+																			합병증동반수족구병
+																		
+																	</span>
+																</a>
+															
+														
+															
+																
+																	
+																	
+																	
+																
+
+																
+																
+
+																
+																<a href="/pot/is/st/stis.do" class="link_sub" target="_self">
+																	<span class="sub_text">
+																		
+																			
+																			성매개감염병
+																		
+																	</span>
+																</a>
+															
+														
+															
+																
+																	
+																	
+																	
+																
+
+																
+																
+
+																
+																<a href="/pot/is/st/ipi.do" class="link_sub" target="_self">
+																	<span class="sub_text">
+																		
+																			
+																			해외유입기생충감염증
+																		
+																	</span>
+																</a>
+															
+														
+															
+																
+																	
+																	
+																	
+																
+
+																
+																
+
+																
+																<a href="/pot/is/st/gstrnftn.do" class="link_sub" target="_self">
+																	<span class="sub_text">
+																		
+																			
+																			장관감염증
+																		
+																	</span>
+																</a>
+															
+														
+															
+																
+																	
+																	
+																	
+																
+
+																
+																
+
+																
+																<a href="/pot/is/st/ari.do" class="link_sub" target="_self">
+																	<span class="sub_text">
+																		
+																			
+																			급성호흡기감염증
+																		
+																	</span>
+																</a>
+															
+														
+															
+																
+																	
+																	
+																	
+																
+
+																
+																
+
+																
+																<a href="/pot/is/st/sari.do" class="link_sub" target="_self">
+																	<span class="sub_text">
+																		
+																			
+																			중증급성호흡기감염증
+																		
+																	</span>
+																</a>
+															
+														
+															
+																
+																	
+																	
+																	
+																
+
+																
+																
+
+																
+																<a href="/pot/is/st/etrvnftn.do" class="link_sub" target="_self">
+																	<span class="sub_text">
+																		
+																			
+																			엔테로바이러스감염증
+																		
+																	</span>
+																</a>
+															
+														
+															
+																
+																	
+																	
+																	
+																
+
+																
+																
+
+																
+																<a href="/pot/is/st/ophlgc.do" class="link_sub" target="_self">
+																	<span class="sub_text">
+																		
+																			
+																			안과감염병
+																		
+																	</span>
+																</a>
+															
+														
+															
+																
+																	
+																	
+																	
+																
+
+																
+																
+
+																
+																<a href="/pot/is/st/hai.do" class="link_sub" target="_self">
+																	<span class="sub_text">
+																		
+																			
+																			의료관련감염병
+																		
+																	</span>
+																</a>
+															
+														
+															
+																
+																	
+																	
+																	
+																
+
+																
+																
+
+																
+																<a href="/pot/is/st/hcv.do" class="link_sub" target="_self">
+																	<span class="sub_text">
+																		
+																			
+																			C형간염
+																		
+																	</span>
+																</a>
+															
+														
+													</li>
+												
+											
+										</ul>
+									</div>
+								
+								
+							
+						</li>
+					
+				
+					
+						<li 
+							
+						>
+							
+								
+								
+								
+							
+
+							
+							
+								
+									
+										
+										
+									
+								
+									
+								
+									
+								
+							
+
+							
+								
+									
+									<a href="/pot/bbs/BD_selectBbsList.do?q_bbsSn=1011" aria-haspopup="false">
+										
+											
+											알림·자료
+										
+									</a>
+									<div class="menu_sub">
+										<div class="gnb_sub_title">
+											
+												
+												<div class="gnb-menu-title">알림·자료</div>
+											
+										</div>
+										<ul class="depth2">
+											
+												
+													
+														
+														
+														
+														
+													
+
+													
+													
+
+													<li>
+														<strong class="title_sub">
+															
+															<a href="/pot/bbs/BD_selectBbsList.do?q_bbsSn=1011" target="_self">
+																
+																	
+																	공지사항
+																
+															</a>
+														</strong>
+														
+													</li>
+												
+											
+												
+													
+														
+														
+														
+														
+													
+
+													
+													
+
+													<li>
+														<strong class="title_sub">
+															
+															<a href="/pot/bbs/BD_selectBbsList.do?q_bbsSn=1002" target="_self">
+																
+																	
+																	홍보자료
+																
+															</a>
+														</strong>
+														
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+													</li>
+												
+											
+												
+													
+														
+														
+														
+														
+													
+
+													
+													
+
+													<li>
+														<strong class="title_sub">
+															
+															<a href="/pot/bbs/BD_selectBbsList.do?q_bbsSn=1013" target="_self">
+																
+																	
+																	자주찾는 질문
+																
+															</a>
+														</strong>
+														
+													</li>
+												
+											
+										</ul>
+									</div>
+								
+								
+							
+						</li>
+					
+				
+					
+				
+			</ul>
+		</nav>
+		<ul class="right-area">
+			<li>
+				<a href="/pot/search.do" class="btn_search for_pc" title="검색">검색하기</a>
+			<li>
+				<a href="#" class="btn_toggle_menu" title="전체메뉴">전체메뉴</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+
+<script>
+	$(document).ready(function() {
+		// mDepth3 자식에 li가 없을시 dropDown 클래스 삭제
+		$('.menu_list .dropDown').each(function(index) {
+			if ($(this).find('.mDepth3').children().length == 0) {
+				$(this).removeClass('dropDown');
+			}
+		});
+
+		/***********************
+		gnb 메뉴 오버 show/hide
+		2023.0627 슬라이드 요소추가
+		**************************/
+		let gnbMenu = {
+			toggleMainMenu: function() {
+				$('.menu > li').on('mouseover focusin', function() {
+					$('select').blur(); // select 포커스 빼기 추가
+
+					let hasClassOn = $(this).is('[class*="on"]');
+					if (!hasClassOn) {
+						$('.menu > li').removeClass('on');
+						$('.menu > li > .menu_sub').hide();
+					}
+					$(this).addClass('on');
+					$(this).children('.menu_sub').slideDown();
+
+				}).on('mouseleave', function() {
+					$(this).removeClass('on');
+					$(this).children('.menu_sub').hide();
+				})
+			},
+		}
+
+		gnbMenu.toggleMainMenu();
+
+		$(".site_map").css("visibility","hidden"); //전체메뉴 시야 숨김
+ // 전체메뉴안에서 탭이동 함수
+    function focusInModalMenu() {
+      const $modal_menu =  $('.site_map .menu_effect.for_pc ');
+
+      const focusableElements = $modal_menu.find("button, input:not([type='hidden']), select, iframe, textarea, [href], [tabindex]:not([tabindex='-1'])");
+      const $firstFocus = focusableElements.first();
+      const $lastFocus = focusableElements.last();
+
+      $(".site_map").css("visibility","visible");
+
+      setTimeout(function(){
+        $firstFocus.focus();
+      },500); // css visibility 변경보다 늦어져서 500 시간차 둠...
+
+     // debugger
+      $modal_menu.on('keydown', (e) => {
+        if (e.key ==='Tab'){
+          if(e.shiftKey){
+            if(document.activeElement === $firstFocus[0]){
+              e.preventDefault();
+              $lastFocus.focus();
+            }
+          }else{
+            if(document.activeElement === $lastFocus[0]) {
+              e.preventDefault();
+              $firstFocus.focus();
+            }
+          }
+        }
+
+      });
+    }
+
+
+    let preTabActionEl; //전체메뉴 열리기 이전 탭위치 저장 변수
+
+    //모달 전체메뉴 오픈 닫기
+    const $body = $("body");
+    $('.btn_toggle_menu').on('click', function () {
+      preTabActionEl = document.activeElement; // 이전요소 변수 저장
+      $body.addClass('menuOpen');
+      focusInModalMenu(); // 전체메뉴 안에 탭 소스 돌게
+      return false
+    });
+
+    $('.allmenu_close').on('click', function () {
+      $body.removeClass('menuOpen');
+      $(".site_map").css("visibility","hidden"); //포커스 안가게 닫기
+      preTabActionEl.focus();
+      return false
+    });
+
+
+  //전체메뉴 ESC 닫기
+    $(document).keydown(function (event) {
+      let $body = $("body");
+      if (event.key === 'Escape' && $body.hasClass('menuOpen')) {
+        $body.removeClass('menuOpen');
+      }
+
+    });
+
+
+		// 모바일 전체메뉴 on/off
+		let mMenuDepth1 = $('.mob_allMenu .contents .mDepth1 > li');
+		mMenuDepth1.click(function(e) {
+			mMenuDepth1.not(this).removeClass('on');
+			$(this).addClass('on')
+		});
+
+		// 모바일 전체메뉴 아코디언
+		let dropDown = $('.dropDown');
+		$('.mDepth3').hide();
+
+		$('.dropDown > a').click(function(e) {
+			e.stopPropagation();
+			if ($(this).parent().hasClass('open')) {
+				$(this).parent().removeClass('open');
+				$(this).next('.mDepth3').slideUp()
+			} else {
+				dropDown.removeClass('open');
+				$('.mDepth3').slideUp();
+				$(this).parent().addClass('open');
+				$(this).next('.mDepth3').slideDown();
+			}
+		});
+
+		// 모바일 전체페이지 메뉴 클릭 action
+		$('.mob_allMenu .mDepth3 a').click(function() {
+			$('.mob_allMenu .mDepth3 a').removeClass('action');
+			$(this).addClass('action');
+		});
+
+
+
+  // gnb 영역 외부를 클릭하거나 탭 포커스가 gnb 영역을 벗어났을 때 메뉴 닫기
+  $(document).on('click keyup', function(e) {
+    let gnb = $('.gnb');
+    if (!gnb.is(e.target) && gnb.has(e.target).length === 0) {
+
+      // 메뉴 닫기 로직 추가
+			$('.menu > li').removeClass('on');
+			$('.menu > li > .menu_sub').hide();
+
+    }
+  });
+	  //gnb접근성
+	 /*   let menuOn = $('.menu > li > a');
+	  $(menuOn).on('focusin',function(e){
+		  $(this).removeAttr('aria-expanded')
+	  })
+	  $(menuOn).on('mouseover',function(e){
+		  $(this).attr('aria-expanded','true');
+	  })
+	  let menuSubOn = $('.menu_sub');
+	  $(menuSubOn).on('mouseover',function(e){
+		  $(this).siblings('a').attr('aria-expanded','true');
+
+	  })
+	   $(menuSubOn).on('mouseleave',function(e){
+		  $(this).siblings('a').attr('aria-expanded','false');
+	  })
+	  $(menuOn).on('mouseleave',function(e){
+		  $(this).attr('aria-expanded','false');
+	  }) */
+	});
+
+
+
+//stiky 소스
+$(window).on('scroll', function(){
+const $menu = $('#header');
+$menu.css({
+	'position':'sticky',
+	'top':'0'
+})
+//.top_banner 가 보일경우 250 아닐경우 85
+ const topBanner_scrollHight = $('.top_banner').is(':visible') ?  250 : 85;
+let $scrollTop = $(window).scrollTop();
+if($scrollTop  > topBanner_scrollHight){
+  $menu.addClass("stiky");
+  $("#top-btn").addClass('stiky'); //top버튼 스크롤 추가
+  //$('.contents').addClass("content_mt85") //margin-top: 85
+}else{
+  $menu.removeClass("stiky");
+  $("#top-btn").removeClass('stiky');
+  //$('.contents').removeClass("content_mt85") // margin-top: 0
+}
+});
+
+
+	// 검색 label 숨김
+	$(".search").on("change keyup paste", function() {
+		if ($(this).val().length == 0) {
+			$(this).prev('label').removeClass("hide");
+		} else {
+			$(this).prev('label').addClass("hide");
+		}
+	});
+
+
+	//gnb 새창열기 아이콘 추가
+	$("a.link_sub[target = '_blank']").addClass('gnb-new-link')
+
+
+
+	//
+
+</script>
+		</header>
+
+		<div class="contents">
+			
+
+
+
+
+
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+
+    });
+</script>
+
+<section class="navigation-box">
+	<div class="navigation container1400">
+		<div id="selectTime" class="for_pc"></div>
+		<ul>
+		<li><a href="/pot/"><img src="/pot/resources/images/sub/nav-ico-home.png" alt="home"></a></li>
+		
+            
+			<li><a href="/pot/is/summaryEDW.do">감염병통계</a></li>
+		
+            
+			<li><a href="/pot/is/summaryEDW.do">전수감시감염병</a></li>
+		
+            
+			<li><a href="/pot/is/summaryRginEDW.do">주요통계(지역별)</a></li>
+		
+		</ul>
+	</div>
+</section>
+			
+
+
+
+
+
+
+
+<script>
+$(document).ready(function() {
+	$("div.share-wrap").find(".sns_copy_inpStyle").val(window.location.href);
+});
+</script>
+
+<div class="share-wrap">
+	<div class="share-area">
+        <div class="sns-share">
+          <button class="share_btn">공유하기</button>
+          <!--공유하기 모달-->
+          <div class="sns_list shadow">
+            <h2>공유하기</h2>
+            <span class="btn-close" tabindex="0" role="button">닫기</span>
+            <ul class="sns_ic_list">
+              <li>
+                <a href="https://www.facebook.com/koreadca/" title="페이스북 공유하기(새창)" target="_blank" class="share_facebook">페이스북</a>
+              </li>
+              <li>
+                <a href="https://twitter.com/KoreaDCA/" title="트위터 공유하기(새창)" target="_blank" class="share_twiter">트위터</a>
+              </li>
+              <li>
+                <a href="https://post.naver.com/my.nhn?memberNo=20182790" title="네이버 공유하기(새창)" target="_blank" class="share_naver">네이버</a>
+              </li>
+              <!-- <li>
+                <a href="https://story.kakao.com/ch/koreacdc" title="카카오스토리 공유하기(새창)" target="_blank" class="share_kakao">카카오스토리</a>
+              </li> -->
+              <li>
+                <a href="https://www.instagram.com/koreadca/" title="인스타그램 공유하기(새창)" target="_blank" class="share_insta">인스타그램</a>
+              </li>
+            </ul>
+            <div class="url_copy_area">
+              <input type="text" class="sns_copy_inpStyle" id="snsCopy" value="/index.html" readonly title="공유 URL" aria-label="공유 URL 입력란">
+              <label for="snsCopy" class="hide">공유URL</label>
+              <button class="sns_sh_btn" onclick="copySns(); return false" >url복사</button>
+            </div>
+          </div>
+          <!--//공유하기 모달-->
+        </div>
+        <div class="print">
+
+          <button onclick="window.print(); return false">인쇄하기</button>
+        </div>
+	</div>
+</div>
+
+			<div class="container1400 sidebar-page">
+				<section class="side-bar for_pc">
+					<div class="side-depth01">
+						<div class="smenu-title">감염병통계</div>
+					</div>
+					<div class="side-depth02">
+						
+							<ul class="side-type-list01 action" id="dis-tab01">
+								
+									
+										
+											
+											
+											
+											
+										
+
+										
+										
+											
+												
+													
+													
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+										
+
+										<li class="open">
+											
+											
+
+											
+
+											<!-- START 2024. 12. 30 웹 접근성 조치 -->
+											
+											<a href="#" class="txt-ell ">
+												
+													
+													전수감시감염병
+												
+											</a>
+											
+											
+											
+											<!-- END 2024. 12. 30 웹 접근성 조치 -->
+
+											
+												<div class="side-type-list02">
+													
+														
+															
+																
+																
+																
+															
+															
+															
+															
+															<a href="/pot/is/summaryEDW.do" target="_self" class="txt-ell ">
+																
+																	
+																	주요통계(기간별)
+																
+															</a>
+														
+													
+														
+															
+																
+																
+																
+															
+															
+															
+															
+															<a href="/pot/is/summaryRginEDW.do" target="_self" class="txt-ell on">
+																
+																	
+																	주요통계(지역별)
+																
+															</a>
+														
+													
+														
+															
+																
+																
+																
+															
+															
+															
+															
+															<a href="/pot/is/summaryAgeEDW.do" target="_self" class="txt-ell ">
+																
+																	
+																	주요통계(성별/연령별)
+																
+															</a>
+														
+													
+														
+															
+																
+																
+																
+															
+															
+															
+															
+															<a href="/pot/is/inftnsdsEDW.do" target="_self" class="txt-ell ">
+																
+																	
+																	감염병별
+																
+															</a>
+														
+													
+														
+															
+																
+																
+																
+															
+															
+															
+															
+															<a href="/pot/is/rginEDW.do" target="_self" class="txt-ell ">
+																
+																	
+																	지역별
+																
+															</a>
+														
+													
+														
+															
+																
+																
+																
+															
+															
+															
+															
+															<a href="/pot/is/ageEDW.do" target="_self" class="txt-ell ">
+																
+																	
+																	성별/연령별
+																
+															</a>
+														
+													
+														
+															
+																
+																
+																
+															
+															
+															
+															
+															<a href="/pot/is/dashboardEDW.do" target="_blank" title="새창으로 이동합니다." class="txt-ell ">
+																
+																	
+																	대시보드
+																
+															</a>
+														
+													
+												</div>
+											
+										</li>
+									
+								
+									
+										
+											
+											
+											
+											
+										
+
+										
+										
+											
+												
+													
+													
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+										
+
+										<li >
+											
+											
+
+											
+
+											<!-- START 2024. 12. 30 웹 접근성 조치 -->
+											
+											<a href="#" class="txt-ell ">
+												
+													
+													표본감시감염병
+												
+											</a>
+											
+											
+											
+											<!-- END 2024. 12. 30 웹 접근성 조치 -->
+
+											
+												<div class="side-type-list02">
+													
+														
+															
+																
+																
+																
+															
+															
+															
+															
+															<a href="/pot/is/st/influ.do" target="_self" class="txt-ell ">
+																
+																	
+																	인플루엔자
+																
+															</a>
+														
+													
+														
+															
+																
+																
+																
+															
+															
+															
+															
+															<a href="/pot/is/st/fluON.do" target="_blank" title="새창으로 이동합니다." class="txt-ell ">
+																
+																	
+																	인플루엔자대시보드
+																
+															</a>
+														
+													
+														
+															
+																
+																
+																
+															
+															
+															
+															
+															<a href="/pot/is/st/prsts.do" target="_self" class="txt-ell ">
+																
+																	
+																	기생충감염증
+																
+															</a>
+														
+													
+														
+															
+																
+																
+																
+															
+															
+															
+															
+															<a href="/pot/is/st/hfmd.do" target="_self" class="txt-ell ">
+																
+																	
+																	수족구병
+																
+															</a>
+														
+													
+														
+															
+																
+																
+																
+															
+															
+															
+															
+															<a href="/pot/is/st/hfmdc.do" target="_self" class="txt-ell ">
+																
+																	
+																	합병증동반수족구병
+																
+															</a>
+														
+													
+														
+															
+																
+																
+																
+															
+															
+															
+															
+															<a href="/pot/is/st/stis.do" target="_self" class="txt-ell ">
+																
+																	
+																	성매개감염병
+																
+															</a>
+														
+													
+														
+															
+																
+																
+																
+															
+															
+															
+															
+															<a href="/pot/is/st/ipi.do" target="_self" class="txt-ell ">
+																
+																	
+																	해외유입기생충감염증
+																
+															</a>
+														
+													
+														
+															
+																
+																
+																
+															
+															
+															
+															
+															<a href="/pot/is/st/gstrnftn.do" target="_self" class="txt-ell ">
+																
+																	
+																	장관감염증
+																
+															</a>
+														
+													
+														
+															
+																
+																
+																
+															
+															
+															
+															
+															<a href="/pot/is/st/ari.do" target="_self" class="txt-ell ">
+																
+																	
+																	급성호흡기감염증
+																
+															</a>
+														
+													
+														
+															
+																
+																
+																
+															
+															
+															
+															
+															<a href="/pot/is/st/sari.do" target="_self" class="txt-ell ">
+																
+																	
+																	중증급성호흡기감염증
+																
+															</a>
+														
+													
+														
+															
+																
+																
+																
+															
+															
+															
+															
+															<a href="/pot/is/st/etrvnftn.do" target="_self" class="txt-ell ">
+																
+																	
+																	엔테로바이러스감염증
+																
+															</a>
+														
+													
+														
+															
+																
+																
+																
+															
+															
+															
+															
+															<a href="/pot/is/st/ophlgc.do" target="_self" class="txt-ell ">
+																
+																	
+																	안과감염병
+																
+															</a>
+														
+													
+														
+															
+																
+																
+																
+															
+															
+															
+															
+															<a href="/pot/is/st/hai.do" target="_self" class="txt-ell ">
+																
+																	
+																	의료관련감염병
+																
+															</a>
+														
+													
+														
+															
+																
+																
+																
+															
+															
+															
+															
+															<a href="/pot/is/st/hcv.do" target="_self" class="txt-ell ">
+																
+																	
+																	C형간염
+																
+															</a>
+														
+													
+												</div>
+											
+										</li>
+									
+								
+							</ul>
+						
+					</div>
+				</section>
+				<div class="content-area" id="content">
+					
+
+        <h1 class="content-title02">전수신고 감염병</h1>
+
+        <ul class="link-tab square">
+            <li><a href="/pot/is/summaryEDW.do"title="주요통계(기간별) 페이지 이동">주요통계(기간별)</a></li>
+	        <li class="on" ><a href="/pot/is/summaryRginEDW.do" title="현재 페이지">주요통계(지역별)</a></li>
+	        <li><a href="/pot/is/summaryAgeEDW.do" title="주요통계(성별/연령별) 페이지 이동">주요통계(성별/연령별)</a></li>
+            <li><a href="/pot/is/inftnsdsEDW.do"title="전수감시감염병 감염병별통계 페이지 이동">감염병별</a></li>
+            <li><a href="/pot/is/rginEDW.do"title="전수감시감염병 지역별통계 페이지 이동">지역별</a></li>
+            <li><a href="/pot/is/ageEDW.do" title="전수감시감염병 성별,연령별통계 페이지 이동">성별/연령별</a></li>
+        </ul>
+
+        <h2 class="title02 mt60">주요통계(지역별)</h2><div class="selectTime">최종 업데이트 일시 : </div>
+
+
+
+        <form id="simpleAreaFrm" name="simpleAreaFrm" method="post" onsubmit="return false;">
+        	<input type="hidden" name="frmNm" value="simpleAreaFrm">
+            <div class="statistic-form mt30">
+                <table>
+                <caption>주요통계(지역별) 감영병명, 기간, 종류별 검색 조건</caption>
+            <colgroup>
+              <col style="width:120px;">
+              <col style="width:calc(100% / 2);">
+              <col style="width:120px;">
+              <col>
+            </colgroup>
+            <tbody>
+              <tr>
+                <th scope="row"><label for="simpleAreaFrmIcdgrpCd">감염병명</label></th>
+                <td>
+                    <div class="input-flex">
+                    <div class="input-flex">
+	                    <select style="width:200px;" name="icdgrpCd" id="simpleAreaFrmIcdgrpCd" onkeyup="mskeyup(this);" tabindex="0" title="감염병 급수 선택">
+			            
+							<option value="01">제1급</option>
+						
+							<option value="02">제2급</option>
+						
+							<option value="03">제3급</option>
+						
+			        </select>
+                        <select style="width:200px;" name="icdCd" id="simpleAreaFrmIcdCd" title="감염병명 선택">
+                        	
+							<optgroup label="제1급" style="height:35px;" data-icdgrpCd="01">
+								
+									
+										
+										<option value="NA0001">에볼라바이러스병</option>
+										
+									
+								
+									
+										
+										<option value="NA0002">마버그열</option>
+										
+									
+								
+									
+										
+										<option value="NA0003">라싸열</option>
+										
+									
+								
+									
+										
+										<option value="NA0004">크리미안콩고출혈열</option>
+										
+									
+								
+									
+										
+										<option value="NA0005">남아메리카출혈열</option>
+										
+									
+								
+									
+										
+										<option value="NA0006">리프트밸리열</option>
+										
+									
+								
+									
+										
+										<option value="NA0007">두창</option>
+										
+									
+								
+									
+										
+										<option value="NA0008">페스트</option>
+										
+									
+								
+									
+										
+										<option value="NA0009">탄저</option>
+										
+									
+								
+									
+										
+										<option value="NA0010">보툴리눔독소증</option>
+										
+									
+								
+									
+										
+										<option value="NA0011">야토병</option>
+										
+									
+								
+									
+										
+										<option value="NA0013">중증급성호흡기증후군(SARS)</option>
+										
+									
+								
+									
+										
+										<option value="NA0014">중동호흡기증후군(MERS)</option>
+										
+									
+								
+									
+										
+										<option value="NA0015">동물인플루엔자 인체감염증</option>
+										
+									
+								
+									
+										
+										<option value="NA0016">신종인플루엔자</option>
+										
+									
+								
+									
+										
+										<option value="NA0017">디프테리아</option>
+										
+									
+								
+									
+										
+										<option value="NA0018">@니파바이러스감염증</option>
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+							</optgroup>
+						
+							<optgroup label="제2급" style="height:35px;" data-icdgrpCd="02">
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+										<option value="NB0002">수두</option>
+										
+									
+								
+									
+										
+										<option value="NB0003">홍역</option>
+										
+									
+								
+									
+										
+										<option value="NB0004">콜레라</option>
+										
+									
+								
+									
+										
+										<option value="NB0005">장티푸스</option>
+										
+									
+								
+									
+										
+										<option value="NB0006">파라티푸스</option>
+										
+									
+								
+									
+										
+										<option value="NB0007">세균성이질</option>
+										
+									
+								
+									
+										
+										<option value="NB0008">장출혈성대장균감염증</option>
+										
+									
+								
+									
+										
+										<option value="NB0009">A형간염</option>
+										
+									
+								
+									
+										
+										<option value="NB0010">백일해</option>
+										
+									
+								
+									
+										
+										<option value="NB0011">유행성이하선염</option>
+										
+									
+								
+									
+										
+										<option value="NB1201">풍진(선천성)</option>
+										
+									
+								
+									
+										
+										<option value="NB1202">풍진(후천성)</option>
+										
+									
+								
+									
+										
+										<option value="NB0013">폴리오</option>
+										
+									
+								
+									
+										
+										<option value="NB0014">수막구균 감염증</option>
+										
+									
+								
+									
+										
+										<option value="NB0015">b형헤모필루스인플루엔자</option>
+										
+									
+								
+									
+										
+										<option value="NB0016">폐렴구균 감염증</option>
+										
+									
+								
+									
+										
+										<option value="NB0017">한센병</option>
+										
+									
+								
+									
+										
+										<option value="NB0018">성홍열</option>
+										
+									
+								
+									
+										
+										<option value="NB0019">반코마이신내성황색포도알균(VRSA) 감염증</option>
+										
+									
+								
+									
+										
+										<option value="NB0020">카바페넴내성장내세균목(CRE) 감염증</option>
+										
+									
+								
+									
+										
+										<option value="NB0021">E형간염</option>
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+							</optgroup>
+						
+							<optgroup label="제3급" style="height:35px;" data-icdgrpCd="03">
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+									
+								
+									
+										
+										<option value="NC0001">파상풍</option>
+										
+									
+								
+									
+										
+										<option value="NC0201">B형간염</option>
+										
+									
+								
+									
+										
+										<option value="NC0003">일본뇌염</option>
+										
+									
+								
+									
+										
+										<option value="NC0004">C형간염</option>
+										
+									
+								
+									
+										
+										<option value="NC0005">말라리아</option>
+										
+									
+								
+									
+										
+										<option value="NC0006">레지오넬라증</option>
+										
+									
+								
+									
+										
+										<option value="NC0007">비브리오패혈증</option>
+										
+									
+								
+									
+										
+										<option value="NC0008">발진티푸스</option>
+										
+									
+								
+									
+										
+										<option value="NC0009">발진열</option>
+										
+									
+								
+									
+										
+										<option value="NC0010">쯔쯔가무시증</option>
+										
+									
+								
+									
+										
+										<option value="NC0011">렙토스피라증</option>
+										
+									
+								
+									
+										
+										<option value="NC0012">브루셀라증</option>
+										
+									
+								
+									
+										
+										<option value="NC0013">공수병</option>
+										
+									
+								
+									
+										
+										<option value="NC0014">신증후군출혈열</option>
+										
+									
+								
+									
+										
+										<option value="NC0016">크로이츠펠트-야콥병(CJD) 및 변종크로이츠펠트-야콥병(vCJD)</option>
+										
+									
+								
+									
+										
+										<option value="NC0017">황열</option>
+										
+									
+								
+									
+										
+										<option value="NC0018">뎅기열</option>
+										
+									
+								
+									
+										
+										<option value="NC0019">큐열</option>
+										
+									
+								
+									
+										
+										<option value="NC0020">웨스트나일열</option>
+										
+									
+								
+									
+										
+										<option value="NC0021">라임병</option>
+										
+									
+								
+									
+										
+										<option value="NC0022">진드기매개뇌염</option>
+										
+									
+								
+									
+										
+										<option value="NC0023">유비저</option>
+										
+									
+								
+									
+										
+										<option value="NC0024">치쿤구니야열</option>
+										
+									
+								
+									
+										
+										<option value="NC0025">중증열성혈소판감소증후군(SFTS)</option>
+										
+									
+								
+									
+										
+										<option value="NC0026">지카바이러스감염증</option>
+										
+									
+								
+									
+										
+										<option value="NC0027">매독</option>
+										
+									
+								
+									
+										
+										<option value="NC2704">매독(선천성)</option>
+										
+									
+								
+									
+										
+										<option value="NC0028">@엠폭스</option>
+										
+									
+								
+							</optgroup>
+						
+                        </select>
+                    </div>
+                    </div>
+                </td>
+                <th scope="row"><label for="simpleAreaFrmStarDt">기간</label></th>
+                <td>
+					<select style="width:200px;" name="startDt" id="simpleAreaFrmStarDt" title="시작년도 선택">
+                        
+	                    
+	                        <option value="2026" selected="selected" >2026</option>
+                            
+	                    
+	                        <option value="2025"  >2025</option>
+                            
+	                    
+	                        <option value="2024"  >2024</option>
+                            
+	                    
+	                        <option value="2023"  >2023</option>
+                            
+	                    
+	                        <option value="2022"  >2022</option>
+                            
+	                    
+	                        <option value="2021"  >2021</option>
+                            
+	                    
+	                        <option value="2020"  >2020</option>
+                            
+	                    
+	                        <option value="2019"  >2019</option>
+                            
+	                    
+	                        <option value="2018"  >2018</option>
+                            
+	                    
+	                        <option value="2017"  >2017</option>
+                            
+	                    
+	                        <option value="2016"  >2016</option>
+                            
+	                    
+	                        <option value="2015"  >2015</option>
+                            
+	                    
+	                        <option value="2014"  >2014</option>
+                            
+	                    
+	                        <option value="2013"  >2013</option>
+                            
+	                    
+	                        <option value="2012"  >2012</option>
+                            
+	                    
+	                        <option value="2011"  >2011</option>
+                            
+	                    
+	                        <option value="2010"  >2010</option>
+                            
+	                    
+	                        <option value="2009"  >2009</option>
+                            
+	                    
+	                        <option value="2008"  >2008</option>
+                            
+	                    
+	                        <option value="2007"  >2007</option>
+                            
+	                    
+	                        <option value="2006"  >2006</option>
+                            
+	                    
+	                        <option value="2005"  >2005</option>
+                            
+	                    
+	                        <option value="2004"  >2004</option>
+                            
+	                    
+	                        <option value="2003"  >2003</option>
+                            
+	                    
+	                        <option value="2002"  >2002</option>
+                            
+	                    
+	                        <option value="2001"  >2001</option>
+                            
+	                    
+	                </select>
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">종류</th>
+                <td>
+                  <div class="input-flex">
+                    <span>
+                      <input type="radio" id="simpleAreaFrm_searchType1" name="searchType" checked="checked" value="1">
+                      <label for="simpleAreaFrm_searchType1">발생수</label>
+                      <input type="radio" id="simpleAreaFrm_searchType2" name="searchType" value="2">
+                      <label for="simpleAreaFrm_searchType2">인구 10만명당 발생률</label>
+                    </span>
+                  </div>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+            </div>
+
+            <button type="submit">통계작성</button>
+        </form>
+        <div class="box01 mt40">※ 매해 통계 자료는 변동 가능한 잠정통계입니다.
+			<br> <a href="/pot/bbs/BD_selectBbsList.do?q_bbsSn=1010&q_clsfNo=2">※ 후천성면역결핍증(AIDS) 통계 바로가기 <img src="/pot/resources/images/ic/ico-move-page.png" /></a>
+		</div>
+
+<!--             <div class="mt20" id="chartDiv"> -->
+
+<!--             </div> -->
+
+            <!-- 통계페이지 로드 -->
+            <div class="contents-wrap mt40" id="dataTable"></div>
+
+
+
+				</div>
+			</div>
+		</div>
+
+		<footer id="footer">
+			
+
+
+
+
+
+
+
+
+<div class="container1400">
+  <div class="footer-box01">
+      <ul class="guide">
+          <li><a href="https://kdca.go.kr/kdca/3507/subview.do" target="_blank" title="개인정보처리방침 새창열기" class="guide-bold">개인정보처리방침</a></li>
+          <li><a href="/pot/guide.do" target="_blank" title="이용안내 새창열기">이용안내</a></li>
+          <li><a href="https://kdca.go.kr/kdca/3509/subview.do" target="_blank" title="저작권정책 새창열기">저작권정책</a></li>
+      </ul>
+      <div class="guide-right">
+          <ul class="sns-link">
+              <li><a href="https://www.facebook.com/koreadca" target="_blank" title="질병청 페이스북 새창열기">페이스북</a></li>
+              <li><a href="https://twitter.com/i/flow/login?redirect_after_login=%2FKoreaDCA%2F" target="_blank" title="질병청트위터 새창열기">트위터</a></li>
+              <li><a href="https://post.naver.com/my.nhn?memberNo=20182790" target="_blank" title="질병청 네이버 블로그 새창열기">네이버블로그</a></li>
+              <li><a href="https://www.youtube.com/channel/UCa7-3Zvxg-5Rfxgu3RQY_gw" target="_blank" title="질병청 유튜브 새창열기">유튜브</a></li>
+              <li><a href="https://www.instagram.com/koreadca" target="_blank" title="질병청 인스타그램 새창열기">인스타그램</a></li>
+          </ul>
+          <ul class="family-site">
+              <li>
+                 <div class="select_topDrop">
+                    <span class="selected">
+                        <a href="#" title="열기"  role="button">사업별 누리집</a>
+                    </span>
+                    <ul class="list">
+                        <li><a href="https://qcode.kdca.go.kr/" target="_blank" title="Q-CODE 새창 열림">Q-CODE</a></li>
+                        <li><a href="https://tbzero.kdca.go.kr/tbzero/index.jsp" target="_blank" title="결핵ZERO 새창 열림">결핵ZERO</a></li>
+                        <li><a href="https://nip.kdca.go.kr/irhp/index.jsp" target="_blank" title="예방접종도우미 새창 열림">예방접종도우미</a></li>
+                        <li><a href="https://nqs.kdca.go.kr/nqs/main.do" target="_blank" title="국립검역소 새창 열림">국립검역소</a></li>
+                        <li><a href="http://xn--now-po7lf48dlsm0ya109f.kr/nqs/oidnow/main/index.do" target="_blank" title="해외감염병now 새창 열림">해외감염병now</a></li>
+                        <li><a href="https://knhanes.kdca.go.kr/knhanes/intro.html" target="_blank" title="국민건강영양조사 새창 열림">국민건강영양조사</a></li>
+                        <li><a href="https://health.kdca.go.kr/healthinfo/" target="_blank" title="국가건강정보포털 새창 열림">국가건강정보포털</a></li>
+                        <li><a href="https://www.kdca.go.kr/injury/" target="_blank" title="국가손상정보포털 새창 열림">국가손상정보포털</a></li>
+                    </ul>
+                 </div>
+              </li>
+              <li>
+                 <div class="select_topDrop">
+                    <span class="selected">
+                        <a href="#" title="열기"  role="button">관련기관 누리집</a>
+                    </span>
+                    <ul class="list">
+                        <li><a href="https://www.hira.or.kr/main.do" target="_blank" title="건강보험심사평가원 새창 열림">건강보험심사평가원</a></li>
+                        <li><a href="https://www.ncc.re.kr/" target="_blank" title="국립암센터 새창 열림">국립암센터</a></li>
+                        <li><a href="https://www.nhis.or.kr/nhis/index.do" target="_blank" title="국민건강보험공단 새창 열림">국민건강보험공단</a></li>
+                        <li><a href="https://www.nps.or.kr/jsppage/etc/data/data01_01.jsp" target="_blank" title="국민연금통계 새창 열림">국민연금통계</a></li>
+                        <li><a href="https://kosis.kr/index/index.do" target="_blank" title="국가통계포털 새창 열림">국가통계포털</a></li>
+                        <li><a href="http://www.khiss.go.kr/" target="_blank" title="보건산업통계 새창 열림">보건산업통계</a></li>
+                        <li><a href="https://www.data.go.kr/" target="_blank" title="공공데이터포털 새창 열림">공공데이터포털</a></li>
+                        <li><a href="https://www.index.go.kr/unity/potal/eNara/main/EnaraMain.do" target="_blank" title="e나라지표 새창 열림">e나라지표</a></li>
+                        <li><a href="http://me.go.kr/home/web/main.do" target="_blank" title="환경부 새창 열림">환경부</a></li>
+                        <li><a href="https://www.qia.go.kr/listindexWebAction.do" target="_blank" title="농림축산검역본부 새창 열림">농림축산검역본부</a></li>
+                        <li><a href="https://www.mfds.go.kr/index.do" target="_blank" title="식품의약품안전처 새창 열림">식품의약품안전처</a></li>
+                    </ul>
+                 </div>
+              </li>
+              <li>
+                <div class="select_topDrop">
+                   <span class="selected">
+                       <a href="#" title="열기" role="button">관련국외기관 누리집</a>
+                   </span>
+                   <ul class="list">
+                       <li><a href="https://www.who.int/" target="_blank" title="세계보건기구 새창 열림">세계보건기구[WHO]</a></li>
+                       <li><a href="https://data.oecd.org/" target="_blank" title="경제협력개발기구 새창 열림">경제협력개발기구[OECD]</a></li>
+                       <li><a href="https://www.cdc.gov/" target="_blank" title="미국질병통제예방센터 새창 열림">미국질병통제예방센터[CDC]</a></li>
+                       <li><a href="https://promedmail.org/" target="_blank" title=" 새창 열림">ProMED</a></li>
+                       <li><a href="https://www.ecdc.europa.eu/en" target="_blank" title="유럽질병통제예방센터 새창 열림">유럽질병통제예방센터[ECDC]</a></li>
+                       <li><a href="https://www.cidrap.umn.edu/" target="_blank" title="CIDRAP 새창 열림">CIDRAP</a></li>
+                       <li><a href="https://outbreaknewstoday.com/" target="_blank" title="Outbreak News Today 새창 열림">Outbreak News Today</a></li>
+                       <li><a href="https://gphin.canada.ca/cepr/listarticles.jsp?language=en_CA" target="_blank" title="GPHIN 새창 열림">GPHIN</a></li>
+                       <li><a href="https://medisys.newsbrief.eu/medisys/homeedition/en/home.html" target="_blank" title="Medisys 새창 열림">Medisys</a></li>
+                       <li><a href="https://flutrackers.com/forum/" target="_blank" title="Flu Trasckers 새창 열림">Flu Trasckers</a></li>
+                       <li><a href="http://ddc.moph.go.th/" target="_blank" title="MPH(Thailand) 새창 열림">MPH(Thailand)</a></li>
+                       <li><a href="https://doh.gov.ph/" target="_blank" title="Dept of Health(Philippines) 새창 열림">Dept of Health(Philippines)</a></li>
+                       <li><a href="http://www.moh.gov.cn/" target="_blank" title="MOH China(China) 새창 열림">MOH China(China)</a></li>
+                       <li><a href="https://www.chp.gov.hk/en/index.html" target="_blank" title="Centre for Health Protection(Hongkong) 새창 열림">Centre for Health Protection(Hongkong)</a></li>
+                       <li><a href="https://www.cdc.gov.tw/En" target="_blank" title="CDC Taiwan(Taiwan) 새창 열림">CDC Taiwan(Taiwan)</a></li>
+                       <li><a href="https://www.mhlw.go.jp/index.html" target="_blank" title=" 새창 열림">MOH Japan(Japan)</a></li>
+                       <li><a href="https://www.gov.uk/government/organisations/public-health-england" target="_blank" title="영국공공보건국[PHE] 새창 열림">영국공공보건국[PHE]</a></li>
+                       <li><a href="https://www.canada.ca/en/health-canada.html" target="_blank" title="Health Canada(Canada) 새창 열림">Health Canada(Canada)</a></li>
+                       <li><a href="https://ncdc.gov.ng/" target="_blank" title="Nigeria CDC(Nigeria) 새창 열림">Nigeria CDC(Nigeria)</a></li>
+                       <li><a href="https://www.moh.gov.sa/Pages/Default.aspx" target="_blank" title="Ministry of Health(Saudi Arabia) 새창 열림">Ministry of Health(Saudi Arabia)</a></li>
+                       <li><a href="https://www.gov.br/saude/pt-br" target="_blank" title="Ministry of Health(Brazil) 새창 열림">Ministry of Health(Brazil)</a></li>
+                       <li><a href="https://www.niid.go.jp/" target="_blank" title="일본감염병연구소[NIID] 새창 열림">일본감염병연구소[NIID]</a></li>
+                       <li><a href="https://ivdc.chinacdc.cn/" target="_blank" title="IVDC(China) 새창 열림">IVDC(China)</a></li>
+                       <li><a href="https://statsoc.org.au/" target="_blank" title="호주통계청 새창 열림">호주통계청</a></li>
+                       <li><a href="https://ssc.ca/en" target="_blank" title="캐나다통계청 새창 열림">캐나다통계청</a></li>
+                       <li><a href="https://www.stat.go.jp/" target="_blank" title="일본통계청 새창 열림">일본통계청</a></li>
+                       <li><a href="https://www.ons.gov.uk/" target="_blank" title="영국통계청 새창 열림">영국통계청</a></li>
+                       <li><a href="https://www.census.gov/" target="_blank" title="미국인구조사 새창 열림">미국인구조사</a></li>
+                       <li><a href="https://fedstats.sites.usa.gov/" target="_blank" title="미국연방정부통계 새창 열림">미국연방정부통계</a></li>
+                       <li><a href="https://www.e-stat.go.jp/" target="_blank" title="일본정부통계포털 새창 열림">일본정부통계포털</a></li>
+                   </ul>
+                </div>
+             </li>
+          </ul>
+      </div>
+  </div>
+  <div class="footer-box02">
+      <img src="/pot/resources/images/logo_S.png" alt="감염병포털 로고">
+      <div class="txt">
+          <p>(28159)충북 청주시 흥덕구 오송읍 오송생명2로 187 오송보건의료행정타운내 질병관리청</p>
+          <p>☎콜센터 : 1339 </p>
+          <p>COPYRIGHTⓒ질병관리청 ALL RIGHTS RESERVED</p>
+      </div>
+      <div class="mark">
+          <a href="https://kogl.or.kr/info/introduce.do" target="_blank" title="공공누리 새창열기">
+              <img src="/pot/resources/images/open-mark.png" alt="공공누리 마크">
+          </a>
+          <!-- START 2025. 12. 29 웹접근성 인증서 추가  -->
+<!--           <a href="http://www.webwatch.or.kr/Situation/WA_Situation.html?MenuCD=110" target="_blank" title="국가 공인 인증기관 : 웹와치 새창열기"> -->
+
+<!--           </a> -->
+          <a href="/pot/guide.do" target="_self" title="웹 접근성 인증서 바로가기">
+	          <img style="max-height: 54px;" src="/pot/resources/images/web-mark_2026.png" border="0" alt="과학기술정보통신부 WEB ACCESSIBILITY 마크(웹 접근성 품질인증 마크)"/>
+          </a>
+          <!-- END 2025. 12. 29 웹접근성 인증서 추가  -->
+      </div>
+  </div>
+</div>
+<script>
+  $(document).ready(function() {
+  // 위로 드롭다운 셀릭트
+  $('.select_topDrop > .selected').click(function (e) {
+    e.preventDefault();
+
+    let $this = $(this);
+
+    if ($this.hasClass('on')) {
+      $this.removeClass('on');
+      $this.next('.list').slideUp();
+
+      // "열림"으로 표시
+      $this.find('a').attr('title', '열기');
+
+    } else {
+      $('.select_topDrop > .selected').removeClass('on');
+      $('.select_topDrop .list').slideUp();
+
+      $this.addClass('on');
+      $this.next('.list').slideDown();
+
+       // "닫힘"으로 표시
+       $this.find('a').attr('title', '닫힘');
+    }
+  });
+
+  // 위로 드롭다운 셀릭트 외 클릭시 닫기
+  $(document).click(function (e) {
+     let clickEl = $(e.target);
+     if (!clickEl.closest('.select_topDrop').length) {
+       $('.select_topDrop > .selected.on').removeClass('on');
+       $('.select_topDrop .list').slideUp();
+
+       // "열림"으로 표시
+       $('.select_topDrop > .selected a').attr('title', '열기');
+     }
+   });
+});
+
+
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-335GHWX90W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-335GHWX90W');
+</script>
+
+		</footer>
+
+		<div class="container1400" style="position: relative;">
+			<div class="btn-area">
+				<a href="javascript:void(0);" target="_self" class="quick-blue quick-menu" style="display: none;" data-vcn>백신<br>알기</a>
+				<a href="#" id="top-btn">TOP</a>
+			</div>
+		</div>
+
+		
+
+
+
+
+<!--로딩페이지-->
+<div class="loading-bg">
+	<div class="spin">
+		<img src="/pot/resources/images/loading.png" alt="">
+	</div>
+</div>
+<!--//로딩페이지-->
+	</body>
+</html>
